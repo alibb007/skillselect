@@ -1,0 +1,722 @@
+[
+ {
+  "area": 0,
+  "persona": "Junior project coordinator in Manila",
+  "prompt": "Hi, can you help me write an email to my boss Ma'am Reyes asking to move the client presentation? It was set for Thursday Nov 20 but the client's designer only sends the final mockups on Wednesday night. I'd like to suggest Monday Nov 24 instead, and I need to keep it polite but short because she reads emails on her phone.",
+  "details": [
+   "Boss is Ma'am Reyes",
+   "Presentation currently Thursday Nov 20",
+   "Mockups arrive Wednesday night",
+   "Proposed new date Monday Nov 24"
+  ],
+  "id": "Q01"
+ },
+ {
+  "area": 1,
+  "persona": "Cafe owner in Lisbon, mid-40s",
+  "prompt": "I need a weekly rota for my little cafe, we're open 8am to 4pm Tuesday to Sunday and closed Mondays. I have 3 staff: Inês can only do mornings, Rui wants max 25 hours a week, and Bea is full time. Can you lay it out day by day so there's always 2 people on?",
+  "details": [
+   "Open 8am-4pm, Tuesday to Sunday, closed Monday",
+   "Inês can only work mornings",
+   "Rui wants maximum 25 hours per week",
+   "Always need 2 people on shift"
+  ],
+  "id": "Q02"
+ },
+ {
+  "area": 2,
+  "persona": "Nurse in Manchester, single mum",
+  "prompt": "I work 12-hour night shifts at the hospital and I've got the rota for December: Mon, Tue, Fri and Sat nights. My mum can take Leo, he's 6, on any weeknight but not weekends because she works Saturdays. My neighbour Priya said she'd help but only until 10pm. Can you make me a childcare schedule for a typical week so I can see where the gaps are?",
+  "details": [
+   "Night shifts Mon, Tue, Fri, Sat",
+   "Son Leo is 6",
+   "Mum available weeknights only, not weekends",
+   "Neighbour Priya can help only until 10pm"
+  ],
+  "id": "Q03"
+ },
+ {
+  "area": 3,
+  "persona": "Nurse in Manchester paying off card",
+  "prompt": "I've got £3,400 left on my credit card at 22.9% APR and I want it gone before my wedding next September. After rent and bills I can realistically put about £380 a month towards it. Can you give me a month-by-month payoff schedule and tell me if I'll make it in time?",
+  "details": [
+   "£3,400 credit card balance",
+   "22.9% APR",
+   "deadline: wedding next September",
+   "£380 per month available"
+  ],
+  "id": "Q04"
+ },
+ {
+  "area": 4,
+  "persona": "Nigerian final-year nursing student",
+  "prompt": "I have my licensing exam on 12 March and I can only study evenings from 7 to 10 because I do clinical shifts all day. My weakest areas are pharmacology and maternal health, everything else I'm fairly okay with. I also lose every Sunday to church and family, so please don't put anything there. Can you make me a weekly study timetable I can follow till the exam?",
+  "details": [
+   "Licensing exam on 12 March",
+   "Can only study 7pm to 10pm on weekdays/evenings",
+   "Weakest topics are pharmacology and maternal health",
+   "No study possible on Sundays"
+  ],
+  "id": "Q05"
+ },
+ {
+  "area": 5,
+  "persona": "Retired teacher in Leeds, UK",
+  "prompt": "I'm 67 and want to build up to walking 10,000 steps a day, but right now I average about 3,500. My left knee gets sore if I go more than 40 minutes in one go. Can you give me a week-by-week plan to get there by the end of February? I walk my neighbour's dog every morning so that walk has to stay in the plan.",
+  "details": [
+   "Currently averages 3,500 steps a day",
+   "Left knee sore after more than 40 minutes of continuous walking",
+   "Target date is end of February",
+   "Walks neighbour's dog every morning"
+  ],
+  "id": "Q06"
+ },
+ {
+  "area": 0,
+  "persona": "HR manager at German logistics firm",
+  "prompt": "I have to interview 6 candidates for a warehouse supervisor role next week, and each interview takes 45 minutes plus 15 minutes for my notes. I can only do interviews Tuesday and Wednesday between 9:00 and 13:00. Our operations head Herr Vogel must join at least 3 of them, but he is only free Wednesday morning. Can you make me a schedule?",
+  "details": [
+   "6 candidates",
+   "45 min interview + 15 min notes each",
+   "Available Tue and Wed 9:00-13:00",
+   "Herr Vogel joins at least 3, only Wednesday morning"
+  ],
+  "id": "Q07"
+ },
+ {
+  "area": 1,
+  "persona": "Freelance plumber in Manchester, 52",
+  "prompt": "Customer wants a quote for replacing a bathroom sink and taps. Parts come to £185, I reckon it's about 3 hours work and I charge £55 an hour. I also need to add VAT at 20% since I'm registered now. Can you work out the total and write me a short quote message I can text her?",
+  "details": [
+   "Parts cost £185",
+   "Job takes about 3 hours",
+   "Labour rate £55 per hour",
+   "VAT 20% must be added"
+  ],
+  "id": "Q08"
+ },
+ {
+  "area": 2,
+  "persona": "Retired engineer planning 50th anniversary",
+  "prompt": "My wife and I hit 50 years married on 14 March and the kids want a party at the village hall. We've got £1,800 total to spend and the hall holds 60 people max, which is tricky because our guest list is at 72 right now. Can you help me decide who to trim and give me a rough budget breakdown for the day?",
+  "details": [
+   "Anniversary on 14 March",
+   "Budget £1,800",
+   "Hall capacity 60 people",
+   "Current guest list 72"
+  ],
+  "id": "Q09"
+ },
+ {
+  "area": 3,
+  "persona": "Software developer in Bangalore comparing jobs",
+  "prompt": "I have two offers and need to decide by Friday. Company A in Bangalore pays ₹28 lakh a year and is fully remote, Company B in Pune pays ₹32 lakh but I'd have to move and rent there is around ₹30,000 a month more than I pay now. I also lose my 3 hours of daily commute savings with B since it's office-only. Which one actually leaves me better off?",
+  "details": [
+   "Offer A ₹28 lakh, remote, Bangalore",
+   "Offer B ₹32 lakh, Pune",
+   "extra ₹30,000/month rent in Pune",
+   "Offer B is office-only, decide by Friday"
+  ],
+  "id": "Q10"
+ },
+ {
+  "area": 4,
+  "persona": "Primary teacher in rural Scotland",
+  "prompt": "I teach a composite class of P3 and P4, 19 kids in total, and I need a 50-minute maths lesson on telling time to the quarter hour. We only have one set of 10 clock faces so they'll have to share. Two of my P3s are still shaky on o'clock and half past. Could you write me a lesson plan that works for both year groups at once?",
+  "details": [
+   "Composite P3/P4 class of 19 pupils",
+   "Lesson is 50 minutes on telling time to the quarter hour",
+   "Only 10 clock faces available",
+   "Two P3 pupils still struggle with o'clock and half past"
+  ],
+  "id": "Q11"
+ },
+ {
+  "area": 5,
+  "persona": "Nurse and amateur runner in Manila",
+  "prompt": "I signed up for a half marathon on March 8 and my longest run so far is 8 km. I work 12-hour night shifts Monday to Wednesday, so I can only really train Thursday to Sunday. Can you make me a training schedule that fits that? It gets really hot after 7am here, so all runs need to be early morning or evening.",
+  "details": [
+   "Half marathon on March 8",
+   "Longest run so far is 8 km",
+   "Works 12-hour night shifts Monday to Wednesday",
+   "Too hot to run after 7am"
+  ],
+  "id": "Q12"
+ },
+ {
+  "area": 0,
+  "persona": "Freelance bookkeeper in Ontario, Canada",
+  "prompt": "I need to send a client an invoice reminder that doesn't sound pushy. Invoice #2041 for $1,850 was due October 31 and they haven't paid or replied. My terms say 2% late fee per month, but this is a long-time client so I want to mention it gently. Can you write the email?",
+  "details": [
+   "Invoice #2041",
+   "Amount $1,850",
+   "Due October 31, unpaid",
+   "2% monthly late fee in terms"
+  ],
+  "id": "Q13"
+ },
+ {
+  "area": 1,
+  "persona": "Corner shop owner in Lagos, 38",
+  "prompt": "I buy a carton of 12 bottles of groundnut oil for 30,000 naira and I want to sell each bottle making at least 25% profit. My competitor down the road sells the same bottle at 3,100 naira. Transport to bring the carton costs me 1,200 naira each time. What price per bottle should I put and will I still beat him?",
+  "details": [
+   "Carton of 12 bottles costs 30,000 naira",
+   "Wants at least 25% profit",
+   "Competitor sells at 3,100 naira per bottle",
+   "Transport costs 1,200 naira per carton"
+  ],
+  "id": "Q14"
+ },
+ {
+  "area": 2,
+  "persona": "Software developer relocating Berlin to Lisbon",
+  "prompt": "We're moving from Berlin to Lisbon and the movers come on 9 January, so I need a packing checklist working backwards from that. It's me, my partner and our cat Mochi, who needs an EU pet passport check before we fly. Our new flat in Lisbon is furnished so we're selling our sofa and bed here. Can you give me a week-by-week list starting from today?",
+  "details": [
+   "Movers arrive 9 January",
+   "Cat named Mochi needs pet passport check",
+   "New flat in Lisbon is furnished",
+   "Selling sofa and bed before moving"
+  ],
+  "id": "Q15"
+ },
+ {
+  "area": 3,
+  "persona": "Retired teacher in Ohio planning trip",
+  "prompt": "My husband and I want to visit Portugal for 12 days next May, flying into Lisbon. Our total budget is $6,000 for everything including flights from Columbus. He has a bad knee so we can't do steep walking all day. Could you put together a day-by-day plan with a rough cost breakdown?",
+  "details": [
+   "12 days in Portugal next May",
+   "$6,000 total budget incl. flights",
+   "flying from Columbus into Lisbon",
+   "husband has bad knee, limited steep walking"
+  ],
+  "id": "Q16"
+ },
+ {
+  "area": 4,
+  "persona": "German master's student writing thesis",
+  "prompt": "My master's thesis in environmental engineering is due on 31 May and I haven't started writing, but my lab data will be done by mid-January. My supervisor wants a full draft at least 4 weeks before submission to give feedback. I also work as a student assistant 15 hours a week. Can you give me a month-by-month plan from now until the deadline?",
+  "details": [
+   "Thesis due 31 May",
+   "Lab data finished by mid-January",
+   "Supervisor needs full draft 4 weeks before submission",
+   "Works 15 hours a week as student assistant"
+  ],
+  "id": "Q17"
+ },
+ {
+  "area": 5,
+  "persona": "Youth football coach in Lagos",
+  "prompt": "I coach an under-12 football team of 18 kids and we have a tournament on Saturday where each match is 2 halves of 15 minutes. We'll play 4 group matches and only 7 players are on the pitch at a time. Can you work out a rotation so every child gets roughly equal minutes? Two of my players, Tunde and Chidi, are the only ones who can play in goal.",
+  "details": [
+   "18 players in the squad",
+   "Matches are 2 halves of 15 minutes",
+   "4 group matches with 7 players on the pitch",
+   "Only Tunde and Chidi can play goalkeeper"
+  ],
+  "id": "Q18"
+ },
+ {
+  "area": 0,
+  "persona": "Sales team lead in Nairobi",
+  "prompt": "My team of 5 reps had a quarterly target of KES 12 million and we closed KES 9.6 million. I have to report this to the regional director on Friday and explain that two big deals worth KES 2.1 million together slipped into January. Can you help me write a short summary paragraph with the percentage we hit and what it would be with the slipped deals?",
+  "details": [
+   "Team of 5 reps",
+   "Target KES 12 million",
+   "Closed KES 9.6 million",
+   "KES 2.1 million slipped to January"
+  ],
+  "id": "Q19"
+ },
+ {
+  "area": 1,
+  "persona": "Young florist in Melbourne, 26",
+  "prompt": "A customer just messaged angry because her birthday bouquet arrived 2 hours late yesterday. Our driver got a flat tyre so it wasn't really anyone's fault but I still feel bad. I can offer her either a $20 refund or a free small posy next time, not both. Can you write a reply that's apologetic but not grovelling?",
+  "details": [
+   "Bouquet arrived 2 hours late",
+   "Cause was driver's flat tyre",
+   "Can offer $20 refund or free small posy",
+   "Can only offer one, not both"
+  ],
+  "id": "Q20"
+ },
+ {
+  "area": 2,
+  "persona": "Father of four in Lagos",
+  "prompt": "I need a dinner plan for Monday to Friday for six people, me, my wife and our four kids. Our food budget is ₦45,000 for the week. My second son is allergic to groundnuts so nothing with groundnut oil or paste. Also my wife gets home at 7pm so meals should take less than 40 minutes to cook. Please include a shopping list.",
+  "details": [
+   "Six people in the family",
+   "Weekly food budget ₦45,000",
+   "Son allergic to groundnuts",
+   "Meals must cook in under 40 minutes"
+  ],
+  "id": "Q21"
+ },
+ {
+  "area": 3,
+  "persona": "University student in Berlin budgeting",
+  "prompt": "I get €934 a month from BAföG plus €520 from my minijob at a café. My room in a WG costs €480 warm and my Deutschlandticket is €58. I keep running out of money around the 20th. Can you make me a simple monthly budget that actually lasts the whole month?",
+  "details": [
+   "€934/month BAföG",
+   "€520/month minijob income",
+   "€480 rent warm",
+   "€58 Deutschlandticket"
+  ],
+  "id": "Q22"
+ },
+ {
+  "area": 4,
+  "persona": "Indian 17-year-old choosing college stream",
+  "prompt": "I got 92% in my Class 12 maths and 78% in biology, and I need to decide between a BSc in Data Science and a BSc in Biotechnology before the 5 December admission deadline. My parents can pay up to 2.5 lakh per year in fees. The data science course is 3 years and biotech is 4 years at the college I'm looking at. Can you help me weigh this up and tell me which makes more sense for me?",
+  "details": [
+   "92% in maths, 78% in biology",
+   "Admission decision deadline 5 December",
+   "Family budget up to 2.5 lakh per year",
+   "Data science is 3 years, biotech is 4 years"
+  ],
+  "id": "Q23"
+ },
+ {
+  "area": 5,
+  "persona": "Allotment gardener and accountant, Melbourne",
+  "prompt": "I've got a new garden bed that's 3 metres by 1.2 metres and gets about 6 hours of full sun a day. I want to plant tomatoes, basil and zucchini this month since it's spring here. How many of each can I fit without overcrowding, and how should I lay them out? I can only water every second day because of local restrictions.",
+  "details": [
+   "Bed is 3 m by 1.2 m",
+   "Gets about 6 hours of full sun",
+   "Wants tomatoes, basil and zucchini",
+   "Can only water every second day"
+  ],
+  "id": "Q24"
+ },
+ {
+  "area": 0,
+  "persona": "Office administrator at Australian dental clinic",
+  "prompt": "We're organising a team planning meeting for 14 staff and the budget is AUD 600 for catering and room. Two people are vegan and one has a nut allergy. The meeting runs from 8:30 to 12:30 so we need morning tea at least. Can you give me a checklist and a rough cost split?",
+  "details": [
+   "14 staff attending",
+   "Budget AUD 600",
+   "2 vegans, 1 nut allergy",
+   "Meeting 8:30-12:30"
+  ],
+  "id": "Q25"
+ },
+ {
+  "area": 1,
+  "persona": "Bakery owner in Toronto, 61",
+  "prompt": "I keep throwing out bread at the end of the day and need a better plan. On weekdays I bake 80 loaves and usually have about 15 left over, on Saturdays I bake 120 and sell out by 1pm. My oven can only do 20 loaves per batch. Can you suggest how many to bake each day and roughly when?",
+  "details": [
+   "Bakes 80 loaves weekdays, ~15 left over",
+   "Bakes 120 on Saturdays",
+   "Sells out by 1pm on Saturdays",
+   "Oven does 20 loaves per batch"
+  ],
+  "id": "Q26"
+ },
+ {
+  "area": 2,
+  "persona": "Teacher renovating bathroom in Toronto",
+  "prompt": "We're redoing our only bathroom and the contractor says it'll take 3 weeks starting 5 January. I have CAD 14,000 to work with and he quoted 11,200 for labour and basic materials. I really want heated floors which he said adds about 2,400. Can you help me figure out if I can afford heated floors and still keep a buffer, and what else I should budget for?",
+  "details": [
+   "Renovation takes 3 weeks from 5 January",
+   "Total budget CAD 14,000",
+   "Contractor quote CAD 11,200",
+   "Heated floors add about CAD 2,400"
+  ],
+  "id": "Q27"
+ },
+ {
+  "area": 3,
+  "persona": "Single dad in Toronto, car loan",
+  "prompt": "I owe $14,200 on my car loan at 7.4% with 41 months left, and I just got a $5,000 tax refund. My daughter's daycare goes up by $250 a month starting January. Should I dump the refund into the loan or keep it as a cushion? Just tell me what you'd do and why, with the numbers.",
+  "details": [
+   "$14,200 car loan at 7.4%",
+   "41 months remaining",
+   "$5,000 tax refund",
+   "daycare +$250/month from January"
+  ],
+  "id": "Q28"
+ },
+ {
+  "area": 4,
+  "persona": "Brazilian English teacher, adult learners",
+  "prompt": "I teach an evening English class for 8 adult beginners who all work in hotels in Florianópolis. Classes are 90 minutes, twice a week, and the hotel season starts in 6 weeks so they mostly need to talk to guests at reception. We have no projector, just a whiteboard. Can you plan the 12 lessons for me with a short topic and activity for each one?",
+  "details": [
+   "8 adult beginner students who work in hotels",
+   "Classes are 90 minutes twice a week",
+   "Hotel season starts in 6 weeks (12 lessons)",
+   "No projector, only a whiteboard"
+  ],
+  "id": "Q29"
+ },
+ {
+  "area": 5,
+  "persona": "Volunteer coordinator at Toronto food bank",
+  "prompt": "I need to write a message to our volunteer group asking for help with the holiday hamper packing on December 13. We need 25 people across two shifts, 9am to 12pm and 1pm to 4pm. Can you draft something friendly I can send on WhatsApp? People need to sign up with me, Priya, by December 6, and they should wear closed-toe shoes.",
+  "details": [
+   "Hamper packing on December 13",
+   "Need 25 volunteers across shifts 9-12 and 1-4",
+   "Sign up with Priya by December 6",
+   "Closed-toe shoes required"
+  ],
+  "id": "Q30"
+ },
+ {
+  "area": 0,
+  "persona": "Recently promoted engineering manager, Bangalore",
+  "prompt": "I just became manager and need to decide whether to hire one senior developer at 28 lakh per year or two juniors at 12 lakh each. Our budget for new hires is 26 lakh, and we have a product launch in March that needs someone productive fast. Only one person on my team, Priya, has time to mentor. What should I choose and how do I explain it to my director?",
+  "details": [
+   "Senior costs 28 lakh/year",
+   "Juniors 12 lakh each",
+   "Hiring budget 26 lakh",
+   "Launch in March, only Priya can mentor"
+  ],
+  "id": "Q31"
+ },
+ {
+  "area": 1,
+  "persona": "Freelance graphic designer in Berlin, 33",
+  "prompt": "A client hasn't paid my invoice of €1,450 which was due on 1 October, so it's now over six weeks late. I've already sent one polite reminder on 20 October with no answer. My contract says I can charge 5% late fee after 30 days. Can you write a firmer second reminder in English that mentions the fee?",
+  "details": [
+   "Unpaid invoice €1,450",
+   "Due date was 1 October",
+   "First reminder sent 20 October, no reply",
+   "Contract allows 5% late fee after 30 days"
+  ],
+  "id": "Q32"
+ },
+ {
+  "area": 2,
+  "persona": "Divorced dad, accountant in Sydney",
+  "prompt": "My ex and I share custody of our two girls, Ava (9) and Mia (5), and we need to sort out the summer school holidays from 19 December to 27 January. She's taking them to Perth for her family from 23 to 30 December. I want Christmas Day with them next year so this year it's fine with her. Can you write a fair calendar split and a short polite message I can send her proposing it?",
+  "details": [
+   "Daughters Ava 9 and Mia 5",
+   "Holidays 19 December to 27 January",
+   "Ex in Perth with kids 23-30 December",
+   "Dad wants Christmas next year, fine to skip this year"
+  ],
+  "id": "Q33"
+ },
+ {
+  "area": 3,
+  "persona": "Freelance designer in Mexico City",
+  "prompt": "My income swings between 25,000 and 60,000 pesos a month depending on clients. My fixed costs are 18,000 pesos and I want to build an emergency fund of 3 months of expenses by the end of next year. Can you give me a rule for how much to save in good months versus bad months so I hit that goal?",
+  "details": [
+   "income 25,000–60,000 MXN/month",
+   "fixed costs 18,000 MXN/month",
+   "goal: 3 months of expenses saved",
+   "deadline: end of next year"
+  ],
+  "id": "Q34"
+ },
+ {
+  "area": 4,
+  "persona": "Canadian mom returning to university",
+  "prompt": "I'm 41 and going back to finish my business degree part-time, and I have 4 courses left to graduate. I can only handle 2 courses per term because I have two kids and work 30 hours a week. One of the remaining courses, Corporate Finance, is only offered in the fall term. Can you work out the fastest order to take these so I graduate as soon as possible, starting January 2027?",
+  "details": [
+   "4 courses left to graduate",
+   "Max 2 courses per term",
+   "Corporate Finance only offered in fall",
+   "Starting January 2027"
+  ],
+  "id": "Q35"
+ },
+ {
+  "area": 5,
+  "persona": "Software developer starting strength training, Berlin",
+  "prompt": "I'm 34 and want to start lifting at the gym, but I've never done it before. I can go 3 times a week for about 45 minutes each time. Can you give me a simple beginner program? I had a lower back injury two years ago so I'd rather avoid heavy deadlifts for now, and my goal is mainly to gain some muscle.",
+  "details": [
+   "Complete beginner at lifting",
+   "Can train 3 times a week for 45 minutes",
+   "Previous lower back injury, avoid heavy deadlifts",
+   "Goal is gaining muscle"
+  ],
+  "id": "Q36"
+ },
+ {
+  "area": 0,
+  "persona": "Retired accountant now part-time consultant, UK",
+  "prompt": "I'm 67 and I do consulting two days a week for a small charity. Their treasurer asked me to plan the year-end close, and the accounts must go to the auditors by 31 January. I can only work Mondays and Thursdays, and they're shut from 22 December to 2 January. Could you lay out a week-by-week plan so I don't fall behind?",
+  "details": [
+   "Works Mondays and Thursdays only",
+   "Accounts due to auditors 31 January",
+   "Charity closed 22 Dec - 2 Jan",
+   "Starting from mid-November"
+  ],
+  "id": "Q37"
+ },
+ {
+  "area": 1,
+  "persona": "Hardware store manager in Texas, 47",
+  "prompt": "Need a stock checklist before the winter rush, we usually get our first freeze around early December. Last year we ran out of pipe insulation and space heaters in the first week. My reorder budget is $6,000 and my supplier needs 10 days lead time. What should I order and by what date?",
+  "details": [
+   "First freeze usually early December",
+   "Ran out of pipe insulation and space heaters last year",
+   "Reorder budget $6,000",
+   "Supplier lead time 10 days"
+  ],
+  "id": "Q38"
+ },
+ {
+  "area": 2,
+  "persona": "Young couple first apartment, Mexico City",
+  "prompt": "My novia and I are moving into our first apartment together in Coyoacán on 1 December. Rent is 13,500 pesos and we earn 22,000 and 18,000 a month. We also need to buy a fridge and a bed, around 16,000 pesos together, but we don't want to use credit cards. How should we split the rent fairly and how many months to save for the furniture?",
+  "details": [
+   "Move-in date 1 December",
+   "Rent 13,500 pesos monthly",
+   "Incomes 22,000 and 18,000 pesos",
+   "Fridge and bed cost ~16,000 pesos, no credit cards"
+  ],
+  "id": "Q39"
+ },
+ {
+  "area": 3,
+  "persona": "Couple in Sydney planning Japan",
+  "prompt": "My partner and I are going to Japan from 3 to 17 April and we've got AUD 9,000 to spend, flights already booked and paid. We want to see Tokyo, Kyoto and Hiroshima but neither of us likes moving hotels more than 3 times. Can you give me an itinerary and tell me whether a JR Pass is worth it for that route?",
+  "details": [
+   "Japan trip 3–17 April",
+   "AUD 9,000 budget, flights already paid",
+   "want Tokyo, Kyoto, Hiroshima",
+   "max 3 hotel changes"
+  ],
+  "id": "Q40"
+ },
+ {
+  "area": 4,
+  "persona": "Kenyan secondary school chemistry teacher",
+  "prompt": "I have to cover the whole Form 3 organic chemistry topic in 5 weeks before the end-of-term exams. I get 4 lessons a week of 40 minutes each, and my lab has no reagents for practicals this term so everything has to be theory or demonstrations with simple items. The class has 52 students. Please give me a week-by-week scheme of work I can hand to my head of department.",
+  "details": [
+   "Organic chemistry topic must be finished in 5 weeks",
+   "4 lessons per week, 40 minutes each",
+   "No lab reagents available for practicals",
+   "Class of 52 students"
+  ],
+  "id": "Q41"
+ },
+ {
+  "area": 5,
+  "persona": "PTA parent running school bake sale, Dublin",
+  "prompt": "We're running a bake sale to raise €800 for new library books and we'll have about 300 items to sell. Ingredients and supplies are costing us around €150. What should we price things at to hit the target, assuming we sell maybe 80% of everything? We'll have cupcakes, brownies, and big slices of cake, and the cake slices cost more to make.",
+  "details": [
+   "Fundraising target is €800",
+   "About 300 items to sell",
+   "Costs around €150",
+   "Expecting to sell about 80%"
+  ],
+  "id": "Q42"
+ },
+ {
+  "area": 0,
+  "persona": "Marketing assistant at Mexico City agency",
+  "prompt": "My boss Daniela wants a weekly status email to our client every Friday, and this week I have to say the social campaign is 3 days late. The reason is the client approved the copy on Tuesday instead of last Friday. The new launch date is November 28. Please write it in English, friendly but making clear the delay came from the approval.",
+  "details": [
+   "Boss is Daniela",
+   "Campaign 3 days late",
+   "Client approved copy Tuesday instead of Friday",
+   "New launch November 28"
+  ],
+  "id": "Q43"
+ },
+ {
+  "area": 1,
+  "persona": "Street food vendor in Bangkok, 29",
+  "prompt": "I sell pad thai from my cart and want to decide if I should add a second dish. I have only 2 burners and I work alone, and lunch rush is 11:30 to 1:30. I'm thinking mango sticky rice or fried chicken skewers. Which one makes more sense for me?",
+  "details": [
+   "Only 2 burners",
+   "Works alone",
+   "Lunch rush 11:30 to 1:30",
+   "Choosing between mango sticky rice and chicken skewers"
+  ],
+  "id": "Q44"
+ },
+ {
+  "area": 2,
+  "persona": "Grandmother hosting Diwali dinner in Leicester",
+  "prompt": "I'm hosting the family dinner on Saturday for 18 people and I want to start cooking from Thursday. My oven only fits one big tray at a time and I have just 4 hob rings. Three of the grandchildren are vegan now so I need some dishes without ghee or paneer. Please make me a cooking timeline for Thursday to Saturday so I'm not rushing on the day.",
+  "details": [
+   "18 guests on Saturday",
+   "Cooking starts Thursday",
+   "Oven fits one tray, 4 hob rings",
+   "Three vegan grandchildren, no ghee or paneer"
+  ],
+  "id": "Q45"
+ },
+ {
+  "area": 3,
+  "persona": "Warehouse worker in Johannesburg, debt message",
+  "prompt": "I owe a store account R8,600 and I've missed two payments because my hours got cut. I can pay R700 a month from now on, starting 1 December. The account is with Ackermans. Can you write me a short message I can send them asking for a payment arrangement?",
+  "details": [
+   "R8,600 owed on store account",
+   "missed two payments due to cut hours",
+   "can pay R700/month from 1 December",
+   "creditor is Ackermans"
+  ],
+  "id": "Q46"
+ },
+ {
+  "area": 4,
+  "persona": "Japanese university student, exam cramming",
+  "prompt": "I have 4 final exams in January: Statistics on the 13th, Economics on the 15th, Japanese History on the 16th and English on the 20th. Winter break starts 24 December and I'm going home to Osaka from the 29th to the 3rd and won't study there. Statistics is my hardest subject by far. Can you make me a day-by-day revision schedule from 24 December?",
+  "details": [
+   "Exams: Statistics 13 Jan, Economics 15 Jan, Japanese History 16 Jan, English 20 Jan",
+   "Break starts 24 December",
+   "No studying 29 Dec to 3 Jan while visiting Osaka",
+   "Statistics is the hardest subject"
+  ],
+  "id": "Q47"
+ },
+ {
+  "area": 5,
+  "persona": "Cycling club secretary in Utrecht",
+  "prompt": "Our cycling club wants to do a weekend ride on the first Sunday of April and I need to pick between two routes. Route A is 85 km and flat, and Route B is 60 km but has some hills. About half of our 24 members are over 60, and we must be back by 3pm because the clubhouse closes. Which route should we choose, and what start time do you suggest?",
+  "details": [
+   "Route A is 85 km flat, Route B is 60 km with hills",
+   "24 members in the club",
+   "About half are over 60",
+   "Must be back by 3pm"
+  ],
+  "id": "Q48"
+ },
+ {
+  "area": 0,
+  "persona": "Shift scheduler at Polish call centre",
+  "prompt": "I need to cover the help desk from 7:00 to 22:00, Monday to Friday, always with at least 2 people. I have 7 agents and each one works 8-hour shifts, max 5 per week. One agent, Marta, can't work after 16:00 because of childcare. Can you make a weekly rota?",
+  "details": [
+   "Coverage 7:00-22:00 Mon-Fri",
+   "Minimum 2 people at all times",
+   "7 agents, 8-hour shifts, max 5/week",
+   "Marta can't work after 16:00"
+  ],
+  "id": "Q49"
+ },
+ {
+  "area": 1,
+  "persona": "Hair salon owner in Dublin, 55",
+  "prompt": "I want to put my prices up in January but I'm nervous about losing regulars. A cut and blow-dry is currently €45 and I haven't raised it in 3 years, while my rent went up €300 a month. Most of my clients are older ladies who come every 6 weeks. Can you help me decide the new price and write a short notice for the window?",
+  "details": [
+   "Cut and blow-dry currently €45",
+   "No price rise in 3 years",
+   "Rent increased €300 per month",
+   "Clients mostly older women visiting every 6 weeks"
+  ],
+  "id": "Q50"
+ },
+ {
+  "area": 2,
+  "persona": "Farmer downsizing house in rural Ireland",
+  "prompt": "My husband and I are selling the farmhouse and moving into a 2-bed bungalow in Ennis at the end of February. We've 40 years of stuff and the new place has no attic or garage. Our son Declan can come down with his van on two weekends only. Can you help us decide what to keep, sell or give away, and plan how to use Declan's two weekends best?",
+  "details": [
+   "Moving to 2-bed bungalow in Ennis end of February",
+   "40 years of belongings",
+   "New house has no attic or garage",
+   "Son Declan's van available two weekends only"
+  ],
+  "id": "Q51"
+ },
+ {
+  "area": 3,
+  "persona": "Marketing manager in Dubai comparing flats",
+  "prompt": "I'm choosing between two flats: one in JLT for AED 85,000 a year paid in 2 cheques, and one in Al Barsha for AED 72,000 paid in 4 cheques. My office is in Media City and I don't own a car, so I'd rely on the metro or taxis. I have AED 45,000 saved right now. Which one makes more sense and can I even afford the upfront cost?",
+  "details": [
+   "JLT flat AED 85,000/yr, 2 cheques",
+   "Al Barsha flat AED 72,000/yr, 4 cheques",
+   "works in Media City, no car",
+   "AED 45,000 in savings"
+  ],
+  "id": "Q52"
+ },
+ {
+  "area": 4,
+  "persona": "Polish PhD student emailing supervisor",
+  "prompt": "I need to write an email to my PhD supervisor, Professor Nowak, asking to push my thesis defence from June to October 2027. The reason is that my second paper got a major revision request and I need about 3 months to redo the experiments. My funding runs out in September though, so I also need to ask if she knows any way to extend it. Can you write the email for me, polite but direct?",
+  "details": [
+   "Supervisor is Professor Nowak",
+   "Wants to move defence from June to October 2027",
+   "Second paper needs major revision, about 3 months of experiments",
+   "Funding ends in September"
+  ],
+  "id": "Q53"
+ },
+ {
+  "area": 5,
+  "persona": "Office worker trying to cut sugar, Mexico City",
+  "prompt": "I drink about 4 cans of regular soda a day at work and I want to quit by the end of January without going crazy. I get really bad headaches when I stop caffeine suddenly. Can you give me a step-by-step plan to reduce it? I don't like plain water much but I'm fine with sparkling water and tea.",
+  "details": [
+   "Drinks about 4 cans of regular soda a day",
+   "Wants to quit by end of January",
+   "Gets headaches from stopping caffeine suddenly",
+   "Likes sparkling water and tea, not plain water"
+  ],
+  "id": "Q54"
+ },
+ {
+  "area": 0,
+  "persona": "Small business owner, cafe chain, South Africa",
+  "prompt": "I want to set up a monthly meeting with my 3 store managers but they all work different shifts and one is in Durban while the others are in Johannesburg. The Durban manager, Sipho, can only do video calls after 14:00. I want it to be 1 hour, on the first week of each month, and I'm away 1–5 December. Can you pick a time and write the invite?",
+  "details": [
+   "3 store managers, one in Durban",
+   "Sipho only available after 14:00",
+   "1 hour, first week of each month",
+   "Owner away 1-5 December"
+  ],
+  "id": "Q55"
+ },
+ {
+  "area": 1,
+  "persona": "Independent bookshop owner in Edinburgh, 40",
+  "prompt": "I'm running a Christmas late-night shopping evening on 12 December from 6 to 9pm. I'll have 2 volunteers helping and a budget of £150 for mulled wine and snacks. We usually get about 60 people at these. Can you give me a checklist of what to prepare and a timeline for the evening?",
+  "details": [
+   "Event on 12 December, 6-9pm",
+   "2 volunteers helping",
+   "Budget £150 for drinks and snacks",
+   "Expecting about 60 people"
+  ],
+  "id": "Q56"
+ },
+ {
+  "area": 2,
+  "persona": "Working mum, marketing manager in Singapore",
+  "prompt": "Our helper Joy is going home to the Philippines for 3 weeks from 8 December and I need to cover the kids' after-school hours, 2pm to 7pm. My husband can work from home Tuesdays and Thursdays only. Student care at the school costs S$45 a day and my mother-in-law can do one day a week max. Can you work out a weekly plan and the total cost for the 3 weeks?",
+  "details": [
+   "Helper Joy away 3 weeks from 8 December",
+   "Childcare needed 2pm-7pm",
+   "Husband WFH Tuesdays and Thursdays",
+   "Student care S$45/day, mother-in-law one day/week max"
+  ],
+  "id": "Q57"
+ },
+ {
+  "area": 3,
+  "persona": "Backpacker from Chile in Southeast Asia",
+  "prompt": "I have USD 2,800 left and 7 weeks before my flight home from Bangkok on 10 January. I'm in Hanoi right now and want to get through Laos and Cambodia overland on the way. Can you make me a route with a daily spending limit so I don't run out before the flight?",
+  "details": [
+   "USD 2,800 remaining",
+   "7 weeks left, flight home 10 January from Bangkok",
+   "currently in Hanoi",
+   "wants Laos and Cambodia overland"
+  ],
+  "id": "Q58"
+ },
+ {
+  "area": 4,
+  "persona": "Australian retiree learning Italian",
+  "prompt": "I'm 67 and planning a trip to Italy in early May, and I want to get to basic conversational Italian before I go. I can do about 30 minutes a day, but I take Wednesdays off for golf. I already know a bit of Spanish from years ago, if that helps. Can you work out a study plan from now until I leave, with what to focus on each month?",
+  "details": [
+   "Trip to Italy in early May",
+   "Can study 30 minutes a day",
+   "No study on Wednesdays",
+   "Already knows some Spanish"
+  ],
+  "id": "Q59"
+ },
+ {
+  "area": 5,
+  "persona": "Community choir director in Cape Town",
+  "prompt": "Our choir has a charity concert on December 20 and we have 5 rehearsals left before then, each 90 minutes long. We still need to learn 3 new songs and polish 4 songs we already know. Can you help me plan what to work on in each rehearsal? Our accompanist can only come to the last two, so piano-heavy pieces need to be done then.",
+  "details": [
+   "Charity concert on December 20",
+   "5 rehearsals left, each 90 minutes",
+   "3 new songs and 4 known songs to polish",
+   "Accompanist only at last two rehearsals"
+  ],
+  "id": "Q60"
+ }
+]

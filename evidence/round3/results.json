@@ -1,0 +1,73 @@
+{
+ "n": 42,
+ "A": {
+  "n": 42,
+  "words": 488,
+  "words_median": 431.5,
+  "chars": 2642,
+  "tok_out": 1946,
+  "placeholders": 16,
+  "answers_with_placeholder": 6
+ },
+ "S": {
+  "n": 42,
+  "words": 245,
+  "words_median": 208.5,
+  "chars": 1262,
+  "tok_out": 1447,
+  "placeholders": 0,
+  "answers_with_placeholder": 0
+ },
+ "B": {
+  "n": 42,
+  "words": 541,
+  "words_median": 446.0,
+  "chars": 2912,
+  "tok_out": 2573,
+  "placeholders": 0,
+  "answers_with_placeholder": 0
+ },
+ "pairs_SA": {
+  "n": 42,
+  "S": 7,
+  "A": 29,
+  "tie": 6,
+  "p": 0.00031
+ },
+ "pairs_SB": {
+  "n": 42,
+  "S": 6,
+  "B": 29,
+  "tie": 7,
+  "p": 0.00012
+ },
+ "shorter_in": 42,
+ "rules": {
+  "T1": {
+   "S_words": 245,
+   "A_words": 488,
+   "ratio": 0.502,
+   "passed": true
+  },
+  "T2": {
+   "S": 7,
+   "A": 29,
+   "tie": 6,
+   "p": 0.00031,
+   "passed": false
+  },
+  "T3": {
+   "S_tok": 1447,
+   "A_tok": 1946,
+   "ratio": 0.744,
+   "passed": true
+  },
+  "T4": {
+   "S": 6,
+   "B": 29,
+   "tie": 7,
+   "p": 0.00012,
+   "passed": false
+  }
+ }
+}

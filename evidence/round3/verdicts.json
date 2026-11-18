@@ -1,0 +1,926 @@
+{
+ "S01-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clearer original-to-new date wording; brief apology helps soothe partners who complain.",
+   "Equally brief; adds a calendar invite and a polite apology."
+  ]
+ },
+ "S02-SvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "S"
+  ],
+  "why": [
+   "Both correct; Reply 2 groups gaps better and adds practical fixes.",
+   "Both correct; Reply 2 is concise with practical morning gaps and simple layout."
+  ]
+ },
+ "S01-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Brief and accurate; Reply 2 wrongly says 'only slot that week'.",
+   "Brief and accurate; Reply 1 wrongly says 'only slot that week'."
+  ]
+ },
+ "S02-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Both correct; Reply 2 adds practical alternatives and a workable owner-cover plan.",
+   "Both correct; Reply 1 adds useful alternatives and fairness rotation tips."
+  ]
+ },
+ "S08-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct total, plus VAT, contingency and validity notes for the quote.",
+   "Same correct total, plus VAT, contingency and CoC reminders that matter for quoting."
+  ]
+ },
+ "S12-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct maths, plus useful T-shirt cost caveat and practical fundraising options.",
+   "Both correct; Reply 1 flags T-shirt cost scaling and offers practical alternatives."
+  ]
+ },
+ "S04-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Simple plan that fully meets the deadline; Reply 2's recommended plan falls short.",
+   "Simple plan that gets fees fully ready; Reply 1's recommended plan falls short."
+  ]
+ },
+ "S03-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Both flag Thursday; Reply 2 adds practical fixes like świetlica.",
+   "Same correct table, plus practical Thursday options like świetlica."
+  ]
+ },
+ "S07-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Concise, correct dates; Reply 2 adds irrelevant US Thanksgiving and needless padding.",
+   "Concise, correct schedule starting sooner; Reply 1 adds irrelevant US Thanksgiving padding."
+  ]
+ },
+ "S14-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same answer, plus a ready Japanese notice and a check of other costs.",
+   "Same answer, plus a ready Japanese notice and a prompt to check other costs."
+  ]
+ },
+ "S05-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Concrete topics, diagnostic start, and practical tips; Reply 1 is vague placeholders.",
+   "Concrete topics, more probability and hypothesis-testing time, helpful assumptions; Reply 2 is vague."
+  ]
+ },
+ "S13-SvA": {
+  "winner": "tie",
+  "votes": [
+   "A",
+   "S"
+  ],
+  "why": [
+   "More polished, client-ready email with correct times; the US Eastern note is unnecessary.",
+   "Offers two specific times as asked; Reply 1 adds irrelevant US caveat."
+  ]
+ },
+ "S11-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Practical large-class management, safety notes, no-ice fallback, and clear timing table.",
+   "More classroom-ready: large-class management tips, engaging chant and role-play, safety and fallback notes."
+  ]
+ },
+ "S09-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds the Portuguese NIF, insurance, inventory checks and narrow-street truck access that Reply 1 misses.",
+   "Covers crucial Portugal paperwork like NIF and residence registration; clearer mover questions."
+  ]
+ },
+ "S10-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "More knee-specific guidance: lifts, avoiding steep areas, walking pole, flexible rest days.",
+   "More knee-specific guidance: flat areas, lifts, walking pole, avoiding extra walks."
+  ]
+ },
+ "S06-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds vital sea-safety prep: cold water, floating rests, tow float, knee care.",
+   "Covers vital sea-safety points like cold March water, tow float, and knee strain."
+  ]
+ },
+ "S17-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds crucial housing-queue reality, job market, and concrete checks before deadline.",
+   "Flags Gothenburg housing queues and design costs; more practical checks before deadline."
+  ]
+ },
+ "S20-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Steers toward replacement, adds practical touches, sensibly omits irrelevant restock date.",
+   "Warmer draft, no-return offer, and useful notes on steering toward a replacement."
+  ]
+ },
+ "S21-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct math; flags stone cutout charges that could erase the margin.",
+   "Same correct math, plus useful warning about stone cutout and edge charges."
+  ]
+ },
+ "S18-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Seats all 14 every block; Reply 2's math is muddled and leaves extras idle.",
+   "Seats all 14 people every block; Reply 1's seating math is muddled."
+  ]
+ },
+ "S25-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds practical checks: verify B's French, ask A about 18,000.",
+   "Adds useful checks like verifying French and asking A about 18k."
+  ]
+ },
+ "S24-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Hypo warning matters for a driver; uses breaks and layovers; better knee advice.",
+   "Includes a hypo warning for medication users, crucial for a diabetic bus driver, plus fuller knee care."
+  ]
+ },
+ "S16-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds after-tax figures, commute time and benefits, all relevant to deciding.",
+   "Adds after-tax figures and commute-time cost; Reply 2 omits them."
+  ]
+ },
+ "S23-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds chapter allocation, session guidance, and an important data-readiness warning.",
+   "Maps weekly targets to chapters and flags data-collection risk; more actionable."
+  ]
+ },
+ "S19-SvA": {
+  "winner": "tie",
+  "votes": [
+   "A",
+   "S"
+  ],
+  "why": [
+   "Adds practical safeguards: Cork backup, out-of-office, partial-Q4 caveat, buffer days.",
+   "Tighter, correct Cork timing; concise day-by-day plan with useful latest-request note."
+  ]
+ },
+ "S15-SvA": {
+  "winner": "tie",
+  "votes": [
+   "S",
+   "A"
+  ],
+  "why": [
+   "Concise, correct totals; avoids Reply 2's risky four-day cooked-bean storage.",
+   "Checks whether Wanjiru eats eggs; adds useful gas-saving batch-cooking tips."
+  ]
+ },
+ "S22-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Accurate schedule with stated assumptions, plus useful cheaper options like 0% transfers and FCA help.",
+   "Accurate schedule plus 0% transfer and FCA help, which speed payoff."
+  ]
+ },
+ "S26-SvA": {
+  "winner": "tie",
+  "votes": [
+   "A",
+   "S"
+  ],
+  "why": [
+   "Adds recount buffer, short-shipping checks, empty-box checks, and charger-loss prevention fixes.",
+   "Tighter, stall-appropriate checklist; per-location charger counts and weekly checks pinpoint losses."
+  ]
+ },
+ "S27-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Correctly flags December 7 is Monday; asks headcount and how to reply.",
+   "Equally good message, plus it rightly flags that 7 December is a Monday."
+  ]
+ },
+ "S28-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Correct Seollal date (Sat 6 Feb); Reply 1 wrongly says Sunday 7.",
+   "Reply 2 gets Seollal's date wrong; Reply 1's dates are correct."
+  ]
+ },
+ "S31-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct total, plus practical rounding and legal checks before payroll.",
+   "Same correct math, plus practical rounding and labor-law checks before payroll."
+  ]
+ },
+ "S30-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Concise, season-aware plan that fits budget and schedule without unnecessary hedging.",
+   "Tailored to São Paulo November, concise layout and shift routine; Reply 1 hedges."
+  ]
+ },
+ "S35-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct maths, but flags O5/O4 grading, which matters for nursing entry.",
+   "Same correct maths, plus it flags that ordinary level grades are O5/O4."
+  ]
+ },
+ "S29-SvA": {
+  "winner": "tie",
+  "votes": [
+   "A",
+   "S"
+  ],
+  "why": [
+   "Clear bullet layout, explains medical note, avoids misleading 'take again' wording.",
+   "Shorter, simpler, ready to send; no unrequested weekday or extras."
+  ]
+ },
+ "S32-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Adds practical middle options like New Year-only and minimum stays.",
+   "Same verdict, plus practical middle-ground options like opening only for New Year."
+  ]
+ },
+ "S34-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Ready-to-send message plus total, payment confirmations, and practical negotiating tips.",
+   "Same solid plan, plus payment confirmations, sign-off placeholders, and practical negotiation tips."
+  ]
+ },
+ "S33-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same fair split, plus useful options for the uncovered weekend.",
+   "Equally fair split, but adds options for the uncovered 2–3 January gap."
+  ]
+ },
+ "S38-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct price, plus a valuable warning that combos can cut profit.",
+   "Same correct price, plus a useful warning about combos cannibalizing full-price sales."
+  ]
+ },
+ "S37-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Assigns modules correctly and offers practical alternatives; Reply 1's sequencing note is muddled.",
+   "Clearer module logic; Reply 2's self-paced note contradicts Group B's order."
+  ]
+ },
+ "S39-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Flags eligibility, engine-size duty, and customs delays with a rental plan for arrival.",
+   "More realistic timing plan, eligibility and duty caveats, and a clear decision threshold."
+  ]
+ },
+ "S40-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Same correct verdict, more concise, matching our request to just tell us straight.",
+   "Same correct answer, more concise, matching the 'just tell us straight' request."
+  ]
+ },
+ "S03-SvB": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Simple table as requested; flags Thursday gap concisely without extra padding.",
+   "Simple table as requested; flags the Thursday gap without extra padding."
+  ]
+ },
+ "S42-SvA": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Short, friendly, ready to post; flags the date error without heavy placeholders.",
+   "Shorter, nearly ready to send, and still flags the date mismatch."
+  ]
+ },
+ "S41-SvA": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "More balanced coverage, checkpoints, subject pairing; asks for other exam dates.",
+   "Covers every subject with better strategy, and sensibly asks for the other exam dates."
+  ]
+ },
+ "S08-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct total, plus ready-to-send wording and key VAT/CoC checks.",
+   "Same correct total, plus VAT, CoC and send-ready wording useful today."
+  ]
+ },
+ "S05-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concrete daily topics and drills; Reply 1 is too vague to follow.",
+   "Concrete daily topics and tasks; Reply 2 is vague P/HT placeholders."
+  ]
+ },
+ "S09-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Covers crucial gaps: NIF, delayed truck arrival, medicines, mover questions, Portugal registration.",
+   "More complete: NIF, taxes, residency, survival bag; clear mover questions."
+  ]
+ },
+ "S04-SvB": {
+  "winner": "tie",
+  "votes": [
+   "S",
+   "B"
+  ],
+  "why": [
+   "Simple, complete plan as requested; Reply 2 adds bulk without much more substance.",
+   "Clearer item breakdown and practical tips like saving now; still simple."
+  ]
+ },
+ "S06-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Plans around holidays, teaches floating, warns out-and-back doubles distance and about cold water.",
+   "Adds key safety advice: back-floating, out-and-back distance, cold sea water."
+  ]
+ },
+ "S10-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More knee-conscious detail, more rest days, plus insurance and spare money.",
+   "More knee-aware guidance, more rest days, and it includes insurance."
+  ]
+ },
+ "S07-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Adds offer timeline, backup contingency, notice period, holiday planning; still accurate.",
+   "Fuller plan with offer timeline, contingency backups, and start-date caveat."
+  ]
+ },
+ "S36-SvA": {
+  "winner": "tie",
+  "votes": [
+   "S",
+   "A"
+  ],
+  "why": [
+   "Both valid; Reply 1 is simpler, fairer, with more delay slack.",
+   "Valid schedule with semifinals, no rematch final, plus practical timing tips."
+  ]
+ },
+ "S12-SvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "S"
+  ],
+  "why": [
+   "Same correct math, plus useful alternatives and a practical T-shirt cost caveat.",
+   "Same correct answer and assumptions, delivered concisely without extra padding."
+  ]
+ },
+ "S11-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Richer classroom management for 42 pupils: roles, actions, safety, timing, assessment.",
+   "Handles 42 pupils better: roles, hand actions, demo carried along rows."
+  ]
+ },
+ "S14-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same sound advice, plus a ready-to-print Japanese notice, a tax check, and practical tips.",
+   "Ready-to-print Japanese notice and consumption tax check are practically useful."
+  ]
+ },
+ "S17-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Covers hidden material costs, design job-market risks, and gives an actionable checklist.",
+   "Covers job market, hidden material costs, housing queues; more actionable checklist."
+  ]
+ },
+ "S21-SvB": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Same correct numbers and caveat, delivered more concisely without padding.",
+   "Same correct numbers and caveat, delivered more concisely without repetition."
+  ]
+ },
+ "S13-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Gives cancelled call in Munich time; clearer, more polished client email.",
+   "Converts the cancelled call to Munich time; polished, accurate dates, signed."
+  ]
+ },
+ "S20-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Warmer tone and gently steers toward replacement, matching my preference.",
+   "Warmer tone and gently nudges toward replacement, matching my preference."
+  ]
+ },
+ "S16-SvB": {
+  "winner": "tie",
+  "votes": [
+   "S",
+   "B"
+  ],
+  "why": [
+   "Concise and correct math; Reply 2 misstates the Philippine tax bracket.",
+   "Adds tax and commute-time adjustments that sharpen the real comparison."
+  ]
+ },
+ "S15-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Accurate totals plus practical tips on freshness, gas saving and vegetarian stock.",
+   "More practical detail: burner sequencing, vegetarian Royco warning, freshness and gas tips."
+  ]
+ },
+ "S19-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Adds manager review, follow-up tactics, and a useful Q4 data-period check.",
+   "Adds manager draft review and flags Q4 period mismatch with December figures."
+  ]
+ },
+ "S24-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Adds hypo warning for medication, knee guidance, and realistic layover steps.",
+   "Includes hypo warning, crucial for a diabetic bus driver; equally realistic plan."
+  ]
+ },
+ "S25-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Flags that B's salary is unconfirmed; fuller reasoning and ready-to-send email.",
+   "Flags that B's salary is unconfirmed; gives a fuller, ready-to-send director email."
+  ]
+ },
+ "S18-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More actionable: prep checklist, tournament structure, attendance contingencies, and nobody is left idle.",
+   "Fully accounts for all 14 players, with prep checklist and attendance contingencies."
+  ]
+ },
+ "S23-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Correct totals plus section-by-section budgets and practical catch-up rules for the plan.",
+   "Adds section budgets and writing order, making weekly targets actionable; arithmetic correct."
+  ]
+ },
+ "S26-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Better loss detection: empty-box checks, cause table, and a time-overrun fallback.",
+   "Empty-box checks and pattern table better pinpoint where chargers are disappearing."
+  ]
+ },
+ "S29-SvB": {
+  "winner": "tie",
+  "votes": [
+   "S",
+   "B"
+  ],
+  "why": [
+   "Simpler and clearly says 'take the test again'; Reply 2 loses that.",
+   "Bullet points are easy for basic-English parents to scan."
+  ]
+ },
+ "S22-SvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "S"
+  ],
+  "why": [
+   "Accurate schedule, plus a faster option and FCA and balance-transfer advice that could genuinely help.",
+   "Starts paying this month, giving the faster schedule asked for, concisely."
+  ]
+ },
+ "S28-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Correct Seollal 2027 dates; Reply 1 gets the holiday wrong.",
+   "Correct Seollal 2027 dates (Feb 6); Reply 2 gets the holiday dates wrong."
+  ]
+ },
+ "S27-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Equally warm message, plus useful catch that dates fall on Mondays.",
+   "Good bilingual message, plus useful flag that 7 December is a Monday."
+  ]
+ },
+ "S30-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Adds practical mulching, setup steps, pest and bolting tips suited to beginner.",
+   "More complete practical guidance: mulch, establishment watering, pests, bolting, budget tips."
+  ]
+ },
+ "S31-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct total, plus an independent cross-check and clear guidance on which method applies.",
+   "Adds an independent cross-check and legal-standard note, which helps verification."
+  ]
+ },
+ "S32-SvB": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Concise and correct; Reply 2 contradicts its own profit figures.",
+   "Concise and correct; Reply 1 contradicts its own profit figures and over-elaborates."
+  ]
+ },
+ "S35-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct math, plus it flags O-grade labelling and confirms the 30/70 split.",
+   "Same correct maths, plus flags ordinary level uses O-grades, not H-grades."
+  ]
+ },
+ "S33-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Shares festive days between families and offers concrete options for uncovered weekend.",
+   "Shares holidays fairly, offers fixes for uncovered weekend, clearer 28 Dec reasoning."
+  ]
+ },
+ "S34-SvB": {
+  "winner": "tie",
+  "votes": [
+   "S",
+   "B"
+  ],
+  "why": [
+   "Concise and accurate; Reply 2 adds unrequested promises and assumptions.",
+   "Adds payment confirmations and early-payoff offer, building supplier trust."
+  ]
+ },
+ "S40-SvB": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Same correct advice, delivered concisely as requested; Reply 2 is padded.",
+   "Same correct verdict and math, more concise, matching the 'just tell us straight' request."
+  ]
+ },
+ "S39-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Handles the arrival car gap realistically and gives a clear sell threshold.",
+   "Handles the arrival-day car gap with rentals and gives a clear sell threshold."
+  ]
+ },
+ "S38-SvB": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Same correct answer and floor, concise without extra padding.",
+   "Same correct answer and floor, delivered concisely without padding."
+  ]
+ },
+ "S37-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Handles Group B's pre-instruction block and offers a practical video-link alternative.",
+   "Flags Group B's pre-instruction block; uses full trainer time; offers video-link option."
+  ]
+ },
+ "S42-SvB": {
+  "winner": "S",
+  "votes": [
+   "S",
+   "S"
+  ],
+  "why": [
+   "Shorter as requested; both correctly flag the Sunday date clash.",
+   "Shorter as requested; date note fairly offers Saturday 28 or Sunday 29."
+  ]
+ },
+ "S41-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Detailed second pharmacology pass, past papers, practical study tips; better balanced.",
+   "Better prioritizes pharmacology near exam, includes past papers and practical tracking tips."
+  ]
+ },
+ "S36-SvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Valid schedule plus practical game-length and tiebreak rules; minor five-game miscount.",
+   "More Sunday buffer, a 3rd-place game, and rules fitting games into 50 minutes."
+  ]
+ }
+}

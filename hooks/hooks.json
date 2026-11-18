@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/straight_answer.py\"" } ] }
+    ]
+  }
+}

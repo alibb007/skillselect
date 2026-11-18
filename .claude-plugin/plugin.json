@@ -1,0 +1,18 @@
+{
+  "name": "straight-answer",
+  "version": "1.0.0",
+  "description": "Short, finished answers without typing anything extra, plus a finder that suggests a skill for the job: what you already have first, then GitHub with the most stars first.",
+  "author": {
+    "name": "Ali B.B",
+    "url": "https://github.com/alibb007"
+  },
+  "homepage": "https://github.com/alibb007/straight-answer",
+  "repository": "https://github.com/alibb007/straight-answer",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "agent-skills",
+    "skill-finder",
+    "prompt"
+  ]
+}

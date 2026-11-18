@@ -1,0 +1,1542 @@
+{
+ "Q01-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concise phone-friendly draft plus date warning, without excessive extra commentary.",
+   "Short, phone-friendly email delivered directly; flags the date mismatch without excess padding."
+  ]
+ },
+ "Q01-AvA2": {
+  "winner": "A2",
+  "votes": [
+   "A2",
+   "A2"
+  ],
+  "why": [
+   "Both flag the date mismatch; Reply 1 wrongly claims the weekdays match 2025.",
+   "Shorter email; Reply 2 wrongly claims 2025 weekdays match 2026."
+  ]
+ },
+ "Q01-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same date warning, but ready replacement lines and no false 2025 claim.",
+   "Shorter, phone-friendly email with clear, ready-to-use date corrections."
+  ]
+ },
+ "Q10-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Accurate math throughout; Reply 1's ₹37–38L break-even figure is wrong.",
+   "Both correct overall, but Reply 2's ₹37–38L break-even is wrong (~₹33L)."
+  ]
+ },
+ "Q14-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct math, plus a clear upfront answer and concrete price recommendations.",
+   "Leads with clear answer, exact targets, and practical concrete recommendation."
+  ]
+ },
+ "Q07-AvB": {
+  "winner": "tie",
+  "votes": [
+   "tie",
+   "A"
+  ],
+  "why": [
+   "Both give the same correct schedule, with only minor stylistic differences.",
+   "Same schedule, plus clearer Vogel column and practical options like a debrief."
+  ]
+ },
+ "Q13-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Gentle fee mention with waiver option, alternative wording, and practical follow-up tips.",
+   "Gentle tone, asks for a payment date, and gives a fee waiver option."
+  ]
+ },
+ "Q08-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Same correct total; text is signed and ready to send without placeholders.",
+   "Same correct total, plus useful VAT-number reminder and a better caveat."
+  ]
+ },
+ "Q12-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concrete start times, detailed workouts, and race-day guidance suit the heat constraint better.",
+   "Specific pre-7am start times and clearer workout details fit the heat constraint better."
+  ]
+ },
+ "Q15-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Adds key Berlin specifics: Halteverbotszone, telling movers about furniture, Sperrmüll backup.",
+   "More accurate sequencing and Berlin specifics, like the Halteverbotszone and Abmeldung-before-Rundfunkbeitrag."
+  ]
+ },
+ "Q03-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Full-week view, clear action list, more specific December holiday warnings.",
+   "Same gaps found, plus practical options for solving the Saturday problem."
+  ]
+ },
+ "Q06-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Step maths adds up every week; Reply 1's later weeks fall short of target.",
+   "Reply 1's minutes add up; Reply 2 falls short and stretches the dog walk."
+  ]
+ },
+ "Q09-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Exact budget totalling £1,800, reserve-list strategy, capacity check, clearer licensing advice.",
+   "Exact budget totaling £1,800, reserve-list strategy, capacity-includes-staff check; more actionable."
+  ]
+ },
+ "Q05-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Fully dated, correct weekdays, detailed weak-area focus, holidays accounted for.",
+   "Nigeria-relevant topics, practical shift tips, flexible buffer; Reply 1 leans NCLEX-specific."
+  ]
+ },
+ "Q04-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Gives a clear yes and covers both November and December start dates.",
+   "Clear yes, covers both start months, practical buffer advice; Reply 1 hedges more."
+  ]
+ },
+ "Q11-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Realistic clock sharing with a demo clock, plus concrete time lists and problems.",
+   "Clock-sharing maths adds up; concrete time lists and answers ready to use."
+  ]
+ },
+ "Q02-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same rota, plus a concrete, fully laid-out fix that gives Bea days off.",
+   "Gives a concrete, workable fixed rota with Bea at 40 hours."
+  ]
+ },
+ "Q20-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Equally good drafts, plus useful advice on which option suits an angry customer.",
+   "Polished draft with placeholders, plus useful advice if offering only one option."
+  ]
+ },
+ "Q19-AvB": {
+  "winner": "tie",
+  "votes": [
+   "A",
+   "B"
+  ],
+  "why": [
+   "Same correct paragraph and math, plus practical tips for Friday's questions.",
+   "Delivers the requested paragraph and math concisely, plus a useful caveat."
+  ]
+ },
+ "Q16-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Itemized budget, fewer hotel moves, no driving needed, and every steep stretch is mitigated.",
+   "More detailed itemized costs and knee-friendly logistics without the stress of driving abroad."
+  ]
+ },
+ "Q23-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Gives a clear recommendation, concrete cost and salary figures, and deadline-aware steps.",
+   "Weighs personal interest and real tradeoffs, offers practical self-test, still gives a lean."
+  ]
+ },
+ "Q17-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concrete dated checkpoints and contingencies make it more actionable and trackable.",
+   "More concrete dated milestones and checkpoints; equally accurate, more actionable."
+  ]
+ },
+ "Q25-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Exact budget math, and flags that vegan items must also be nut-free.",
+   "More concrete costings, flags vegan treats often containing nuts, and checks lunch options."
+  ]
+ },
+ "Q24-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Precise measured layout plus Melbourne-relevant cool-night basil timing and total water estimate.",
+   "Precise plant positions, clear orientation, total water volumes, Melbourne cool-night basil tip."
+  ]
+ },
+ "Q28-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Reply 2 suggests US-only FSA/credit; I'm in Toronto, Canada.",
+   "Reply 1 gives US-only FSA advice to a Toronto user; Reply 2 is accurate."
+  ]
+ },
+ "Q21-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Step-by-step timed methods prove every meal fits the 40-minute limit.",
+   "Complete step-by-step weeknight methods, consistent shopping list, no extra Sunday cooking needed."
+  ]
+ },
+ "Q26-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clearer batch-by-batch schedule with concrete times and consistent Saturday totals.",
+   "Clearer batch-by-batch timing; Reply 2's Saturday totals are slightly inconsistent."
+  ]
+ },
+ "Q22-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Uses my actual numbers, totals check out, clear weekly periods with rollover rules.",
+   "Spots the Semesterticket overlap and budgets health insurance realistically."
+  ]
+ },
+ "Q29-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Better tailored to the whiteboard-only setup, group of 8, and Floripa guests.",
+   "More concrete, Floripa-specific activities that rely on the whiteboard alone."
+  ]
+ },
+ "Q27-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Computes Ontario HST impact, clearer shortfall math, concrete contractor questions.",
+   "Quantifies Ontario HST impact and buffer shortfall precisely; concrete contractor questions."
+  ]
+ },
+ "Q18-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Half-time-only subs and full lineups with resting lists are easier to run.",
+   "Both correct, but half-time-only subs are simpler, with clearer contingencies."
+  ]
+ },
+ "Q30-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Includes correct weekdays, a reason for the shoes, and a useful location reminder.",
+   "Correct weekdays, explains shoes, signs off, and flags the missing location."
+  ]
+ },
+ "Q36-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More concrete: starting weights, learning phase, deload, and no deadlifts early.",
+   "More concrete for a beginner, with starting weights and no deadlift variations."
+  ]
+ },
+ "Q31-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Mid-level fallback and contractor backup beat leaving 14L unused.",
+   "Mid-level fallback and contractor backup suit the March deadline better."
+  ]
+ },
+ "Q35-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Same plan, but flags the Corporate Finance risk and uses summer to lighten fall.",
+   "Both correct; Reply 2 adds spring-availability and graduation-application checks, offers follow-up."
+  ]
+ },
+ "Q33-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Shorter blocks suit Mia better; includes handover details and Christmas video call.",
+   "Even 20/20 split with shorter blocks suits Mia better; message is complete."
+  ]
+ },
+ "Q34-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Guarantees hitting the goal even if every month is the worst case.",
+   "Reply 1's rule hits the goal even if every month is 25,000."
+  ]
+ },
+ "Q32-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Includes payment details, already-paid clause, and a useful check on the contract fee wording.",
+   "Adds payment details, invoice placeholders, already-paid line, and useful escalation tips."
+  ]
+ },
+ "Q39-AvB": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Same correct math, plus vital deposit and move-in cost warning.",
+   "Flags deposit and move-in costs, store credit traps, and cheaper options."
+  ]
+ },
+ "Q38-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concrete quantities, actionable checklist, clear dates and reorder triggers; math checks out.",
+   "Actionable quantities, clear dates, and an actual checklist ready to order from."
+  ]
+ },
+ "Q41-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More concrete: extra no-reagent demo, materials list, test breakdown, KLB reference.",
+   "More concrete simple-item demos, a materials list, and a clear test blueprint."
+  ]
+ },
+ "Q37-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Day-by-day tasks, audit file checklist; Reply 1 wrongly mentions December payroll year-end.",
+   "Day-by-day task allocation is clearer and spare-day contingency advice is sensible."
+  ]
+ },
+ "Q40-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "More practical detail: hotel-by-hotel budget, Fuji seat tip, baggage rules, regional pass check.",
+   "Clearer JR pass reasoning, flags assumptions upfront, and offers an open-jaw alternative."
+  ]
+ },
+ "Q42-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clear prices upfront, plus useful sell-through scenarios and practical change advice.",
+   "Clear, mostly correct pricing with useful sensitivity scenarios and practical tips."
+  ]
+ },
+ "Q43-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clearer cause of delay; Reply 1 wrongly calls November 28 a Friday.",
+   "Reply 2 wrongly calls November 28 a Friday; Reply 1 is clean and ready."
+  ]
+ },
+ "Q44-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Gives a concrete solo prep-and-rush plan tailored to two burners.",
+   "Equally sound advice, more concise, with practical warmth, batch-size, and combo tips."
+  ]
+ },
+ "Q46-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Shorter as requested, and the message itself asks about interest and the end date.",
+   "Shorter, ready to send, and asks about interest within the message."
+  ]
+ },
+ "Q45-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Vegetarian Diwali menu, a timeline that respects the hob limits, and precise recipes.",
+   "Vegetarian Diwali menu, precise ring and oven scheduling, full shopping list included."
+  ]
+ },
+ "Q48-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Correct timing math, larger margin, practical group-split and turn-back plans.",
+   "Accurate timing arithmetic; Reply 2 double-counts its buffer. Plus practical group-splitting advice."
+  ]
+ },
+ "Q47-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More concrete daily tasks, more Stats past papers, clear time blocks and totals.",
+   "More specific, actionable tasks per block; Reply 2 relies on vague 'next topic' placeholders."
+  ]
+ },
+ "Q50-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Addresses losing-regulars fear directly with a break-even client loss figure and delivery tips.",
+   "Accurate maths, clear notice, practical tips; Reply 2's 'sweetener' makes little sense."
+  ]
+ },
+ "Q51-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concrete dates, clear decision rules, and a detailed weekend-by-weekend plan.",
+   "Concrete dates, clear decision rules, and detailed weekend schedules fit the request."
+  ]
+ },
+ "Q53-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Ready to send without placeholders; clear, polite, direct reasoning.",
+   "Stronger justification, funding in subject line; placeholders are easy to fill."
+  ]
+ },
+ "Q54-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Tracks caffeine per step, adds buffer, warns about sugared tea, gives concrete first steps.",
+   "Clearer caffeine-matched schedule with buffer weeks and concrete headache-prevention rules."
+  ]
+ },
+ "Q52-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Clearer math, practical metro-walk checks, and a no-agent scenario; more actionable.",
+   "Covers moving and chiller costs, plus a Barsha Heights caveat and salary check."
+  ]
+ },
+ "Q49-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Valid rota with 3+ cover, staying robust to breaks and sickness.",
+   "Correct rota with 3+ staff always, so it survives breaks and sickness."
+  ]
+ },
+ "Q55-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Keeps every meeting in the first week, including December; Reply 1 breaks this.",
+   "First Monday keeps December in week one with no exception."
+  ]
+ },
+ "Q57-AvB": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "A"
+  ],
+  "why": [
+   "Clearer day-by-day schedule with correct dates; same total and holiday caveat.",
+   "Same correct S$180 total; adds practical caveats about husband's workload and flexibility."
+  ]
+ },
+ "Q56-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More actionable: dated checklist, roles per time slot, kit box, realistic budget yields.",
+   "More concrete, internally consistent plan; Reply 2's wine quantities contradict its batches."
+  ]
+ },
+ "Q60-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Covers all seven songs explicitly with clear timings and a practical fallback.",
+   "Complete minute-by-minute plan covering all seven songs, plus a fallback."
+  ]
+ },
+ "Q59-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Accurate per-month day counts, clear monthly goals, and a Wednesday-aware weekly rhythm.",
+   "Accurate per-month hours, weekly rhythm around golf Wednesdays, and concrete monthly goals."
+  ]
+ },
+ "Q05-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "More detailed weak-area topics, mocks, practical tips and locally relevant content.",
+   "More detailed topic plans, local relevance, high-yield facts, and practical shift tips."
+  ]
+ },
+ "Q02-BvC": {
+  "winner": "tie",
+  "votes": [
+   "C",
+   "B"
+  ],
+  "why": [
+   "Gives practical options, including closing Tuesday, and Portugal-specific working-time limits; Reply 1's 47-hour claim is wrong.",
+   "Gives the rota directly, flags the overwork problem, and offers a clean fix."
+  ]
+ },
+ "Q04-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Same schedule, plus clearer yes/no answer and practical buffer options like paying November.",
+   "Same schedule, plus practical buffers: pay this November, emergency fund, wedding deposits."
+  ]
+ },
+ "Q07-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct schedule, more concise; already notes the optional fourth Vogel slot.",
+   "Same correct schedule, delivered concisely without excess padding."
+  ]
+ },
+ "Q08-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Correct total and a ready-to-send short text, without excessive extra advice.",
+   "Correct total and a short ready-to-send text, without excess extras."
+  ]
+ },
+ "Q03-BvC": {
+  "winner": "tie",
+  "votes": [
+   "C",
+   "B"
+  ],
+  "why": [
+   "Treats Friday cover cautiously, checks real Christmas dates, and offers practical fixes.",
+   "Correctly uses Mum for Friday and flags the handover; clearer, more concise schedule."
+  ]
+ },
+ "Q58-AvB": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "More precise checkpoints, Laos visa-length check, explicit carry-forward rules, fully reconciled budget.",
+   "Tighter accounting, more frequent checkpoints, and an explicit Laos 30-day visa check."
+  ]
+ },
+ "Q06-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clear, consistent plan meeting every constraint without excessive length or assumptions about dog-walk timing.",
+   "Complete, consistent plan with knee safeguards, without Reply 1's excessive length."
+  ]
+ },
+ "Q10-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct conclusion and math, concise, actionable without excessive speculative padding.",
+   "Same correct math and conclusion, delivered concisely; Reply 1 is padded."
+  ]
+ },
+ "Q11-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Practical and complete; Reply 2 is bloated, prep-heavy, and adds irrelevant Northern Ireland note.",
+   "Practical, low-prep plan fitting the clock shortage; Reply 1 is bloated, includes odd NI aside."
+  ]
+ },
+ "Q12-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Complete, fitted schedule with per-week start times; Reply 2 is bloated.",
+   "Concise and complete, with per-week Sunday start times that keep runs out of the heat."
+  ]
+ },
+ "Q09-BvC": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "C"
+  ],
+  "why": [
+   "Covers both asks with clear method and budget, no excess padding.",
+   "Same core plan, plus practical extras: heating, accessibility, two-session idea, larger contingency."
+  ]
+ },
+ "Q14-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Both accurate; Reply 1 gives the same answer and fixes more concisely.",
+   "Same correct answer, clearer and more concise for a busy shop owner."
+  ]
+ },
+ "Q13-BvC": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "C"
+  ],
+  "why": [
+   "Delivers the requested gentle email directly; Reply 2 buries it in excessive extras.",
+   "Waiver-with-deadline handles fee gently and clearly; Reply 2's fee wording is vague."
+  ]
+ },
+ "Q19-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Delivers the requested short paragraph with correct math, without excess extras.",
+   "Short paragraph with correct math, exactly what was asked, without excess."
+  ]
+ },
+ "Q15-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Flags Mochi's rabies 21-day trap and airline pet rules; more useful.",
+   "Explains Mochi's rabies 21-day trap and pet-friendly airlines; more thorough planning."
+  ]
+ },
+ "Q20-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Ready-to-send, well-judged reply; Reply 2 buries it in excessive commentary.",
+   "Ready-to-send, warm, concise reply; Reply 1 buries it in excessive commentary."
+  ]
+ },
+ "Q16-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Covers insurance, airport assistance, taxes and funicular closures; more realistic for knee concerns.",
+   "More knee-aware detail; budget includes insurance and ETIAS, plus pre-existing-condition timing."
+  ]
+ },
+ "Q22-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Delivers the requested simple budget clearly; Reply 2 is bloated with extras.",
+   "Gives the simple budget asked for, with clear math and period splits."
+  ]
+ },
+ "Q17-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Complete, accurate month-by-month plan without excessive length; Reply 2 is bloated.",
+   "Concise, accurate dated month-by-month plan; Reply 1 is bloated with extras."
+  ]
+ },
+ "Q23-BvC": {
+  "winner": "tie",
+  "votes": [
+   "C",
+   "B"
+  ],
+  "why": [
+   "Deeper nuance on interest, program quality, scholarships, plus concrete 18-day plan.",
+   "Same sound recommendation and key checks, clearer and appropriately concise for a teenager."
+  ]
+ },
+ "Q25-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Delivers a clear checklist and cost split concisely; Reply 2 is overly long.",
+   "Concrete cost split totalling $600, concise checklist, covers dietary needs without excess length."
+  ]
+ },
+ "Q26-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clear, right-sized plan; Reply 2 is bloated and uses pounds for Toronto.",
+   "Concise, clear schedule; Reply 1 is overlong and uses pounds for a Toronto bakery."
+  ]
+ },
+ "Q21-BvC": {
+  "winner": "tie",
+  "votes": [
+   "C",
+   "B"
+  ],
+  "why": [
+   "Bigger budget buffer, varied menu, practical price swaps, and stronger groundnut safety guidance.",
+   "Meets the 40-minute limit without Sunday prep; concise, consistent quantities."
+  ]
+ },
+ "Q24-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same plant counts and layout, delivered concisely with precise positions and focused watering advice.",
+   "Same plant counts, but precise layout coordinates and concise watering advice."
+  ]
+ },
+ "Q27-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concise, clear gap math; Reply 2 is bloated and asks for my province.",
+   "Tighter, clearer shortfall math; Reply 1 pointlessly asks province despite Toronto."
+  ]
+ },
+ "Q18-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Every child plays every match, with practical logistics and backup goalkeeper advice.",
+   "Correct rotation where every child plays each match; includes a half-time-only fallback."
+  ]
+ },
+ "Q29-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Delivers the requested short topic-plus-activity plan concisely; Reply 2 is far longer.",
+   "Gives the short topic-and-activity plan requested, practical and whiteboard-friendly, without excess length."
+  ]
+ },
+ "Q28-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concise and direct; both wrongly cite US FSA, Reply 2 leans harder.",
+   "Same sound advice and numbers, more concise as requested; both wrongly cite US FSA."
+  ]
+ },
+ "Q30-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Reply 2 wrongly calls December 6 a Saturday; Reply 1 is concise and correct.",
+   "Reply 1 wrongly labels December 6 as Saturday; Reply 2 is accurate and concise."
+  ]
+ },
+ "Q31-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Flags notice-period risk, offers better fallbacks, and prepares for director pushback.",
+   "Catches notice-period risk accurately, offers contractor fallback; Reply 2 miscalculates timing."
+  ]
+ },
+ "Q32-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Concise, ready-to-send firm email; Reply 2 adds lots of unrequested material.",
+   "Concise, ready-to-send firm reminder; Reply 1 adds excessive unrequested material."
+  ]
+ },
+ "Q34-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Simple rule guarantees the goal even in worst-case months; concise and correct.",
+   "Simple rule that guarantees the goal even in worst-case months."
+  ]
+ },
+ "Q35-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct plan, concise for a busy parent; Reply 2 overly long.",
+   "Correct plan, concise, covers key risks without overwhelming a busy parent."
+  ]
+ },
+ "Q33-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Exactly even 20/20 split, concise, clear message; Reply 2 is wordier and uneven.",
+   "Even 20/20 split and a concise signed message, exactly as asked."
+  ]
+ },
+ "Q36-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Simple, complete, back-safe program; Reply 2 is overly long for 'simple'.",
+   "Delivers the requested simple program concisely, with back safety and starting weights."
+  ]
+ },
+ "Q37-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Flags SORP 2026 changes and rehearsal close, giving more useful planning detail.",
+   "More thorough and accurate; flags SORP 2026 changes; Reply 2 has small date errors."
+  ]
+ },
+ "Q39-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Adds aguinaldo and move-in deposit costs, key Mexico-specific planning insights.",
+   "Adds aguinaldo, net pay, and deposit costs that change the timeline."
+  ]
+ },
+ "Q38-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Better suited to Texas: adds pipe repair, skips snow shovels, sizes from lost sales.",
+   "Better fits Texas: adds pipe repair, skips shovels, and sizes demand from stockouts."
+  ]
+ },
+ "Q44-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Reply 2 assumes US context: dollars, Fahrenheit, Mexican mangoes. Wrong for Bangkok.",
+   "Reply 1 assumes US context (dollars, imported mangoes), wrong for Bangkok."
+  ]
+ },
+ "Q41-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "More complete: calculations, large-class strategies, HOD signature fields, and a schedule buffer.",
+   "Adds large-class strategies, calculations, buffer time, and an HOD-ready header with signatures."
+  ]
+ },
+ "Q46-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Short ready-to-send message as asked; Reply 2 is long and overloaded.",
+   "Short message as requested, with only the essential notes."
+  ]
+ },
+ "Q40-BvC": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "C"
+  ],
+  "why": [
+   "Complete itinerary, pass analysis and budget, concise; Reply 2 is overlong.",
+   "More thorough JR math, sakura timing, booking timeline, smart luggage strategy."
+  ]
+ },
+ "Q50-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Correct January 2027 date; Reply 2's notice wrongly says 2026, and it's overlong.",
+   "Reply 1 dates the notice January 2026, which has already passed; Reply 2 correctly says 2027."
+  ]
+ },
+ "Q43-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Flags that Nov 28 is a holiday-weekend Saturday; gives a fuller weekly status email.",
+   "Warmer tone, ready weekly structure, and flags the Saturday holiday-weekend launch date."
+  ]
+ },
+ "Q42-BvC": {
+  "winner": "tie",
+  "votes": [
+   "B",
+   "C"
+  ],
+  "why": [
+   "Concise, workable prices hitting target; Reply 2 overlong, €6 slices steep.",
+   "Accurate math with a safety buffer; Reply 2 has a calculation error."
+  ]
+ },
+ "Q48-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clear, decisive answer with solid timing; Reply 2 is overlong and generic.",
+   "Decisive, correct timing, concise; Reply 1 is bloated and generic, not Utrecht-specific."
+  ]
+ },
+ "Q45-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Vegetarian Diwali menu with clear recipes; Reply 2 assumes meat and runs long.",
+   "Simpler vegetarian Diwali-appropriate menu with concrete recipes and a clear ring timeline."
+  ]
+ },
+ "Q47-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Delivers the complete day-by-day schedule concisely; Reply 2 adds unrequested length.",
+   "Concise day-by-day plan, heavier Statistics focus, without excessive extra commentary."
+  ]
+ },
+ "Q53-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Ready-to-send, polite and direct; Reply 2 adds placeholders and invented timeline.",
+   "Concise, polite, direct, ready to send; Reply 1 overloaded with placeholders."
+  ]
+ },
+ "Q52-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clear, correct affordability math and recommendation without excessive length.",
+   "Answers both questions clearly with accurate numbers, without Reply 1's excessive length."
+  ]
+ },
+ "Q49-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Correct, concise rota with 3-person minimum; Reply 2 overly long.",
+   "Correct, concise rota with minimum three on desk; Reply 1 overlong."
+  ]
+ },
+ "Q51-BvC": {
+  "winner": "tie",
+  "votes": [
+   "C",
+   "B"
+  ],
+  "why": [
+   "Covers farm-specific disposal, removal-firm backup, and realistic van limits; more useful.",
+   "Clear, decisive plan with concrete dates; Reply 1 is overly long and hedged."
+  ]
+ },
+ "Q54-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Clear, concise taper plan; Reply 2 is excessively long for the need.",
+   "Concise, clear headache-safe schedule; Reply 1 is overly long and US-centric."
+  ]
+ },
+ "Q57-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Same correct plan and holiday warning, delivered more concisely without filler scenarios.",
+   "Same correct plan and cost, clearer day-by-day schedule, less padding."
+  ]
+ },
+ "Q55-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Simple, correct schedule and ready invite; Reply 2 overcomplicates with exceptions and extras.",
+   "Simpler consistent first-Monday rule handles December cleanly; concise, accurate, complete invite."
+  ]
+ },
+ "Q56-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Flags that Scotland's licensing rules differ, and covers the till, insurance and sales side.",
+   "Flags that licensing differs in Scotland; Reply 2 gives England-only TEN advice."
+  ]
+ },
+ "Q03-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "Shows the full typical week and flags Friday handover and Tuesday pickup.",
+   "Time-block table shows gaps more clearly, including Sunday morning and Christmas holidays."
+  ]
+ },
+ "Q02-AvA2": {
+  "winner": "A2",
+  "votes": [
+   "A2",
+   "A2"
+  ],
+  "why": [
+   "Keeps Bea at 40 hours, marks gaps clearly; Reply 1 overlooks Monday off.",
+   "Respects Bea's full-time limit with clearly marked gaps and practical fixes."
+  ]
+ },
+ "Q60-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "Deeper practical guidance on accompanist logistics and fallback decisions, though longer.",
+   "Handles the piano constraint better, with accompanist recordings, contingency plans and integration steps."
+  ]
+ },
+ "Q04-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "Same correct numbers; clearer table with starting balances, plus practical caveats.",
+   "Same correct numbers, but covers both start dates and gives practical direct-debit advice."
+  ]
+ },
+ "Q59-BvC": {
+  "winner": "B",
+  "votes": [
+   "B",
+   "B"
+  ],
+  "why": [
+   "Accurate day counts; Reply 2 miscounts sessions and calls me American.",
+   "Accurate study-day counts, concise; Reply 1 wrongly says 'americano' for an Australian."
+  ]
+ },
+ "Q06-AvA2": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Spells out exact walks every week; Reply 2 leaves many rows blank.",
+   "Concrete per-week walk breakdowns built around the dog walk; more actionable."
+  ]
+ },
+ "Q58-BvC": {
+  "winner": "C",
+  "votes": [
+   "C",
+   "C"
+  ],
+  "why": [
+   "More robust plan: realistic per-country limits, recalculation formula, and practical warnings.",
+   "Country-specific daily limits, cut options, and cash tips are practically more useful."
+  ]
+ },
+ "Q08-AvA2": {
+  "winner": "A2",
+  "votes": [
+   "A2",
+   "A2"
+  ],
+  "why": [
+   "Same correct total, plus useful 'inc. VAT' and 30-day validity lines.",
+   "Adds quote validity and 'inc. VAT', making the text more practical."
+  ]
+ },
+ "Q05-AvA2": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Simpler weekly template, equal weight on both weak areas, explicit rotation schedule.",
+   "More complete week-by-week plan, with Nigeria-relevant topics and a practical tip for clinical shifts."
+  ]
+ },
+ "Q07-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "tie"
+  ],
+  "why": [
+   "Same correct schedule, but states its date assumption and offers to add candidate names.",
+   "Both give the same correct schedule, with only minor presentation differences."
+  ]
+ },
+ "Q09-AvA2": {
+  "winner": "A2",
+  "votes": [
+   "A2",
+   "A2"
+  ],
+  "why": [
+   "Counts hosts and helpers toward capacity; avoids risky over-inviting based on no-shows.",
+   "Safer capacity advice, budget totals exactly £1,800; Reply 2 risks overcapacity."
+  ]
+ },
+ "Q10-AvA2": {
+  "winner": "A2",
+  "votes": [
+   "A2",
+   "A2"
+  ],
+  "why": [
+   "Break-even figure more accurate; adds practical negotiation counter before Friday deadline.",
+   "Reply 2's ₹37–38L break-even is wrong; Reply 1's ₹34–35L checks out."
+  ]
+ },
+ "Q12-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "Rests Thursday after night shifts, adds weekly totals, heat and strength tips.",
+   "Clear per-day timing, holiday flexibility, and injury warning signs fit shifts and heat."
+  ]
+ },
+ "Q13-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "tie",
+   "A"
+  ],
+  "why": [
+   "Both are gentle, well-structured emails with a fee-waiver option; differences are negligible.",
+   "Asks for an expected payment date, addressing their silence; adds a next-step tip."
+  ]
+ },
+ "Q14-AvA2": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Both answer correctly; Reply 2 misstates the carton price needed, including transport.",
+   "Reply 1 misstates the target carton cost; Reply 2's math holds and covers margin."
+  ]
+ },
+ "Q11-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "Clear year-group differentiation, practical clock sharing, paper backups for everyone.",
+   "Richer misconception guidance, clearer hour-hand teaching, realistic timing including tidy-up."
+  ]
+ },
+ "Q15-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "Checkbox format, plus Halteverbot and Sperrmüll tips; otherwise equally accurate timeline.",
+   "Flags lease notice and New Year fireworks for Mochi; clearer moving-day steps."
+  ]
+ },
+ "Q16-AvA2": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Skips hilly Porto for the knee; budget includes insurance and still fits.",
+   "Avoids hilly Porto, door-to-door car, includes insurance, realistic flights, useful booking checklist."
+  ]
+ },
+ "Q17-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "More buffer, full draft by March, practical tips for balancing the job.",
+   "Similar plans; Reply 2 adds practical employer and supervisor-feedback-timing tips."
+  ]
+ },
+ "Q20-AvA2": {
+  "winner": "tie",
+  "votes": [
+   "A2",
+   "A"
+  ],
+  "why": [
+   "Cleaner flat-tyre explanation, clearer refund details; Reply 1's 'couldn't predict' line sounds defensive.",
+   "Recommending the refund for an angry customer fits her situation better."
+  ]
+ },
+ "Q19-AvA2": {
+  "winner": "A",
+  "votes": [
+   "A",
+   "A"
+  ],
+  "why": [
+   "Doesn't invent close timing and frames the 2.4M gap explicitly.",
+   "Names the KES 2.4M gap explicitly; its tips are slightly sharper."
+  ]
+ },
+ "Q18-AvA2": {
+  "winner": "A2",
+  "votes": [
+   "A2",
+   "A2"
+  ],
+  "why": [
+   "Equal minutes with changes only at half-time; far simpler to run.",
+   "Correct equal split with changes only at half-time; simpler on match day."
+  ]
+ }
+}

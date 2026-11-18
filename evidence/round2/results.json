@@ -1,0 +1,116 @@
+{
+ "n": 60,
+ "A": {
+  "n": 60,
+  "checked": 60,
+  "details": 240,
+  "used": 232,
+  "ignored": 4,
+  "wrong": 4,
+  "chars": 2946,
+  "tok_out": 2014,
+  "placeholders": 32,
+  "answers_with_placeholder": 11
+ },
+ "B": {
+  "n": 60,
+  "checked": 60,
+  "details": 240,
+  "used": 237,
+  "ignored": 1,
+  "wrong": 2,
+  "chars": 3559,
+  "tok_out": 3018,
+  "placeholders": 3,
+  "answers_with_placeholder": 1
+ },
+ "C": {
+  "n": 60,
+  "checked": 60,
+  "details": 240,
+  "used": 238,
+  "ignored": 1,
+  "wrong": 1,
+  "chars": 8056,
+  "tok_out": 5843,
+  "placeholders": 58,
+  "answers_with_placeholder": 13
+ },
+ "A2": {
+  "n": 20,
+  "checked": 20,
+  "details": 80,
+  "used": 80,
+  "ignored": 0,
+  "wrong": 0,
+  "chars": 2903,
+  "tok_out": 2020,
+  "placeholders": 10,
+  "answers_with_placeholder": 3
+ },
+ "details_AB": {
+  "y_more": 6,
+  "x_more": 2,
+  "p": 0.2891
+ },
+ "details_BC": {
+  "y_more": 3,
+  "x_more": 2,
+  "p": 1.0
+ },
+ "pairs_AB": {
+  "n": 60,
+  "A": 8,
+  "B": 39,
+  "tie": 13,
+  "p": 1e-05,
+  "split_orders": 13
+ },
+ "pairs_BC": {
+  "n": 60,
+  "B": 37,
+  "C": 14,
+  "tie": 9,
+  "p": 0.00177,
+  "split_orders": 9
+ },
+ "pairs_AA2": {
+  "n": 20,
+  "A": 5,
+  "A2": 6,
+  "tie": 9,
+  "p": 1.0,
+  "split_orders": 9
+ },
+ "rules": {
+  "R1": {
+   "A_pct": 96.7,
+   "B_pct": 98.8,
+   "diff": 2.1,
+   "p": 0.2891,
+   "passed": false
+  },
+  "R2": {
+   "B": 39,
+   "A": 8,
+   "tie": 13,
+   "p": 1e-05,
+   "B_share": 0.83,
+   "noise_share": 0.545,
+   "passed": true
+  },
+  "R3": {
+   "B": 37,
+   "C": 14,
+   "tie": 9,
+   "p": 0.00177,
+   "passed": true
+  },
+  "R4": {
+   "A_tok": 2014,
+   "B_tok": 3018,
+   "ratio": 1.499,
+   "passed": false
+  }
+ }
+}

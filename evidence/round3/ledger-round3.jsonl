@@ -1,0 +1,300 @@
+{"kind": "v3_write", "meta": {"area": 1}, "models": ["claude-opus-5-5"], "cost": 0.039212, "sec": 22.9, "tok_in": 1260, "tok_out": 1457, "at": "2026-11-18T02:30:31"}
+{"kind": "v3_write", "meta": {"area": 2}, "models": ["claude-opus-5-5"], "cost": 0.044680000000000004, "sec": 23.3, "tok_in": 1251, "tok_out": 1734, "at": "2026-11-18T02:30:32"}
+{"kind": "v3_write", "meta": {"area": 0}, "models": ["claude-opus-5-5"], "cost": 0.046228000000000005, "sec": 24.0, "tok_in": 1247, "tok_out": 1813, "at": "2026-11-18T02:30:33"}
+{"kind": "v3_write", "meta": {"area": 3}, "models": ["claude-opus-5-5"], "cost": 0.038272, "sec": 18.6, "tok_in": 1250, "tok_out": 1414, "at": "2026-11-18T02:30:50"}
+{"kind": "v3_write", "meta": {"area": 5}, "models": ["claude-opus-5-5"], "cost": 0.040948, "sec": 20.2, "tok_in": 1252, "tok_out": 1547, "at": "2026-11-18T02:30:53"}
+{"kind": "v3_write", "meta": {"area": 4}, "models": ["claude-opus-5-5"], "cost": 0.043996, "sec": 22.2, "tok_in": 1233, "tok_out": 1707, "at": "2026-11-18T02:30:54"}
+{"kind": "v3_answer", "meta": {"id": "S01", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.015564, "sec": 7.9, "tok_in": 959, "tok_out": 395, "at": "2026-11-18T02:31:02"}
+{"kind": "v3_answer", "meta": {"id": "S01", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.01656, "sec": 7.9, "tok_in": 906, "tok_out": 466, "at": "2026-11-18T02:31:02"}
+{"kind": "v3_answer", "meta": {"id": "S01", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.01654, "sec": 8.0, "tok_in": 946, "tok_out": 449, "at": "2026-11-18T02:31:02"}
+{"kind": "v3_answer", "meta": {"id": "S02", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.09771999999999999, "sec": 51.1, "tok_in": 901, "tok_out": 4526, "at": "2026-11-18T02:31:45"}
+{"kind": "v3_answer", "meta": {"id": "S02", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.139248, "sec": 70.7, "tok_in": 957, "tok_out": 6580, "at": "2026-11-18T02:32:05"}
+{"kind": "v3_answer", "meta": {"id": "S02", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.18415199999999998, "sec": 93.5, "tok_in": 945, "tok_out": 8830, "at": "2026-11-18T02:32:28"}
+{"kind": "v3_judge", "meta": {"id": "S01", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.016892, "sec": 7.1, "tok_in": 1385, "tok_out": 291, "at": "2026-11-18T02:32:35"}
+{"kind": "v3_judge", "meta": {"id": "S02", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03476, "sec": 9.1, "tok_in": 2986, "tok_out": 544, "at": "2026-11-18T02:32:37"}
+{"kind": "v3_judge", "meta": {"id": "S02", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.034624, "sec": 9.4, "tok_in": 2719, "tok_out": 644, "at": "2026-11-18T02:32:37"}
+{"kind": "v3_judge", "meta": {"id": "S01", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.020724, "sec": 9.6, "tok_in": 1534, "tok_out": 423, "at": "2026-11-18T02:32:38"}
+{"kind": "v3_judge", "meta": {"id": "S01", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.018148, "sec": 6.6, "tok_in": 1392, "tok_out": 351, "at": "2026-11-18T02:32:42"}
+{"kind": "v3_judge", "meta": {"id": "S02", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.032736, "sec": 8.3, "tok_in": 2983, "tok_out": 444, "at": "2026-11-18T02:32:45"}
+{"kind": "v3_judge", "meta": {"id": "S01", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.016676, "sec": 8.1, "tok_in": 1533, "tok_out": 221, "at": "2026-11-18T02:32:46"}
+{"kind": "v3_judge", "meta": {"id": "S02", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.033932, "sec": 8.7, "tok_in": 2720, "tok_out": 609, "at": "2026-11-18T02:32:46"}
+{"kind": "v3_answer", "meta": {"id": "S03", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.015092000000000001, "sec": 9.8, "tok_in": 995, "tok_out": 357, "at": "2026-11-18T02:32:56"}
+{"kind": "v3_answer", "meta": {"id": "S03", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.019212, "sec": 10.2, "tok_in": 945, "tok_out": 583, "at": "2026-11-18T02:32:57"}
+{"kind": "v3_answer", "meta": {"id": "S03", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.025924, "sec": 14.7, "tok_in": 979, "tok_out": 905, "at": "2026-11-18T02:33:01"}
+{"kind": "v3_answer", "meta": {"id": "S04", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.025864, "sec": 15.2, "tok_in": 934, "tok_out": 920, "at": "2026-11-18T02:33:02"}
+{"kind": "v3_answer", "meta": {"id": "S04", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.0358, "sec": 17.3, "tok_in": 886, "tok_out": 1436, "at": "2026-11-18T02:33:04"}
+{"kind": "v3_answer", "meta": {"id": "S04", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.03864, "sec": 22.4, "tok_in": 921, "tok_out": 1564, "at": "2026-11-18T02:33:09"}
+{"kind": "v3_answer", "meta": {"id": "S08", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.013868000000000002, "sec": 6.8, "tok_in": 957, "tok_out": 311, "at": "2026-11-18T02:33:11"}
+{"kind": "v3_answer", "meta": {"id": "S07", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.029788000000000002, "sec": 14.1, "tok_in": 947, "tok_out": 1111, "at": "2026-11-18T02:33:11"}
+{"kind": "v3_answer", "meta": {"id": "S08", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.020632, "sec": 10.8, "tok_in": 905, "tok_out": 670, "at": "2026-11-18T02:33:13"}
+{"kind": "v3_answer", "meta": {"id": "S07", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.041548, "sec": 20.1, "tok_in": 897, "tok_out": 1719, "at": "2026-11-18T02:33:16"}
+{"kind": "v3_answer", "meta": {"id": "S06", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.05958000000000001, "sec": 29.9, "tok_in": 986, "tok_out": 2585, "at": "2026-11-18T02:33:16"}
+{"kind": "v3_answer", "meta": {"id": "S08", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.023432, "sec": 11.9, "tok_in": 945, "tok_out": 794, "at": "2026-11-18T02:33:21"}
+{"kind": "v3_answer", "meta": {"id": "S06", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.070288, "sec": 36.4, "tok_in": 927, "tok_out": 3144, "at": "2026-11-18T02:33:23"}
+{"kind": "v3_answer", "meta": {"id": "S05", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.08981600000000001, "sec": 38.9, "tok_in": 993, "tok_out": 4094, "at": "2026-11-18T02:33:26"}
+{"kind": "v3_answer", "meta": {"id": "S07", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.051912, "sec": 26.3, "tok_in": 940, "tok_out": 2220, "at": "2026-11-18T02:33:28"}
+{"kind": "v3_answer", "meta": {"id": "S09", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.04244800000000001, "sec": 22.3, "tok_in": 972, "tok_out": 1734, "at": "2026-11-18T02:33:33"}
+{"kind": "v3_answer", "meta": {"id": "S06", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.09382, "sec": 50.0, "tok_in": 971, "tok_out": 4303, "at": "2026-11-18T02:33:37"}
+{"kind": "v3_answer", "meta": {"id": "S05", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.12428799999999998, "sec": 55.7, "tok_in": 937, "tok_out": 5840, "at": "2026-11-18T02:33:42"}
+{"kind": "v3_answer", "meta": {"id": "S12", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.017071999999999997, "sec": 7.3, "tok_in": 985, "tok_out": 460, "at": "2026-11-18T02:33:44"}
+{"kind": "v3_answer", "meta": {"id": "S12", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.021056000000000002, "sec": 11.1, "tok_in": 923, "tok_out": 684, "at": "2026-11-18T02:33:44"}
+{"kind": "v3_answer", "meta": {"id": "S11", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03992, "sec": 19.4, "tok_in": 946, "tok_out": 1618, "at": "2026-11-18T02:33:45"}
+{"kind": "v3_answer", "meta": {"id": "S09", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.065236, "sec": 34.6, "tok_in": 918, "tok_out": 2895, "at": "2026-11-18T02:33:45"}
+{"kind": "v3_answer", "meta": {"id": "S12", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.026008000000000003, "sec": 12.6, "tok_in": 967, "tok_out": 914, "at": "2026-11-18T02:33:55"}
+{"kind": "v3_answer", "meta": {"id": "S10", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.070996, "sec": 38.7, "tok_in": 943, "tok_out": 3173, "at": "2026-11-18T02:33:55"}
+{"kind": "v3_answer", "meta": {"id": "S05", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.15019200000000002, "sec": 68.6, "tok_in": 975, "tok_out": 7120, "at": "2026-11-18T02:33:55"}
+{"kind": "v3_answer", "meta": {"id": "S13", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.021588, "sec": 10.9, "tok_in": 972, "tok_out": 691, "at": "2026-11-18T02:33:55"}
+{"kind": "v3_answer", "meta": {"id": "S11", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.064332, "sec": 32.8, "tok_in": 890, "tok_out": 2861, "at": "2026-11-18T02:33:56"}
+{"kind": "v3_answer", "meta": {"id": "S13", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.024900000000000002, "sec": 12.0, "tok_in": 956, "tok_out": 863, "at": "2026-11-18T02:33:57"}
+{"kind": "v3_answer", "meta": {"id": "S13", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.030376000000000004, "sec": 15.4, "tok_in": 918, "tok_out": 1152, "at": "2026-11-18T02:34:00"}
+{"kind": "v3_answer", "meta": {"id": "S14", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.03054, "sec": 16.1, "tok_in": 901, "tok_out": 1167, "at": "2026-11-18T02:34:01"}
+{"kind": "v3_answer", "meta": {"id": "S10", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.084516, "sec": 45.5, "tok_in": 883, "tok_out": 3873, "at": "2026-11-18T02:34:02"}
+{"kind": "v3_answer", "meta": {"id": "S14", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.019728, "sec": 10.5, "tok_in": 952, "tok_out": 606, "at": "2026-11-18T02:34:06"}
+{"kind": "v3_answer", "meta": {"id": "S09", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.09958399999999999, "sec": 54.5, "tok_in": 964, "tok_out": 4594, "at": "2026-11-18T02:34:07"}
+{"kind": "v3_answer", "meta": {"id": "S11", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.08703199999999998, "sec": 43.8, "tok_in": 935, "tok_out": 3978, "at": "2026-11-18T02:34:11"}
+{"kind": "v3_answer", "meta": {"id": "S16", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.025140000000000003, "sec": 12.8, "tok_in": 956, "tok_out": 875, "at": "2026-11-18T02:34:12"}
+{"kind": "v3_answer", "meta": {"id": "S14", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.042528, "sec": 21.5, "tok_in": 937, "tok_out": 1752, "at": "2026-11-18T02:34:17"}
+{"kind": "v3_answer", "meta": {"id": "S17", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.025108000000000002, "sec": 12.3, "tok_in": 1012, "tok_out": 851, "at": "2026-11-18T02:34:18"}
+{"kind": "v3_answer", "meta": {"id": "S10", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.109388, "sec": 57.4, "tok_in": 927, "tok_out": 5099, "at": "2026-11-18T02:34:18"}
+{"kind": "v3_answer", "meta": {"id": "S16", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.043772000000000005, "sec": 21.8, "tok_in": 900, "tok_out": 1829, "at": "2026-11-18T02:34:19"}
+{"kind": "v3_answer", "meta": {"id": "S15", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.058996, "sec": 28.5, "tok_in": 958, "tok_out": 2567, "at": "2026-11-18T02:34:24"}
+{"kind": "v3_answer", "meta": {"id": "S16", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.043412000000000006, "sec": 22.8, "tok_in": 940, "tok_out": 1795, "at": "2026-11-18T02:34:24"}
+{"kind": "v3_answer", "meta": {"id": "S17", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.042811999999999996, "sec": 24.7, "tok_in": 955, "tok_out": 1759, "at": "2026-11-18T02:34:27"}
+{"kind": "v3_answer", "meta": {"id": "S18", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.031316000000000004, "sec": 16.6, "tok_in": 888, "tok_out": 1211, "at": "2026-11-18T02:34:28"}
+{"kind": "v3_answer", "meta": {"id": "S20", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01698, "sec": 9.0, "tok_in": 941, "tok_out": 473, "at": "2026-11-18T02:34:33"}
+{"kind": "v3_answer", "meta": {"id": "S20", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.02038, "sec": 11.2, "tok_in": 891, "tok_out": 663, "at": "2026-11-18T02:34:35"}
+{"kind": "v3_answer", "meta": {"id": "S17", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.051484, "sec": 28.4, "tok_in": 999, "tok_out": 2175, "at": "2026-11-18T02:34:36"}
+{"kind": "v3_answer", "meta": {"id": "S15", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.08666399999999999, "sec": 41.2, "tok_in": 904, "tok_out": 3972, "at": "2026-11-18T02:34:36"}
+{"kind": "v3_answer", "meta": {"id": "S19", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03766, "sec": 18.3, "tok_in": 956, "tok_out": 1501, "at": "2026-11-18T02:34:37"}
+{"kind": "v3_answer", "meta": {"id": "S19", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.038652000000000006, "sec": 18.7, "tok_in": 900, "tok_out": 1573, "at": "2026-11-18T02:34:37"}
+{"kind": "v3_answer", "meta": {"id": "S21", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.01702, "sec": 8.6, "tok_in": 911, "tok_out": 487, "at": "2026-11-18T02:34:37"}
+{"kind": "v3_answer", "meta": {"id": "S20", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.021212, "sec": 11.4, "tok_in": 930, "tok_out": 689, "at": "2026-11-18T02:34:38"}
+{"kind": "v3_answer", "meta": {"id": "S21", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.014876, "sec": 5.9, "tok_in": 958, "tok_out": 361, "at": "2026-11-18T02:34:39"}
+{"kind": "v3_answer", "meta": {"id": "S19", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.0468, "sec": 23.0, "tok_in": 941, "tok_out": 1964, "at": "2026-11-18T02:34:42"}
+{"kind": "v3_answer", "meta": {"id": "S15", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.095944, "sec": 46.9, "tok_in": 944, "tok_out": 4420, "at": "2026-11-18T02:34:43"}
+{"kind": "v3_answer", "meta": {"id": "S18", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.057812, "sec": 30.8, "tok_in": 940, "tok_out": 2515, "at": "2026-11-18T02:34:43"}
+{"kind": "v3_answer", "meta": {"id": "S21", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.018564, "sec": 8.5, "tok_in": 949, "tok_out": 549, "at": "2026-11-18T02:34:44"}
+{"kind": "v3_answer", "meta": {"id": "S25", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.015695999999999998, "sec": 6.9, "tok_in": 968, "tok_out": 398, "at": "2026-11-18T02:34:51"}
+{"kind": "v3_answer", "meta": {"id": "S22", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.041636, "sec": 18.3, "tok_in": 938, "tok_out": 1707, "at": "2026-11-18T02:34:55"}
+{"kind": "v3_answer", "meta": {"id": "S25", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.02478, "sec": 14.4, "tok_in": 916, "tok_out": 873, "at": "2026-11-18T02:34:58"}
+{"kind": "v3_answer", "meta": {"id": "S24", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.035496, "sec": 16.7, "tok_in": 968, "tok_out": 1388, "at": "2026-11-18T02:34:59"}
+{"kind": "v3_answer", "meta": {"id": "S22", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.052608, "sec": 23.1, "tok_in": 887, "tok_out": 2276, "at": "2026-11-18T02:34:59"}
+{"kind": "v3_answer", "meta": {"id": "S18", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.081592, "sec": 42.8, "tok_in": 925, "tok_out": 3710, "at": "2026-11-18T02:35:00"}
+{"kind": "v3_answer", "meta": {"id": "S24", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.04244400000000001, "sec": 20.5, "tok_in": 914, "tok_out": 1757, "at": "2026-11-18T02:35:00"}
+{"kind": "v3_answer", "meta": {"id": "S23", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.057992, "sec": 26.8, "tok_in": 970, "tok_out": 2512, "at": "2026-11-18T02:35:04"}
+{"kind": "v3_answer", "meta": {"id": "S25", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.027656, "sec": 15.2, "tok_in": 958, "tok_out": 1000, "at": "2026-11-18T02:35:06"}
+{"kind": "v3_answer", "meta": {"id": "S23", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.06984800000000001, "sec": 30.5, "tok_in": 922, "tok_out": 3124, "at": "2026-11-18T02:35:07"}
+{"kind": "v3_answer", "meta": {"id": "S22", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.063724, "sec": 31.6, "tok_in": 924, "tok_out": 2817, "at": "2026-11-18T02:35:08"}
+{"kind": "v3_answer", "meta": {"id": "S27", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018012, "sec": 9.1, "tok_in": 975, "tok_out": 511, "at": "2026-11-18T02:35:09"}
+{"kind": "v3_answer", "meta": {"id": "S24", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.054063999999999994, "sec": 26.9, "tok_in": 954, "tok_out": 2322, "at": "2026-11-18T02:35:10"}
+{"kind": "v3_answer", "meta": {"id": "S27", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.021927999999999996, "sec": 13.1, "tok_in": 917, "tok_out": 730, "at": "2026-11-18T02:35:12"}
+{"kind": "v3_answer", "meta": {"id": "S27", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.023068, "sec": 14.1, "tok_in": 962, "tok_out": 769, "at": "2026-11-18T02:35:14"}
+{"kind": "v3_answer", "meta": {"id": "S29", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.015359999999999999, "sec": 6.8, "tok_in": 906, "tok_out": 406, "at": "2026-11-18T02:35:15"}
+{"kind": "v3_answer", "meta": {"id": "S29", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.014551999999999999, "sec": 6.4, "tok_in": 955, "tok_out": 346, "at": "2026-11-18T02:35:15"}
+{"kind": "v3_answer", "meta": {"id": "S26", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.03922, "sec": 20.6, "tok_in": 901, "tok_out": 1601, "at": "2026-11-18T02:35:15"}
+{"kind": "v3_answer", "meta": {"id": "S29", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.015116000000000001, "sec": 6.8, "tok_in": 948, "tok_out": 377, "at": "2026-11-18T02:35:17"}
+{"kind": "v3_answer", "meta": {"id": "S23", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.08648399999999999, "sec": 39.2, "tok_in": 959, "tok_out": 3941, "at": "2026-11-18T02:35:17"}
+{"kind": "v3_answer", "meta": {"id": "S31", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018048, "sec": 7.8, "tok_in": 962, "tok_out": 518, "at": "2026-11-18T02:35:23"}
+{"kind": "v3_answer", "meta": {"id": "S26", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.04946, "sec": 26.5, "tok_in": 956, "tok_out": 2091, "at": "2026-11-18T02:35:24"}
+{"kind": "v3_answer", "meta": {"id": "S31", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.025416, "sec": 10.5, "tok_in": 948, "tok_out": 892, "at": "2026-11-18T02:35:27"}
+{"kind": "v3_answer", "meta": {"id": "S31", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.025724000000000004, "sec": 12.3, "tok_in": 909, "tok_out": 923, "at": "2026-11-18T02:35:27"}
+{"kind": "v3_answer", "meta": {"id": "S32", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.026632000000000003, "sec": 14.9, "tok_in": 905, "tok_out": 970, "at": "2026-11-18T02:35:32"}
+{"kind": "v3_answer", "meta": {"id": "S32", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.017959999999999997, "sec": 9.0, "tok_in": 956, "tok_out": 516, "at": "2026-11-18T02:35:32"}
+{"kind": "v3_answer", "meta": {"id": "S30", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.04328800000000001, "sec": 23.3, "tok_in": 952, "tok_out": 1784, "at": "2026-11-18T02:35:37"}
+{"kind": "v3_answer", "meta": {"id": "S26", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.07172, "sec": 41.2, "tok_in": 941, "tok_out": 3210, "at": "2026-11-18T02:35:40"}
+{"kind": "v3_answer", "meta": {"id": "S34", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.020427999999999998, "sec": 10.0, "tok_in": 897, "tok_out": 663, "at": "2026-11-18T02:35:42"}
+{"kind": "v3_answer", "meta": {"id": "S28", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.076048, "sec": 39.9, "tok_in": 882, "tok_out": 3450, "at": "2026-11-18T02:35:43"}
+{"kind": "v3_answer", "meta": {"id": "S30", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.059019999999999996, "sec": 31.8, "tok_in": 901, "tok_out": 2591, "at": "2026-11-18T02:35:44"}
+{"kind": "v3_answer", "meta": {"id": "S32", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.034943999999999996, "sec": 19.7, "tok_in": 944, "tok_out": 1370, "at": "2026-11-18T02:35:44"}
+{"kind": "v3_answer", "meta": {"id": "S28", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.07592, "sec": 38.4, "tok_in": 936, "tok_out": 3422, "at": "2026-11-18T02:35:44"}
+{"kind": "v3_answer", "meta": {"id": "S34", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.017216, "sec": 7.6, "tok_in": 948, "tok_out": 482, "at": "2026-11-18T02:35:45"}
+{"kind": "v3_answer", "meta": {"id": "S33", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03692, "sec": 18.8, "tok_in": 971, "tok_out": 1458, "at": "2026-11-18T02:35:46"}
+{"kind": "v3_answer", "meta": {"id": "S33", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.045672, "sec": 21.3, "tok_in": 915, "tok_out": 1918, "at": "2026-11-18T02:35:48"}
+{"kind": "v3_answer", "meta": {"id": "S34", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.020232, "sec": 9.5, "tok_in": 935, "tok_out": 638, "at": "2026-11-18T02:35:49"}
+{"kind": "v3_answer", "meta": {"id": "S35", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.015776, "sec": 8.0, "tok_in": 978, "tok_out": 398, "at": "2026-11-18T02:35:52"}
+{"kind": "v3_answer", "meta": {"id": "S35", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.026048, "sec": 12.8, "tok_in": 932, "tok_out": 930, "at": "2026-11-18T02:35:55"}
+{"kind": "v3_answer", "meta": {"id": "S35", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.028048, "sec": 13.9, "tok_in": 972, "tok_out": 1014, "at": "2026-11-18T02:35:58"}
+{"kind": "v3_answer", "meta": {"id": "S30", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.08284, "sec": 45.4, "tok_in": 936, "tok_out": 3768, "at": "2026-11-18T02:36:00"}
+{"kind": "v3_answer", "meta": {"id": "S33", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.05884400000000001, "sec": 29.0, "tok_in": 959, "tok_out": 2559, "at": "2026-11-18T02:36:01"}
+{"kind": "v3_answer", "meta": {"id": "S38", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.015388, "sec": 6.9, "tok_in": 952, "tok_out": 389, "at": "2026-11-18T02:36:02"}
+{"kind": "v3_answer", "meta": {"id": "S38", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.023308000000000002, "sec": 11.8, "tok_in": 902, "tok_out": 805, "at": "2026-11-18T02:36:03"}
+{"kind": "v3_answer", "meta": {"id": "S37", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.04108, "sec": 20.1, "tok_in": 951, "tok_out": 1674, "at": "2026-11-18T02:36:08"}
+{"kind": "v3_answer", "meta": {"id": "S37", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.04814, "sec": 23.6, "tok_in": 896, "tok_out": 2049, "at": "2026-11-18T02:36:10"}
+{"kind": "v3_answer", "meta": {"id": "S38", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.023688, "sec": 12.7, "tok_in": 942, "tok_out": 808, "at": "2026-11-18T02:36:10"}
+{"kind": "v3_answer", "meta": {"id": "S28", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.12220399999999998, "sec": 65.9, "tok_in": 924, "tok_out": 5741, "at": "2026-11-18T02:36:13"}
+{"kind": "v3_answer", "meta": {"id": "S40", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.019732, "sec": 10.0, "tok_in": 885, "tok_out": 633, "at": "2026-11-18T02:36:13"}
+{"kind": "v3_answer", "meta": {"id": "S39", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.024272, "sec": 13.3, "tok_in": 985, "tok_out": 820, "at": "2026-11-18T02:36:15"}
+{"kind": "v3_answer", "meta": {"id": "S40", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018032, "sec": 9.1, "tok_in": 935, "tok_out": 528, "at": "2026-11-18T02:36:18"}
+{"kind": "v3_answer", "meta": {"id": "S39", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.036036, "sec": 20.8, "tok_in": 933, "tok_out": 1429, "at": "2026-11-18T02:36:21"}
+{"kind": "v3_answer", "meta": {"id": "S37", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.06344, "sec": 33.7, "tok_in": 941, "tok_out": 2796, "at": "2026-11-18T02:36:23"}
+{"kind": "v3_answer", "meta": {"id": "S36", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.081272, "sec": 38.7, "tok_in": 965, "tok_out": 3678, "at": "2026-11-18T02:36:23"}
+{"kind": "v3_answer", "meta": {"id": "S42", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.018476, "sec": 9.4, "tok_in": 923, "tok_out": 555, "at": "2026-11-18T02:36:24"}
+{"kind": "v3_answer", "meta": {"id": "S40", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.032016, "sec": 15.9, "tok_in": 923, "tok_out": 1232, "at": "2026-11-18T02:36:26"}
+{"kind": "v3_answer", "meta": {"id": "S42", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.017064, "sec": 9.2, "tok_in": 974, "tok_out": 464, "at": "2026-11-18T02:36:27"}
+{"kind": "v3_answer", "meta": {"id": "S39", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.047164, "sec": 26.6, "tok_in": 979, "tok_out": 1967, "at": "2026-11-18T02:36:29"}
+{"kind": "v3_answer", "meta": {"id": "S42", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.021336, "sec": 8.3, "tok_in": 963, "tok_out": 682, "at": "2026-11-18T02:36:30"}
+{"kind": "v3_answer", "meta": {"id": "S41", "arm": "S"}, "models": ["claude-opus-5-5"], "cost": 0.04642, "sec": 20.7, "tok_in": 986, "tok_out": 1927, "at": "2026-11-18T02:36:34"}
+{"kind": "v3_answer", "meta": {"id": "S41", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.07922, "sec": 39.7, "tok_in": 931, "tok_out": 3589, "at": "2026-11-18T02:36:50"}
+{"kind": "v3_answer", "meta": {"id": "S36", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.13682000000000002, "sec": 67.8, "tok_in": 956, "tok_out": 6459, "at": "2026-11-18T02:36:53"}
+{"kind": "v3_answer", "meta": {"id": "S36", "arm": "A"}, "models": ["claude-opus-5-5"], "cost": 0.165908, "sec": 79.7, "tok_in": 917, "tok_out": 7929, "at": "2026-11-18T02:37:04"}
+{"kind": "v3_answer", "meta": {"id": "S41", "arm": "B"}, "models": ["claude-opus-5-5"], "cost": 0.108444, "sec": 53.8, "tok_in": 974, "tok_out": 5033, "at": "2026-11-18T02:37:07"}
+{"kind": "v3_judge", "meta": {"id": "S08", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.016448, "sec": 5.7, "tok_in": 1717, "tok_out": 136, "at": "2026-11-18T02:37:13"}
+{"kind": "v3_judge", "meta": {"id": "S12", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.020072, "sec": 6.8, "tok_in": 1910, "tok_out": 240, "at": "2026-11-18T02:37:14"}
+{"kind": "v3_judge", "meta": {"id": "S03", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01858, "sec": 6.9, "tok_in": 1806, "tok_out": 207, "at": "2026-11-18T02:37:14"}
+{"kind": "v3_judge", "meta": {"id": "S04", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.023272, "sec": 7.2, "tok_in": 2370, "tok_out": 216, "at": "2026-11-18T02:37:15"}
+{"kind": "v3_judge", "meta": {"id": "S09", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.040068, "sec": 7.9, "tok_in": 4112, "tok_out": 359, "at": "2026-11-18T02:37:16"}
+{"kind": "v3_judge", "meta": {"id": "S14", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.0259, "sec": 8.0, "tok_in": 2436, "tok_out": 321, "at": "2026-11-18T02:37:16"}
+{"kind": "v3_judge", "meta": {"id": "S05", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.053132, "sec": 8.4, "tok_in": 5600, "tok_out": 417, "at": "2026-11-18T02:37:16"}
+{"kind": "v3_judge", "meta": {"id": "S07", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.028156, "sec": 8.7, "tok_in": 2398, "tok_out": 449, "at": "2026-11-18T02:37:16"}
+{"kind": "v3_judge", "meta": {"id": "S11", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.047296000000000005, "sec": 8.9, "tok_in": 5023, "tok_out": 356, "at": "2026-11-18T02:37:16"}
+{"kind": "v3_judge", "meta": {"id": "S10", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.040668, "sec": 8.9, "tok_in": 4282, "tok_out": 321, "at": "2026-11-18T02:37:17"}
+{"kind": "v3_judge", "meta": {"id": "S13", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.023759999999999996, "sec": 9.0, "tok_in": 1836, "tok_out": 454, "at": "2026-11-18T02:37:17"}
+{"kind": "v3_judge", "meta": {"id": "S08", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.016408, "sec": 4.9, "tok_in": 1717, "tok_out": 134, "at": "2026-11-18T02:37:18"}
+{"kind": "v3_judge", "meta": {"id": "S06", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.049296000000000006, "sec": 11.9, "tok_in": 4363, "tok_out": 720, "at": "2026-11-18T02:37:20"}
+{"kind": "v3_judge", "meta": {"id": "S12", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.018972, "sec": 5.2, "tok_in": 1910, "tok_out": 185, "at": "2026-11-18T02:37:20"}
+{"kind": "v3_judge", "meta": {"id": "S04", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.023116, "sec": 5.2, "tok_in": 2368, "tok_out": 209, "at": "2026-11-18T02:37:20"}
+{"kind": "v3_judge", "meta": {"id": "S03", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.017471999999999998, "sec": 5.7, "tok_in": 1810, "tok_out": 150, "at": "2026-11-18T02:37:20"}
+{"kind": "v3_judge", "meta": {"id": "S07", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.024996, "sec": 6.0, "tok_in": 2398, "tok_out": 291, "at": "2026-11-18T02:37:22"}
+{"kind": "v3_judge", "meta": {"id": "S14", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.02592, "sec": 6.9, "tok_in": 2436, "tok_out": 322, "at": "2026-11-18T02:37:23"}
+{"kind": "v3_judge", "meta": {"id": "S05", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.05058, "sec": 6.7, "tok_in": 5601, "tok_out": 289, "at": "2026-11-18T02:37:23"}
+{"kind": "v3_judge", "meta": {"id": "S13", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.02112, "sec": 6.7, "tok_in": 1836, "tok_out": 322, "at": "2026-11-18T02:37:23"}
+{"kind": "v3_judge", "meta": {"id": "S11", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.04548, "sec": 7.1, "tok_in": 5021, "tok_out": 266, "at": "2026-11-18T02:37:24"}
+{"kind": "v3_judge", "meta": {"id": "S09", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.042628, "sec": 8.5, "tok_in": 4107, "tok_out": 489, "at": "2026-11-18T02:37:24"}
+{"kind": "v3_judge", "meta": {"id": "S10", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.042104, "sec": 9.1, "tok_in": 4284, "tok_out": 392, "at": "2026-11-18T02:37:26"}
+{"kind": "v3_judge", "meta": {"id": "S17", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.027848, "sec": 5.9, "tok_in": 2977, "tok_out": 202, "at": "2026-11-18T02:37:26"}
+{"kind": "v3_judge", "meta": {"id": "S20", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.017300000000000003, "sec": 4.8, "tok_in": 1826, "tok_out": 135, "at": "2026-11-18T02:37:27"}
+{"kind": "v3_judge", "meta": {"id": "S18", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.030052000000000002, "sec": 7.7, "tok_in": 2770, "tok_out": 395, "at": "2026-11-18T02:37:28"}
+{"kind": "v3_judge", "meta": {"id": "S16", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.031135999999999997, "sec": 8.2, "tok_in": 2628, "tok_out": 506, "at": "2026-11-18T02:37:28"}
+{"kind": "v3_judge", "meta": {"id": "S21", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018692, "sec": 7.2, "tok_in": 1670, "tok_out": 267, "at": "2026-11-18T02:37:30"}
+{"kind": "v3_judge", "meta": {"id": "S19", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.029519999999999998, "sec": 7.9, "tok_in": 2671, "tok_out": 408, "at": "2026-11-18T02:37:30"}
+{"kind": "v3_judge", "meta": {"id": "S15", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.041668, "sec": 12.1, "tok_in": 3147, "tok_out": 825, "at": "2026-11-18T02:37:30"}
+{"kind": "v3_judge", "meta": {"id": "S06", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.050244000000000004, "sec": 10.8, "tok_in": 4364, "tok_out": 767, "at": "2026-11-18T02:37:30"}
+{"kind": "v3_judge", "meta": {"id": "S23", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.034144, "sec": 7.1, "tok_in": 3389, "tok_out": 352, "at": "2026-11-18T02:37:31"}
+{"kind": "v3_judge", "meta": {"id": "S25", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.020632, "sec": 5.7, "tok_in": 2250, "tok_out": 132, "at": "2026-11-18T02:37:31"}
+{"kind": "v3_judge", "meta": {"id": "S17", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.027483999999999998, "sec": 5.5, "tok_in": 2974, "tok_out": 185, "at": "2026-11-18T02:37:32"}
+{"kind": "v3_judge", "meta": {"id": "S24", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.030792, "sec": 7.7, "tok_in": 2845, "tok_out": 402, "at": "2026-11-18T02:37:32"}
+{"kind": "v3_judge", "meta": {"id": "S20", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.016804, "sec": 4.9, "tok_in": 1824, "tok_out": 111, "at": "2026-11-18T02:37:32"}
+{"kind": "v3_judge", "meta": {"id": "S22", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.035704, "sec": 9.1, "tok_in": 2964, "tok_out": 600, "at": "2026-11-18T02:37:32"}
+{"kind": "v3_judge", "meta": {"id": "S21", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.015784, "sec": 5.0, "tok_in": 1669, "tok_out": 122, "at": "2026-11-18T02:37:35"}
+{"kind": "v3_judge", "meta": {"id": "S18", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.030272, "sec": 8.0, "tok_in": 2775, "tok_out": 404, "at": "2026-11-18T02:37:36"}
+{"kind": "v3_judge", "meta": {"id": "S26", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.033076, "sec": 6.4, "tok_in": 3458, "tok_out": 271, "at": "2026-11-18T02:37:37"}
+{"kind": "v3_judge", "meta": {"id": "S25", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.021412, "sec": 5.8, "tok_in": 2250, "tok_out": 171, "at": "2026-11-18T02:37:37"}
+{"kind": "v3_judge", "meta": {"id": "S27", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01844, "sec": 6.0, "tok_in": 1796, "tok_out": 204, "at": "2026-11-18T02:37:38"}
+{"kind": "v3_judge", "meta": {"id": "S24", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.026424, "sec": 5.8, "tok_in": 2844, "tok_out": 184, "at": "2026-11-18T02:37:38"}
+{"kind": "v3_judge", "meta": {"id": "S16", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.030184000000000002, "sec": 9.8, "tok_in": 2624, "tok_out": 460, "at": "2026-11-18T02:37:38"}
+{"kind": "v3_judge", "meta": {"id": "S28", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.037296, "sec": 6.2, "tok_in": 3913, "tok_out": 300, "at": "2026-11-18T02:37:39"}
+{"kind": "v3_judge", "meta": {"id": "S23", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.037087999999999996, "sec": 8.2, "tok_in": 3387, "tok_out": 500, "at": "2026-11-18T02:37:39"}
+{"kind": "v3_judge", "meta": {"id": "S19", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.032904, "sec": 9.5, "tok_in": 2669, "tok_out": 578, "at": "2026-11-18T02:37:40"}
+{"kind": "v3_judge", "meta": {"id": "S15", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.036424, "sec": 9.5, "tok_in": 3154, "tok_out": 560, "at": "2026-11-18T02:37:40"}
+{"kind": "v3_judge", "meta": {"id": "S29", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018144, "sec": 6.8, "tok_in": 1439, "tok_out": 332, "at": "2026-11-18T02:37:42"}
+{"kind": "v3_judge", "meta": {"id": "S22", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.035552, "sec": 9.7, "tok_in": 2965, "tok_out": 592, "at": "2026-11-18T02:37:42"}
+{"kind": "v3_judge", "meta": {"id": "S31", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.019656, "sec": 4.9, "tok_in": 2118, "tok_out": 136, "at": "2026-11-18T02:37:42"}
+{"kind": "v3_judge", "meta": {"id": "S26", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.034304, "sec": 6.2, "tok_in": 3464, "tok_out": 330, "at": "2026-11-18T02:37:43"}
+{"kind": "v3_judge", "meta": {"id": "S27", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.0194, "sec": 5.5, "tok_in": 1796, "tok_out": 252, "at": "2026-11-18T02:37:43"}
+{"kind": "v3_judge", "meta": {"id": "S30", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.039348, "sec": 7.7, "tok_in": 3947, "tok_out": 389, "at": "2026-11-18T02:37:44"}
+{"kind": "v3_judge", "meta": {"id": "S32", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.02136, "sec": 6.1, "tok_in": 2126, "tok_out": 218, "at": "2026-11-18T02:37:44"}
+{"kind": "v3_judge", "meta": {"id": "S33", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.026732, "sec": 6.0, "tok_in": 2620, "tok_out": 289, "at": "2026-11-18T02:37:44"}
+{"kind": "v3_judge", "meta": {"id": "S35", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01814, "sec": 5.5, "tok_in": 1826, "tok_out": 177, "at": "2026-11-18T02:37:45"}
+{"kind": "v3_judge", "meta": {"id": "S34", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.021592, "sec": 6.8, "tok_in": 1925, "tok_out": 310, "at": "2026-11-18T02:37:46"}
+{"kind": "v3_judge", "meta": {"id": "S28", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.03751600000000001, "sec": 7.8, "tok_in": 3913, "tok_out": 311, "at": "2026-11-18T02:37:46"}
+{"kind": "v3_judge", "meta": {"id": "S31", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.020004, "sec": 5.9, "tok_in": 2114, "tok_out": 155, "at": "2026-11-18T02:37:48"}
+{"kind": "v3_judge", "meta": {"id": "S37", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.026368, "sec": 6.4, "tok_in": 2517, "tok_out": 312, "at": "2026-11-18T02:37:49"}
+{"kind": "v3_judge", "meta": {"id": "S38", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018716, "sec": 5.7, "tok_in": 1853, "tok_out": 195, "at": "2026-11-18T02:37:49"}
+{"kind": "v3_judge", "meta": {"id": "S39", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.022688, "sec": 5.9, "tok_in": 2377, "tok_out": 184, "at": "2026-11-18T02:37:49"}
+{"kind": "v3_judge", "meta": {"id": "S30", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.03546, "sec": 6.3, "tok_in": 3941, "tok_out": 197, "at": "2026-11-18T02:37:50"}
+{"kind": "v3_judge", "meta": {"id": "S35", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.017264, "sec": 4.8, "tok_in": 1829, "tok_out": 132, "at": "2026-11-18T02:37:50"}
+{"kind": "v3_judge", "meta": {"id": "S29", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.021272, "sec": 8.6, "tok_in": 1435, "tok_out": 490, "at": "2026-11-18T02:37:51"}
+{"kind": "v3_judge", "meta": {"id": "S32", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.0226, "sec": 7.3, "tok_in": 2126, "tok_out": 280, "at": "2026-11-18T02:37:51"}
+{"kind": "v3_judge", "meta": {"id": "S40", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01874, "sec": 6.1, "tok_in": 1901, "tok_out": 177, "at": "2026-11-18T02:37:53"}
+{"kind": "v3_judge", "meta": {"id": "S34", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.021023999999999998, "sec": 6.9, "tok_in": 1929, "tok_out": 280, "at": "2026-11-18T02:37:53"}
+{"kind": "v3_judge", "meta": {"id": "S33", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.03128, "sec": 9.1, "tok_in": 2616, "tok_out": 518, "at": "2026-11-18T02:37:53"}
+{"kind": "v3_judge", "meta": {"id": "S38", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.018016, "sec": 5.5, "tok_in": 1848, "tok_out": 162, "at": "2026-11-18T02:37:54"}
+{"kind": "v3_judge", "meta": {"id": "S37", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.024512, "sec": 5.9, "tok_in": 2515, "tok_out": 220, "at": "2026-11-18T02:37:55"}
+{"kind": "v3_judge", "meta": {"id": "S39", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.023444000000000003, "sec": 5.6, "tok_in": 2379, "tok_out": 221, "at": "2026-11-18T02:37:55"}
+{"kind": "v3_judge", "meta": {"id": "S41", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03514, "sec": 6.7, "tok_in": 3621, "tok_out": 309, "at": "2026-11-18T02:37:55"}
+{"kind": "v3_judge", "meta": {"id": "S03", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018776, "sec": 5.3, "tok_in": 2013, "tok_out": 134, "at": "2026-11-18T02:37:55"}
+{"kind": "v3_judge", "meta": {"id": "S42", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018008, "sec": 5.8, "tok_in": 1657, "tok_out": 238, "at": "2026-11-18T02:37:56"}
+{"kind": "v3_judge", "meta": {"id": "S36", "pair": "SvA", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.060360000000000004, "sec": 16.5, "tok_in": 3996, "tok_out": 1420, "at": "2026-11-18T02:37:56"}
+{"kind": "v3_judge", "meta": {"id": "S04", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.025456, "sec": 6.9, "tok_in": 2278, "tok_out": 362, "at": "2026-11-18T02:37:57"}
+{"kind": "v3_judge", "meta": {"id": "S40", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.018376, "sec": 5.7, "tok_in": 1898, "tok_out": 160, "at": "2026-11-18T02:37:58"}
+{"kind": "v3_judge", "meta": {"id": "S05", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.055132, "sec": 7.3, "tok_in": 5945, "tok_out": 379, "at": "2026-11-18T02:37:58"}
+{"kind": "v3_judge", "meta": {"id": "S08", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.016896, "sec": 5.1, "tok_in": 1798, "tok_out": 126, "at": "2026-11-18T02:37:59"}
+{"kind": "v3_judge", "meta": {"id": "S06", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.041756, "sec": 7.3, "tok_in": 4418, "tok_out": 321, "at": "2026-11-18T02:38:00"}
+{"kind": "v3_judge", "meta": {"id": "S09", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.046244, "sec": 5.8, "tok_in": 5299, "tok_out": 193, "at": "2026-11-18T02:38:00"}
+{"kind": "v3_judge", "meta": {"id": "S03", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.018544, "sec": 5.1, "tok_in": 2009, "tok_out": 124, "at": "2026-11-18T02:38:01"}
+{"kind": "v3_judge", "meta": {"id": "S07", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.027236, "sec": 8.1, "tok_in": 2528, "tok_out": 351, "at": "2026-11-18T02:38:01"}
+{"kind": "v3_judge", "meta": {"id": "S42", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.017344000000000002, "sec": 5.6, "tok_in": 1659, "tok_out": 204, "at": "2026-11-18T02:38:01"}
+{"kind": "v3_judge", "meta": {"id": "S10", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.043016, "sec": 7.1, "tok_in": 4508, "tok_out": 348, "at": "2026-11-18T02:38:02"}
+{"kind": "v3_judge", "meta": {"id": "S41", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.035488, "sec": 6.8, "tok_in": 3617, "tok_out": 328, "at": "2026-11-18T02:38:02"}
+{"kind": "v3_judge", "meta": {"id": "S08", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.016524, "sec": 4.9, "tok_in": 1799, "tok_out": 107, "at": "2026-11-18T02:38:04"}
+{"kind": "v3_judge", "meta": {"id": "S05", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.052144, "sec": 5.9, "tok_in": 5944, "tok_out": 230, "at": "2026-11-18T02:38:04"}
+{"kind": "v3_judge", "meta": {"id": "S11", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.05227999999999999, "sec": 7.6, "tok_in": 5756, "tok_out": 312, "at": "2026-11-18T02:38:06"}
+{"kind": "v3_judge", "meta": {"id": "S09", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.047152, "sec": 5.9, "tok_in": 5295, "tok_out": 240, "at": "2026-11-18T02:38:06"}
+{"kind": "v3_judge", "meta": {"id": "S04", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.022532, "sec": 8.9, "tok_in": 2275, "tok_out": 217, "at": "2026-11-18T02:38:06"}
+{"kind": "v3_judge", "meta": {"id": "S12", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.02146, "sec": 6.0, "tok_in": 2031, "tok_out": 261, "at": "2026-11-18T02:38:07"}
+{"kind": "v3_judge", "meta": {"id": "S06", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.044004, "sec": 7.9, "tok_in": 4419, "tok_out": 433, "at": "2026-11-18T02:38:08"}
+{"kind": "v3_judge", "meta": {"id": "S10", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.04178, "sec": 6.1, "tok_in": 4506, "tok_out": 287, "at": "2026-11-18T02:38:08"}
+{"kind": "v3_judge", "meta": {"id": "S14", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.02596, "sec": 6.4, "tok_in": 2541, "tok_out": 282, "at": "2026-11-18T02:38:08"}
+{"kind": "v3_judge", "meta": {"id": "S13", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.020836, "sec": 7.5, "tok_in": 1668, "tok_out": 375, "at": "2026-11-18T02:38:09"}
+{"kind": "v3_judge", "meta": {"id": "S07", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.031071999999999995, "sec": 8.1, "tok_in": 2530, "tok_out": 542, "at": "2026-11-18T02:38:09"}
+{"kind": "v3_judge", "meta": {"id": "S36", "pair": "SvA", "first": "A"}, "models": ["claude-opus-5-5"], "cost": 0.055228, "sec": 13.7, "tok_in": 4002, "tok_out": 1161, "at": "2026-11-18T02:38:10"}
+{"kind": "v3_judge", "meta": {"id": "S16", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.026712, "sec": 7.0, "tok_in": 2600, "tok_out": 296, "at": "2026-11-18T02:38:11"}
+{"kind": "v3_judge", "meta": {"id": "S17", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.02864, "sec": 5.0, "tok_in": 3226, "tok_out": 142, "at": "2026-11-18T02:38:11"}
+{"kind": "v3_judge", "meta": {"id": "S12", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.021048, "sec": 5.8, "tok_in": 2037, "tok_out": 238, "at": "2026-11-18T02:38:12"}
+{"kind": "v3_judge", "meta": {"id": "S20", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.015224, "sec": 4.8, "tok_in": 1544, "tok_out": 144, "at": "2026-11-18T02:38:13"}
+{"kind": "v3_judge", "meta": {"id": "S11", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.051016, "sec": 6.9, "tok_in": 5758, "tok_out": 248, "at": "2026-11-18T02:38:13"}
+{"kind": "v3_judge", "meta": {"id": "S15", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03788, "sec": 9.0, "tok_in": 3516, "tok_out": 488, "at": "2026-11-18T02:38:13"}
+{"kind": "v3_judge", "meta": {"id": "S21", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.016116000000000002, "sec": 4.6, "tok_in": 1723, "tok_out": 117, "at": "2026-11-18T02:38:14"}
+{"kind": "v3_judge", "meta": {"id": "S14", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.023656, "sec": 5.6, "tok_in": 2538, "tok_out": 168, "at": "2026-11-18T02:38:14"}
+{"kind": "v3_judge", "meta": {"id": "S19", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.028924000000000002, "sec": 7.6, "tok_in": 2699, "tok_out": 367, "at": "2026-11-18T02:38:16"}
+{"kind": "v3_judge", "meta": {"id": "S18", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.037503999999999996, "sec": 9.9, "tok_in": 3064, "tok_out": 650, "at": "2026-11-18T02:38:16"}
+{"kind": "v3_judge", "meta": {"id": "S17", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.030148, "sec": 5.8, "tok_in": 3227, "tok_out": 217, "at": "2026-11-18T02:38:17"}
+{"kind": "v3_judge", "meta": {"id": "S21", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.015872, "sec": 4.1, "tok_in": 1725, "tok_out": 104, "at": "2026-11-18T02:38:18"}
+{"kind": "v3_judge", "meta": {"id": "S13", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.023091999999999998, "sec": 8.9, "tok_in": 1665, "tok_out": 489, "at": "2026-11-18T02:38:18"}
+{"kind": "v3_judge", "meta": {"id": "S20", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.016136, "sec": 5.3, "tok_in": 1543, "tok_out": 190, "at": "2026-11-18T02:38:18"}
+{"kind": "v3_judge", "meta": {"id": "S24", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.025004000000000002, "sec": 5.2, "tok_in": 2689, "tok_out": 175, "at": "2026-11-18T02:38:18"}
+{"kind": "v3_judge", "meta": {"id": "S22", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.033872, "sec": 8.8, "tok_in": 2950, "tok_out": 514, "at": "2026-11-18T02:38:19"}
+{"kind": "v3_judge", "meta": {"id": "S16", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.028492, "sec": 8.0, "tok_in": 2600, "tok_out": 385, "at": "2026-11-18T02:38:19"}
+{"kind": "v3_judge", "meta": {"id": "S25", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.020172, "sec": 5.5, "tok_in": 2170, "tok_out": 141, "at": "2026-11-18T02:38:20"}
+{"kind": "v3_judge", "meta": {"id": "S23", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.036604, "sec": 8.4, "tok_in": 3294, "tok_out": 513, "at": "2026-11-18T02:38:21"}
+{"kind": "v3_judge", "meta": {"id": "S15", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.039035999999999994, "sec": 8.9, "tok_in": 3513, "tok_out": 547, "at": "2026-11-18T02:38:22"}
+{"kind": "v3_judge", "meta": {"id": "S26", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.037852000000000004, "sec": 5.9, "tok_in": 4140, "tok_out": 237, "at": "2026-11-18T02:38:23"}
+{"kind": "v3_judge", "meta": {"id": "S19", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.029396, "sec": 7.7, "tok_in": 2698, "tok_out": 391, "at": "2026-11-18T02:38:23"}
+{"kind": "v3_judge", "meta": {"id": "S29", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01404, "sec": 5.6, "tok_in": 1351, "tok_out": 162, "at": "2026-11-18T02:38:24"}
+{"kind": "v3_judge", "meta": {"id": "S28", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.04472, "sec": 6.1, "tok_in": 4891, "tok_out": 280, "at": "2026-11-18T02:38:24"}
+{"kind": "v3_judge", "meta": {"id": "S24", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.027212, "sec": 6.2, "tok_in": 2690, "tok_out": 285, "at": "2026-11-18T02:38:24"}
+{"kind": "v3_judge", "meta": {"id": "S25", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.020208, "sec": 5.4, "tok_in": 2172, "tok_out": 142, "at": "2026-11-18T02:38:25"}
+{"kind": "v3_judge", "meta": {"id": "S27", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.019552, "sec": 7.0, "tok_in": 1735, "tok_out": 284, "at": "2026-11-18T02:38:25"}
+{"kind": "v3_judge", "meta": {"id": "S18", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.035872, "sec": 9.4, "tok_in": 3065, "tok_out": 568, "at": "2026-11-18T02:38:26"}
+{"kind": "v3_judge", "meta": {"id": "S30", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.03712, "sec": 6.7, "tok_in": 3936, "tok_out": 282, "at": "2026-11-18T02:38:26"}
+{"kind": "v3_judge", "meta": {"id": "S23", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.033376, "sec": 6.6, "tok_in": 3293, "tok_out": 352, "at": "2026-11-18T02:38:27"}
+{"kind": "v3_judge", "meta": {"id": "S31", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018824, "sec": 5.4, "tok_in": 2049, "tok_out": 122, "at": "2026-11-18T02:38:28"}
+{"kind": "v3_judge", "meta": {"id": "S26", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.037412, "sec": 5.6, "tok_in": 4140, "tok_out": 215, "at": "2026-11-18T02:38:29"}
+{"kind": "v3_judge", "meta": {"id": "S32", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.022656000000000003, "sec": 5.6, "tok_in": 2228, "tok_out": 242, "at": "2026-11-18T02:38:29"}
+{"kind": "v3_judge", "meta": {"id": "S29", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.014416, "sec": 5.4, "tok_in": 1353, "tok_out": 180, "at": "2026-11-18T02:38:29"}
+{"kind": "v3_judge", "meta": {"id": "S22", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.037972, "sec": 10.6, "tok_in": 2945, "tok_out": 721, "at": "2026-11-18T02:38:29"}
+{"kind": "v3_judge", "meta": {"id": "S28", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.043784, "sec": 5.9, "tok_in": 4894, "tok_out": 232, "at": "2026-11-18T02:38:30"}
+{"kind": "v3_judge", "meta": {"id": "S33", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.02572, "sec": 6.4, "tok_in": 2571, "tok_out": 258, "at": "2026-11-18T02:38:31"}
+{"kind": "v3_judge", "meta": {"id": "S27", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.01966, "sec": 6.2, "tok_in": 1731, "tok_out": 291, "at": "2026-11-18T02:38:31"}
+{"kind": "v3_judge", "meta": {"id": "S35", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018252, "sec": 5.7, "tok_in": 1900, "tok_out": 153, "at": "2026-11-18T02:38:31"}
+{"kind": "v3_judge", "meta": {"id": "S30", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.036004, "sec": 6.0, "tok_in": 3929, "tok_out": 229, "at": "2026-11-18T02:38:32"}
+{"kind": "v3_judge", "meta": {"id": "S34", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.01978, "sec": 7.2, "tok_in": 1756, "tok_out": 287, "at": "2026-11-18T02:38:32"}
+{"kind": "v3_judge", "meta": {"id": "S31", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.018732, "sec": 5.0, "tok_in": 2050, "tok_out": 117, "at": "2026-11-18T02:38:33"}
+{"kind": "v3_judge", "meta": {"id": "S37", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.024276, "sec": 5.3, "tok_in": 2543, "tok_out": 197, "at": "2026-11-18T02:38:34"}
+{"kind": "v3_judge", "meta": {"id": "S38", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.018628000000000002, "sec": 5.4, "tok_in": 1852, "tok_out": 191, "at": "2026-11-18T02:38:34"}
+{"kind": "v3_judge", "meta": {"id": "S32", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.022283999999999998, "sec": 6.0, "tok_in": 2224, "tok_out": 225, "at": "2026-11-18T02:38:35"}
+{"kind": "v3_judge", "meta": {"id": "S39", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.023244, "sec": 5.8, "tok_in": 2414, "tok_out": 197, "at": "2026-11-18T02:38:35"}
+{"kind": "v3_judge", "meta": {"id": "S40", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.020772000000000002, "sec": 5.3, "tok_in": 2085, "tok_out": 205, "at": "2026-11-18T02:38:35"}
+{"kind": "v3_judge", "meta": {"id": "S35", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.01742, "sec": 4.6, "tok_in": 1901, "tok_out": 111, "at": "2026-11-18T02:38:36"}
+{"kind": "v3_judge", "meta": {"id": "S33", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.026456, "sec": 6.7, "tok_in": 2573, "tok_out": 294, "at": "2026-11-18T02:38:38"}
+{"kind": "v3_judge", "meta": {"id": "S42", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.016612000000000002, "sec": 5.4, "tok_in": 1630, "tok_out": 179, "at": "2026-11-18T02:38:38"}
+{"kind": "v3_judge", "meta": {"id": "S34", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.017816, "sec": 5.8, "tok_in": 1758, "tok_out": 188, "at": "2026-11-18T02:38:38"}
+{"kind": "v3_judge", "meta": {"id": "S41", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.036944, "sec": 7.7, "tok_in": 3554, "tok_out": 426, "at": "2026-11-18T02:38:39"}
+{"kind": "v3_judge", "meta": {"id": "S40", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.020152000000000003, "sec": 5.2, "tok_in": 2085, "tok_out": 174, "at": "2026-11-18T02:38:41"}
+{"kind": "v3_judge", "meta": {"id": "S39", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.023984, "sec": 5.9, "tok_in": 2409, "tok_out": 236, "at": "2026-11-18T02:38:41"}
+{"kind": "v3_judge", "meta": {"id": "S36", "pair": "SvB", "first": "S"}, "models": ["claude-opus-5-5"], "cost": 0.05388, "sec": 13.7, "tok_in": 4026, "tok_out": 1084, "at": "2026-11-18T02:38:41"}
+{"kind": "v3_judge", "meta": {"id": "S38", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.020768000000000002, "sec": 6.7, "tok_in": 1857, "tok_out": 296, "at": "2026-11-18T02:38:41"}
+{"kind": "v3_judge", "meta": {"id": "S37", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.0264, "sec": 7.2, "tok_in": 2541, "tok_out": 304, "at": "2026-11-18T02:38:41"}
+{"kind": "v3_judge", "meta": {"id": "S42", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.020388, "sec": 7.0, "tok_in": 1627, "tok_out": 369, "at": "2026-11-18T02:38:45"}
+{"kind": "v3_judge", "meta": {"id": "S41", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.034884, "sec": 6.7, "tok_in": 3549, "tok_out": 325, "at": "2026-11-18T02:38:46"}
+{"kind": "v3_judge", "meta": {"id": "S36", "pair": "SvB", "first": "B"}, "models": ["claude-opus-5-5"], "cost": 0.050448, "sec": 12.6, "tok_in": 4027, "tok_out": 912, "at": "2026-11-18T02:38:54"}

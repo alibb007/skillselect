@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Demo: a user asks for a slide deck from quarterly sales numbers. Without the plugin the assistant replies with no mention of any skill. With Straight Answer the finder lists pptx as installed (1 of 19), five skills on GitHub from 108,317 stars down, and recommends pptx because it is already installed." width="100%">
+  <img src="assets/demo.gif" alt="Demo: a user asks which skill to use for a slide deck. Without the plugin the assistant takes 10 steps, 44 seconds and 158,088 tokens. With Straight Answer it takes 1 step, 19 seconds and 38,622 tokens, lists pptx as installed, shows GitHub options by stars and recommends pptx. Across five jobs it used 5.1 times fewer tokens, was 3 times faster, and passed 29 of 30 quality checks against 30 of 30." width="100%">
 </p>
 
-<p align="center"><sub>This is the same request, without the plugin and with it. Without it the assistant asks for the data and mentions no skill. With it you get the skills installed on your computer that fit, the ones available on GitHub with the most stars first, and one recommendation. Both sides are real runs on a machine with 19 public skills installed. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
+<p align="center"><sub>This is one question, asked without the plugin and with it, on the same clock. Across five jobs the plugin used 5 times fewer tokens (38,622 against 198,288) and answered 3 times faster (19 seconds against 55), in 1 step instead of 10. It passed 29 of 30 quality checks, and plain Claude passed 30 of 30. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2A78D6?style=flat-square"></a>
@@ -94,6 +94,7 @@ Everything behind the numbers is in the [evidence](evidence) folder: the rules w
 - An AI judge read all 42 pairs and preferred the longer answer 29 times to 7. In its notes it praises the extra advice. So this plugin is for people who want the short answer.
 - The finder matches words, so a search for a legal contract review also returned smart-contract skills. Read a skill before you add it.
 - Without a GitHub token the finder can run about two searches an hour.
+- The speed and token test covers five jobs on one model, and the first job was also used to tune the finder.
 
 ## License
 

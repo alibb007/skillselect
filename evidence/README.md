@@ -4,7 +4,7 @@
 |---|---|---|---|
 | [round3](round3) | The one the plugin uses (short, finished) | 42 | `RULES3.md` (written first), `CONCLUSION3.md`, `requests.json`, `answers.json`, `verdicts.json`, `results.json`, scripts |
 | [round2](round2) | Earlier sentence, without "short" | 60 | `RULES2.md` (written first), `CONCLUSION2.md`, `requests.json`, `answers.json`, `checks.json`, `verdicts.json`, `results.json`, scripts |
-| [demo](demo) | The clip at the top of the README | 1 | `before.json` (reply without the plugin), `finder.json` (what the finder returned with 19 public skills installed) |
+| [round4](round4) | The finder: same question without the plugin and with it | 5 jobs | `RULES4.md` (written first), `results.json` (tokens, seconds, steps, 6 quality checks per run), `finder-deck.json`, scripts |
 | [harness](harness) | | | `lab.py`: one model call, model check, spend log |
 
 | Key in the data | Meaning |

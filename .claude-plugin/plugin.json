@@ -1,6 +1,6 @@
 {
   "name": "straight-answer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Short, finished answers without typing anything extra, plus a finder that suggests a skill for the job: what you already have first, then GitHub with the most stars first.",
   "author": {
     "name": "Ali B.B",

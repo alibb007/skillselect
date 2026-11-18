@@ -7,6 +7,7 @@
 It never installs, clones or downloads a skill. The only thing sent out is the search words, to api.github.com.
 Python 3 standard library only."""
 import hashlib, json, math, os, re, subprocess, sys, time, urllib.error, urllib.parse, urllib.request
+from concurrent.futures import ThreadPoolExecutor
 
 STOP = set("a an and are as at be but by for from has have i if in into is it its me my of on or so that the then this to use used using was what when where which who why will with you your "
            "want need create make making build new one some any please help can could would like get do does how find skill skills tool plugin before after first then sign just really good best".split())
@@ -82,7 +83,7 @@ def rank_local(need, skills, k=3):
     res = []
     for s, d in zip(skills, docs):
         hit = [t for t in q if t in d]
-        if len(hit) < min(len(q), max(2, math.ceil(len(q) / 2))):
+        if len(hit) < min(2, len(q)):
             continue
         sc = sum(math.log(1 + (N - df[t] + 0.5) / (df[t] + 0.5)) * d.count(t) * 2.5 / (d.count(t) + 1.5 * (0.25 + 0.75 * len(d) / avg)) for t in hit)
         res.append((len(hit), sc, s))
@@ -121,15 +122,19 @@ def get(url, tok, raw=False):
     h = {"User-Agent": "skill-finder", "Accept": "application/vnd.github+json"}
     if tok and "api.github.com" in url:
         h["Authorization"] = "Bearer " + tok
-    try:
-        with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=20) as r:
-            t = r.read(400000 if raw else 40000000).decode("utf-8", "replace")
-    except urllib.error.HTTPError as e:
-        if e.code in (403, 429):
-            raise Limit("GitHub says too many requests. Wait a minute, or set GITHUB_TOKEN.")
-        if e.code in (404, 409, 422, 451):
-            return "" if raw else {}
-        raise
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=h), timeout=20) as r:
+                t = r.read(400000 if raw else 40000000).decode("utf-8", "replace")
+            break
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429):
+                if attempt < 2 and (e.headers.get("Retry-After") or e.headers.get("X-RateLimit-Remaining") != "0"):
+                    time.sleep(min(8, int(e.headers.get("Retry-After") or 2) + attempt * 2)); continue  # asked to slow down, not out of quota
+                raise Limit("GitHub says too many requests. Wait a minute, or set GITHUB_TOKEN.")
+            if e.code in (404, 409, 422, 451):
+                return "" if raw else {}
+            raise
     open(cf, "w").write(t)
     return t if raw else json.loads(t)
 
@@ -141,22 +146,31 @@ def search_github(need, tok, limit=5):
         return [], []
     notes, cand = [], {}
 
-    def run(terms, extras):
-        for extra in extras:
-            url = "https://api.github.com/search/repositories?q=" + urllib.parse.quote(" ".join(terms) + " " + extra) + "&sort=stars&order=desc&per_page=20"
-            for it in get(url, tok).get("items", []):
-                cand.setdefault(it["full_name"], it)
-
     # all key words together, then pairs of them, so the order you say them in does not decide the result.
-    # With a token: every pair of the first four (14 searches at most; GitHub allows 30 a minute).
-    # Without one: pairs of the first three with one query each (5 searches; the limit is 10 a minute).
+    # With a token: every pair of the first four (10 searches; GitHub allows 30 a minute).
+    # Without one: pairs of the first three (7 searches; the limit is 10 a minute).
     two = ("skill in:name,description,readme", "topic:agent-skills")
-    run(kw, two)
     kk = kw[:4] if tok else kw[:3]
-    for i in range(len(kk)):
-        for j in range(i + 1, len(kk)):
-            if len(kw) > 2:
-                run([kk[i], kk[j]], two if tok else two[:1])
+    queries = [(kw, e) for e in two]
+    if len(kw) > 2:
+        queries += [([kk[i], kk[j]], two[0]) for i in range(len(kk)) for j in range(i + 1, len(kk))]
+    queries += [(["topic:" + t], "") for t in ("agent-skills", "claude-skills")]
+    limited = []
+
+    def one(q):
+        terms, extra = q
+        n = 12 if not extra else 20
+        try:
+            return get("https://api.github.com/search/repositories?q=" + urllib.parse.quote((" ".join(terms) + " " + extra).strip()) + f"&sort=stars&order=desc&per_page={n}", tok).get("items", [])
+        except Limit:
+            limited.append(1); return []  # keep what the other searches found
+
+    with ThreadPoolExecutor(3 if tok else 2) as ex:  # GitHub turns away many searches at once
+        found = list(ex.map(one, queries))
+    big = {}
+    for (terms, extra), items in zip(queries, found):
+        for it in items:
+            (big if not extra else cand).setdefault(it["full_name"], it)
     scored = []
     for it in cand.values():
         topics = set(t.lower() for t in it.get("topics") or [])
@@ -169,25 +183,22 @@ def search_github(need, tok, limit=5):
     scored = sorted([x for x in scored if x[0] >= 1], key=lambda x: -x[1])
     n_c, n_big = (14, 12) if tok else (8, 6)
     # the big skill collections: their own description never names your topic, so they are always opened
-    big = {}
-    for topic in ("agent-skills", "claude-skills"):
-        for it in get("https://api.github.com/search/repositories?q=" + urllib.parse.quote("topic:" + topic) + "&sort=stars&order=desc&per_page=12", tok).get("items", []):
-            big.setdefault(it["full_name"], it)
     big = sorted(big.values(), key=lambda it: -it["stargazers_count"])[:n_big]
     todo = scored[:n_c] + [(0, it["stargazers_count"], it) for it in big if it["full_name"] not in {x[2]["full_name"] for x in scored[:n_c]}]
-    out = []
-    for rel, stars, it in todo:
+    def repo(job):
+        rel, stars, it = job
+        out = []
         try:
             tree = get(f"https://api.github.com/repos/{it['full_name']}/git/trees/{urllib.parse.quote(it['default_branch'])}?recursive=1", tok)
         except ValueError:
-            continue  # a file list too large to read: skip this repository, keep the rest
+            return out  # a file list too large to read: skip this repository, keep the rest
         paths = [t["path"] for t in tree.get("tree", []) if t["path"] == "SKILL.md" or t["path"].endswith("/SKILL.md")]
         if not paths:
-            continue
+            return out
         # up to 8 folders per repo, best folder-name match first; the description then decides which one is shown
         best = sorted(paths, key=lambda p: (-sum(1 for t in q if t in toks(os.path.dirname(p) or it["name"])), len(p)))[:8]
         if rel == 0 and not any(t in toks(os.path.dirname(best[0]) or it["name"]) for t in q):
-            continue  # a big collection with no folder named after your topic
+            return out  # a big collection with no folder named after your topic
         picks = []
         for p in best:
             raw = get(f"https://raw.githubusercontent.com/{it['full_name']}/{urllib.parse.quote(it['default_branch'])}/{urllib.parse.quote(p)}", None, raw=True)
@@ -208,16 +219,23 @@ def search_github(need, tok, limit=5):
             out.append(dict(skill=name or os.path.basename(folder) or it["name"], repo=it["full_name"], stars=stars, license={"NOASSERTION": "unclear"}.get((it.get("license") or {}).get("spdx_id"), (it.get("license") or {}).get("spdx_id") or "none"),
                             updated=(it.get("pushed_at") or "")[:10], desc=desc or (it.get("description") or ""), matched=matched, of=len(q), skills_in_repo=len(paths), flags=flags,
                             url=f"https://github.com/{it['full_name']}" + (f"/tree/{it['default_branch']}/{folder}" if folder else "")))
-    need_hits = max(1, math.ceil(len(q) / 2))
+        return out
+
+    with ThreadPoolExecutor(8 if tok else 3) as ex:
+        out = [o for part in ex.map(repo, todo) for o in part]
+    need_hits = min(2, len(q))
     fit = [o for o in out if o["matched"] >= need_hits]
     if sum(1 for o in fit if o["stars"] >= 10) >= 3:  # drop near-unknown repos when there is enough choice
         fit = [o for o in fit if o["stars"] >= 10]
-    fit.sort(key=lambda o: (-o["stars"], -o["matched"]))
+    half = math.ceil(len(q) / 2)  # skills that fit at least half of the key words come before the looser fits
+    fit.sort(key=lambda o: (o["matched"] < half, -o["stars"], -o["matched"]))
     seen, res = set(), []
     for o in fit:
         if (o["repo"], o["skill"]) in seen:
             continue
         seen.add((o["repo"], o["skill"])); res.append(o)
+    if limited:
+        notes.append(f"GitHub turned away {len(limited)} of {len(queries)} searches (too many requests), so this list may be short. Wait a minute and ask again.")
     notes.append(f"{len(cand) + len(big)} repositories looked at, {len(out)} skill folders read, {len(res)} fit at least {need_hits} of your {len(q)} key words.")
     return res[:limit], notes
 

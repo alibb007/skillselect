@@ -5,7 +5,7 @@ description: Use when the user wants to do a task and no skill already loaded cl
 
 # Find a skill
 
-1. Put what the user wants into 3 to 8 plain words, in their own terms.
+1. Put what the user wants into 3 to 5 topic words: the kind of thing they want, plus one or two other common names or the file type for it (for "turn my quarterly sales numbers into a slide deck": `slide deck presentation pptx`). Leave out their own details such as dates, amounts and names.
 2. Run the finder by its full path (this skill's base directory + `scripts/find_skills.py`). Do not `cd` first:
 
    `python3 "<base directory>/scripts/find_skills.py" "<those words>"`

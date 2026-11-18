@@ -1,0 +1,97 @@
+{
+ "need": "slide deck presentation pptx",
+ "key_words": [
+  "slide",
+  "deck",
+  "presentation",
+  "pptx"
+ ],
+ "installed_total": 19,
+ "local": [
+  {
+   "name": "pptx",
+   "desc": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+   "path": "installed/pptx",
+   "matched": 4,
+   "of": 4
+  }
+ ],
+ "online": [
+  {
+   "skill": "pptx",
+   "repo": "anthropics/skills",
+   "stars": 197191,
+   "license": "none",
+   "updated": "2026-11-16",
+   "desc": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+   "matched": 4,
+   "of": 4,
+   "skills_in_repo": 20,
+   "flags": [
+    "no license"
+   ],
+   "url": "https://github.com/anthropics/skills/tree/main/skills/pptx"
+  },
+  {
+   "skill": "pptx-generator",
+   "repo": "nexu-io/open-design",
+   "stars": 108329,
+   "license": "Apache-2.0",
+   "updated": "2026-11-18",
+   "desc": "Create and edit PowerPoint presentations from scratch with PptxGenJS — MiniMax's production-tested deck pipeline.",
+   "matched": 3,
+   "of": 4,
+   "skills_in_repo": 562,
+   "flags": [],
+   "url": "https://github.com/nexu-io/open-design/tree/main/skills/pptx-generator"
+  },
+  {
+   "skill": "officecli-pptx",
+   "repo": "iOfficeAI/OfficeCLI",
+   "stars": 33433,
+   "license": "Apache-2.0",
+   "updated": "2026-11-17",
+   "desc": "Use this skill any time a .pptx file is involved -- as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file; editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions 'deck', 'slides', 'presentation', 'pitch', or references a .pptx filename.",
+   "matched": 4,
+   "of": 4,
+   "skills_in_repo": 12,
+   "flags": [],
+   "url": "https://github.com/iOfficeAI/OfficeCLI/tree/main/skills/officecli-pptx"
+  },
+  {
+   "skill": "frontend-slides",
+   "repo": "zarazhangrui/frontend-slides",
+   "stars": 32545,
+   "license": "MIT",
+   "updated": "2026-06-23",
+   "desc": "Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, convert a PPT/PPTX to web, or create slides for a talk/pitch. Helps non-designers discover their aesthetic through visual exploration rather than abstract choices.",
+   "matched": 2,
+   "of": 4,
+   "skills_in_repo": 2,
+   "flags": [],
+   "url": "https://github.com/zarazhangrui/frontend-slides"
+  },
+  {
+   "skill": "genoffice",
+   "repo": "genspark-ai/genoffice",
+   "stars": 12599,
+   "license": "Apache-2.0",
+   "updated": "2026-11-18",
+   "desc": "Create, convert, read and edit Office documents locally with GenOffice's command line. Build a new presentation (pptx) from a brief through a checked outline, per-page spec and render pipeline, a new spreadsheet (xlsx) from CSV or JSON data with formulas, a new Word document (docx) from Markdown or HTML, or a PDF; convert between pdf, docx, xlsx, pptx, md, html and csv; read the structure and text of an existing file (including the user's own docx / xlsx / pptx as source material) and apply structured edits to it. Use whenever the user asks for a slide deck, presentation, spreadsheet, workbook, report, Word document or any real Office file, a format conversion, a rewrite of part of an existing document, or wants the result opened in the GenOffice editor. Documents are processed locally; only search, image and media send the query or the referenced file to the provider configured in GenOffice.",
+   "matched": 4,
+   "of": 4,
+   "skills_in_repo": 43,
+   "flags": [],
+   "url": "https://github.com/genspark-ai/genoffice/tree/main/skills/genoffice"
+  }
+ ],
+ "notes": [
+  "96 repositories looked at, 15 skill folders read, 12 fit at least 2 of your 4 key words."
+ ],
+ "recommended": {
+  "name": "pptx",
+  "where": "installed",
+  "why": "You already have it, so there is nothing to download.",
+  "path": "installed/pptx"
+ }
+}

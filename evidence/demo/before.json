@@ -1,6 +1,0 @@
-{
- "request": "I need to turn my quarterly sales numbers into a slide deck for Monday's board meeting.",
- "model": "claude-opus-5-5",
- "reply": "Happy to build the deck. I checked your project folder and there's no sales data in it, so I'll need the numbers from you first. You can paste them here or give me a file path (CSV, Excel export, anything works). The most useful things to include:\n\n1. **Revenue by quarter.** At least this quarter. Last quarter and the same quarter last year would let me show growth.\n2. **How you split the numbers.** For example by region, product line, channel or sales rep, whatever you normally report on.\n3. **Targets or forecast**, if you have them, so the deck can show actual vs. plan.\n4. **Other key metrics**, like deal count, average deal size, pipeline or churn.\n5. **The main story.** Two or three points you want the board to remember, such as \"Q3 beat plan by 8% on enterprise growth.\"\n6. **Company name and any brand colors**, if you want them on the slides.\n\nOnce I have the data, I'll make a presentation-ready deck with a title slide, a short summary of the main points, charts for each split, a plan-vs-actual slide and an outlook slide. You'll be able to download it as .pptx or PDF for Monday.",
- "skills_mentioned": 0
-}

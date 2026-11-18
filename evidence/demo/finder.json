@@ -1,0 +1,95 @@
+{
+ "need": "sales numbers slide deck",
+ "key_words": [
+  "sales",
+  "numbers",
+  "slide",
+  "deck"
+ ],
+ "installed_total": 19,
+ "local": [
+  {
+   "name": "pptx",
+   "desc": "Use this skill any time a .pptx or .potx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or .potx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates (.potx), layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx or .potx filename, regardless of what they plan to do with the content afterward. If a .pptx or .potx file needs to be opened, created, or touched, use this skill.",
+   "path": "installed/pptx",
+   "matched": 2,
+   "of": 4
+  }
+ ],
+ "online": [
+  {
+   "skill": "deck-open-slide-canvas",
+   "repo": "nexu-io/open-design",
+   "stars": 108317,
+   "license": "Apache-2.0",
+   "updated": "2026-11-18",
+   "desc": "Locked 1920x1080 canvas deck with React component-level free composition, not bound to a fixed template.",
+   "matched": 2,
+   "of": 4,
+   "skills_in_repo": 562,
+   "flags": [],
+   "url": "https://github.com/nexu-io/open-design/tree/main/skills/deck-open-slide-canvas"
+  },
+  {
+   "skill": "codex-slides-deck",
+   "repo": "nexu-io/codex-slides",
+   "stars": 986,
+   "license": "MIT",
+   "updated": "2026-07-21",
+   "desc": "Compatibility entry point for scenario-led creation, Design Files, brand systems, inspecting, revising, restyling, and exporting Codex Slides slide decks. Use when a user asks Codex to make a presentation, use project files, edit an existing deck, manage slide structure, apply brand or template rules, or export PDF/PPTX.",
+   "matched": 2,
+   "of": 4,
+   "skills_in_repo": 7,
+   "flags": [],
+   "url": "https://github.com/nexu-io/codex-slides/tree/master/skills/codex-slides-deck"
+  },
+  {
+   "skill": "many-ppt-skills",
+   "repo": "brycewang-stanford/many-ppt-skills",
+   "stars": 87,
+   "license": "unclear",
+   "updated": "2026-11-18",
+   "desc": "Pick an AI slide-deck skill and a concrete visual style from a curated registry, filtering on the requirements that decide it — editable in PowerPoint, speaker notes, a mandated corporate template, offline, PDF — with sample imagery and the style ids each project actually uses. Use when the user wants to make a presentation, deck or slides and has not already chosen a tool; asks which slide skill to use or what the difference between them is; wants to know what a style looks like before committing; or names a style id such as soft-editorial or swiss-grid. This skill routes to the skill that makes the deck — it does not make decks itself.",
+   "matched": 2,
+   "of": 4,
+   "skills_in_repo": 2,
+   "flags": [],
+   "url": "https://github.com/brycewang-stanford/many-ppt-skills"
+  },
+  {
+   "skill": "paperbanana-slide-deck",
+   "repo": "PlutoLei/paperbanana-skill",
+   "stars": 62,
+   "license": "MIT",
+   "updated": "2026-11-02",
+   "desc": "Create or revise a complete PaperBanana slide deck, including image slides and native editable PowerPoint text, tables, charts and diagrams. Use for PaperBanana deck requests; preserve the user's selected presentation tool and existing deck mode.",
+   "matched": 2,
+   "of": 4,
+   "skills_in_repo": 4,
+   "flags": [],
+   "url": "https://github.com/PlutoLei/paperbanana-skill/tree/master/plugins/paperbanana-slide-deck"
+  },
+  {
+   "skill": "mckinsey-market-research-deck",
+   "repo": "norahe0304-art/30x-mckinsey-research-deck",
+   "stars": 61,
+   "license": "MIT",
+   "updated": "2026-07-09",
+   "desc": "End-to-end playbook for producing a top-tier, McKinsey-style market-research deck (HTML page-turning presentation + print-ready PDF) for a brand or product category. Covers the research methodology (TAM/SAM/SOM bottom-up, Good/Better/Best framework, competitor profiling, customer pain points, unit economics, business case), the locked McKinsey visual design system, a reusable Python deck engine, an adversarial verify workflow for decision-grade numbers, an image-generation handoff, and a full QC checklist. Use when the user asks to \"do market research\", build a \"market research deck / report\", a \"McKinsey-style deck / presentation\", a \"GBB / Good-Better-Best analysis\", \"market sizing\", \"competitive landscape deck\", \"投资/商业案例 deck\", or to turn research into a polished slide deck or PDF.",
+   "matched": 3,
+   "of": 4,
+   "skills_in_repo": 2,
+   "flags": [],
+   "url": "https://github.com/norahe0304-art/30x-mckinsey-research-deck/tree/master/skills/mckinsey-market-research-deck"
+  }
+ ],
+ "notes": [
+  "111 repositories looked at, 15 skill folders read, 12 fit at least 2 of your 4 key words."
+ ],
+ "recommended": {
+  "name": "pptx",
+  "where": "installed",
+  "why": "You already have it, so there is nothing to download.",
+  "path": "installed/pptx"
+ }
+}

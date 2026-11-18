@@ -40,6 +40,9 @@ def front(text):
 
 # ---------- skills already on this computer ----------
 def local_dirs():
+    only = [d for d in os.environ.get("SKILL_FINDER_ONLY", "").split(os.pathsep) if d]
+    if only:  # look in these folders and nowhere else
+        return [d for d in only if os.path.isdir(d)]
     h = os.path.expanduser("~")
     ds = [h + "/.claude/skills", h + "/.claude/plugins", os.getcwd() + "/.claude/skills", h + "/.codex/skills", h + "/.cursor/skills", h + "/.agents/skills"]
     ds += [d for d in os.environ.get("SKILL_FINDER_DIRS", "").split(os.pathsep) if d]
@@ -79,7 +82,7 @@ def rank_local(need, skills, k=3):
     res = []
     for s, d in zip(skills, docs):
         hit = [t for t in q if t in d]
-        if len(hit) < min(len(q), max(2, math.ceil(0.6 * len(q)))):
+        if len(hit) < min(len(q), max(2, math.ceil(len(q) / 2))):
             continue
         sc = sum(math.log(1 + (N - df[t] + 0.5) / (df[t] + 0.5)) * d.count(t) * 2.5 / (d.count(t) + 1.5 * (0.25 + 0.75 * len(d) / avg)) for t in hit)
         res.append((len(hit), sc, s))
@@ -144,16 +147,16 @@ def search_github(need, tok, limit=5):
             for it in get(url, tok).get("items", []):
                 cand.setdefault(it["full_name"], it)
 
-    # all key words together, then each pair of the first three: 8 searches at most (GitHub allows 10 a minute without a token)
+    # all key words together, then pairs of them, so the order you say them in does not decide the result.
+    # With a token: every pair of the first four (14 searches at most; GitHub allows 30 a minute).
+    # Without one: pairs of the first three with one query each (5 searches; the limit is 10 a minute).
     two = ("skill in:name,description,readme", "topic:agent-skills")
     run(kw, two)
-    if not tok:
-        two = two[:1]
-    k3 = kw[:3]
-    for i in range(len(k3)):
-        for j in range(i + 1, len(k3)):
+    kk = kw[:4] if tok else kw[:3]
+    for i in range(len(kk)):
+        for j in range(i + 1, len(kk)):
             if len(kw) > 2:
-                run([k3[i], k3[j]], two)
+                run([kk[i], kk[j]], two if tok else two[:1])
     scored = []
     for it in cand.values():
         topics = set(t.lower() for t in it.get("topics") or [])
@@ -219,6 +222,19 @@ def search_github(need, tok, limit=5):
     return res[:limit], notes
 
 
+def recommend(res):
+    """One pick. A skill you already have wins: nothing to download and nothing new to trust."""
+    if res["local"]:
+        s = res["local"][0]
+        return dict(name=s["name"], where="installed", why="You already have it, so there is nothing to download.", path=s["path"])
+    if res["online"]:
+        full = [o for o in res["online"] if o["matched"] == o["of"]]
+        o = (full or res["online"])[0]
+        why = "Most stars among the skills that fit every key word." if full else "Most stars among the skills that fit."
+        return dict(name=o["skill"], where=f"GitHub, {o['repo']}, {o['stars']:,} stars", why=why, url=o["url"])
+    return None
+
+
 def main():
     a = sys.argv[1:]
     flags = {x for x in a if x.startswith("--")}
@@ -228,7 +244,8 @@ def main():
     need = " ".join(x for x in a if not x.startswith("--")).strip()
     if not need:
         print(__doc__); return 2
-    res = dict(need=need, key_words=list(dict.fromkeys(words(need)))[:4], local=rank_local(need, local_skills()), online=[], notes=[])
+    mine = local_skills()
+    res = dict(need=need, key_words=list(dict.fromkeys(words(need)))[:4], installed_total=len({s["name"] for s in mine}), local=rank_local(need, mine), online=[], notes=[])
     if "--no-online" not in flags:
         try:
             res["online"], res["notes"] = search_github(need, token("--no-token" not in flags), lim)
@@ -236,22 +253,26 @@ def main():
             res["notes"].append(str(e))
         except (urllib.error.URLError, OSError, ValueError) as e:
             res["notes"].append("GitHub could not be reached: " + str(e)[:80])
+    res["recommended"] = recommend(res)
     if "--json" in flags:
         print(json.dumps(res, indent=1)); return 0
     cut = lambda s, n=150: s if len(s) <= n else s[: n - 1].rstrip() + "…"
     print(f"You asked for: {need}\nKey words used: {', '.join(res['key_words'])}\n")
-    print(f"ALREADY ON THIS COMPUTER ({len(res['local'])})")
+    print(f"INSTALLED ON THIS COMPUTER ({len(res['local'])} fit, of {res['installed_total']} installed)")
     for s in res["local"]:
         print(f"  {s['name']}  ({s['matched']} of {s['of']} key words)\n     {cut(s['desc'])}\n     {s['path']}")
     if not res["local"]:
         print("  nothing that fits")
-    print(f"\nON GITHUB, MOST STARS FIRST ({len(res['online'])})")
+    print(f"\nAVAILABLE ON GITHUB, MOST STARS FIRST ({len(res['online'])})")
     for i, o in enumerate(res["online"], 1):
         fl = ("  ! " + ", ".join(o["flags"])) if o["flags"] else ""
         more = f", one of {o['skills_in_repo']} skills in this repo" if o["skills_in_repo"] > 1 else ""
         print(f"  {i}. {o['stars']:,} stars  {o['skill']}  [{o['repo']}{more}]\n     license {o['license']} · updated {o['updated']} · {o['matched']} of {o['of']} key words{fl}\n     {cut(o['desc'])}\n     {o['url']}")
     if not res["online"] and "--no-online" not in flags:
         print("  nothing found that fits")
+    r = res["recommended"]
+    print("\nRECOMMENDED")
+    print(f"  {r['name']}  ({r['where']})\n     {r['why']}" if r else "  nothing fits well enough to recommend")
     for n in res["notes"]:
         print("\n" + n)
     print("\nNothing was installed. Read a skill before you add it: it is text your assistant will trust.")

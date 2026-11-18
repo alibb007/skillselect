@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Demo: a shop owner asks for a reply to an angry customer. Without the plugin the answer runs to 312 words and leaves blanks such as [Customer Name]. With Straight Answer it is 103 words and ready to send." width="100%">
+  <img src="assets/demo.gif" alt="Demo: a user asks for a slide deck from quarterly sales numbers. Without the plugin the assistant replies with no mention of any skill. With Straight Answer the finder lists pptx as installed (1 of 19), five skills on GitHub from 108,317 stars down, and recommends pptx because it is already installed." width="100%">
 </p>
 
-<p align="center"><sub>This is a real request from the test, answered without the plugin and with it. The plain answer is 312 words with blanks to fill in, and the plugin's answer is 103 words, ready to send. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
+<p align="center"><sub>This is the same request, without the plugin and with it. Without it the assistant asks for the data and mentions no skill. With it you get the skills installed on your computer that fit, the ones available on GitHub with the most stars first, and one recommendation. Both sides are real runs on a machine with 19 public skills installed. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2A78D6?style=flat-square"></a>
@@ -69,7 +69,7 @@ This is a real run from 18 Nov 2026. Ask in your own words, or call it by name w
   <img src="assets/finder-light.svg" alt="Request: I want to create a video motion graphic. Results from GitHub, most stars first: heygen-com/hyperframes 86,483, nexu-io/openmotion 11,769, Vincentwei1021/anything2explainer 3,398, alchaincyf/huashu-motion 2,874, Tejashmakwana/motionmaxxing 1,663, each with license and last update. Nothing installed." width="100%">
 </picture>
 
-It looks at your own skills first and matches them by what each skill says about itself. Then it searches GitHub: it opens the repositories that mention your topic and the largest skill collections, reads the skill folders inside them, keeps the ones that fit at least half of your key words, and sorts them by stars. Each result shows the license and the last update, with a warning when a repository is archived, has no license, or has had no update for a year.
+It looks at your own skills first and matches them by what each skill says about itself. Then it searches GitHub: it opens the repositories that mention your topic and the largest skill collections, reads the skill folders inside them, keeps the ones that fit at least half of your key words, and sorts them by stars. Each result shows the license and the last update, with a warning when a repository is archived, has no license, or has had no update for a year. It ends with one recommendation, and a skill you already have wins over a download.
 
 Only the search words leave your machine, and they go to api.github.com. Nothing about your own skills is sent.
 

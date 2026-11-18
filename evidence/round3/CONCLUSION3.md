@@ -18,7 +18,8 @@ Round-2 sentence on this new set: 541 words, 2,573 output tokens.
 
 Reading: the short sentence does what it says (half the words, a quarter fewer tokens, no blanks). The AI judge still
 picks the longer answer, and its notes say why: "plus VAT, contingency and validity notes", "adds practical alternatives".
-It rewards extra advice. Whether a person prefers the short answer is not known: the author's blind votes on the page (evidence/round3/human-votes-21.json) are the test of that.
+It rewards extra advice. Whether a person prefers the short answer is not known. Step 4 of the rules (a person's blind votes) is not
+reported here.
 
 So there are two sentences with two different effects, and no single one that is both shorter and judged better:
 - round-2 sentence: judged better than plain (39-8-13 in round 2), costs about 50% more output tokens;

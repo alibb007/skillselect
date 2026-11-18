@@ -2,7 +2,7 @@
 
 | Folder | Sentence tested | Requests | Files |
 |---|---|---|---|
-| [round3](round3) | The one the plugin uses (short, finished) | 42 | `RULES3.md` (written first), `CONCLUSION3.md`, `requests.json`, `answers.json`, `verdicts.json`, `results.json`, `human-votes-21.json`, scripts |
+| [round3](round3) | The one the plugin uses (short, finished) | 42 | `RULES3.md` (written first), `CONCLUSION3.md`, `requests.json`, `answers.json`, `verdicts.json`, `results.json`, scripts |
 | [round2](round2) | Earlier sentence, without "short" | 60 | `RULES2.md` (written first), `CONCLUSION2.md`, `requests.json`, `answers.json`, `checks.json`, `verdicts.json`, `results.json`, scripts |
 | [harness](harness) | | | `lab.py`: one model call, model check, spend log |
 
@@ -13,7 +13,6 @@
 | `B` | request + the round-2 sentence |
 | `C` | request + a generic "be thorough" line (round 2) |
 | `A2` | request as written, second run (round 2, noise check) |
-| `human-votes-21.json` rows | request id, the person's pick, the AI judge's pick; `B` there means the short answer |
 
 | Note | |
 |---|---|

@@ -6,6 +6,12 @@
 </p>
 
 <p align="center">
+  <img src="assets/demo.gif" alt="Demo: a shop owner asks for a reply to an angry customer. Without the plugin the answer runs to 312 words and leaves blanks such as [Customer Name]. With Straight Answer it is 103 words and ready to send." width="100%">
+</p>
+
+<p align="center"><sub>This is a real request from the test, answered without the plugin and with it. The plain answer is 312 words with blanks to fill in, and the plugin's answer is 103 words, ready to send. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
+
+<p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2A78D6?style=flat-square"></a>
   <img alt="Claude Code plugin" src="https://img.shields.io/badge/Claude_Code-plugin-101A2B?style=flat-square">
   <img alt="Python 3, standard library only" src="https://img.shields.io/badge/python-3_·_standard_library_only-178A63?style=flat-square">
@@ -54,13 +60,6 @@ I ran 42 everyday requests, and Claude Opus answered each one twice: once as wri
   <img src="assets/proof-light.svg" alt="Words per answer 488 plain, 245 with the plugin. Answers with a blank: 6 of 42 plain, 0 of 42 with the plugin. Output tokens 1,946 plain, 1,447 with the plugin." width="100%">
 </picture>
 
-I judged 21 of the pairs blind and picked the short answer 13 times and the plain one 6 times. An AI judge read all 42 pairs and preferred the longer answer 29 times to 7. In its notes it praises the extra advice. So this plugin is for people who want the short answer.
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/vote-dark.svg">
-  <img src="assets/vote-light.svg" alt="A person, 21 pairs, blind: short answer 13, no difference 2, plain answer 6. An AI judge, 42 pairs: short 7, no clear winner 6, plain 29." width="100%">
-</picture>
-
 ## The finder
 
 This is a real run from 18 Nov 2026. Ask in your own words, or call it by name with `/straight-answer:find-skill`.
@@ -92,7 +91,7 @@ Everything behind the numbers is in the [evidence](evidence) folder: the rules w
 ## Limits
 
 - Tested on one model, Claude Opus, with requests written by the same model.
-- One person voted, on 21 pairs.
+- An AI judge read all 42 pairs and preferred the longer answer 29 times to 7. In its notes it praises the extra advice. So this plugin is for people who want the short answer.
 - The finder matches words, so a search for a legal contract review also returned smart-contract skills. Read a skill before you add it.
 - Without a GitHub token the finder can run about two searches an hour.
 

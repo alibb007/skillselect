@@ -64,26 +64,6 @@ def proof(c):
     return svg(1200, 300, b)
 
 
-def split(c, x, y, w, parts):
-    tot = sum(v for v, _ in parts); b = ""; cx = x
-    for v, col in parts:
-        pw = (w - 2 * (len(parts) - 1)) * v / tot
-        b += r(round(cx, 1), y, round(pw, 1), 44, col, 6) + t(round(cx + pw / 2, 1), y + 29, str(v), 19, c["on"], 800, "middle"); cx += pw + 2
-    return b
-
-
-def vote(c):
-    b = r(.5, .5, 1199, 259, c["panel"], 16, c["line"])
-    b += t(32, 48, "Who prefers the short answer?", 24, c["ink"], 800, ls=-.5)
-    b += t(32, 96, "A person, 21 pairs, blind", 16, c["ink"], 600) + split(c, 330, 68, 838, [(13, c["blue"]), (2, c["grey"]), (6, c["orange"])])
-    b += t(32, 162, "An AI judge, 42 pairs", 16, c["ink"], 600) + split(c, 330, 134, 838, [(7, c["blue"]), (6, c["grey"]), (29, c["orange"])])
-    lx = 330
-    for col, lab in ((c["blue"], "short answer, with the plugin"), (c["grey"], "no clear winner"), (c["orange"], "plain answer")):
-        b += r(lx, 208, 14, 14, col, 3) + t(lx + 22, 220, lab, 14, c["mute"]); lx += 60 + len(lab) * 8
-    b += t(32, 220, "They disagree.", 14, c["mute"])
-    return svg(1200, 260, b)
-
-
 def finder(c):
     rows = [("86,483", "heygen-com/hyperframes", "Apache-2.0 · updated 18 Nov 2026"), ("11,769", "nexu-io/openmotion", "Apache-2.0 · updated 18 Nov 2026"),
             ("3,398", "Vincentwei1021/anything2explainer", "license unclear · updated 18 Nov 2026"), ("2,874", "alchaincyf/huashu-motion", "MIT · updated 16 Nov 2026"),
@@ -116,7 +96,7 @@ def flow(c):
 
 
 os.makedirs(OUT, exist_ok=True)
-for name, fn in (("hero", hero), ("proof", proof), ("vote", vote), ("finder", finder), ("flow", flow)):
+for name, fn in (("hero", hero), ("proof", proof), ("finder", finder), ("flow", flow)):
     for mode, c in T.items():
         open(os.path.join(OUT, f"{name}-{mode}.svg"), "w").write(fn(c))
 print("wrote", sorted(os.listdir(OUT)))

@@ -11,7 +11,7 @@ D = json.load(open(ROOT + "/evidence/round5/results.json")); R = D["runs"]
 S = json.load(open(ROOT + "/evidence/round5/deck-B-session.json"))
 JOBS = [("deck", "slide deck"), ("model", "financial model"), ("pdf", "PDF forms"), ("landing", "landing page"), ("webtest", "web app test")]
 JOBS = [j for j in JOBS if j[0] + "-A" in R and j[0] + "-B" in R]
-FPS, DUR = 24, 24.0
+FPS, DUR = 24, 42.0
 INSTALLED = ["academy-guide", "algorithmic-art", "brand-guidelines", "canvas-design", "claude-api", "discernment-nudge", "doc-coauthoring", "docx", "frontend-design", "internal-comms",
              "mcp-builder", "pdf", "pptx", "skill-creator", "slack-gif-creator", "theme-factory", "web-artifacts-builder", "webapp-testing", "xlsx"]  # the 19 public skills in the test folder
 
@@ -149,7 +149,7 @@ const F=D.f,mx=Math.max(...F.rows.map(o=>o.stars),1),pickAt=D.installed.indexOf(
 $('#rail').innerHTML='<div class="st" data-s="1"><h4><em>1</em>What you have</h4><div class="body"><div class="dots">'+D.installed.map((n,i)=>'<i data-d="'+i+'"></i>').join('')+'</div><div class="sm"><b>'+F.pick+'</b> fits · '+F.fit+' of '+F.total+' installed</div><div class="sm" style="margin-top:3px">checked on your computer, nothing sent</div></div></div>'
  +'<div class="st" data-s="2"><h4><em>2</em>The best on GitHub</h4><div class="body">'+F.rows.slice(0,4).map(o=>'<div class="sb"><span>'+o.skill+'</span><u><i data-w="'+Math.max(4,100*o.stars/mx)+'"></i></u><b>'+fmt(o.stars)+'</b></div>').join('')+'<div class="sm" style="margin-top:6px">most stars first · license · last update</div></div></div>'
  +'<div class="st" data-s="3"><h4><em>3</em>How to use it</h4><div class="body"><div class="cmd">'+F.call.replace(/</g,'&lt;')+'</div><div class="tags">'+F.needs.slice(0,3).map(n=>'<span>needs '+n+'</span>').join('')+'<span class="ok">nothing installed</span></div></div></div>';
-const T0=4.3,TT=4.55,TR=5.6,S=[0,5.75,7.75,9.95],T1=11.2;   // sent, tool call, tool result, the three steps, done
+const T0=8.2,TT=8.6,TR=10.4,S=[0,10.6,14.8,19.8],T1=22.0;   // sent, tool call, tool result, the three steps, done
 // the clock shows the session's real seconds: the wait for the tool is sped up, the rest runs to the logged end
 const realS=t=>t<T0?0:t<TR?D.t_res*(t-T0)/(TR-T0):Math.min(D.t_done,D.t_res+(D.t_done-D.t_res)*(t-TR)/(T1-TR));
 const cur=t=>t>=S[3]?3:t>=S[2]?2:t>=S[1]?1:0;
@@ -158,7 +158,7 @@ function cc(t){
   if(t>=T0){h+='<div class="me">&gt; <b>'+D.ask+'</b></div>';
     if(t>=TT){const run=t<TR;h+='<div class="tl"><span class="dot" style="background:'+(run?(Math.floor(t*4)%2?'#56657A':'#C9D5E6'):'#3FD1A2')+'"></span><b style="color:#fff">Bash</b>('+D.tool.replace(/</g,'&lt;')+')</div>'
       +'<div class="sub">⎿ '+(run?'Running… checking your skills, then GitHub':D.res_head+' <span style="color:#56657A">… +'+D.res_more+' lines</span>')+'</div>';}
-    if(t>=S[1]){const c=cur(t);h+='<div class="ans">';D.lines.forEach((l,i)=>{if(t>=S[l[0]])h+='<div class="ln s'+l[0]+(l[1].startsWith('<b>'+l[0])?' h':'')+(c===l[0]?' on'+c:'')+'" style="opacity:'+(c===l[0]?1:0.38)*cl((t-S[l[0]])/0.2)+'">'+(i===0?'<span class="dot" style="background:#C9D5E6"></span>':'')+l[1]+'</div>'});h+='</div>';}}
+    if(t>=S[1]){const c=cur(t);h+='<div class="ans">';D.lines.forEach((l,i)=>{if(t>=S[l[0]])h+='<div class="ln s'+l[0]+(l[1].startsWith('<b>'+l[0])?' h':'')+(c===l[0]?' on'+c:'')+'" style="opacity:'+(c===l[0]?1:0.38)*cl((t-S[l[0]])/0.4)+'">'+(i===0?'<span class="dot" style="background:#C9D5E6"></span>':'')+l[1]+'</div>'});h+='</div>';}}
   $('#cc').innerHTML=h;}
 // scene 3
 const M=D.med,xr=(a,b)=>(a/b).toFixed(1).replace('.0','')+'×';
@@ -174,24 +174,24 @@ $('#la').innerHTML=LA.map((w,i)=>'<u class="'+([3,9,14].includes(i)?'x':'')+'" d
 $('#lb').innerHTML=LB.map((w,i)=>'<u data-n="'+i+'" style="width:'+w+'px;background:#5B9FEA"></u>').join('');
 const AR='<svg viewBox="0 0 20 20"><path d="M3 10h13M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 $('#flow').innerHTML='<div><em>1</em>What you have</div>'+AR+'<div><em>2</em>The best on GitHub</div>'+AR+'<div><em>3</em>How to use it</div>';$('#endp').textContent='Which skill to use, and how. Short answers, too.';
-const A=3.0,B=12.6,Cc=17.6,E=21.2,fade=(t,a,b)=>Math.min(cl((t-a)/0.35),cl((b-t)/0.35));
+const A=5.5,B=25.4,Cc=33.4,E=38.6,fade=(t,a,b)=>Math.min(cl((t-a)/0.35),cl((b-t)/0.35));
 window.setT=function(t){
   $('#s1').hidden=t>=A;$('#s1').style.opacity=cl((A-t)/0.35);
-  $$('#chips .chip').forEach(e=>{const a=0.1+0.03*(+e.dataset.i);e.style.opacity=cl((t-a)/0.15)*(t>1.05?1-0.72*cl((t-1.05)/0.3):1);e.style.transform='scale('+(0.7+0.3*ease((t-a)/0.25))+')'});
-  $$('.q').forEach(e=>{const a=1.15+0.3*(+e.dataset.q);e.style.opacity=cl((t-a)/0.2);e.style.transform='translateY('+(1-ease((t-a)/0.3))*14+'px) scale('+(0.9+0.1*ease((t-a)/0.3))+')'});
+  $$('#chips .chip').forEach(e=>{const a=0.3+0.085*(+e.dataset.i);e.style.opacity=cl((t-a)/0.25)*(t>2.6?1-0.72*cl((t-2.6)/0.5):1);e.style.transform='scale('+(0.7+0.3*ease((t-a)/0.25))+')'});
+  $$('.q').forEach(e=>{const a=2.9+0.8*(+e.dataset.q);e.style.opacity=cl((t-a)/0.2);e.style.transform='translateY('+(1-ease((t-a)/0.3))*14+'px) scale('+(0.9+0.1*ease((t-a)/0.3))+')'});
   $('#s2').hidden=t<A||t>=B;$('#s2').style.opacity=fade(t,A,B);
-  const k=cl((t-A-0.2)/0.95);$('#typed').textContent=t<T0?D.ask.slice(0,Math.round(D.ask.length*k)):'';$('#caret').hidden=t>=T0&&Math.floor(t*2)%2===1;
+  const k=cl((t-A-0.4)/2.1);$('#typed').textContent=t<T0?D.ask.slice(0,Math.round(D.ask.length*k)):'';$('#caret').hidden=t>=T0&&Math.floor(t*2)%2===1;
   cc(t);$('#clock').hidden=t<T0;$('#clock').textContent=(t>=T1?'done in ':t<TR?'» ':'')+Math.round(realS(t))+' s'+(t>=T1?' · '+fmt(D.tokens)+' tokens':'');
-  $$('.st').forEach(e=>{const s=+e.dataset.s,a=S[s],on=cl((t-a)/0.25),act=cur(t)===s;e.style.borderColor=act?(s===3?'#3FD1A2':'#5B9FEA'):'#28364A';e.querySelector('.body').style.opacity=on;e.style.opacity=on<=0?0.32:(act?1:0.5);e.style.transform='scale('+(act?1.025:1)+')';
+  $$('.st').forEach(e=>{const s=+e.dataset.s,a=S[s],on=cl((t-a)/0.45),act=cur(t)===s;e.style.borderColor=act?(s===3?'#3FD1A2':'#5B9FEA'):'#28364A';e.querySelector('.body').style.opacity=on;e.style.opacity=on<=0?0.32:(act?1:0.5);e.style.transform='scale('+(act?1.025:1)+')';
     e.querySelector('h4 em').style.background=on>0.5?(s===3?'#3FD1A2':'#5B9FEA'):'#28364A';e.querySelector('h4 em').style.color=on>0.5?'#0B111B':'#94A3B8';
-    e.querySelectorAll('.dots i').forEach(d=>{const i=+d.dataset.d,b=a+0.02*i;d.style.background=(t>b+0.35&&i===D.installed.indexOf(D.f.pick))?'#5B9FEA':(t>b?'#3A4A61':'#28364A')});
-    e.querySelectorAll('.sb i').forEach((b,i)=>b.style.width=(+b.dataset.w)*ease((t-a-0.1-0.07*i)/0.45)+'%')});
+    e.querySelectorAll('.dots i').forEach(d=>{const i=+d.dataset.d,b=a+0.05*i;d.style.background=(t>b+0.6&&i===D.installed.indexOf(D.f.pick))?'#5B9FEA':(t>b?'#3A4A61':'#28364A')});
+    e.querySelectorAll('.sb i').forEach((b,i)=>b.style.width=(+b.dataset.w)*ease((t-a-0.3-0.2*i)/0.8)+'%')});
   $('#s3').hidden=t<B||t>=Cc;$('#s3').style.opacity=fade(t,B,Cc);
-  $$('#grid .m').forEach(e=>{const a=B+0.25+0.85*(+e.dataset.m);e.style.opacity=cl((t-a)/0.2);e.style.transform='translateY('+(1-ease((t-a)/0.3))*12+'px)';e.querySelectorAll('.br i').forEach(i=>i.style.width=(+i.dataset.w)*ease((t-a-0.1)/0.5)+'%')});
-  $('#ql').style.opacity=cl((t-B-2.9)/0.25);
+  $$('#grid .m').forEach(e=>{const a=B+0.4+1.8*(+e.dataset.m);e.style.opacity=cl((t-a)/0.35);e.style.transform='translateY('+(1-ease((t-a)/0.3))*12+'px)';e.querySelectorAll('.br i').forEach(i=>i.style.width=(+i.dataset.w)*ease((t-a-0.3)/0.9)+'%')});
+  $('#ql').style.opacity=cl((t-B-5.8)/0.4);
   $('#s4').hidden=t<Cc||t>=E;$('#s4').style.opacity=fade(t,Cc,E);
-  $$('#la u').forEach(e=>e.style.opacity=cl((t-Cc-0.2-0.02*(+e.dataset.n))/0.1));$$('#lb u').forEach(e=>e.style.opacity=cl((t-Cc-0.2-0.02*(+e.dataset.n))/0.1));
-  $$('.fact').forEach(e=>{const a=Cc+0.7+0.8*(+e.dataset.f);e.style.opacity=cl((t-a)/0.3);e.style.transform='translateX('+(1-ease((t-a)/0.35))*16+'px)'});
+  $$('#la u').forEach(e=>e.style.opacity=cl((t-Cc-0.3-0.05*(+e.dataset.n))/0.15));$$('#lb u').forEach(e=>e.style.opacity=cl((t-Cc-0.3-0.05*(+e.dataset.n))/0.15));
+  $$('.fact').forEach(e=>{const a=Cc+1.3+1.6*(+e.dataset.f);e.style.opacity=cl((t-a)/0.3);e.style.transform='translateX('+(1-ease((t-a)/0.35))*16+'px)'});
   $('#s5').hidden=t<E;$('#s5').style.opacity=cl((t-E)/0.35);
 };setT(0);
 </script>"""
@@ -204,7 +204,7 @@ with sync_playwright() as p:
     pg.goto("file://" + tmp + "/demo.html")
     prev = os.environ.get("DEMO_PREVIEW_DIR")
     if prev:
-        for name, tt in (("a", 0.9), ("b", 2.4), ("c", 5.2), ("d", 6.6), ("e", 8.8), ("f", 11.6), ("g", 14.4), ("h", 16.9), ("i", 20.4)):
+        for name, tt in (("a", 2.0), ("b", 5.0), ("c", 9.6), ("d", 13.5), ("e", 18.5), ("f", 24.0), ("g", 29.0), ("h", 32.8), ("i", 37.5)):
             pg.evaluate(f"setT({tt})"); pg.screenshot(path=f"{prev}/demo-{name}.png")
     if not os.environ.get("DEMO_STILLS_ONLY"):
         for f in range(int(FPS * DUR)):

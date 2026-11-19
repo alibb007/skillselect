@@ -9,7 +9,7 @@
   <img src="assets/demo.gif" alt="Demo: a person has 19 skills and asks which one to use for a slide deck. In Claude Code the plugin checks the installed skills and finds pptx, lists five GitHub skills by stars, recommends pptx and shows the command /pptx. It took 27 seconds and 39,354 tokens. Across five jobs it used 4.6 times fewer tokens, was 4.8 times faster, and passed 34 of 35 quality checks against 33 of 35. In a separate test of 42 requests, answers came back at half the words (245 against 488)." width="100%">
 </p>
 
-<p align="center"><sub>The Claude Code window is redrawn from a saved session, with links cut to fit. The request shown took 27 seconds and one step. Across five jobs the plugin used 4.6 times fewer tokens (39,354 against 179,393) and answered 4.8 times faster (19 seconds against 93), in 1 step instead of 14. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
+<p align="center"><sub>The Claude Code window is redrawn from a saved session, with links cut to fit and the wait for the search sped up. The request shown took 27 seconds and one step. Across five jobs the plugin used 4.6 times fewer tokens (39,354 against 179,393) and answered 4.8 times faster (19 seconds against 93), in 1 step instead of 14. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2A78D6?style=flat-square"></a>

@@ -1,0 +1,97 @@
+{
+ "request": "Build a landing page for my product. It is Papertrail, a note-taking app for students, $4 a month.",
+ "the_five_fits": [
+  "landing-page-generator",
+  "landing",
+  "epic-design",
+  "copywriting",
+  "page-cro"
+ ],
+ "runs": {
+  "P1": {
+   "asked": "with \"use whatever skills you have that help\"",
+   "skills_loaded": [
+    "landing",
+    "copywriting"
+   ],
+   "loaded_outside_the_test_folder": 0,
+   "of_the_five_fits": 2,
+   "turns": 9,
+   "sec": 144.5,
+   "cost": 0.628,
+   "models": [
+    "claude-opus-5-5"
+   ]
+  },
+  "P2": {
+   "asked": "with \"use whatever skills you have that help\"",
+   "skills_loaded": [
+    "copywriting"
+   ],
+   "loaded_outside_the_test_folder": 0,
+   "of_the_five_fits": 1,
+   "turns": 5,
+   "sec": 93.3,
+   "cost": 0.442,
+   "models": [
+    "claude-opus-5-5"
+   ]
+  },
+  "P3": {
+   "asked": "with \"use whatever skills you have that help\"",
+   "skills_loaded": [
+    "landing"
+   ],
+   "loaded_outside_the_test_folder": 0,
+   "of_the_five_fits": 1,
+   "turns": 5,
+   "sec": 102.0,
+   "cost": 0.493,
+   "models": [
+    "claude-opus-5-5"
+   ]
+  },
+  "Q1": {
+   "asked": "the plain request",
+   "skills_loaded": [
+    "landing"
+   ],
+   "loaded_outside_the_test_folder": 0,
+   "of_the_five_fits": 1,
+   "turns": 5,
+   "sec": 101.0,
+   "cost": 0.419,
+   "models": [
+    "claude-opus-5-5"
+   ]
+  },
+  "Q2": {
+   "asked": "the plain request",
+   "skills_loaded": [
+    "landing"
+   ],
+   "loaded_outside_the_test_folder": 0,
+   "of_the_five_fits": 1,
+   "turns": 5,
+   "sec": 88.5,
+   "cost": 0.396,
+   "models": [
+    "claude-opus-5-5"
+   ]
+  },
+  "Q3": {
+   "asked": "the plain request",
+   "skills_loaded": [
+    "landing"
+   ],
+   "loaded_outside_the_test_folder": 0,
+   "of_the_five_fits": 1,
+   "turns": 6,
+   "sec": 92.1,
+   "cost": 0.426,
+   "models": [
+    "claude-opus-5-5"
+   ]
+  }
+ }
+}

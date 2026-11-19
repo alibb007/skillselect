@@ -1,5 +1,7 @@
 {
  "ask": "build a landing page for my product",
+ "query": "landing page website marketing html",
+ "key_words": 5,
  "installed": [
   "algorithmic-art",
   "brainstorming",
@@ -52,26 +54,83 @@
   "xlsx",
   "youtube-downloader"
  ],
+ "scores": {
+  "algorithmic-art": 0,
+  "brainstorming": 0,
+  "changelog-generator": 0,
+  "claude-api": 0,
+  "code-reviewer": 0,
+  "content-production": 0,
+  "copywriting": 2,
+  "data-quality-auditor": 0,
+  "deploy-to-vercel": 0,
+  "dispatching-parallel-agents": 0,
+  "doc-coauthoring": 0,
+  "docx": 1,
+  "domain-name-brainstormer": 0,
+  "dpdpa": 0,
+  "epic-design": 2,
+  "executing-plans": 0,
+  "file-organizer": 0,
+  "financial-health": 0,
+  "gdpr-compliance": 0,
+  "image-enhancer": 0,
+  "internal-comms": 0,
+  "invoice-organizer": 0,
+  "landing": 3,
+  "landing-page-generator": 3,
+  "langsmith-fetch": 0,
+  "mcp-builder": 0,
+  "meeting-insights-analyzer": 0,
+  "page-cro": 2,
+  "pdf": 0,
+  "pptx": 0,
+  "pr-review-expert": 0,
+  "raffle-winner-picker": 0,
+  "receiving-code-review": 0,
+  "requesting-code-review": 0,
+  "seo-auditor": 0,
+  "skill-creator": 0,
+  "slack-gif-creator": 0,
+  "stock-analysis": 0,
+  "systematic-debugging": 0,
+  "tailored-resume-generator": 0,
+  "test-driven-development": 0,
+  "using-git-worktrees": 0,
+  "vercel-cli-with-tokens": 0,
+  "vercel-optimize": 0,
+  "vercel-react-best-practices": 0,
+  "verification-before-completion": 0,
+  "webapp-testing": 0,
+  "writing-plans": 0,
+  "xlsx": 1,
+  "youtube-downloader": 0
+ },
  "fits": [
   {
    "name": "landing-page-generator",
-   "use": "builds a landing page as a Next.js component with Tailwind"
+   "when": "use it if you want the page as a Next.js TSX component with Tailwind.",
+   "call": "/landing-page-generator"
   },
   {
    "name": "landing",
-   "use": "builds a premium single-file HTML page with 3D effects and scroll animation"
-  },
-  {
-   "name": "page-cro",
-   "use": "fixes a page that already exists but isn't converting"
-  },
-  {
-   "name": "copywriting",
-   "use": "writes headlines, taglines and CTAs"
+   "when": "use it if you want one high-end HTML file with 3D CSS, GSAP scroll effects and parallax.",
+   "call": "/landing"
   },
   {
    "name": "epic-design",
-   "use": "for cinematic, scroll-driven landing pages"
+   "when": "use it if the page should feel cinematic, with scrollytelling, text reveals and Apple-style motion.",
+   "call": "/epic-design"
+  },
+  {
+   "name": "copywriting",
+   "when": "use it for the headline, tagline and call-to-action text before you build.",
+   "call": "/copywriting"
+  },
+  {
+   "name": "page-cro",
+   "when": "use it after the page is live, if it isn't getting signups or sales.",
+   "call": "/page-cro"
   }
  ],
  "github": [
@@ -80,50 +139,57 @@
    "skill": "design-taste-frontend",
    "repo": "Leonxlnx/taste-skill",
    "license": "MIT",
-   "updated": "2026-11-08"
+   "updated": "2026-11-08",
+   "when": "It builds polished company websites with plain copy, which suits a product landing page."
   },
   {
    "stars": 114811,
    "skill": "paperclip-page",
    "repo": "paperclipai/paperclip",
    "license": "MIT",
-   "updated": "2026-11-19"
+   "updated": "2026-11-19",
+   "when": "This one publishes pages to Paperclip's hosting and doesn't build them."
   },
   {
    "stars": 108338,
    "skill": "screenshots-marketing",
    "repo": "nexu-io/open-design",
    "license": "Apache-2.0",
-   "updated": "2026-11-18"
+   "updated": "2026-11-18",
+   "when": "It makes hero screenshots for a page with Playwright and doesn't build the page itself."
   },
   {
    "stars": 108338,
-   "skill": "saas-landing",
+   "skill": "kami-landing",
    "repo": "nexu-io/open-design",
    "license": "Apache-2.0",
-   "updated": "2026-11-18"
+   "updated": "2026-11-18",
+   "when": "It makes a print-style single-page document in a parchment-and-serif look."
   },
   {
-   "stars": 61258,
+   "stars": 61257,
    "skill": "marketing-psychology",
    "repo": "coreyhaines31/marketingskills",
    "license": "MIT",
-   "updated": "2026-11-18"
+   "updated": "2026-11-18",
+   "when": "It covers persuasion tactics for marketing and doesn't build pages."
   }
  ],
- "pick": {
-  "name": "landing-page-generator",
-  "where": "already installed",
-  "call": "/landing-page-generator <what you want>",
-  "why": "nothing to download",
-  "needs": "needs nothing extra"
+ "pick": "landing-page-generator",
+ "plain": {
+  "used": [
+   "landing"
+  ],
+  "runs": 6,
+  "one": 5,
+  "two": 1
  },
- "run": {
-  "tokens": 45204,
-  "sec": 17.4,
+ "after": {
+  "tokens": 46725,
+  "sec": 23.9,
   "steps": 1
  },
- "plain": {
+ "before": {
   "tokens": 528087,
   "sec": 111.4,
   "steps": 27

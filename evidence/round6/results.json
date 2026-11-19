@@ -5,6 +5,7 @@
   "cost": 0.472,
   "sec": 111.4,
   "steps": 27,
+  "turns": 28,
   "words": 672,
   "models": [
    "claude-opus-5-5"
@@ -148,19 +149,20 @@
   ]
  },
  "with_plugin": {
-  "tokens": 45204,
-  "cost": 0.115,
-  "sec": 17.4,
+  "tokens": 46725,
+  "cost": 0.138,
+  "sec": 23.9,
   "steps": 1,
-  "words": 186,
+  "turns": 2,
+  "words": 442,
   "models": [
    "claude-opus-5-5"
   ],
   "step_list": [
    {
-    "t": 4.89,
+    "t": 4.16,
     "tool": "Bash",
-    "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"landing page marketing website html\""
+    "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"landing page website marketing html\""
    }
   ]
  }

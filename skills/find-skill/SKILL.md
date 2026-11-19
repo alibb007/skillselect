@@ -1,6 +1,6 @@
 ---
 name: find-skill
-description: Use when the user wants to do a task and no skill already loaded clearly covers it, or when they ask which skill to use, how to use a skill, or to find, suggest or recommend a skill for something ("I want to create a motion graphic video", "which skill do I use for slide decks?", "find me a skill for X"). Checks the skills already installed on this computer, then the ones on public GitHub with the most stars first, recommends one, and says how to use it. Never installs anything.
+description: Use when the user wants to do a task and no skill already loaded clearly covers it, or when they ask which skill to use, how to use a skill, or to find, suggest or recommend a skill for something ("I want to create a motion graphic video", "which skill do I use for slide decks?", "find me a skill for X"). Reads every skill installed on this computer and picks the ones that fit, adds the best ones on public GitHub by stars, and says when and how to use each. Never installs anything.
 argument-hint: <what you want to do>
 ---
 
@@ -11,10 +11,10 @@ argument-hint: <what you want to do>
 
    `python3 "<base directory>/scripts/find_skills.py" "<those words>"`
 
-3. Show the user what came back, short, in the finder's three steps:
-   - **1. What you have**: the installed skills that fit, and how many are installed in total.
-   - **2. On GitHub**: keep the order (most stars first). For each: name, repository, stars, license, last update, link. Pass on the warnings as written: "no license", "archived", "no update for a year".
-   - **3. Recommended, and how to use it**: the finder's one pick and its reason, then its how-to lines as written: the command to call it, what it needs, and for a GitHub skill the command to add it. A skill they already have wins over a download. If the pick is plainly about something else (the search matches words, not meaning), say so and name the next one that fits.
+3. Show the user what came back, short, in the finder's three steps. For every skill you list, add one line on when to use it for what they asked, taken from the skill's own description, and its command as the finder printed it:
+   - **1. What you have**: the installed skills that fit, and how many are installed in total. Per skill: when to use it for this request, then its `call` line.
+   - **2. On GitHub**: keep the order (most stars first). Per skill: name, repository, stars, license, last update, link, when to use it for this request, then its `add` and `call` lines. Pass on the warnings as written: "no license", "archived", "no update for a year". If a skill is plainly about something else (the search matches words, not meaning), say so in its line.
+   - **3. Start with this one**: the finder's one pick and its reason, then what it needs. A skill they already have wins over a download.
 4. If the user picks a different one, get its how-to: `python3 "<base directory>/scripts/find_skills.py" --how "<its name, or its GitHub link>"`.
 5. Stop there. Never install, clone, download or copy a skill yourself. The user runs the add command, or tells you to.
 

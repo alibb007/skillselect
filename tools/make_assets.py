@@ -37,7 +37,7 @@ def hero(c):
     b += t(274, 344, "then say the job", 17, c["mute"], 500)
     b += step_card(c, 740, 52, 410, 1, "What you have", "the skills on your computer that fit", c["blue"])
     b += step_card(c, 740, 164, 410, 2, "The best on GitHub", "most stars first, license, last update", c["blue"])
-    b += step_card(c, 740, 276, 410, 3, "How to use it", "the command, what it needs, how to add it", c["green"])
+    b += step_card(c, 740, 276, 410, 3, "When and how to use each", "one line and a command for every skill", c["green"])
     return svg(1200, 420, b)
 
 
@@ -80,7 +80,7 @@ def flow(c):
         return f'<line x1="{x1}" x2="{x2 - 8}" y1="{y}" y2="{y}" stroke="{c["grey"]}" stroke-width="2"/><path d="M{x2 - 10} {y - 6} L{x2} {y} L{x2 - 10} {y + 6} Z" fill="{c["grey"]}"/>'
     b = r(.5, .5, 1199, 299, c["panel"], 16, c["line"])
     b += t(32, 44, "WHEN YOU HAVE A JOB", 13, c["mute"], 700, font=MONO, ls=1)
-    b += box(32, 60, 236, "You say the job", "in your own words") + arrow(268, 316, 95) + box(316, 60, 252, "1  What you have", "your own skills, checked first", c["blue"]) + arrow(568, 616, 95) + box(616, 60, 252, "2  The best on GitHub", "most stars first", c["blue"]) + arrow(868, 916, 95) + box(916, 60, 252, "3  How to use it", "one pick, and its command", c["green"])
+    b += box(32, 60, 236, "You say the job", "in your own words") + arrow(268, 316, 95) + box(316, 60, 252, "1  What you have", "your own skills, checked first", c["blue"]) + arrow(568, 616, 95) + box(616, 60, 252, "2  The best on GitHub", "most stars first", c["blue"]) + arrow(868, 916, 95) + box(916, 60, 252, "3  When and how", "a line and a command for each", c["green"])
     b += t(32, 178, "ON EVERY REQUEST", 13, c["mute"], 700, font=MONO, ls=1)
     b += box(32, 194, 236, "You ask", "as you always do") + arrow(268, 316, 229) + box(316, 194, 400, "One sentence is added for you", "short, finished, your own facts") + arrow(716, 764, 229) + box(764, 194, 404, "A short answer you can use as it is", "no blanks, nothing extra")
     return svg(1200, 300, b)

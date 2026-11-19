@@ -12,6 +12,7 @@ export const theme = {
     hero: "#2B5CFF", // the one accent: whatever the eye should be on
     heroSoft: "#E4EAFF",
     star: "#E9A23B",
+    warn: "#E8622C", // the "before" colour: what goes wrong without the plugin
     shadow: "rgba(20,22,27,0.10)",
   },
   fonts: { display: "Bricolage", body: "InterV", mono: "JBMono" },

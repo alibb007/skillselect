@@ -310,7 +310,9 @@ def search_github(need, tok, limit=5, have=()):
         if mine_here:  # you already have these: step 1 shows them, so take this repository's next fit instead
             skipped.extend(x[4] for x in mine_here if x[0] >= min(2, len(q))); picks = [x for x in picks if x not in mine_here]
         # the best folder of the repository, and a second one when it is named after your topic too
-        for matched, _, _, p, name, desc, raw in picks[:1] + [x for x in picks[1:2] if x[1] >= 1 and x[0] >= min(2, len(q))]:
+        first = picks[:1] + [x for x in picks[1:2] if x[1] >= 1 and x[0] >= min(2, len(q))]
+        spare = [x for x in picks[len(first):] if x[1] >= 1 and x[0] >= min(2, len(q))]
+        for matched, _, _, p, name, desc, raw in first + spare:
             folder = os.path.dirname(p)
             how = howto(raw, name or os.path.basename(folder) or it["name"])
             how["add"] = add_command(it["full_name"], folder, ".claude-plugin/marketplace.json" in allp)
@@ -323,13 +325,14 @@ def search_github(need, tok, limit=5, have=()):
                 flags.append("no update for a year")
             out.append(dict(skill=name or os.path.basename(folder) or it["name"], repo=it["full_name"], stars=stars, license={"NOASSERTION": "unclear"}.get((it.get("license") or {}).get("spdx_id"), (it.get("license") or {}).get("spdx_id") or "none"),
                             updated=(it.get("pushed_at") or "")[:10], desc=desc or (it.get("description") or ""), matched=matched, of=len(q), skills_in_repo=len(paths), flags=flags,
-                            url=f"https://github.com/{it['full_name']}" + (f"/tree/{it['default_branch']}/{folder}" if folder else ""), how=how))
+                            url=f"https://github.com/{it['full_name']}" + (f"/tree/{it['default_branch']}/{folder}" if folder else ""), how=how, spare=len(out) >= len(first)))
         return out
 
     with ThreadPoolExecutor(8 if tok else 3) as ex:
         out = [o for part in ex.map(repo, todo) for o in part]
     need_hits = min(2, len(q))
-    fit = [o for o in out if o["matched"] >= need_hits]
+    fit = [o for o in out if o["matched"] >= need_hits and not o["spare"]]
+    spares = sorted([o for o in out if o["matched"] >= need_hits and o["spare"] and o["stars"] >= 50], key=lambda o: (-o["stars"], -o["matched"]))
     if sum(1 for o in fit if o["stars"] >= 10) >= 3:  # drop near-unknown repos when there is enough choice
         fit = [o for o in fit if o["stars"] >= 10]
     half = math.ceil(len(q) / 2)  # skills that fit at least half of the key words come before the looser fits
@@ -342,6 +345,12 @@ def search_github(need, tok, limit=5, have=()):
         if (o["repo"], o["skill"]) in seen:
             continue
         seen.add((o["repo"], o["skill"])); res.append(o)
+    for o in spares:  # a short list is filled from the repositories already read, most stars first
+        if len(res) >= limit:
+            break
+        if (o["repo"], o["skill"]) not in seen:
+            seen.add((o["repo"], o["skill"])); res.append(o)
+    res.sort(key=lambda o: (-o["stars"], -o["matched"]))
     if limited:
         notes.append(f"GitHub turned away {len(limited)} of {len(queries)} searches (too many requests), so this list may be short. Wait a minute and ask again.")
     if owned:
@@ -448,24 +457,27 @@ def main():
             res["notes"].append(str(e))
         except (urllib.error.URLError, OSError, ValueError) as e:
             res["notes"].append("GitHub could not be reached: " + str(e)[:80])
+    for s in res["local"]:
+        s["how"] = local_how(s)
     res["recommended"] = recommend(res)
     if "--json" in flags:
         print(json.dumps(res, indent=1)); return 0
     print(f"You asked for: {need}\nKey words used: {', '.join(res['key_words'])}\n")
     print(f"1. WHAT YOU HAVE ({len(res['local'])} fit, of {res['installed_total']} installed on this computer)")
     for s in res["local"]:
-        print(f"  {s['name']}  ({s['matched']} of {s['of']} key words)\n     {cut(s['desc'])}\n     {s['path']}")
+        h = s["how"]
+        print(f"  {s['name']}  ({s['matched']} of {s['of']} key words)\n     {cut(s['desc'])}\n     call: {h['call'] if h['by_name'] else 'just ask, it has no command'}" + (f"\n     needs: {' · '.join(h['needs'])}" if h["needs"] else ""))
     if not res["local"]:
         print("  nothing that fits")
     print("\n2. ON GITHUB: not searched" if "--no-online" in flags else f"\n2. ON GITHUB, MOST STARS FIRST ({len(res['online'])} you do not have)")
     for i, o in enumerate(res["online"], 1):
         fl = ("  ! " + ", ".join(o["flags"])) if o["flags"] else ""
         more = f", one of {o['skills_in_repo']} skills in this repo" if o["skills_in_repo"] > 1 else ""
-        print(f"  {i}. {o['stars']:,} stars  {o['skill']}  [{o['repo']}{more}]\n     license {o['license']} · updated {o['updated']} · {o['matched']} of {o['of']} key words{fl}\n     {cut(o['desc'])}\n     {o['url']}")
+        print(f"  {i}. {o['stars']:,} stars  {o['skill']}  [{o['repo']}{more}]\n     license {o['license']} · updated {o['updated']} · {o['matched']} of {o['of']} key words{fl}\n     {cut(o['desc'])}\n     {o['url']}\n     add: {o['how']['add']['copy']}\n     call: {o['how']['call']}" + (f"\n     needs: {' · '.join(o['how']['needs'])}" if o["how"]["needs"] else ""))
     if not res["online"] and "--no-online" not in flags:
         print("  nothing found that fits")
     r = res["recommended"]
-    print("\n3. RECOMMENDED, AND HOW TO USE IT")
+    print("\n3. START WITH THIS ONE")
     print(f"  {r['name']}  ({r['where']})\n  {r['why']}\n" + show_how(r["how"]) if r else "  nothing fits well enough to recommend")
     for n in res["notes"]:
         print("\n" + n)

@@ -1,6 +1,6 @@
 {
   "name": "straight-answer",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Which skill to use, and how. Checks the skills you already have, finds the best ones on GitHub by stars, and tells you how to use the one it picks. Also keeps every answer short and finished.",
   "author": {
     "name": "Ali B.B",

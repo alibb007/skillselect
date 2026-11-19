@@ -1,0 +1,26 @@
+{
+ "ask": "/straight-answer:find-skill turn my quarterly sales numbers into a slide deck",
+ "events": [
+  {
+   "t": 4.11,
+   "kind": "tool",
+   "tool": "Bash",
+   "command": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"slide deck presentation pptx\""
+  },
+  {
+   "t": 14.66,
+   "kind": "tool_result",
+   "text": "You asked for: slide deck presentation pptx\nKey words used: slide, deck, presentation, pptx\n\n1. WHAT YOU HAVE (1 fit, of 19 installed on this computer)\n  pptx  (4 of 4 key words)\n     Use this skill any time a .pptx or .potx file is involved in any way \u2014 as input, output, or both. This includes: creating slide decks, pitch decks, o\u2026\n     ~/my-project/.claude/skills/pptx\n\n2. ON GITHUB, MOST STARS FIRST (5)\n  1. 197,201 stars  pptx  [anthropics/skills, one of 20 skills in this repo]\n     license none \u00b7 updated 2026-11-16 \u00b7 4 of 4 key words  ! no license\n     Use this skill any time a .pptx or .potx file is involved in any way \u2014 as input, output, or both. This includes: creating slide decks, pitch decks, o\u2026\n     https://github.com/anthropics/skills/tree/main/skills/pptx\n  2. 108,333 stars  pptx-generator  [nexu-io/open-design, one of 562 skills in this repo]\n     license Apache-2.0 \u00b7 updated 2026-11-18 \u00b7 3 of 4 key words\n     Create and edit PowerPoint presentations from scratch with PptxGenJS \u2014 MiniMax's production-tested deck pipeline.\n     https://github.com/nexu-io/open-design/tree/main/skills/pptx-generator\n  3. 33,434 stars  officecli-pptx  [iOfficeAI/OfficeCLI, one of 12 skills in this repo]\n     license Apache-2.0 \u00b7 updated 2026-11-17 \u00b7 4 of 4 key words\n     Use this skill any time a .pptx file is involved -- as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; re\u2026\n     https://github.com/iOfficeAI/OfficeCLI/tree/main/skills/officecli-pptx\n  4. 32,545 stars  frontend-slides  [zarazhangrui/frontend-slides, one of 2 skills in this repo]\n     license MIT \u00b7 updated 2026-06-23 \u00b7 2 of 4 key words\n     Create stunning, animation-rich HTML presentations from scratch or by converting PowerPoint files. Use when the user wants to build a presentation, c\u2026\n     https://github.com/zarazhangrui/frontend-slides\n  5. 12,598 stars  genoffice  [genspark-ai/genoffice, one of 43 skills in this repo]\n     license Apache-2.0 \u00b7 updated 2026-11-18 \u00b7 4 of 4 key words\n     Create, convert, read and edit Office documents locally with GenOffice's command line. Build a new presentation (pptx) from a brief through a checked\u2026\n     https://github.com/genspark-ai/genoffice/tree/main/skills/genoffice\n\n3. RECOMMENDED, AND HOW TO USE IT\n  pptx  (installed)\n  You already have it, so there is nothing to download.\n  Call it:    /pptx <what you want>\n              or just ask in your own words. Claude loads it when the request fits.\n  It needs:   npm: pptxgenjs, react-icons, react, react-dom, sharp  (named in its instructions)\n  It covers:  Scripts \u00b7 Creating with pptxgenjs \u2014 gotchas \u00b7 Structured decks \u00b7 Editing existing decks and templates \u00b7 Deck content and flow\n\n96 repositories looked at, 15 skill folders read, 12 fit at least 2 of your 4 key words.\n\nNothing was installed. Read a skill before you add it: it is text your assistant will trust."
+  },
+  {
+   "t": 25.33,
+   "kind": "answer"
+  }
+ ],
+ "done": 27.45,
+ "result": "**1. What you have:** 1 of your 19 installed skills fits.\n- **pptx**: creates, reads and edits .pptx slide decks. It's installed at `~/my-project/.claude/skills/pptx`.\n\n**2. On GitHub (most stars first)**\n1. **pptx**, anthropics/skills: 197,201 stars \u00b7 no license \u00b7 updated 2026-11-16 \u00b7 https://github.com/anthropics/skills/tree/main/skills/pptx \u00b7 ! no license\n2. **pptx-generator**, nexu-io/open-design: 108,333 stars \u00b7 Apache-2.0 \u00b7 updated 2026-11-18 \u00b7 https://github.com/nexu-io/open-design/tree/main/skills/pptx-generator\n3. **officecli-pptx**, iOfficeAI/OfficeCLI: 33,434 stars \u00b7 Apache-2.0 \u00b7 updated 2026-11-17 \u00b7 https://github.com/iOfficeAI/OfficeCLI/tree/main/skills/officecli-pptx\n4. **frontend-slides**, zarazhangrui/frontend-slides: 32,545 stars \u00b7 MIT \u00b7 updated 2026-06-23 \u00b7 https://github.com/zarazhangrui/frontend-slides\n5. **genoffice**, genspark-ai/genoffice: 12,598 stars \u00b7 Apache-2.0 \u00b7 updated 2026-11-18 \u00b7 https://github.com/genspark-ai/genoffice/tree/main/skills/genoffice\n\n**3. Recommended: pptx (already installed)**\nYou already have it, so there's nothing to download.\n- **Call it:** `/pptx turn my quarterly sales numbers into a slide deck`, or just ask in your own words and Claude loads it when the request fits.\n- **It needs:** the npm packages pptxgenjs, react-icons, react, react-dom and sharp (its instructions name these).\n\nFor the charts in the deck, you also have the **dataviz** skill installed.\n\nNothing was installed. To build the deck, send me your quarterly sales numbers (paste them or give me a file path). You didn't include them, so I haven't made anything yet.",
+ "model": [
+  "claude-opus-5-5"
+ ],
+ "tokens": 39354
+}

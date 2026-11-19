@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """find_skills.py "<what you want to do>" [--json] [--no-online] [--no-token] [--limit N]
+find_skills.py --mine [words] [--json]       every skill on this computer: how to call it and when to use it
+find_skills.py --how <skill name | github link>   how to use one skill
 
 1. Looks at the skills already on this computer. Nothing about them leaves the machine.
 2. Searches public GitHub for skills that fit and lists them with the most stars first.
+3. Says how to use the one it recommends: how to call it, what it needs, and for a GitHub skill the command to add it.
 
 It never installs, clones or downloads a skill. The only thing sent out is the search words, to api.github.com.
 Python 3 standard library only."""
@@ -37,6 +40,95 @@ def front(text):
     d = re.search(r"^description:\s*(.*?)(?=\n[A-Za-z_-]+:|\Z)", fm, re.S | re.M)
     desc = re.sub(r"\s+", " ", d.group(1)).strip().strip("\"'>|") if d else ""
     return (n.group(1).strip().strip("\"'") if n else ""), desc.strip()
+
+
+def split_fm(text):
+    m = re.match(r"---\s*\n(.*?)\n---\s*\n?(.*)", text, re.S)
+    return (m.group(1), m.group(2)) if m else ("", text)
+
+
+def field(fm, k):
+    m = re.search(rf"^{k}:\s*(.+)$", fm, re.M)
+    return m.group(1).strip().strip("\"'") if m else ""
+
+
+def pkgs(body, pat, ok=r"@?[A-Za-z0-9][A-Za-z0-9_.\-/\[\]]*"):
+    out = []
+    for line in re.findall(pat, body):
+        for w in line.replace('"', " ").replace("'", " ").split():
+            w = w.strip("`,.;)(")
+            if w.startswith("-") or w.endswith((".txt", ".toml", ".json")) or w in (".", "install") or not re.fullmatch(ok, w):
+                continue
+            if w not in out:
+                out.append(w)
+    return out[:6]
+
+
+def howto(text, name, plugin=""):
+    """How to use one skill, read from its own SKILL.md. Nothing is guessed: a line is left out when the file does not say."""
+    fm, body = split_fm(text)
+    prose = re.sub(r"```.*?```", "", body, flags=re.S)
+    hint = field(fm, "argument-hint")
+    h = dict(call="/" + (plugin + ":" if plugin else "") + name + " " + (hint or "<what you want>"),
+             by_name=field(fm, "user-invocable").lower() != "false", auto=field(fm, "disable-model-invocation").lower() != "true")
+    need = []
+    for label, pat in (("pip", r"(?:pip3?|uv pip) install\s+([^\n`&|;#]+)"), ("npm", r"npm (?:install|i)\s+([^\n`&|;#]+)"), ("brew", r"brew install\s+([^\n`&|;#]+)")):
+        got = pkgs(body, pat)
+        if got:
+            need.append(label + ": " + ", ".join(got))
+    npx = list(dict.fromkeys(re.findall(r"npx\s+(?:-y\s+|--yes\s+)?(@?[A-Za-z0-9][A-Za-z0-9_.\-/]*)", body)))[:4]
+    if npx:
+        need.append("npx: " + ", ".join(npx))
+    keys = list(dict.fromkeys(re.findall(r"\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)*_(?:API_KEY|TOKEN|SECRET)\b", body)))[:4]
+    if keys:
+        need.append("keys: " + ", ".join(keys))
+    h["needs"] = need
+    heads = [re.sub(r"[`*_]", "", x).strip() for x in re.findall(r"^#{2,3}\s+(.+?)\s*#*$", prose, re.M)]
+    h["covers"] = [x if len(x) <= 44 else x[:43].rstrip() + "…" for x in heads if x][:5]
+    return h
+
+
+def plugin_of(path):
+    """The plugin a local skill folder belongs to, or "" for a plain skill."""
+    parts = path.split("/")
+    if "skills" not in parts:
+        return ""
+    i = len(parts) - 1 - parts[::-1].index("skills")
+    try:
+        return json.load(open("/".join(parts[:i]) + "/.claude-plugin/plugin.json")).get("name", "")
+    except (OSError, ValueError):
+        return ""
+
+
+def add_command(repo, folder, has_market):
+    short = repo.split("/")[1]
+    if folder:
+        cmd = f"git clone --depth 1 https://github.com/{repo} /tmp/{short} && mkdir -p ~/.claude/skills && cp -R /tmp/{short}/{folder} ~/.claude/skills/"
+    else:
+        cmd = f"git clone --depth 1 https://github.com/{repo} ~/.claude/skills/{short}"
+    return dict(copy=cmd, market=f"/plugin marketplace add {repo}" if has_market else "")
+
+
+def show_how(h, pad="  "):
+    out = []
+    if h.get("add"):
+        out.append(pad + "Add it first. You run this, the plugin never does:")
+        out.append(pad + "   " + h["add"]["copy"])
+        if h["add"]["market"]:
+            out.append(pad + "   or, as a Claude Code plugin:  " + h["add"]["market"] + "  (then pick it under /plugin)")
+        out.append(pad + "Read it before you add it: " + h.get("url", ""))
+    if h["by_name"]:
+        out.append(pad + "Call it:    " + h["call"])
+        if h["auto"]:
+            out.append(pad + "            or just ask in your own words. Claude loads it when the request fits.")
+    else:
+        out.append(pad + "Call it:    just ask in your own words. Claude loads it itself; it has no command.")
+    if h.get("when"):
+        out.append(pad + "Use it for: " + h["when"])
+    out.append(pad + "It needs:   " + (" · ".join(h["needs"]) + "  (named in its instructions)" if h["needs"] else "nothing named in its instructions"))
+    if h["covers"]:
+        out.append(pad + "It covers:  " + " · ".join(h["covers"]))
+    return "\n".join(out)
 
 
 # ---------- skills already on this computer ----------
@@ -192,7 +284,8 @@ def search_github(need, tok, limit=5):
             tree = get(f"https://api.github.com/repos/{it['full_name']}/git/trees/{urllib.parse.quote(it['default_branch'])}?recursive=1", tok)
         except ValueError:
             return out  # a file list too large to read: skip this repository, keep the rest
-        paths = [t["path"] for t in tree.get("tree", []) if t["path"] == "SKILL.md" or t["path"].endswith("/SKILL.md")]
+        allp = {t["path"] for t in tree.get("tree", [])}
+        paths = [p for p in allp if p == "SKILL.md" or p.endswith("/SKILL.md")]
         if not paths:
             return out
         # up to 8 folders per repo, best folder-name match first; the description then decides which one is shown
@@ -205,10 +298,12 @@ def search_github(need, tok, limit=5):
             name, desc = front(raw[:8000])
             nm = set(toks(" ".join([name, os.path.dirname(p) or it["name"]])))
             mt = nm | set(toks(desc))
-            picks.append((sum(1 for t in q if t in mt), sum(1 for t in q if t in nm), -len(p), p, name, desc))
+            picks.append((sum(1 for t in q if t in mt), sum(1 for t in q if t in nm), -len(p), p, name, desc, raw))
         picks.sort(reverse=True)
-        for matched, _, _, p, name, desc in picks[:1]:
+        for matched, _, _, p, name, desc, raw in picks[:1]:
             folder = os.path.dirname(p)
+            how = howto(raw, name or os.path.basename(folder) or it["name"])
+            how["add"] = add_command(it["full_name"], folder, ".claude-plugin/marketplace.json" in allp)
             flags = []
             if not it.get("license"):
                 flags.append("no license")
@@ -218,7 +313,7 @@ def search_github(need, tok, limit=5):
                 flags.append("no update for a year")
             out.append(dict(skill=name or os.path.basename(folder) or it["name"], repo=it["full_name"], stars=stars, license={"NOASSERTION": "unclear"}.get((it.get("license") or {}).get("spdx_id"), (it.get("license") or {}).get("spdx_id") or "none"),
                             updated=(it.get("pushed_at") or "")[:10], desc=desc or (it.get("description") or ""), matched=matched, of=len(q), skills_in_repo=len(paths), flags=flags,
-                            url=f"https://github.com/{it['full_name']}" + (f"/tree/{it['default_branch']}/{folder}" if folder else "")))
+                            url=f"https://github.com/{it['full_name']}" + (f"/tree/{it['default_branch']}/{folder}" if folder else ""), how=how))
         return out
 
     with ThreadPoolExecutor(8 if tok else 3) as ex:
@@ -240,16 +335,74 @@ def search_github(need, tok, limit=5):
     return res[:limit], notes
 
 
+cut = lambda s, n=150: s if len(s) <= n else s[: n - 1].rstrip() + "…"
+
+
+def local_how(s):
+    try:
+        text = open(os.path.join(s["path"], "SKILL.md"), errors="replace").read(400000)
+    except OSError:
+        text = ""
+    return dict(howto(text, s["name"], plugin_of(s["path"])), when=cut(s["desc"], 170))
+
+
+def mine(need, skills, as_json):
+    """Every skill on this computer: its command and when to use it. With words, only the ones that fit."""
+    by = {}
+    for s in skills:
+        by.setdefault(s["name"], []).append(s)
+    names = [s["name"] for s in rank_local(need, skills, k=40)] if need else sorted(by, key=str.lower)
+    rows = [dict(name=n, call="/" + (plugin_of(by[n][0]["path"]) + ":" if plugin_of(by[n][0]["path"]) else "") + n, when=by[n][0]["desc"], copies=len(by[n]), path=by[n][0]["path"]) for n in names]
+    twice = {n: len(v) for n, v in by.items() if len(v) > 1}
+    if as_json:
+        print(json.dumps(dict(installed_total=len(by), shown=len(rows), skills=rows, more_than_one_copy=twice), indent=1)); return 0
+    print(f"YOUR SKILLS ({len(by)} on this computer" + (f", {len(rows)} fit \"{need}\"" if need else "") + ")")
+    for r in rows:
+        print(f"  {r['call']}\n     {cut(r['when'], 130) or 'no description in the skill file'}")
+    if twice:
+        print("\nIn more than one place: " + ", ".join(f"{n} ({c})" for n, c in sorted(twice.items())))
+    print("\nNothing was sent anywhere. To use one, type its command, or just ask: Claude loads a skill when the request fits its description.")
+    return 0
+
+
+def how_one(target, skills, tok):
+    """How to use one skill: a name on this computer, or a github.com link to a skill folder or repository."""
+    m = re.search(r"github\.com/([\w.-]+/[\w.-]+?)(?:\.git)?(?:/tree/([^/]+)/(.+?))?/?$", target)
+    if not m:
+        hit = [s for s in skills if s["name"].lower() == target.lower().lstrip("/").split(":")[-1]]
+        if not hit:
+            print(f"No skill named {target} on this computer. Give a github.com link to look at one online."); return 1
+        print(f"HOW TO USE {hit[0]['name']}  (installed)\n" + show_how(local_how(hit[0])) + f"\n  {hit[0]['path']}"); return 0
+    repo, branch, folder = m.group(1), m.group(2), (m.group(3) or "").strip("/")
+    info = get(f"https://api.github.com/repos/{repo}", tok)
+    if not info:
+        print(f"GitHub has no public repository {repo}."); return 1
+    branch = branch or info["default_branch"]
+    tree = get(f"https://api.github.com/repos/{repo}/git/trees/{urllib.parse.quote(branch)}?recursive=1", tok)
+    allp = {t["path"] for t in tree.get("tree", [])}
+    p = (folder + "/SKILL.md") if folder else "SKILL.md"
+    if p not in allp:
+        inside = sorted(os.path.dirname(x) for x in allp if x.endswith("/SKILL.md"))
+        print(f"No SKILL.md at {p} in {repo}." + (f" Skill folders there: {', '.join(inside[:12])}" if inside else "")); return 1
+    raw = get(f"https://raw.githubusercontent.com/{repo}/{urllib.parse.quote(branch)}/{urllib.parse.quote(p)}", None, raw=True)
+    name, desc = front(raw[:8000])
+    h = dict(howto(raw, name or os.path.basename(folder) or repo.split("/")[1]), when=cut(desc, 170), url=f"https://github.com/{repo}" + (f"/tree/{branch}/{folder}" if folder else ""))
+    h["add"] = add_command(repo, folder, ".claude-plugin/marketplace.json" in allp)
+    lic = (info.get("license") or {}).get("spdx_id") or "none"
+    print(f"HOW TO USE {name or folder}  (GitHub, {repo}, {info.get('stargazers_count', 0):,} stars, license {lic}, updated {(info.get('pushed_at') or '')[:10]})\n" + show_how(h))
+    print("\nNothing was installed."); return 0
+
+
 def recommend(res):
     """One pick. A skill you already have wins: nothing to download and nothing new to trust."""
     if res["local"]:
         s = res["local"][0]
-        return dict(name=s["name"], where="installed", why="You already have it, so there is nothing to download.", path=s["path"])
+        return dict(name=s["name"], where="installed", why="You already have it, so there is nothing to download.", path=s["path"], how=dict(local_how(s), when=""))
     if res["online"]:
         full = [o for o in res["online"] if o["matched"] == o["of"]]
         o = (full or res["online"])[0]
         why = "Most stars among the skills that fit every key word." if full else "Most stars among the skills that fit."
-        return dict(name=o["skill"], where=f"GitHub, {o['repo']}, {o['stars']:,} stars", why=why, url=o["url"])
+        return dict(name=o["skill"], where=f"GitHub, {o['repo']}, {o['stars']:,} stars", why=why, url=o["url"], how=dict(o["how"], url=o["url"]))
     return None
 
 
@@ -260,10 +413,19 @@ def main():
     if "--limit" in a:
         i = a.index("--limit"); lim = int(a[i + 1]); a = a[:i] + a[i + 2:]
     need = " ".join(x for x in a if not x.startswith("--")).strip()
+    if "--mine" in flags:
+        return mine(need, local_skills(), "--json" in flags)
     if not need:
         print(__doc__); return 2
-    mine = local_skills()
-    res = dict(need=need, key_words=list(dict.fromkeys(words(need)))[:4], installed_total=len({s["name"] for s in mine}), local=rank_local(need, mine), online=[], notes=[])
+    if "--how" in flags:
+        try:
+            return how_one(need, local_skills(), token("--no-token" not in flags))
+        except Limit as e:
+            print(e); return 1
+        except (urllib.error.URLError, OSError, ValueError) as e:
+            print("GitHub could not be reached: " + str(e)[:80]); return 1
+    have = local_skills()
+    res = dict(need=need, key_words=list(dict.fromkeys(words(need)))[:4], installed_total=len({s["name"] for s in have}), local=rank_local(need, have), online=[], notes=[])
     if "--no-online" not in flags:
         try:
             res["online"], res["notes"] = search_github(need, token("--no-token" not in flags), lim)
@@ -274,14 +436,13 @@ def main():
     res["recommended"] = recommend(res)
     if "--json" in flags:
         print(json.dumps(res, indent=1)); return 0
-    cut = lambda s, n=150: s if len(s) <= n else s[: n - 1].rstrip() + "…"
     print(f"You asked for: {need}\nKey words used: {', '.join(res['key_words'])}\n")
-    print(f"INSTALLED ON THIS COMPUTER ({len(res['local'])} fit, of {res['installed_total']} installed)")
+    print(f"1. WHAT YOU HAVE ({len(res['local'])} fit, of {res['installed_total']} installed on this computer)")
     for s in res["local"]:
         print(f"  {s['name']}  ({s['matched']} of {s['of']} key words)\n     {cut(s['desc'])}\n     {s['path']}")
     if not res["local"]:
         print("  nothing that fits")
-    print(f"\nAVAILABLE ON GITHUB, MOST STARS FIRST ({len(res['online'])})")
+    print(f"\n2. ON GITHUB, MOST STARS FIRST ({len(res['online'])})")
     for i, o in enumerate(res["online"], 1):
         fl = ("  ! " + ", ".join(o["flags"])) if o["flags"] else ""
         more = f", one of {o['skills_in_repo']} skills in this repo" if o["skills_in_repo"] > 1 else ""
@@ -289,8 +450,8 @@ def main():
     if not res["online"] and "--no-online" not in flags:
         print("  nothing found that fits")
     r = res["recommended"]
-    print("\nRECOMMENDED")
-    print(f"  {r['name']}  ({r['where']})\n     {r['why']}" if r else "  nothing fits well enough to recommend")
+    print("\n3. RECOMMENDED, AND HOW TO USE IT")
+    print(f"  {r['name']}  ({r['where']})\n  {r['why']}\n" + show_how(r["how"]) if r else "  nothing fits well enough to recommend")
     for n in res["notes"]:
         print("\n" + n)
     print("\nNothing was installed. Read a skill before you add it: it is text your assistant will trust.")

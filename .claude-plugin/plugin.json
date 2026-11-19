@@ -1,7 +1,7 @@
 {
   "name": "straight-answer",
-  "version": "1.1.0",
-  "description": "Short, finished answers without typing anything extra, plus a finder that suggests a skill for the job: what you already have first, then GitHub with the most stars first.",
+  "version": "2.0.0",
+  "description": "Which skill to use, and how. Checks the skills you already have, finds the best ones on GitHub by stars, and tells you how to use the one it picks. Also keeps every answer short and finished.",
   "author": {
     "name": "Ali B.B",
     "url": "https://github.com/alibb007"

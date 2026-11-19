@@ -8,11 +8,11 @@
     {
       "name": "straight-answer",
       "source": "./",
-      "description": "Short, finished answers and a skill finder.",
-      "version": "1.1.0"
+      "description": "Which skill to use, and how to use it. Short, finished answers too.",
+      "version": "2.0.0"
     }
   ],
   "metadata": {
-    "description": "Straight Answer: short, finished AI answers and a skill finder for Claude Code."
+    "description": "Straight Answer: which skill to use and how to use it, for Claude Code."
   }
 }

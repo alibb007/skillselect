@@ -1,0 +1,675 @@
+{
+ "runs": {
+  "deck-A": {
+   "tokens": 179393,
+   "tok_out": 4420,
+   "cost": 0.375,
+   "sec": 67.6,
+   "steps": 15,
+   "turns": 16,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "anthropics/skills",
+    "appautomaton/document-skills",
+    "composiohq/awesome-claude-skills",
+    "davepoon/buildwithclaude",
+    "daymade/claude-code-skills",
+    "microsoft/cat-agent-skills",
+    "noi1r/powerpoint-skill",
+    "oimiragieo/agent-studio"
+   ],
+   "repos_fake": [],
+   "words": 677,
+   "step_list": [
+    {
+     "t": 7.65,
+     "tool": "ToolSearch",
+     "what": "select:WebSearch,WebFetch"
+    },
+    {
+     "t": 8.7,
+     "tool": "Bash",
+     "what": "ls -d ~/.claude/skills/* ~/.claude/plugins/*/ 2>/dev/null; find ~/.claude -maxdepth 6 -name SKILL.md -path '*pptx*' 2>/dev/null; which gh &&"
+    },
+    {
+     "t": 11.29,
+     "tool": "Glob",
+     "what": "**/pptx/SKILL.md"
+    },
+    {
+     "t": 11.68,
+     "tool": "WebSearch",
+     "what": "github Claude skill pptx slide deck presentation SKILL.md"
+    },
+    {
+     "t": 19.84,
+     "tool": "Read",
+     "what": "~/.claude/skills/<account skills>/pptx/SKILL.md"
+    },
+    {
+     "t": 20.64,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/anthropics/skills"
+    },
+    {
+     "t": 21.44,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/noi1r/powerpoint-skill"
+    },
+    {
+     "t": 22.15,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/ComposioHQ/awesome-claude-skills"
+    },
+    {
+     "t": 31.27,
+     "tool": "WebFetch",
+     "what": "https://raw.githubusercontent.com/anthropics/skills/main/skills/pptx/LICENSE.txt"
+    },
+    {
+     "t": 32.01,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/appautomaton/document-skills"
+    },
+    {
+     "t": 32.65,
+     "tool": "WebSearch",
+     "what": "github agent skill data to slides charts business report pptx \"SKILL.md\" python-pptx"
+    },
+    {
+     "t": 40.46,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/daymade/claude-code-skills"
+    },
+    {
+     "t": 40.96,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/vasilyu1983/AI-Agents-public"
+    },
+    {
+     "t": 41.71,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/oimiragieo/agent-studio"
+    },
+    {
+     "t": 42.35,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/microsoft/cat-agent-skills"
+    }
+   ]
+  },
+  "deck-B": {
+   "tokens": 39354,
+   "tok_out": 890,
+   "cost": 0.111,
+   "sec": 27.4,
+   "steps": 1,
+   "turns": 2,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "anthropics/skills",
+    "genspark-ai/genoffice",
+    "iofficeai/officecli",
+    "nexu-io/open-design",
+    "zarazhangrui/frontend-slides"
+   ],
+   "repos_fake": [],
+   "words": 197,
+   "step_list": [
+    {
+     "t": 4.11,
+     "tool": "Bash",
+     "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"slide deck presentation pptx\""
+    }
+   ]
+  },
+  "model-A": {
+   "tokens": 217994,
+   "tok_out": 4943,
+   "cost": 0.314,
+   "sec": 102.2,
+   "steps": 11,
+   "turns": 12,
+   "quality": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "score": 6,
+   "installed_run": false,
+   "repos_real": [
+    "anthropics/financial-services",
+    "daloopa/investing",
+    "dhruvjainin/absolute",
+    "fivetaku/claude-office-skills"
+   ],
+   "repos_fake": [],
+   "words": 705,
+   "step_list": [
+    {
+     "t": 5.61,
+     "tool": "Bash",
+     "what": "ls -d ~/.claude/skills/*/ ~/.claude/plugins/*/ 2>/dev/null; find ~/.claude -maxdepth 6 -type d -name xlsx 2>/dev/null | head"
+    },
+    {
+     "t": 5.89,
+     "tool": "ToolSearch",
+     "what": "select:WebSearch,WebFetch"
+    },
+    {
+     "t": 11.99,
+     "tool": "Glob",
+     "what": "**/xlsx/SKILL.md"
+    },
+    {
+     "t": 13.23,
+     "tool": "Bash",
+     "what": "gh search repos \"financial model skill claude\" --sort stars --limit 15 --json fullName,stargazersCount,license,updatedAt,description 2>&1 | "
+    },
+    {
+     "t": 13.86,
+     "tool": "WebSearch",
+     "what": "github Claude skill financial modeling spreadsheet SKILL.md DCF 3-statement"
+    },
+    {
+     "t": 40.4,
+     "tool": "Bash",
+     "what": "for r in anthropics/financial-services-plugins anthropics/financial-services fivetaku/claude-office-skills claude-office-skills/skills daloo"
+    },
+    {
+     "t": 41.58,
+     "tool": "Read",
+     "what": "~/.claude/skills/<account skills>/xlsx/SKILL.md"
+    },
+    {
+     "t": 50.16,
+     "tool": "Bash",
+     "what": "gh api repos/anthropics/financial-services-plugins --jq '[.full_name,.stargazers_count,(.license.spdx_id//\"none\"),.pushed_at,.archived]|@tsv"
+    },
+    {
+     "t": 62.3,
+     "tool": "Bash",
+     "what": "gh api \"repos/anthropics/financial-services/git/trees/HEAD?recursive=1\" --jq '.tree[].path' | grep -i 'SKILL.md' | grep -iE 'model|dcf|lbo|s"
+    },
+    {
+     "t": 70.84,
+     "tool": "Bash",
+     "what": "cd /private/tmp/claude-501/-private-tmp-claude-501-sa-r5-proj/cea483d6-2707-4529-978f-3d9c0f21f81f/scratchpad; gh api repos/anthropics/finan"
+    },
+    {
+     "t": 76.69,
+     "tool": "Bash",
+     "what": "gh api repos/anthropics/financial-services/readme --jq .content | base64 -d | grep -A12 '^### Claude Code'"
+    }
+   ]
+  },
+  "model-B": {
+   "tokens": 39210,
+   "tok_out": 909,
+   "cost": 0.096,
+   "sec": 17.7,
+   "steps": 1,
+   "turns": 2,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "anthropics/skills",
+    "iofficeai/officecli",
+    "opencoworkai/open-cowork",
+    "petehottelet/spreadsheet-auditor"
+   ],
+   "repos_fake": [],
+   "words": 160,
+   "step_list": [
+    {
+     "t": 2.43,
+     "tool": "Bash",
+     "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"financial model spreadsheet xlsx excel\""
+    }
+   ]
+  },
+  "pdf-A": {
+   "tokens": 278663,
+   "tok_out": 4241,
+   "cost": 0.368,
+   "sec": 109.2,
+   "steps": 15,
+   "turns": 16,
+   "quality": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "score": 6,
+   "installed_run": false,
+   "repos_real": [
+    "alirezarezvani/claude-skills",
+    "anthropics/skills",
+    "composiohq/awesome-claude-skills",
+    "hermes-pro/storytold-skills",
+    "nfsarch33/pdf-mcp-server",
+    "westhealth/pdf-form-filler"
+   ],
+   "repos_fake": [],
+   "words": 617,
+   "step_list": [
+    {
+     "t": 5.15,
+     "tool": "Bash",
+     "what": "ls -d ~/.claude/skills/* ~/.claude/plugins/*/ 2>/dev/null; find ~/.claude -iname \"SKILL.md\" -path \"*pdf*\" 2>/dev/null | head"
+    },
+    {
+     "t": 9.03,
+     "tool": "Glob",
+     "what": "**/pdf/**/*.md"
+    },
+    {
+     "t": 20.69,
+     "tool": "Read",
+     "what": "~/.claude/skills/<account skills>/pdf/SKILL.md"
+    },
+    {
+     "t": 21.51,
+     "tool": "Read",
+     "what": "~/.claude/skills/<account skills>/pdf/FORMS.md"
+    },
+    {
+     "t": 39.18,
+     "tool": "Glob",
+     "what": "scripts/*"
+    },
+    {
+     "t": 40.07,
+     "tool": "Bash",
+     "what": "gh search repos \"pdf skill claude\" --limit 15 --json fullName,stargazersCount,license,updatedAt,description"
+    },
+    {
+     "t": 49.43,
+     "tool": "Bash",
+     "what": "for q in \"anthropics/skills\" \"pdf form fill skill\" \"claude skills pdf\" \"agent skills pdf\" \"SKILL.md pdf form\"; do echo \"== $q\"; gh search re"
+    },
+    {
+     "t": 73.69,
+     "tool": "Bash",
+     "what": "gh search repos \"claude skills\" --sort stars --limit 12 --json fullName,stargazersCount,license,updatedAt,description"
+    },
+    {
+     "t": 74.49,
+     "tool": "Bash",
+     "what": "gh search repos \"pdf form fill\" --sort stars --limit 12 --json fullName,stargazersCount,license,updatedAt,description"
+    },
+    {
+     "t": 75.25,
+     "tool": "Bash",
+     "what": "gh search code \"name: pdf\" --filename SKILL.md --limit 30 --json repository,path"
+    },
+    {
+     "t": 80.23,
+     "tool": "Bash",
+     "what": "gh repo view anthropics/skills --json nameWithOwner,stargazerCount,licenseInfo,pushedAt,description"
+    },
+    {
+     "t": 81.03,
+     "tool": "Bash",
+     "what": "gh repo view hermes-pro/storytold-skills --json nameWithOwner,stargazerCount,licenseInfo,pushedAt,description"
+    },
+    {
+     "t": 81.82,
+     "tool": "Bash",
+     "what": "gh repo view nfsarch33/pdf-mcp-server --json nameWithOwner,stargazerCount,licenseInfo,pushedAt,description"
+    },
+    {
+     "t": 82.68,
+     "tool": "Bash",
+     "what": "gh api repos/hermes-pro/storytold-skills/contents/pdfcraft/SKILL.md -q .content | base64 -d | head -40"
+    },
+    {
+     "t": 86.99,
+     "tool": "Bash",
+     "what": "gh api repos/anthropics/skills/contents/skills/pdf/LICENSE.txt -q .content | base64 -d | head -8; gh api \"repos/anthropics/skills/commits?pa"
+    }
+   ]
+  },
+  "pdf-B": {
+   "tokens": 38766,
+   "tok_out": 671,
+   "cost": 0.09,
+   "sec": 19.4,
+   "steps": 1,
+   "turns": 2,
+   "quality": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "score": 6,
+   "installed_run": false,
+   "repos_real": [
+    "anthropics/skills",
+    "docugrip/docugrip-claude-plugin",
+    "nexu-io/open-design"
+   ],
+   "repos_fake": [],
+   "words": 160,
+   "step_list": [
+    {
+     "t": 2.18,
+     "tool": "Bash",
+     "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"pdf form fill merge\""
+    }
+   ]
+  },
+  "landing-A": {
+   "tokens": 150041,
+   "tok_out": 4085,
+   "cost": 0.265,
+   "sec": 92.5,
+   "steps": 14,
+   "turns": 15,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "alirezarezvani/claude-skills",
+    "anthropics/skills",
+    "conardli/garden-skills",
+    "jezweb/claude-skills",
+    "shadcn/ui",
+    "whawkinsiv/solo-founder-superpowers",
+    "wshobson/agents"
+   ],
+   "repos_fake": [],
+   "words": 670,
+   "step_list": [
+    {
+     "t": 5.58,
+     "tool": "ToolSearch",
+     "what": "select:WebSearch,WebFetch"
+    },
+    {
+     "t": 6.72,
+     "tool": "Bash",
+     "what": "ls ~/.claude/skills ~/.claude/plugins 2>/dev/null; ls /private~/my-project/.claude 2>/dev/null; command -v gh && gh auth statu"
+    },
+    {
+     "t": 8.7,
+     "tool": "WebSearch",
+     "what": "Claude Code skill landing page design GitHub SKILL.md"
+    },
+    {
+     "t": 9.23,
+     "tool": "WebSearch",
+     "what": "awesome claude skills frontend UI design skill github stars"
+    },
+    {
+     "t": 21.75,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/jezweb/claude-skills"
+    },
+    {
+     "t": 22.45,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/anthropics/skills"
+    },
+    {
+     "t": 23.21,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/wshobson/agents"
+    },
+    {
+     "t": 24.01,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/alirezarezvani/claude-skills"
+    },
+    {
+     "t": 24.81,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/whawkinsiv/solo-founder-superpowers"
+    },
+    {
+     "t": 25.44,
+     "tool": "WebFetch",
+     "what": "https://api.github.com/repos/ConardLi/garden-skills"
+    },
+    {
+     "t": 36.41,
+     "tool": "WebFetch",
+     "what": "https://raw.githubusercontent.com/jezweb/claude-skills/main/plugins/frontend/skills/landing-page/SKILL.md"
+    },
+    {
+     "t": 37.16,
+     "tool": "WebFetch",
+     "what": "https://open-design.ai/skills/brand-landingpage/"
+    },
+    {
+     "t": 37.9,
+     "tool": "WebFetch",
+     "what": "https://tessl.io/registry/skills/github/alirezarezvani/claude-skills/landing"
+    },
+    {
+     "t": 49.64,
+     "tool": "WebFetch",
+     "what": "https://raw.githubusercontent.com/jezweb/claude-skills/main/README.md"
+    }
+   ]
+  },
+  "landing-B": {
+   "tokens": 39762,
+   "tok_out": 1178,
+   "cost": 0.104,
+   "sec": 24.6,
+   "steps": 1,
+   "turns": 2,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "leonxlnx/taste-skill",
+    "liyupi/awesome-vibe-coding-websites",
+    "nextlevelbuilder/ui-ux-pro-max-skill",
+    "nexu-io/open-design",
+    "paperclipai/paperclip"
+   ],
+   "repos_fake": [],
+   "words": 231,
+   "step_list": [
+    {
+     "t": 2.3,
+     "tool": "Bash",
+     "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"landing page web design html\""
+    }
+   ]
+  },
+  "webtest-A": {
+   "tokens": 135593,
+   "tok_out": 3731,
+   "cost": 0.193,
+   "sec": 48.7,
+   "steps": 9,
+   "turns": 11,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "anthropics/skills",
+    "browser-use/browser-use",
+    "chromedevtools/chrome-devtools-mcp",
+    "lackeyjb/playwright-skill",
+    "microsoft/playwright-mcp",
+    "vercel-labs/agent-browser"
+   ],
+   "repos_fake": [],
+   "words": 631,
+   "step_list": [
+    {
+     "t": 4.87,
+     "tool": "Bash",
+     "what": "ls -d ~/.claude/skills/* ~/.claude/plugins/*/skills/* 2>/dev/null; find ~/.claude -maxdepth 6 -type d -name \"webapp-testing\" 2>/dev/null"
+    },
+    {
+     "t": 5.22,
+     "tool": "ToolSearch",
+     "what": "select:WebSearch,WebFetch"
+    },
+    {
+     "t": 8.99,
+     "tool": "Glob",
+     "what": "**/webapp-testing/**"
+    },
+    {
+     "t": 11.9,
+     "tool": "Bash",
+     "what": "gh api repos/anthropics/skills --jq '{stars:.stargazers_count,license:.license.spdx_id,pushed:.pushed_at}'; gh api repos/microsoft/playwrigh"
+    },
+    {
+     "t": 22.1,
+     "tool": "Bash",
+     "what": "gh api repos/anthropics/skills/contents/skills/webapp-testing --jq '.[].name'; gh api repos/anthropics/skills/commits?path=skills/webapp-tes"
+    },
+    {
+     "t": 22.3,
+     "tool": "Skill",
+     "what": "webapp-testing"
+    },
+    {
+     "t": 27.09,
+     "tool": "Bash",
+     "what": "gh api \"repos/anthropics/skills/commits?path=skills/webapp-testing&per_page=1\" --jq '.[0].commit.committer.date'; gh api repos/anthropics/sk"
+    },
+    {
+     "t": 29.2,
+     "tool": "Bash",
+     "what": "gh api \"repos/anthropics/skills/commits?path=skills/webapp-testing&per_page=1\" --jq '.[0].commit.committer.date'"
+    },
+    {
+     "t": 29.84,
+     "tool": "Read",
+     "what": "/private~/my-project/.claude/skills/webapp-testing/LICENSE.txt"
+    }
+   ]
+  },
+  "webtest-B": {
+   "tokens": 39387,
+   "tok_out": 931,
+   "cost": 0.098,
+   "sec": 18.0,
+   "steps": 1,
+   "turns": 2,
+   "quality": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "score": 7,
+   "installed_run": false,
+   "repos_real": [
+    "addyosmani/agent-skills",
+    "anthropics/skills",
+    "morluto/rea",
+    "nexu-io/open-design",
+    "paperclipai/paperclip"
+   ],
+   "repos_fake": [],
+   "words": 196,
+   "step_list": [
+    {
+     "t": 2.27,
+     "tool": "Bash",
+     "what": "python3 \"<plugin>/skills/find-skill/scripts/find_skills.py\" \"web app browser testing playwright\""
+    }
+   ]
+  }
+ },
+ "summary": {
+  "A": {
+   "tokens": 179393,
+   "sec": 92.5,
+   "steps": 14,
+   "cost": 0.314,
+   "score": 7
+  },
+  "B": {
+   "tokens": 39354,
+   "sec": 19.4,
+   "steps": 1,
+   "cost": 0.098,
+   "score": 7
+  },
+  "same_way": {
+   "tokens": 5,
+   "sec": 5,
+   "steps": 5,
+   "cost": 5,
+   "score_B_ge_A": 5
+  }
+ }
+}

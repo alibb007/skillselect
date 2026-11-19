@@ -22,64 +22,89 @@ def r(x, y, w, h, fill, rx=8, stroke=None):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}"{st}/>'
 
 
+def step_card(c, x, y, w, n, title, sub, col):
+    return (r(x, y, w, 92, c["soft"], 14, col) + f'<circle cx="{x + 34}" cy="{y + 46}" r="17" fill="{col}"/>' + t(x + 34, y + 52, str(n), 17, c["on"], 800, "middle")
+            + t(x + 64, y + 42, title, 20, c["ink"], 800, ls=-.3) + t(x + 64, y + 66, sub, 14, c["mute"]))
+
+
 def hero(c):
     b = r(0.5, 0.5, 1199, 419, c["panel"], 20, c["line"])
     b += t(64, 96, "CLAUDE CODE PLUGIN", 15, c["mute"], 600, font=MONO, ls=2)
     b += t(62, 178, "Straight Answer", 72, c["ink"], 800, ls=-2)
-    b += t(64, 236, "Short, finished AI answers.", 28, c["ink"], 500)
-    b += t(64, 274, "And the right skill for the job.", 28, c["mute"], 500)
+    b += t(64, 236, "Which skill to use, and how to use it.", 28, c["ink"], 500)
+    b += t(64, 274, "Short, finished answers too.", 28, c["mute"], 500)
     b += r(64, 316, 190, 44, c["blue"], 22) + t(159, 344, "Install once", 17, c["on"], 700, "middle")
-    b += t(274, 344, "then ask the way you already do", 17, c["mute"], 500)
-    # right: the same answer, before and after
-    x = 720
-    b += r(x, 50, 200, 320, c["soft"], 14) + t(x + 18, 82, "PLAIN REQUEST", 12, c["mute"], 600, font=MONO, ls=1)
-    y = 102
-    for i, w in enumerate([164, 150, 164, 120, 158, 164, 96, 150, 164, 140, 164, 110, 156, 130]):
-        blank = i in (3, 9)
-        b += r(x + 18, y, w, 9, c["orange"] if blank else c["grey"], 4); y += 18
-    b += t(x + 18, 360, "488 words", 15, c["ink"], 700)
-    x2 = 950
-    b += r(x2, 50, 200, 320, c["soft"], 14, c["blue"]) + t(x2 + 18, 82, "WITH THE PLUGIN", 12, c["blue"], 600, font=MONO, ls=1)
-    y = 102
-    for w in [164, 150, 164, 120, 158, 164, 96]:
-        b += r(x2 + 18, y, w, 9, c["blue"], 4); y += 18
-    b += t(x2 + 18, 360, "245 words", 15, c["ink"], 700)
+    b += t(274, 344, "then say the job", 17, c["mute"], 500)
+    b += step_card(c, 740, 52, 410, 1, "What you have", "the skills on your computer that fit", c["blue"])
+    b += step_card(c, 740, 164, 410, 2, "The best on GitHub", "most stars first, license, last update", c["blue"])
+    b += step_card(c, 740, 276, 410, 3, "How to use it", "the command, what it needs, how to add it", c["green"])
     return svg(1200, 420, b)
 
 
-def proof(c):
+SHORT = [("Half the words", "words per answer", 488, 245, "488", "245", "Shorter in 42 of 42 requests"),
+         ("Nothing left to fill in", "answers with a blank like [Name]", 6, 0, "6 of 42", "0 of 42", "Blanks counted with one fixed pattern"),
+         ("A quarter cheaper", "output tokens per answer", 1946, 1447, "1,946", "1,447", "26% fewer tokens to pay for")]
+
+
+def proof(c, cards=SHORT, la_="Plain request", lb_="With the plugin"):
     b = ""
-    cards = [("Half the words", "words per answer", 488, 245, "488", "245", "Shorter in 42 of 42 requests"),
-             ("Nothing left to fill in", "answers with a blank like [Name]", 6, 0, "6 of 42", "0 of 42", "Blanks counted with one fixed pattern"),
-             ("A quarter cheaper", "output tokens per answer", 1946, 1447, "1,946", "1,447", "26% fewer tokens to pay for")]
     for i, (h, sub, a, s, la, ls, cap) in enumerate(cards):
         x = 12 + i * 396
         b += r(x + .5, .5, 383, 299, c["panel"], 16, c["line"])
         b += t(x + 26, 48, h, 24, c["ink"], 800, ls=-.5) + t(x + 26, 74, sub, 15, c["mute"])
         full = 240
-        b += t(x + 26, 118, "Plain request", 14, c["mute"]) + r(x + 26, 128, full, 24, c["orange"], 6) + t(x + 26 + full + 12, 146, la, 18, c["ink"], 800)
+        b += t(x + 26, 118, la_, 14, c["mute"]) + r(x + 26, 128, full, 24, c["orange"], 6) + t(x + 26 + full + 12, 146, la, 18, c["ink"], 800)
         sw = round(full * s / a)
-        b += t(x + 26, 190, "With the plugin", 14, c["mute"]) + r(x + 26, 200, full, 24, c["soft"], 6) + (r(x + 26, 200, sw, 24, c["blue"], 6) if sw else "") + t(x + 26 + full + 12, 218, ls, 18, c["ink"], 800)
+        b += t(x + 26, 190, lb_, 14, c["mute"]) + r(x + 26, 200, full, 24, c["soft"], 6) + (r(x + 26, 200, sw, 24, c["blue"], 6) if sw else "") + t(x + 26 + full + 12, 218, ls, 18, c["ink"], 800)
         b += t(x + 26, 268, cap, 14, c["mute"])
     return svg(1200, 300, b)
 
 
+import json, re, statistics as st
+EV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "evidence", "round5")
+RES = json.load(open(EV + "/results.json"))["runs"]; SES = json.load(open(EV + "/deck-B-session.json"))
+KEYS = [k[:-2] for k in RES if k.endswith("-A") and k[:-2] + "-B" in RES]
+med = lambda arm, m: st.median(RES[k + "-" + arm][m] for k in KEYS)
+up = lambda x: int(x + 0.5)  # halves go up, the same as the clip
+times = lambda a, b: (f"{a / b:.1f}".rstrip("0").rstrip(".") + " times") if a / b >= 2 else f"{round((1 - b / a) * 100)}%"
+same = lambda m: sum(1 for k in KEYS if RES[k + "-B"][m] < RES[k + "-A"][m])
+SPEED = [(times(med("A", "tokens"), med("B", "tokens")) + " fewer tokens", "tokens per question", med("A", "tokens"), med("B", "tokens"), f"{up(med('A', 'tokens')):,}", f"{up(med('B', 'tokens')):,}", f"Fewer in {same('tokens')} of {len(KEYS)} jobs"),
+         (times(med("A", "sec"), med("B", "sec")) + " faster", "seconds to an answer", med("A", "sec"), med("B", "sec"), f"{up(med('A', 'sec'))} s", f"{up(med('B', 'sec'))} s", f"Faster in {same('sec')} of {len(KEYS)} jobs"),
+         (f"{round(med('B', 'steps'))} step, not {round(med('A', 'steps'))}", "tool calls the assistant made", med("A", "steps"), med("B", "steps"), str(round(med("A", "steps"))), str(round(med("B", "steps"))), f"Fewer in {same('steps')} of {len(KEYS)} jobs")]
+
+
 def finder(c):
-    rows = [("86,483", "heygen-com/hyperframes", "Apache-2.0 · updated 18 Nov 2026"), ("11,769", "nexu-io/openmotion", "Apache-2.0 · updated 18 Nov 2026"),
-            ("3,398", "Vincentwei1021/anything2explainer", "license unclear · updated 18 Nov 2026"), ("2,874", "alchaincyf/huashu-motion", "MIT · updated 16 Nov 2026"),
-            ("1,663", "Tejashmakwana/motionmaxxing", "Apache-2.0 · updated 6 Oct 2026")]
-    b = r(.5, .5, 1199, 479, c["panel"], 16, c["line"]) + r(.5, .5, 1199, 46, c["soft"], 16) + r(.5, 30, 1199, 17, c["soft"], 0)
+    out = [e for e in SES["events"] if e["kind"] == "tool_result"][0]["text"]
+    have = re.search(r"WHAT YOU HAVE \((\d+) fit, of (\d+) installed", out)
+    rows = re.findall(r"^\s+\d\. ([\d,]+) stars\s+(\S+)\s+\[([^\],]+)[^\n]*\n\s+license (\S+) · updated (\S+)", out, re.M)
+    pick = re.search(r"RECOMMENDED, AND HOW TO USE IT\n\s+(\S+)", out).group(1)
+    call = re.search(r"Call it:\s+(.+)", out).group(1).strip()
+    needs = re.search(r"It needs:\s+(.+?)\s+\(named", out)
+    note = re.search(r"^(\d+) repositories looked at, (\d+) skill folders read", out, re.M)
+    H = 636
+    b = r(.5, .5, 1199, H - 1, c["panel"], 16, c["line"]) + r(.5, .5, 1199, 46, c["soft"], 16) + r(.5, 30, 1199, 17, c["soft"], 0)
     for i, col in enumerate((c["orange"], c["grey"], c["green"])):
         b += f'<circle cx="{28 + i * 22}" cy="24" r="6.5" fill="{col}"/>'
-    b += t(600, 29, "find-skill", 14, c["mute"], 600, "middle", MONO)
-    b += t(32, 88, "you", 14, c["mute"], 600, font=MONO) + t(92, 88, "I want to create a video motion graphic. Create me a new one.", 17, c["ink"], 600, font=MONO)
-    b += t(32, 128, "ON GITHUB, MOST STARS FIRST", 13, c["blue"], 700, font=MONO, ls=1)
-    y = 170
-    for st, repo, meta in rows:
-        b += t(150, y, st, 22, c["ink"], 800, "end") + t(158, y, "stars", 13, c["mute"], font=MONO) + t(230, y, repo, 19, c["ink"], 700) + t(1168, y, meta, 14, c["mute"], anchor="end", font=MONO)
-        b += f'<line x1="32" x2="1168" y1="{y + 20}" y2="{y + 20}" stroke="{c["line"]}" stroke-width="1"/>'; y += 52
-    b += t(32, 452, "81 repositories looked at · 12 skill folders read · 5 kept · nothing installed", 14, c["mute"], font=MONO)
-    return svg(1200, 480, b)
+    b += t(600, 29, "claude", 14, c["mute"], 600, "middle", MONO)
+    b += t(32, 84, ">", 16, c["mute"], 600, font=MONO) + t(54, 84, SES["ask"], 16, c["ink"], 600, font=MONO)
+    b += t(32, 128, "1  WHAT YOU HAVE", 13, c["blue"], 700, font=MONO, ls=1)
+    b += t(54, 160, pick, 20, c["ink"], 800) + t(54 + 12 * len(pick) + 14, 160, f"fits · {have.group(1)} of {have.group(2)} installed · read on your computer, nothing sent", 14, c["mute"], font=MONO)
+    b += f'<line x1="32" x2="1168" y1="180" y2="180" stroke="{c["line"]}" stroke-width="1"/>'
+    b += t(32, 214, "2  ON GITHUB, MOST STARS FIRST", 13, c["blue"], 700, font=MONO, ls=1)
+    y = 250
+    for stars, skill, repo, lic, upd in rows:
+        b += t(150, y, stars, 19, c["ink"], 800, "end") + t(158, y, "stars", 12, c["mute"], font=MONO) + t(224, y, skill, 17, c["ink"], 700) + t(224 + 9.6 * len(skill) + 14, y, repo, 14, c["mute"], font=MONO)
+        b += t(1168, y, ("no license" if lic == "none" else lic) + " · updated " + upd, 13, c["orange"] if lic == "none" else c["mute"], anchor="end", font=MONO); y += 36
+    b += f'<line x1="32" x2="1168" y1="{y - 12}" y2="{y - 12}" stroke="{c["line"]}" stroke-width="1"/>'
+    y += 22
+    b += t(32, y, "3  RECOMMENDED, AND HOW TO USE IT", 13, c["green"], 700, font=MONO, ls=1)
+    b += t(54, y + 34, pick, 20, c["ink"], 800) + t(54 + 12 * len(pick) + 14, y + 34, "you already have it, so there is nothing to download", 14, c["mute"], font=MONO)
+    b += r(54, y + 50, 330, 36, c["soft"], 8, c["green"]) + t(68, y + 74, call, 16, c["green"], 700, font=MONO)
+    b += t(400, y + 74, "or just ask in your own words", 14, c["mute"], font=MONO)
+    if needs:
+        b += t(54, y + 112, "It needs  " + needs.group(1), 14, c["mute"], font=MONO)
+    b += t(32, H - 22, f"{note.group(1)} repositories looked at · {note.group(2)} skill folders read · nothing installed", 13, c["mute"], font=MONO)
+    return svg(1200, H, b)
 
 
 def flow(c):
@@ -88,15 +113,15 @@ def flow(c):
     def arrow(x1, x2, y):
         return f'<line x1="{x1}" x2="{x2 - 8}" y1="{y}" y2="{y}" stroke="{c["grey"]}" stroke-width="2"/><path d="M{x2 - 10} {y - 6} L{x2} {y} L{x2 - 10} {y + 6} Z" fill="{c["grey"]}"/>'
     b = r(.5, .5, 1199, 299, c["panel"], 16, c["line"])
-    b += t(32, 44, "EVERY REQUEST", 13, c["mute"], 700, font=MONO, ls=1)
-    b += box(32, 60, 250, "You ask", "as you always do") + arrow(282, 330, 95) + box(330, 60, 380, "One sentence is added for you", "short, finished, your own facts", c["blue"]) + arrow(710, 758, 95) + box(758, 60, 410, "A short answer you can use as it is", "no blanks, nothing extra")
-    b += t(32, 178, "WHEN YOU NEED A SKILL", 13, c["mute"], 700, font=MONO, ls=1)
-    b += box(32, 194, 250, "Say what you want to make", "in your own words") + arrow(282, 330, 229) + box(330, 194, 250, "Your own skills", "checked first, on your machine", c["blue"]) + arrow(580, 628, 229) + box(628, 194, 250, "GitHub", "most stars first", c["blue"]) + arrow(878, 926, 229) + box(926, 194, 242, "A list to choose from", "nothing installed")
+    b += t(32, 44, "WHEN YOU HAVE A JOB", 13, c["mute"], 700, font=MONO, ls=1)
+    b += box(32, 60, 236, "You say the job", "in your own words") + arrow(268, 316, 95) + box(316, 60, 252, "1  What you have", "your own skills, checked first", c["blue"]) + arrow(568, 616, 95) + box(616, 60, 252, "2  The best on GitHub", "most stars first", c["blue"]) + arrow(868, 916, 95) + box(916, 60, 252, "3  How to use it", "one pick, and its command", c["green"])
+    b += t(32, 178, "ON EVERY REQUEST", 13, c["mute"], 700, font=MONO, ls=1)
+    b += box(32, 194, 236, "You ask", "as you always do") + arrow(268, 316, 229) + box(316, 194, 400, "One sentence is added for you", "short, finished, your own facts") + arrow(716, 764, 229) + box(764, 194, 404, "A short answer you can use as it is", "no blanks, nothing extra")
     return svg(1200, 300, b)
 
 
 os.makedirs(OUT, exist_ok=True)
-for name, fn in (("hero", hero), ("proof", proof), ("finder", finder), ("flow", flow)):
+for name, fn in (("hero", hero), ("proof", proof), ("speed", lambda c: proof(c, SPEED, "Without the plugin", "With the plugin")), ("finder", finder), ("flow", flow)):
     for mode, c in T.items():
         open(os.path.join(OUT, f"{name}-{mode}.svg"), "w").write(fn(c))
 print("wrote", sorted(os.listdir(OUT)))

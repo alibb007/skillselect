@@ -165,7 +165,7 @@ def local_skills():
     return out
 
 
-def rank_local(need, skills, k=3):
+def rank_local(need, skills, k=5):
     q = list(dict.fromkeys(toks(need)))
     if not q or not skills:
         return []
@@ -231,7 +231,7 @@ def get(url, tok, raw=False):
     return t if raw else json.loads(t)
 
 
-def search_github(need, tok, limit=5):
+def search_github(need, tok, limit=5, have=()):
     kw = list(dict.fromkeys(words(need)))[:4]
     q = list(dict.fromkeys(toks(need)))
     if not kw:
@@ -276,7 +276,13 @@ def search_github(need, tok, limit=5):
     n_c, n_big = (14, 12) if tok else (8, 6)
     # the big skill collections: their own description never names your topic, so they are always opened
     big = sorted(big.values(), key=lambda it: -it["stargazers_count"])[:n_big]
-    todo = scored[:n_c] + [(0, it["stargazers_count"], it) for it in big if it["full_name"] not in {x[2]["full_name"] for x in scored[:n_c]}]
+    todo = scored[:n_c]
+    # plus the repositories whose own name or description names two of your key words: fewer stars, closer to the job
+    close = [x for x in scored[n_c:] if x[0] >= min(2, len(q))][: n_c // 2 + 1]
+    todo += close
+    todo += [(0, it["stargazers_count"], it) for it in big if it["full_name"] not in {x[2]["full_name"] for x in todo}]
+    skipped = []
+
     def repo(job):
         rel, stars, it = job
         out = []
@@ -300,7 +306,11 @@ def search_github(need, tok, limit=5):
             mt = nm | set(toks(desc))
             picks.append((sum(1 for t in q if t in mt), sum(1 for t in q if t in nm), -len(p), p, name, desc, raw))
         picks.sort(reverse=True)
-        for matched, _, _, p, name, desc, raw in picks[:1]:
+        mine_here = [x for x in picks if (x[4] or os.path.basename(os.path.dirname(x[3]))).lower() in have]
+        if mine_here:  # you already have these: step 1 shows them, so take this repository's next fit instead
+            skipped.extend(x[4] for x in mine_here if x[0] >= min(2, len(q))); picks = [x for x in picks if x not in mine_here]
+        # the best folder of the repository, and a second one when it is named after your topic too
+        for matched, _, _, p, name, desc, raw in picks[:1] + [x for x in picks[1:2] if x[1] >= 1 and x[0] >= min(2, len(q))]:
             folder = os.path.dirname(p)
             how = howto(raw, name or os.path.basename(folder) or it["name"])
             how["add"] = add_command(it["full_name"], folder, ".claude-plugin/marketplace.json" in allp)
@@ -323,14 +333,19 @@ def search_github(need, tok, limit=5):
     if sum(1 for o in fit if o["stars"] >= 10) >= 3:  # drop near-unknown repos when there is enough choice
         fit = [o for o in fit if o["stars"] >= 10]
     half = math.ceil(len(q) / 2)  # skills that fit at least half of the key words come before the looser fits
-    fit.sort(key=lambda o: (o["matched"] < half, -o["stars"], -o["matched"]))
-    seen, res = set(), []
+    close = [o for o in fit if o["matched"] >= half and o["skill"].lower() not in have]
+    if len({(o["repo"], o["skill"]) for o in close}) >= limit:  # enough close fits: show only those
+        fit = close
+    fit.sort(key=lambda o: (-o["stars"], -o["matched"]))  # the list is by stars, as its heading says
+    seen, res, owned = set(), [], len(set(skipped))
     for o in fit:
         if (o["repo"], o["skill"]) in seen:
             continue
         seen.add((o["repo"], o["skill"])); res.append(o)
     if limited:
         notes.append(f"GitHub turned away {len(limited)} of {len(queries)} searches (too many requests), so this list may be short. Wait a minute and ask again.")
+    if owned:
+        notes.append(f"{owned} GitHub {'skill' if owned == 1 else 'skills'} left out of the list because you already have a skill of that name.")
     notes.append(f"{len(cand) + len(big)} repositories looked at, {len(out)} skill folders read, {len(res)} fit at least {need_hits} of your {len(q)} key words.")
     return res[:limit], notes
 
@@ -428,7 +443,7 @@ def main():
     res = dict(need=need, key_words=list(dict.fromkeys(words(need)))[:4], installed_total=len({s["name"] for s in have}), local=rank_local(need, have), online=[], notes=[])
     if "--no-online" not in flags:
         try:
-            res["online"], res["notes"] = search_github(need, token("--no-token" not in flags), lim)
+            res["online"], res["notes"] = search_github(need, token("--no-token" not in flags), lim, {s["name"].lower() for s in have})
         except Limit as e:
             res["notes"].append(str(e))
         except (urllib.error.URLError, OSError, ValueError) as e:
@@ -442,7 +457,7 @@ def main():
         print(f"  {s['name']}  ({s['matched']} of {s['of']} key words)\n     {cut(s['desc'])}\n     {s['path']}")
     if not res["local"]:
         print("  nothing that fits")
-    print(f"\n2. ON GITHUB, MOST STARS FIRST ({len(res['online'])})")
+    print("\n2. ON GITHUB: not searched" if "--no-online" in flags else f"\n2. ON GITHUB, MOST STARS FIRST ({len(res['online'])} you do not have)")
     for i, o in enumerate(res["online"], 1):
         fl = ("  ! " + ", ".join(o["flags"])) if o["flags"] else ""
         more = f", one of {o['skills_in_repo']} skills in this repo" if o["skills_in_repo"] > 1 else ""

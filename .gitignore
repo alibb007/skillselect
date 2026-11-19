@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .DS_Store
+tools/clip/node_modules
+tools/clip/out/
+tools/clip/public/fonts/

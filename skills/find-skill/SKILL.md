@@ -6,7 +6,7 @@ argument-hint: <what you want to do>
 
 # Find a skill, and how to use it
 
-1. Put what the user wants into 3 to 5 topic words: the kind of thing they want, plus one or two other common names or the file type for it (for "turn my quarterly sales numbers into a slide deck": `slide deck presentation pptx`). Leave out their own details such as dates, amounts and names.
+1. Put what the user wants into 3 to 5 topic words: the kind of thing they want, another common name for it, and the field or file type it belongs to (for "turn my quarterly sales numbers into a slide deck": `slide deck presentation pptx`; for "write a blog post about our launch": `blog post article writing`). Leave out their own details such as dates, amounts and names.
 2. Run the finder by its full path (this skill's base directory + `scripts/find_skills.py`). Do not `cd` first:
 
    `python3 "<base directory>/scripts/find_skills.py" "<those words>"`

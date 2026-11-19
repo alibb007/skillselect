@@ -1,0 +1,131 @@
+{
+ "ask": "build a landing page for my product",
+ "installed": [
+  "algorithmic-art",
+  "brainstorming",
+  "changelog-generator",
+  "claude-api",
+  "code-reviewer",
+  "content-production",
+  "copywriting",
+  "data-quality-auditor",
+  "deploy-to-vercel",
+  "dispatching-parallel-agents",
+  "doc-coauthoring",
+  "docx",
+  "domain-name-brainstormer",
+  "dpdpa",
+  "epic-design",
+  "executing-plans",
+  "file-organizer",
+  "financial-health",
+  "gdpr-compliance",
+  "image-enhancer",
+  "internal-comms",
+  "invoice-organizer",
+  "landing",
+  "landing-page-generator",
+  "langsmith-fetch",
+  "mcp-builder",
+  "meeting-insights-analyzer",
+  "page-cro",
+  "pdf",
+  "pptx",
+  "pr-review-expert",
+  "raffle-winner-picker",
+  "receiving-code-review",
+  "requesting-code-review",
+  "seo-auditor",
+  "skill-creator",
+  "slack-gif-creator",
+  "stock-analysis",
+  "systematic-debugging",
+  "tailored-resume-generator",
+  "test-driven-development",
+  "using-git-worktrees",
+  "vercel-cli-with-tokens",
+  "vercel-optimize",
+  "vercel-react-best-practices",
+  "verification-before-completion",
+  "webapp-testing",
+  "writing-plans",
+  "xlsx",
+  "youtube-downloader"
+ ],
+ "fits": [
+  {
+   "name": "landing-page-generator",
+   "use": "builds a landing page as a Next.js component with Tailwind"
+  },
+  {
+   "name": "landing",
+   "use": "builds a premium single-file HTML page with 3D effects and scroll animation"
+  },
+  {
+   "name": "page-cro",
+   "use": "fixes a page that already exists but isn't converting"
+  },
+  {
+   "name": "copywriting",
+   "use": "writes headlines, taglines and CTAs"
+  },
+  {
+   "name": "epic-design",
+   "use": "for cinematic, scroll-driven landing pages"
+  }
+ ],
+ "github": [
+  {
+   "stars": 118427,
+   "skill": "design-taste-frontend",
+   "repo": "Leonxlnx/taste-skill",
+   "license": "MIT",
+   "updated": "2026-11-08"
+  },
+  {
+   "stars": 114811,
+   "skill": "paperclip-page",
+   "repo": "paperclipai/paperclip",
+   "license": "MIT",
+   "updated": "2026-11-19"
+  },
+  {
+   "stars": 108338,
+   "skill": "screenshots-marketing",
+   "repo": "nexu-io/open-design",
+   "license": "Apache-2.0",
+   "updated": "2026-11-18"
+  },
+  {
+   "stars": 108338,
+   "skill": "saas-landing",
+   "repo": "nexu-io/open-design",
+   "license": "Apache-2.0",
+   "updated": "2026-11-18"
+  },
+  {
+   "stars": 61258,
+   "skill": "marketing-psychology",
+   "repo": "coreyhaines31/marketingskills",
+   "license": "MIT",
+   "updated": "2026-11-18"
+  }
+ ],
+ "pick": {
+  "name": "landing-page-generator",
+  "where": "already installed",
+  "call": "/landing-page-generator <what you want>",
+  "why": "nothing to download",
+  "needs": "needs nothing extra"
+ },
+ "run": {
+  "tokens": 45204,
+  "sec": 17.4,
+  "steps": 1
+ },
+ "plain": {
+  "tokens": 528087,
+  "sec": 111.4,
+  "steps": 27
+ }
+}

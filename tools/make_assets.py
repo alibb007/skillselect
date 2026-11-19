@@ -62,7 +62,7 @@ def proof(c, cards=SHORT, la_="Plain request", lb_="With the plugin"):
 
 import json, re, statistics as st
 EV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "evidence", "round5")
-RES = json.load(open(EV + "/results.json"))["runs"]; SES = json.load(open(EV + "/deck-B-session.json"))
+RES = json.load(open(EV + "/results.json"))["runs"]
 KEYS = [k[:-2] for k in RES if k.endswith("-A") and k[:-2] + "-B" in RES]
 med = lambda arm, m: st.median(RES[k + "-" + arm][m] for k in KEYS)
 up = lambda x: int(x + 0.5)  # halves go up, the same as the clip
@@ -71,40 +71,6 @@ same = lambda m: sum(1 for k in KEYS if RES[k + "-B"][m] < RES[k + "-A"][m])
 SPEED = [(times(med("A", "tokens"), med("B", "tokens")) + " fewer tokens", "tokens per question", med("A", "tokens"), med("B", "tokens"), f"{up(med('A', 'tokens')):,}", f"{up(med('B', 'tokens')):,}", f"Fewer in {same('tokens')} of {len(KEYS)} jobs"),
          (times(med("A", "sec"), med("B", "sec")) + " faster", "seconds to an answer", med("A", "sec"), med("B", "sec"), f"{up(med('A', 'sec'))} s", f"{up(med('B', 'sec'))} s", f"Faster in {same('sec')} of {len(KEYS)} jobs"),
          (f"{round(med('B', 'steps'))} step, not {round(med('A', 'steps'))}", "tool calls the assistant made", med("A", "steps"), med("B", "steps"), str(round(med("A", "steps"))), str(round(med("B", "steps"))), f"Fewer in {same('steps')} of {len(KEYS)} jobs")]
-
-
-def finder(c):
-    out = [e for e in SES["events"] if e["kind"] == "tool_result"][0]["text"]
-    have = re.search(r"WHAT YOU HAVE \((\d+) fit, of (\d+) installed", out)
-    rows = re.findall(r"^\s+\d\. ([\d,]+) stars\s+(\S+)\s+\[([^\],]+)[^\n]*\n\s+license (\S+) · updated (\S+)", out, re.M)
-    pick = re.search(r"RECOMMENDED, AND HOW TO USE IT\n\s+(\S+)", out).group(1)
-    call = re.search(r"Call it:\s+(.+)", out).group(1).strip()
-    needs = re.search(r"It needs:\s+(.+?)\s+\(named", out)
-    note = re.search(r"^(\d+) repositories looked at, (\d+) skill folders read", out, re.M)
-    H = 636
-    b = r(.5, .5, 1199, H - 1, c["panel"], 16, c["line"]) + r(.5, .5, 1199, 46, c["soft"], 16) + r(.5, 30, 1199, 17, c["soft"], 0)
-    for i, col in enumerate((c["orange"], c["grey"], c["green"])):
-        b += f'<circle cx="{28 + i * 22}" cy="24" r="6.5" fill="{col}"/>'
-    b += t(600, 29, "claude", 14, c["mute"], 600, "middle", MONO)
-    b += t(32, 84, ">", 16, c["mute"], 600, font=MONO) + t(54, 84, SES["ask"], 16, c["ink"], 600, font=MONO)
-    b += t(32, 128, "1  WHAT YOU HAVE", 13, c["blue"], 700, font=MONO, ls=1)
-    b += t(54, 160, pick, 20, c["ink"], 800) + t(54 + 12 * len(pick) + 14, 160, f"fits · {have.group(1)} of {have.group(2)} installed · read on your computer, nothing sent", 14, c["mute"], font=MONO)
-    b += f'<line x1="32" x2="1168" y1="180" y2="180" stroke="{c["line"]}" stroke-width="1"/>'
-    b += t(32, 214, "2  ON GITHUB, MOST STARS FIRST", 13, c["blue"], 700, font=MONO, ls=1)
-    y = 250
-    for stars, skill, repo, lic, upd in rows:
-        b += t(150, y, stars, 19, c["ink"], 800, "end") + t(158, y, "stars", 12, c["mute"], font=MONO) + t(224, y, skill, 17, c["ink"], 700) + t(224 + 9.6 * len(skill) + 14, y, repo, 14, c["mute"], font=MONO)
-        b += t(1168, y, ("no license" if lic == "none" else lic) + " · updated " + upd, 13, c["orange"] if lic == "none" else c["mute"], anchor="end", font=MONO); y += 36
-    b += f'<line x1="32" x2="1168" y1="{y - 12}" y2="{y - 12}" stroke="{c["line"]}" stroke-width="1"/>'
-    y += 22
-    b += t(32, y, "3  RECOMMENDED, AND HOW TO USE IT", 13, c["green"], 700, font=MONO, ls=1)
-    b += t(54, y + 34, pick, 20, c["ink"], 800) + t(54 + 12 * len(pick) + 14, y + 34, "you already have it, so there is nothing to download", 14, c["mute"], font=MONO)
-    b += r(54, y + 50, 330, 36, c["soft"], 8, c["green"]) + t(68, y + 74, call, 16, c["green"], 700, font=MONO)
-    b += t(400, y + 74, "or just ask in your own words", 14, c["mute"], font=MONO)
-    if needs:
-        b += t(54, y + 112, "It needs  " + needs.group(1), 14, c["mute"], font=MONO)
-    b += t(32, H - 22, f"{note.group(1)} repositories looked at · {note.group(2)} skill folders read · nothing installed", 13, c["mute"], font=MONO)
-    return svg(1200, H, b)
 
 
 def flow(c):
@@ -121,7 +87,7 @@ def flow(c):
 
 
 os.makedirs(OUT, exist_ok=True)
-for name, fn in (("hero", hero), ("proof", proof), ("speed", lambda c: proof(c, SPEED, "Without the plugin", "With the plugin")), ("finder", finder), ("flow", flow)):
+for name, fn in (("hero", hero), ("proof", proof), ("speed", lambda c: proof(c, SPEED, "Without the plugin", "With the plugin")), ("flow", flow)):
     for mode, c in T.items():
         open(os.path.join(OUT, f"{name}-{mode}.svg"), "w").write(fn(c))
 print("wrote", sorted(os.listdir(OUT)))

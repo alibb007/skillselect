@@ -6,10 +6,10 @@
 </p>
 
 <p align="center">
-  <img src="assets/demo.gif" alt="Demo: a person has 19 skills and asks which one to use for a slide deck. In Claude Code the plugin checks the installed skills and finds pptx, lists five GitHub skills by stars, recommends pptx and shows the command /pptx. It took 27 seconds and 39,354 tokens. Across five jobs it used 4.6 times fewer tokens, was 4.8 times faster, and passed 34 of 35 quality checks against 33 of 35. In a separate test of 42 requests, answers came back at half the words (245 against 488)." width="100%">
+  <img src="assets/demo.gif" alt="Demo: a person has 50 skills installed and wants to build a landing page. The plugin finds the 5 installed skills that fit, lists 5 more on GitHub by stars (118,427 down to 61,258), recommends landing-page-generator, which is already installed, and shows its command. With the plugin: 1 step, 17 seconds, 45,204 tokens. Without it: 27 steps, 111 seconds, 528,087 tokens." width="100%">
 </p>
 
-<p align="center"><sub>The Claude Code window is redrawn from a saved session, with links cut to fit and the wait for the search sped up. The request shown took 27 seconds and one step. Across five jobs the plugin used 4.6 times fewer tokens (39,354 against 179,393) and answered 4.8 times faster (19 seconds against 93), in 1 step instead of 14. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
+<p align="center"><sub>The clip is drawn from one saved session in a test folder with 50 public skills. For this request the plugin took 1 step, 17 seconds and 45,204 tokens. Plain Claude took 27 steps, 111 seconds and 528,087 tokens. Each side ran once, and the five-job test is further down. <a href="assets/demo.mp4">Download the clip</a>.</sub></p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-2A78D6?style=flat-square"></a>
@@ -66,14 +66,17 @@ It needs Python 3. There is no account, no API key and no telemetry.
 
 ## One real run
 
-This run is from 18 Nov 2026, in a test folder with 19 public skills installed. It took 27 seconds and one tool call.
+This run is from 18 Nov 2026, in a test folder with 50 public skills from six repositories. I picked the 50 so that several fit the job. The plugin named the 5 that fit, listed 5 GitHub skills the folder did not have, and recommended one that was already installed. It took 17 seconds and one tool call.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/finder-dark.svg">
-  <img src="assets/finder-light.svg" alt="Request: turn my quarterly sales numbers into a slide deck. 1, what you have: pptx fits, 1 of 19 installed. 2, on GitHub, most stars first: pptx in anthropics/skills 197,201, pptx-generator in nexu-io/open-design 108,333, officecli-pptx in iOfficeAI/OfficeCLI 33,434, frontend-slides in zarazhangrui/frontend-slides 32,545, genoffice in genspark-ai/genoffice 12,598, each with license and last update. 3, recommended: pptx, already installed, call it with /pptx, it needs the npm packages pptxgenjs, react-icons, react, react-dom and sharp. Nothing installed." width="100%">
-</picture>
+<p align="center">
+  <img src="assets/example-have.png" alt="Five cards, one for each installed skill that fits: landing-page-generator, landing, page-cro, copywriting and epic-design, each with one line on what it is for." width="100%">
+</p>
 
-It matches your own skills by what each skill says about itself. On GitHub it opens the repositories that mention your topic and the largest skill collections, reads the skill folders inside them, keeps the ones that fit at least two of your key words, and sorts them by stars. The how-to lines come from the skill's own file: its command, the packages and keys its instructions name, and its section titles.
+<p align="center">
+  <img src="assets/example-github.png" alt="Five GitHub skills by stars: design-taste-frontend 118,427, paperclip-page 114,811, screenshots-marketing 108,338, saas-landing 108,338, marketing-psychology 61,258, each with its license." width="100%">
+</p>
+
+It matches your own skills by what each skill says about itself and shows up to five. On GitHub it opens the repositories that mention your topic and the largest skill collections, reads the skill folders inside them, keeps the ones that fit at least two of your key words, leaves out the ones you already have, and sorts the rest by stars. The how-to lines come from the skill's own file: its command, the packages and keys its instructions name, and its section titles.
 
 Only the search words leave your machine, and they go to api.github.com. Nothing about your own skills is sent.
 
@@ -112,14 +115,15 @@ I ran 42 everyday requests, and Claude Opus answered each one twice: once as wri
 
 ## Evidence
 
-Everything behind the numbers is in the [evidence](evidence) folder: the rules written before each test, the requests, the answers, the verdicts and the scripts. Round 5 tested this version on the five jobs. Round 3 tested the sentence the plugin uses. Round 2 tested an earlier sentence without the word "short": the AI judge preferred it over a plain request 39 times to 8, and it cost 50% more output tokens.
+Everything behind the numbers is in the [evidence](evidence) folder: the rules written before each test, the requests, the answers, the verdicts and the scripts. Round 6 is the worked example in the clip. Round 5 tested version 2.0.0 on the five jobs. Round 3 tested the sentence the plugin uses. Round 2 tested an earlier sentence without the word "short": the AI judge preferred it over a plain request 39 times to 8, and it cost 50% more output tokens.
 
 ## Limits
 
 - I tested on one model, Claude Opus. The 42 requests were written by the same model.
-- The five-job test is small, and I looked at the slide deck job while building the finder.
+- The five-job test is small, it ran on version 2.0.0, and I looked at the slide deck job while building the finder.
+- The example in the clip is one run on each side. I ran the plugin side four times while fixing the finder, and the clip shows the fourth.
 - The finder runs when you call it by name. Asked in plain words, Claude did not always start it.
-- The finder matches words, so a search for a legal contract review also returned smart-contract skills. Read a skill before you add it.
+- The finder matches words. In the clip's example, two of the five GitHub skills do not build landing pages: one hosts pages and one makes screenshots. Read a skill before you add it.
 - "It needs" lists what the skill's instructions name, found with fixed patterns. It can miss a requirement or list an optional one.
 - An AI judge read all 42 short-answer pairs and preferred the longer answer 29 times to 7. In its notes it praises the extra advice. So the short answers are for people who want them short.
 - Without a GitHub token the finder can run about two searches an hour.

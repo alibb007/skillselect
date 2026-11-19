@@ -1,0 +1,202 @@
+[
+ {
+  "skill": "landing-page-generator",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "landing",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "epic-design",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "page-cro",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "copywriting",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "code-reviewer",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "stock-analysis",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "data-quality-auditor",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "financial-health",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "content-production",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "pr-review-expert",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "seo-auditor",
+  "repo": "alirezarezvani/claude-skills"
+ },
+ {
+  "skill": "docx",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "pdf",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "pptx",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "xlsx",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "mcp-builder",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "skill-creator",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "claude-api",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "internal-comms",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "slack-gif-creator",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "doc-coauthoring",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "algorithmic-art",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "webapp-testing",
+  "repo": "anthropics/skills"
+ },
+ {
+  "skill": "brainstorming",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "systematic-debugging",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "test-driven-development",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "writing-plans",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "executing-plans",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "requesting-code-review",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "receiving-code-review",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "using-git-worktrees",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "verification-before-completion",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "dispatching-parallel-agents",
+  "repo": "obra/superpowers"
+ },
+ {
+  "skill": "deploy-to-vercel",
+  "repo": "vercel-labs/agent-skills"
+ },
+ {
+  "skill": "vercel-react-best-practices",
+  "repo": "vercel-labs/agent-skills"
+ },
+ {
+  "skill": "vercel-optimize",
+  "repo": "vercel-labs/agent-skills"
+ },
+ {
+  "skill": "vercel-cli-with-tokens",
+  "repo": "vercel-labs/agent-skills"
+ },
+ {
+  "skill": "changelog-generator",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "file-organizer",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "image-enhancer",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "invoice-organizer",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "meeting-insights-analyzer",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "raffle-winner-picker",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "tailored-resume-generator",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "domain-name-brainstormer",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "youtube-downloader",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "langsmith-fetch",
+  "repo": "ComposioHQ/awesome-claude-skills"
+ },
+ {
+  "skill": "gdpr-compliance",
+  "repo": "lawve/legal-skills"
+ },
+ {
+  "skill": "dpdpa",
+  "repo": "lawve/legal-skills"
+ }
+]

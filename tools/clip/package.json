@@ -1,0 +1,16 @@
+{
+ "name": "straight-answer-clip",
+ "version": "1.0.0",
+ "private": true,
+ "dependencies": {
+  "@remotion/cli": "4.0.529",
+  "remotion": "4.0.529",
+  "react": "^18.2.0",
+  "react-dom": "^18.2.0"
+ },
+ "scripts": {
+  "data": "python3 make_data.py",
+  "render": "remotion render src/index.ts Demo out/demo.mp4 --codec h264 --crf 17",
+  "render:flat": "remotion render src/index.ts Demo out/flat.mp4 --codec h264 --crf 18 --props='{\"flat\":true}'"
+ }
+}

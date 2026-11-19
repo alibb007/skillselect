@@ -18,6 +18,6 @@
 
 | Note | |
 |---|---|
-| Model | every call answered by `claude-opus-5-5` |
+| Model | every call answered by `claude-opus-5-5`; in round 5, Claude Code's own web-fetch tool also used `claude-haiku-5-5` in three of the runs without the plugin (see `round5/RULES5.md`) |
 | Names | some drafted messages are signed "Ali": the account name the model could see |
 | Ledgers | `ledger-round2.jsonl`, `ledger-round3.jsonl`: one line per model call with cost and tokens |

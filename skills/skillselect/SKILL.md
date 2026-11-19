@@ -43,4 +43,4 @@ Run the finder by its full path (this skill's base directory + `scripts/find_ski
    Pass on the finder's warnings as written ("no license", "archived", "no update for a year"). If you dropped candidates, say how many in one line.
 5. Stop there. Never install, clone, download or copy a skill yourself. The user runs the add command, or tells you to.
 
-The finder sends only the search words to api.github.com. It reads the skills on this computer locally and sends nothing about them. No account is needed; without a GitHub token, GitHub allows 60 API calls an hour, enough for a few requests.
+The finder contacts GitHub only: it sends the search words to api.github.com and reads public skill files from raw.githubusercontent.com. If the `gh` command is signed in or `GITHUB_TOKEN` is set, it sends that token to GitHub's API with its searches. It reads the skills on this computer locally and sends nothing about them. No account is needed; without a GitHub token, GitHub allows 60 API calls an hour, enough for a few requests.

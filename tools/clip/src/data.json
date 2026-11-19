@@ -114,25 +114,29 @@
    "name": "landing-page-generator",
    "when": "You want the page as a Next.js TSX component with Tailwind, with PAS, AIDA or BAB copy, SEO meta and Core Web Vitals targets.",
    "how": "/landing-page-generator <what you want>",
-   "needs": ""
+   "needs": "",
+   "short": "You want a Next.js page with Tailwind"
   },
   {
    "name": "landing",
    "when": "You want a premium single-file HTML page with 3D CSS, GSAP scroll effects and parallax, starting from a short intake on positioning.",
    "how": "/landing <what you want>",
-   "needs": ""
+   "needs": "",
+   "short": "You want one polished HTML file"
   },
   {
    "name": "epic-design",
    "when": "You want a cinematic page built around scroll (parallax, scrollytelling, text reveals, Apple-style animation).",
    "how": "/epic-design <what you want>",
-   "needs": "pip: Pillow"
+   "needs": "pip: Pillow",
+   "short": "You want a cinematic, scrolling page"
   },
   {
    "name": "copywriting",
    "when": "You want the page's headline, tagline and CTA copy tested before anything is built.",
    "how": "/copywriting <what you want>",
-   "needs": ""
+   "needs": "",
+   "short": "You need the headline and button text"
   }
  ],
  "github": [
@@ -143,7 +147,8 @@
    "license": "MIT",
    "updated": "2026-10-19",
    "when": "You want a single self-contained HTML product page. It is written mainly for affiliate pages.",
-   "needs": "npx: vercel"
+   "needs": "npx: vercel",
+   "short": "One self-contained HTML product page"
   },
   {
    "skill": "landing-page-designer",
@@ -152,7 +157,8 @@
    "license": "MIT",
    "updated": "2026-10-19",
    "when": "You want production-ready HTML/CSS/JS laid out as hero, social proof, how-it-works, features and benefits.",
-   "needs": ""
+   "needs": "",
+   "short": "A classic layout: hero, proof, features"
   },
   {
    "skill": "design-taste-frontend",
@@ -161,7 +167,8 @@
    "license": "MIT",
    "updated": "2026-11-08",
    "when": "You want a polished company site that avoids generic AI-looking design, with plain copy and real product images.",
-   "needs": ""
+   "needs": "",
+   "short": "A polished company-style site"
   },
   {
    "skill": "write-page",
@@ -170,7 +177,8 @@
    "license": "MIT",
    "updated": "2026-07-02",
    "when": "You want a new landing page or section built from Web Anatomy benchmarks.",
-   "needs": ""
+   "needs": "",
+   "short": "A page built from benchmark layouts"
   },
   {
    "skill": "seo-landing",
@@ -179,7 +187,8 @@
    "license": "MIT",
    "updated": "2026-10-21",
    "when": "You want a fast static HTML page that targets a 100/100 PageSpeed score and includes schema.org markup.",
-   "needs": ""
+   "needs": "",
+   "short": "A fast static page built for search"
   }
  ],
  "gh": {

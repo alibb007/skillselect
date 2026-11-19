@@ -20,8 +20,6 @@
   <img alt="No telemetry" src="https://img.shields.io/badge/telemetry-none-5B6A80?style=flat-square">
 </p>
 
-> **For recruiters**
->
 > - **Problem.** People install dozens of agent skills. Asked for a job, the assistant loads one and leaves the rest unused.
 > - **What I built.** A two-stage retrieval pipeline in plain Python: query expansion, BM25 with field weights, rank fusion of fit and GitHub stars, then a re-rank step by the model.
 > - **How I tested it.** I wrote the pass rule before the run, tuned on 12 requests, froze the code with a checksum, and ran 24 sealed requests once.
@@ -56,7 +54,7 @@ A second command sorts the skills you already have into categories:
 /skillselect categorize
 ```
 
-It needs Python 3. SkillSelect never uploads your skills and never installs or deletes anything. There is no login, no paid API and no telemetry. Only the search words leave your computer, and they go to api.github.com.
+It needs Python 3. SkillSelect never uploads your skills and never installs or deletes anything. There is no login, no paid API and no telemetry. It contacts GitHub only: the search words go to api.github.com, and public skill files are read from raw.githubusercontent.com. If the `gh` command is signed in or `GITHUB_TOKEN` is set, the finder sends that token to GitHub's API with its searches, as `gh` itself would.
 
 To try it without installing, clone the repository and start Claude Code with the folder:
 
@@ -70,56 +68,14 @@ claude --plugin-dir skillselect
   <img src="assets/flow-light.svg" alt="When you have a job: you type /skillselect and the job, SkillSelect scores your skills, adds GitHub skills, and keeps what does the job with when and how for each. On every request: one sentence is added for you, and you get a short answer you can use as it is." width="100%">
 </picture>
 
-## What you get
-
-This is the answer from a real run in the test folder, cut to two skills from each list. The full answer is in [evidence/round10](evidence/round10).
-
-> **On your computer** (4 of 50 installed fit)
-> - **landing-page-generator**<br>
->   When: you want the page as a Next.js TSX component with Tailwind, with PAS, AIDA or BAB copy, SEO meta and Core Web Vitals targets.<br>
->   How: `/landing-page-generator <what you want>`
-> - **epic-design**<br>
->   When: you want a cinematic page built around scroll (parallax, scrollytelling, text reveals, Apple-style animation).<br>
->   How: `/epic-design <what you want>`<br>
->   Needs: pip: Pillow
->
-> **On GitHub** (5 you do not have)
-> - **landing-page-creator** · Affitor/affiliate-skills · 795 stars · MIT · 2026-10-19<br>
->   When: you want a single self-contained HTML product page. It is written mainly for affiliate pages.<br>
->   Add: `git clone --depth 1 https://github.com/Affitor/affiliate-skills /tmp/affiliate-skills && mkdir -p ~/.claude/skills && cp -R /tmp/affiliate-skills/skills/landing/landing-page-creator ~/.claude/skills/`<br>
->   How: `/landing-page-creator <what you want>`<br>
->   Needs: npx: vercel
-> - **design-taste-frontend** · Leonxlnx/taste-skill · 118,520 stars · MIT · 2026-11-08<br>
->   When: you want a polished company site that avoids generic AI-looking design, with plain copy and real product images.<br>
->   Add: `git clone --depth 1 https://github.com/Leonxlnx/taste-skill /tmp/taste-skill && mkdir -p ~/.claude/skills && cp -R /tmp/taste-skill/skills/taste-skill ~/.claude/skills/`<br>
->   How: `/design-taste-frontend <what you want>`
->
-> **Start with** `/landing-page-generator`. It's already installed, and it builds a whole landing page with the copy and SEO included.
-
-And `/skillselect categorize` in the same folder, cut to two categories:
-
-> **Your 50 skills by category**
->
-> **Web pages (5)**
-> - `/landing`: a premium single-file HTML landing page with GSAP and parallax
-> - `/landing-page-generator`: a Next.js and Tailwind landing page component
-> - `/page-cro`: audits a page that doesn't convert and ranks the fixes
->
-> **Documents & office files (4)**
-> - `/docx`: creates or edits Word documents
-> - `/pptx`: creates or edits slide decks
-> - `/xlsx`: creates, cleans or edits spreadsheets and CSVs
-
-With more than 40 skills, each category shows its count and three commands. You can ask for one category in full.
-
 ## How it picks
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
-  <img src="assets/pipeline-light.svg" alt="Retrieval pipeline in three lanes. LLM layer: request, query expansion, LLM re-rank, answer. Local index: term model, candidate gate, BM25F fit score, top 8. Remote index: GitHub search, fetch SKILL.md, gate and BM25F, rank fusion, top 12. Counts on the arrows: 50 skills, 5 pass, 73 repos, 106 files, 30 pass." width="100%">
+  <img src="assets/pipeline-light.svg" alt="Retrieval pipeline in four lanes. LLM layer: request, query expansion. Local index: term model, candidate gate, BM25F score, top 8. Remote index: GitHub search, fetch skills, gate and BM25F, rank fusion, top 12. LLM layer: re-rank, answer. Counts on the arrows: 50 skills, 5 pass, 73 repos, 106 files, 30 pass." width="100%">
 </picture>
 
-The counts on the arrows are from one run of "landing page" in the 50-skill test folder. 5 of the 50 installed skills passed the gate. On GitHub, 73 repositories led to 106 skill files, and 30 of them passed.
+Read it as a U. The request goes in at the top left and the answer comes out at the bottom left. The counts on the arrows are from one run of "landing page" in the 50-skill test folder. 5 of the 50 installed skills passed the gate. On GitHub, 73 repositories led to 106 skill files, and 30 of them passed.
 
 1. **Query expansion.** Claude turns your request into 2 to 4 topic words and up to 6 close words: other names for the same thing, and its file types.
 2. **Term model.** Words are cut to their stems. Two words side by side also count as a pair, so "landing page" is a term of its own. Topic words and pairs weigh 1, and close words weigh 0.5.
@@ -177,7 +133,7 @@ SkillSelect also adds one sentence to every request, so the answer comes back sh
 ## Limits
 
 - The math alone did not raise the share of GitHub picks that do the job on the sealed requests. It was 40% before and 40% after. It found more good candidates (40 against 26), and the re-rank step turned them into the 88%.
-- The judge and the re-rank step are the same model, Claude Opus, so the 88% and the 100% may flatter it. No person labelled the results.
+- The judge and the re-rank step are the same model, Claude Opus, so the 88% and the 100% may flatter it.
 - 5 of the 19 installed skills that fit were still missed.
 - Claude Opus wrote the 36 test requests, and I chose the fields they cover.
 - The side without the plugin is one run, and the three runs with it all used one request.
@@ -187,24 +143,12 @@ SkillSelect also adds one sentence to every request, so the answer comes back sh
 - Nothing is installed for you. Read a skill before you add it, because it is text your assistant will trust.
 - Without a GitHub token, GitHub allows 60 API calls an hour, which is enough for a few requests.
 
-## Repo map
+## License and credit
 
-| Folder | What it holds |
-|---|---|
-| [skills/skillselect](skills/skillselect) | The skill's instructions and the finder, `scripts/find_skills.py` |
-| [hooks](hooks) | The one sentence that keeps answers short |
-| [evidence](evidence) | The rules written before each test, the data and the scripts. Its README lists every round |
-| [tools/make_assets.py](tools/make_assets.py) | Draws the pictures on this page from the evidence files |
-| [tools/clip](tools/clip) | The film |
+SkillSelect is free to use, copy and change under the [MIT license](LICENSE). The one condition is credit. Keep the license notice with its copyright line when you copy or reuse it. A mention of SkillSelect or of Ali B.B with a link to this repository is welcome too.
 
-To check the sealed scores yourself, put a copy of this repository at commit `e70f08b` in `~/skillselect-2.2.0` and run `score9.py` in `evidence/round9`. It recomputes the table from the saved lists and labels.
+The evidence files quote short descriptions of public skills so the tests can be checked. Each one is named with its repository, and those texts belong to their authors. This repository does not include any of those skills.
 
-```bash
-git clone https://github.com/alibb007/skillselect && cd skillselect
-git worktree add ~/skillselect-2.2.0 e70f08b
-cd evidence/round9 && python3 score9.py sealed
-```
+Claude and Claude Code are trademarks of Anthropic, and GitHub is a trademark of GitHub, Inc. SkillSelect is an independent project. It is not affiliated with or endorsed by either company.
 
-## License
-
-[MIT](LICENSE)
+The software comes without warranty, as the license says. The numbers on this page are from the tests in [evidence](evidence), and they describe those tests only.

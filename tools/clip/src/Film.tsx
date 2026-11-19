@@ -7,21 +7,23 @@ import data from "./data.json";
 // The one exception is the counter in scene 1: it is a picture of "more and more", not a measurement.
 const C = theme.colors;
 const FLAT = Boolean((getInputProps() as any).flat); // for the GIF: no moving grain, no drifting background
-export const SECONDS = 77;
+export const SECONDS = 70;
 const NAME = data.name;
+// the product name is always gold and heavy, so the eye learns it
+const Nm: React.FC = () => <b style={{ color: C.gold, fontWeight: 800 }}>{NAME}</b>;
 
 // when each beat starts, in seconds. Scenes with more to read get more time.
 const T = {
   count: 0.3, burst: 3.3,
-  ask: 5.6, type: 6.1, mess: 7.7,
-  pick: 10.3, lift: 13.1, miss: 14.6, noteA: 15.8,
-  tidy: 19.8, sweep: 20.6,
-  score: 24.2, rank: 26.4,
-  cards: 29.4, card1: 31.0, cardStep: 2.4,
-  what: 41.2,
-  hub: 45.4, row1: 46.4, rowStep: 2.0,
-  chart: 57.2, bar1: 58.4, barStep: 2.5,
-  end: 69.6,
+  ask: 5.6, type: 6.1,
+  pick: 9.6, lift: 12.4, miss: 13.9, noteA: 15.1,
+  tidy: 19.1, sweep: 19.9,
+  score: 23.5, rank: 25.7,
+  cards: 28.7,
+  what: 35.6,
+  hub: 39.8, row1: 40.8, rowStep: 1.6,
+  chart: 49.6, bar1: 50.8, barStep: 2.5,
+  end: 62.0,
 };
 
 const PAD = 96, W = 1920 - PAD * 2, TOP = 350;
@@ -74,7 +76,8 @@ const Headline: React.FC<{ c: Ctx; from: number; to: number; text: string; col?:
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", columnGap: size * 0.27, rowGap: 0, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: size, letterSpacing: "-0.035em", lineHeight: 1.1, color: C.ink }}>
         {words.map((x, i) => {
           const p = sp(c, from + i * 0.07, theme.spring.snappy);
-          return <span key={i} style={{ display: "inline-block", opacity: p, transform: `translateY(${mix(30, 0, p)}px) scale(${mix(0.96, 1, p)})`, color: x.hi ? col : C.ink }}>{x.w}</span>;
+          const isName = x.w.replace(/[^A-Za-z]/g, "") === NAME;
+          return <span key={i} style={{ display: "inline-block", opacity: p, transform: `translateY(${mix(30, 0, p)}px) scale(${mix(0.96, 1, p) * (isName ? 1.05 : 1)})`, color: isName ? C.gold : x.hi ? col : C.ink, WebkitTextStroke: isName ? `1.2px ${C.gold}` : undefined }}>{x.w}</span>;
         })}
       </div>
       {sub ? <div style={{ marginTop: 6, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: size * 0.62, letterSpacing: "-0.02em", color: col, opacity: s, transform: `scale(${mix(0.86, 1, s)})` }}>{sub}</div> : null}
@@ -109,15 +112,15 @@ const Counter: React.FC<{ c: Ctx }> = ({ c }) => {
 const JobRow: React.FC<{ c: Ctx }> = ({ c }) => {
   if (c.f < sec(c, T.ask)) return null;
   const p = sp(c, T.ask + 0.2), hide = Math.min(1, out(c, T.what - 0.3) + tw(c, T.hub, T.hub + 0.4, 0, 1)), o = out(c, T.end - 0.4);
-  const n = Math.round(tw(c, T.type, T.type + 1.9, 0, data.ask.length, theme.ease.inOut));
+  const n = Math.round(interpolate(c.f, [sec(c, T.type), sec(c, T.type + 0.9)], [0, data.ask.length], clampOpt)), blink = Math.floor(c.f / 8) % 2 === 0;
   const withPlugin = sp(c, T.tidy, theme.spring.bouncy);
   return (
     <div style={{ position: "absolute", left: 0, width: 1920, top: 232, height: 76, display: "flex", alignItems: "center", justifyContent: "center", gap: 18, opacity: p * o * hide, transform: `translateY(${mix(-20, 0, p)}px)`, zIndex: 18 }}>
       <div style={{ height: 76, padding: "0 30px", borderRadius: 38, background: C.surface, border: `3px solid ${C.ink}`, boxShadow: `0 14px 34px -18px ${C.shadow}`, display: "flex", alignItems: "center", gap: 16 }}>
-        <span style={{ fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 20, letterSpacing: "0.08em", color: C.hero }}>YOU ASK</span>
-        <span style={{ fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 32, color: C.ink, minWidth: 590 }}>{data.ask.slice(0, n)}{n < data.ask.length ? <span style={{ display: "inline-block", width: 3, height: 32, background: C.ink, marginLeft: 3, verticalAlign: -5 }} /> : null}</span>
+        <span style={{ width: 50, height: 50, borderRadius: 15, border: `3px solid ${C.hero}`, background: C.heroSoft, display: "grid", placeItems: "center", marginLeft: -14 }}><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke={C.hero} strokeWidth="2.8" strokeLinecap="round"><circle cx="11" cy="11" r="6.5" /><path d="M16 16l5 5" /></svg></span>
+        <span style={{ fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 32, color: C.ink, minWidth: 590 }}>{data.ask.slice(0, n)}{n < data.ask.length || (blink && c.f < sec(c, T.pick)) ? <span style={{ display: "inline-block", width: 3, height: 32, background: C.ink, marginLeft: 3, verticalAlign: -5 }} /> : null}</span>
       </div>
-      <div style={{ height: 60, padding: "0 24px", borderRadius: 30, background: C.hero, display: withPlugin > 0.01 ? "flex" : "none", alignItems: "center", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 24, color: C.surface, opacity: withPlugin, transform: `scale(${mix(0.8, 1, withPlugin)})` }}>with {NAME}</div>
+      <div style={{ height: 60, padding: "0 24px", borderRadius: 30, background: C.ink, display: withPlugin > 0.01 ? "flex" : "none", alignItems: "center", gap: 8, fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 25, color: C.surface, opacity: withPlugin, transform: `scale(${mix(0.8, 1, withPlugin)})` }}>with <Nm /></div>
     </div>
   );
 };
@@ -136,16 +139,16 @@ const Tiles: React.FC<{ c: Ctx }> = ({ c }) => (
       const k = fitNames.indexOf(name), fit = k >= 0, isUsed = name === USED;
       const burst = sp(c, T.burst + random("b" + i) * 0.5, theme.spring.bouncy);
       if (burst <= 0.001) return null;
-      const toMess = sp(c, T.mess + random("d" + i) * 0.9, theme.spring.smooth), back = sp(c, T.tidy + (i % 10) * 0.03 + Math.floor(i / 10) * 0.05, theme.spring.snappy);
-      const mess = toMess * (1 - back);
-      const rummage = mess * Math.sin(c.f / 7 + i) * 5 * (c.f < sec(c, T.lift) ? 1 : 0.25);
+      const back = sp(c, T.tidy + (i % 10) * 0.03 + Math.floor(i / 10) * 0.05, theme.spring.snappy);
+      const mess = 1 - back;
+      const rummage = FLAT ? 0 : mess * Math.sin(c.f / 7 + i) * 5 * (c.f > sec(c, T.pick) && c.f < sec(c, T.lift) ? 1 : 0.2);
       const lift = isUsed ? sp(c, T.lift + 0.1, theme.spring.bouncy) * (1 - back) : 0;
       const glow = fit && !isUsed ? Math.min(tw(c, T.miss, T.miss + 0.5, 0, 1), tw(c, T.tidy - 0.2, T.tidy, 1, 0)) : 0;
       const score = sp(c, T.score + 0.3 + col * 0.08 + Math.floor(i / COLS) * 0.05, theme.spring.slow);
       const s = scores[name] || 0;
       const ranked = sp(c, T.rank + (fit ? k * 0.16 : 0), fit ? theme.spring.bouncy : theme.spring.smooth);
       const shift = sp(c, T.lift - 0.2) * mess * SHIFT;
-      let x = mix(mix(960 - TW / 2, g.x, burst), m.x, mess) + rummage - shift, y = mix(mix(560 - TH / 2, g.y, burst), m.y, mess), rot = m.r * mess + (1 - burst) * (random("q" + i) - 0.5) * 240, scale = mix(0.15, 1, burst), z = fit ? 3 : 1;
+      let x = mix(960 - TW / 2, mix(g.x, m.x, mess), burst) + rummage - shift, y = mix(560 - TH / 2, mix(g.y, m.y, mess), burst), rot = m.r * mess * burst + (1 - burst) * (random("q" + i) - 0.5) * 240, scale = mix(0.15, 1, burst), z = fit ? 3 : 1;
       if (lift > 0) { x = mix(x, PILE - SHIFT - TW / 2, lift); y = mix(y, TOP + 16, lift); rot *= 1 - lift; scale *= mix(1, 1.8, lift); z = 9; }
       if (!fit) {
         const gone = out(c, T.cards - 0.25 + (i % 7) * 0.02, 0.3);
@@ -159,11 +162,11 @@ const Tiles: React.FC<{ c: Ctx }> = ({ c }) => (
         );
       }
       // a skill the plugin kept
-      const fly = sp(c, T.cards + k * 0.13), gone = out(c, T.what - 0.4 + k * 0.05, 0.3);
+      const fly = sp(c, T.cards + k * 0.06), gone = out(c, T.what - 0.4 + k * 0.05, 0.3);
       if (gone <= 0) return null;
-      const tx = PAD + k * (CW + 24), ty = TOP, at = T.card1 + k * T.cardStep, info = sp(c, at), active = c.f >= sec(c, at) && c.f < sec(c, at + T.cardStep);
+      const tx = PAD + k * (CW + 24), ty = TOP, info = sp(c, T.cards + 0.9), active = fly > 0.5;
       const hot = ranked > 0.4 || lift > 0.4, blue = ranked > 0.4, f0 = data.fits[k];
-      const label: React.CSSProperties = { fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 17, letterSpacing: "0.08em", color: C.hero, opacity: info };
+      const label: React.CSSProperties = { fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 28, letterSpacing: "0.08em", color: C.hero, opacity: info };
       return (
         <div key={name} style={{ position: "absolute", left: mix(x, tx, fly), top: mix(y, ty, fly) - (1 - gone) * 30, width: mix(TW, CW, fly), height: mix(TH, CH, fly), borderRadius: mix(18, 28, fly), overflow: "hidden", zIndex: lift > 0 ? 9 : 5,
           background: C.surface, border: `${glow > 0.1 || hot ? 4 : 2}px ${glow > 0.1 && !hot ? "dashed" : "solid"} ${fly > 0.5 ? (active ? C.hero : C.line) : blue ? C.hero : lift > 0.4 ? C.ink : glow > 0.1 ? C.warn : C.line}`,
@@ -174,11 +177,11 @@ const Tiles: React.FC<{ c: Ctx }> = ({ c }) => (
           <div style={{ position: "absolute", inset: 0, padding: 28, display: "flex", flexDirection: "column", opacity: Math.max(0, fly * 1.6 - 0.6) }}>
             <div style={{ width: 54, height: 54, borderRadius: 16, background: active ? C.hero : C.heroSoft, display: "grid", placeItems: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 28, color: active ? C.surface : C.hero }}>{k + 1}</div>
             <div style={{ marginTop: 18, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: name.length > 16 ? 33 : 40, letterSpacing: "-0.02em", lineHeight: 1.05, color: C.ink }}>{soft(name)}</div>
-            <div style={{ marginTop: 18, ...label }}>WHEN</div>
-            <div style={{ marginTop: 6, fontFamily: theme.fonts.body, fontWeight: 500, fontSize: 23, lineHeight: 1.3, color: C.ink, opacity: info, transform: `translateY(${mix(14, 0, info)}px)` }}>{f0.when}</div>
+            <div style={{ marginTop: 26, ...label }}>WHEN</div>
+            <div style={{ marginTop: 8, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 37, letterSpacing: "-0.02em", lineHeight: 1.12, color: C.ink, opacity: info, transform: `translateY(${mix(14, 0, info)}px)` }}>{f0.short}</div>
             <div style={{ flex: 1 }} />
-            {f0.needs ? <div style={{ marginBottom: 12, fontFamily: theme.fonts.body, fontWeight: 600, fontSize: 21, color: C.ink, opacity: info }}><span style={{ ...label, opacity: 1, marginRight: 10 }}>NEEDS</span>{f0.needs}</div> : null}
-            <div style={label}>HOW</div>
+            {f0.needs ? <div style={{ marginBottom: 12, fontFamily: theme.fonts.body, fontWeight: 600, fontSize: 21, color: C.ink, opacity: info }}><span style={{ ...label, fontSize: 20, opacity: 1, marginRight: 10 }}>NEEDS</span>{f0.needs}</div> : null}
+            <div style={{ ...label, fontSize: 22 }}>HOW</div>
             <div style={{ marginTop: 8, fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 20, lineHeight: 1.3, color: C.surface, background: C.ink, borderRadius: 12, padding: "12px 14px", opacity: info, transform: `translateY(${mix(14, 0, info)}px)` }}>{f0.how}</div>
           </div>
         </div>
@@ -276,7 +279,7 @@ const Rows: React.FC<{ c: Ctx }> = ({ c }) => {
               <div style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, letterSpacing: "-0.02em", color: C.ink, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{g.skill}</div>
               <div style={{ fontFamily: theme.fonts.mono, fontWeight: 500, fontSize: 19, color: C.note, marginTop: 2, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis" }}>{g.repo} · {g.license}</div>
             </div>
-            <div style={{ flex: 1, fontFamily: theme.fonts.body, fontWeight: 500, fontSize: 23, lineHeight: 1.28, color: C.ink, opacity: sp(c, at + 0.35) }}><span style={{ fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 17, letterSpacing: "0.08em", color: C.hero, marginRight: 10 }}>WHEN</span>{g.when}</div>
+            <div style={{ flex: 1, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 31, letterSpacing: "-0.02em", lineHeight: 1.15, color: C.ink, opacity: sp(c, at + 0.3) }}><span style={{ fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 23, letterSpacing: "0.08em", color: C.hero, marginRight: 14 }}>WHEN</span>{g.short}</div>
             <div style={{ width: 250, flex: "0 0 auto" }}>
               <div style={{ textAlign: "right", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 34, letterSpacing: "-0.02em", color: C.ink, fontVariantNumeric: "tabular-nums" }}>{fmt(g.stars * sp(c, at + 0.2, theme.spring.smooth))}<span style={{ color: C.star, fontSize: 27, marginLeft: 8 }}>★</span></div>
               <div style={{ marginTop: 6, height: 12, borderRadius: 6, background: C.bg, overflow: "hidden" }}><div style={{ width: `${Math.max(2, (g.stars / max) * 100) * bar}%`, height: "100%", borderRadius: 6, background: C.hero, marginLeft: "auto" }} /></div>
@@ -308,9 +311,9 @@ const Chart: React.FC<{ c: Ctx }> = ({ c }) => {
           <div key={i} style={{ position: "absolute", left: PAD, top: 330 + i * (RH + 14), width: W, height: RH, borderRadius: 26, background: C.surface, border: `${active ? 4 : 2}px solid ${active ? C.hero : C.line}`, boxShadow: `0 18px 40px -26px ${C.shadow}`, display: "flex", alignItems: "center", padding: "0 34px", gap: 28, opacity: p * o, transform: `translateY(${mix(40, 0, p)}px) scale(${mix(0.97, 1, p)})` }}>
             <div style={{ width: 380, flex: "0 0 auto", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 36, letterSpacing: "-0.02em", lineHeight: 1.08, color: C.ink }}>{r.label}</div>
             <div style={{ flex: 1 }}>
-              {[{ v: r.bv, t: r.bt, col: C.warn, who: `Without ${NAME}` }, { v: r.av, t: r.at, col: C.hero, who: `With ${NAME}` }].map((k, j) => (
+              {[{ v: r.bv, t: r.bt, col: C.warn, who: "Without" }, { v: r.av, t: r.at, col: C.hero, who: "With" }].map((k, j) => (
                 <div key={j} style={{ display: "flex", alignItems: "center", gap: 16, marginTop: j ? 12 : 0 }}>
-                  <div style={{ width: 232, flex: "0 0 auto", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 23, color: C.ink }}>{k.who}</div>
+                  <div style={{ width: 232, flex: "0 0 auto", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 23, color: C.ink }}>{k.who} <Nm /></div>
                   <div style={{ flex: 1, height: 30, borderRadius: 15, background: C.bg, overflow: "hidden" }}><div style={{ width: `${Math.max(1.5, (k.v / m) * 100) * g}%`, height: "100%", borderRadius: 15, background: k.col }} /></div>
                   <div style={{ width: 190, textAlign: "right", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 32, color: k.col, fontVariantNumeric: "tabular-nums", whiteSpace: "nowrap" }}>{k.t}</div>
                 </div>
@@ -327,20 +330,25 @@ const Chart: React.FC<{ c: Ctx }> = ({ c }) => {
   );
 };
 
+const endPos = (i: number) => ({ x: 960 - 78 + (random("ex" + i) - 0.5) * 1560, y: 880 + (random("ey" + i) - 0.5) * 230, r: (random("er" + i) - 0.5) * 50 });
 const End: React.FC<{ c: Ctx }> = ({ c }) => {
   if (c.f < sec(c, T.end)) return null;
-  const p = sp(c, T.end + 0.6), q = sp(c, T.end + 1.6), u = sp(c, T.end + 2.2, theme.spring.bouncy), bob = FLAT ? 0 : Math.sin(c.f / 26) * 3;
+  const p = sp(c, T.end + 1.5), q = sp(c, T.end + 2.4), u = sp(c, T.end + 3.0, theme.spring.bouncy), GW = 250;
   return (
-    <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 26 }}>
-      <div style={{ display: "grid", gridTemplateColumns: `repeat(${COLS}, 34px)`, gap: 10, marginBottom: 14 }}>
-        {data.installed.map((name, i) => {
-          const d = sp(c, T.end + 0.1 + i * 0.012, theme.spring.snappy), fit = fitNames.includes(name);
-          return <div key={i} style={{ width: 34, height: 34, borderRadius: 9, background: fit ? C.hero : C.surface, border: `2px solid ${fit ? C.hero : C.line}`, opacity: d, transform: `scale(${mix(0.5, 1, d)})` }} />;
-        })}
-      </div>
-      <div style={{ width: 1600, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 112, letterSpacing: "-0.045em", lineHeight: 1.02, color: C.ink, opacity: p, transform: `translateY(${mix(40, 0, p) + bob}px) scale(${mix(0.94, 1, p)})` }}>Don't let your <span style={{ color: C.hero }}>best skill</span> sit unused.</div>
-      <div style={{ fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 40, color: C.ink, opacity: q, transform: `translateY(${mix(24, 0, q)}px)` }}>{NAME}, a plugin for Claude Code</div>
-      <div style={{ marginTop: 10, fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 30, color: C.surface, background: C.ink, borderRadius: 22, padding: "20px 34px", opacity: u, transform: `scale(${mix(0.9, 1, u)})` }}>/plugin install {data.slug} --marketplace alibb007/{data.slug}</div>
+    <AbsoluteFill>
+      {data.installed.map((name, i) => {
+        if (fitNames.includes(name)) return null;
+        const m = endPos(i), d = sp(c, T.end + 0.05 + i * 0.012, theme.spring.snappy);
+        return <div key={name} style={{ position: "absolute", left: m.x, top: m.y, width: 156, height: 84, borderRadius: 16, background: C.surface, border: `2px solid ${C.line}`, display: "grid", placeItems: "center", textAlign: "center", padding: 8, fontFamily: theme.fonts.body, fontWeight: 600, fontSize: 15, lineHeight: 1.2, color: C.faint, opacity: d * 0.7, transform: `rotate(${m.r}deg) scale(${mix(0.5, 1, d)})` }}>{soft(name)}</div>;
+      })}
+      {data.fits.map((f, k) => {
+        const m = endPos(data.installed.indexOf(f.name)), rise = sp(c, T.end + 0.7 + k * 0.2, theme.spring.bouncy), float = FLAT ? 0 : Math.sin(c.f / 18 + k * 1.7) * 7;
+        const tx = 960 - (K * GW - 30) / 2 + k * GW, ty = 150;
+        return <div key={f.name} style={{ position: "absolute", left: mix(m.x, tx, rise), top: mix(m.y, ty, rise) + float * rise, width: mix(156, GW - 30, rise), height: mix(84, 112, rise), borderRadius: 20, background: C.hero, border: `5px solid ${C.gold}`, boxShadow: `0 26px 54px -18px ${C.hero}AA`, display: "grid", placeItems: "center", textAlign: "center", padding: 8, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: mix(15, 23, rise), lineHeight: 1.12, color: C.surface, transform: `rotate(${m.r * (1 - rise)}deg)`, zIndex: 5 }}>{soft(f.name)}</div>;
+      })}
+      <div style={{ position: "absolute", left: 0, width: 1920, top: 330, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 112, letterSpacing: "-0.045em", lineHeight: 1.02, color: C.ink, opacity: p, transform: `translateY(${mix(40, 0, p)}px) scale(${mix(0.94, 1, p)})` }}>Don't let your <span style={{ color: C.hero }}>best skill</span> sit unused.</div>
+      <div style={{ position: "absolute", left: 0, width: 1920, top: 478, textAlign: "center", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 44, color: C.ink, opacity: q, transform: `translateY(${mix(24, 0, q)}px)` }}><span style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 56, color: C.gold, WebkitTextStroke: `1px ${C.gold}` }}>{NAME}</span>, a plugin for Claude Code</div>
+      <div style={{ position: "absolute", left: 0, width: 1920, top: 590, display: "flex", justifyContent: "center", opacity: u, transform: `scale(${mix(0.9, 1, u)})` }}><div style={{ fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 30, color: C.surface, background: C.ink, borderRadius: 22, padding: "20px 34px" }}>/plugin install {data.slug} --marketplace alibb007/{data.slug}</div></div>
     </AbsoluteFill>
   );
 };
@@ -358,18 +366,18 @@ export const Film: React.FC = () => {
       <Could c={c} />
       <Headline c={c} from={T.tidy} to={T.score - 0.3} text={`*${NAME}* reads *every* skill you have.`} />
       <Headline c={c} from={T.score} to={T.cards - 0.3} text="It *scores* each one against your request." />
-      <Headline c={c} from={T.cards} to={T.what - 0.4} text={`${NAME} found the *${K}* most useful skills for you.`} sub="No more guessing!" />
+      <Headline c={c} from={T.cards} to={T.what - 0.4} text={`${NAME} found the *${K}* most useful skills you *already* *have!*`} sub="No more guessing!" />
       <Question c={c} />
       <Headline c={c} from={T.hub} to={T.chart - 0.3} text={`${NAME} searches *GitHub* and brings back *${g}* that fit.`} />
-      <Headline c={c} from={T.chart} to={T.end - 0.3} text={`See the difference *with* and without ${NAME}.`} />
+      <Headline c={c} from={T.chart} to={T.end - 0.3} text={`Difference *with* and without ${NAME}`} />
       <JobRow c={c} />
       <Tiles c={c} />
       <Rows c={c} />
       <Chart c={c} />
       <Note c={c} from={T.noteA} to={T.tidy - 0.4}>Plain Claude, same request, {pl.runs} runs: it loaded 1 of these {K} skills in {pl.one} runs and 2 in {pl.more}.</Note>
-      <Note c={c} from={T.rank + 0.6} to={T.cards - 0.4}>{data.passed} of {data.installed.length} passed the match rule. {NAME} kept the {K} whose description does the job.</Note>
+      <Note c={c} from={T.rank + 0.6} to={T.cards - 0.4}>{data.passed} of {data.installed.length} passed the match rule. <Nm /> kept the {K} whose description does the job.</Note>
       <Note c={c} from={T.row1 + 1} to={T.chart - 0.4}>{data.gh.repos} repositories searched, {data.gh.files} skill files read, {data.gh.passed} matched, {g} kept. Nothing is installed for you.</Note>
-      <Note c={c} from={T.bar1 + 5} to={T.end - 0.4}>Tokens, time, steps: Claude answering which skills to use, with {NAME} (middle of 3 runs) and without (1 run). Claude Opus.</Note>
+      <Note c={c} from={T.bar1 + 5} to={T.end - 0.4}>Tokens, time, steps: Claude answering which skills to use, with <Nm /> (middle of 3 runs) and without (1 run). Claude Opus.</Note>
       <End c={c} />
       <Finish c={c} />
     </AbsoluteFill>

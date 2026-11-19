@@ -4,6 +4,7 @@
 - the fit score of each installed skill: the finder's own BM25 score on the test folder (set SANDBOX to its skills folder;
   without it the scores already in data.json are kept)
 - the skills kept, when to use each, how, and what they need: the session in evidence/round10/landing-session.json
+- the short WHEN lines: short.json, hand-written summaries of those lines
 - what plain Claude loaded on its own: evidence/round7/results.json
 - tokens, seconds, steps: evidence/round10/results.json (with: the middle of three first-use runs; without: the round-6 run)"""
 import json, os, re, sys
@@ -39,6 +40,9 @@ if os.environ.get("SANDBOX"):
     core, extra, w = F.query(topic, also); docs = [F.terms(s["name"]) * 3 + F.terms(s["desc"]) for s in sk]
     scores = {n: round(x, 2) for n, x in zip(box, F.bm25(docs, w))}
 assert scores and len(scores) == len(box), "set SANDBOX to the test folder's .claude/skills to score the 50 skills"
+SHORT = json.load(open(H + "/short.json"))
+for f in fits: f["short"] = SHORT["fits"].get(f["name"], f["when"])
+for g in github: g["short"] = SHORT["github"].get(g["skill"], g["when"])
 names = [f["name"] for f in fits]; runs = r7["runs"]
 loaded = [[s for s in v["skills_loaded"] if s in names] for v in runs.values()]
 plain = dict(used=max(loaded, key=loaded.count), runs=len(runs), one=sum(1 for l in loaded if len(l) == 1), more=sum(1 for l in loaded if len(l) > 1), none=sum(1 for l in loaded if not l))

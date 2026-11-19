@@ -101,55 +101,61 @@ def proof(c):
 
 
 def pipeline(c):
-    out = [r(.5, .5, 1259, 371, c["panel"], 16, c["line"])]
+    """Four lanes, read as a U: the request goes in top left, the answer comes out bottom left."""
+    W, LH = 984, 108
+    out = [r(.5, .5, W - 1, 483, c["panel"], 16, c["line"])]
 
     def lane(y, label):
-        out.append(r(8, y, 1244, 110, c["card"], 10, c["line"]) + t(22, y + 20, label, 12, c["mute"], 700, font=MONO, ls=1))
+        out.append(r(8, y, 924, LH, c["card"], 10, c["line"]) + t(22, y + 21, label, 12.5, c["mute"], 700, font=MONO, ls=1))
 
     def node(x, y, w, title, mono, kind="math"):
         fill, stroke = {"math": (c["panel"], c["ink"]), "llm": (c["osoft"], c["orange"]), "io": (c["gsoft"], c["green"])}[kind]
-        s = r(x, y, w, 68, fill, 7, stroke, 1.4) + t(x + 10, y + 22, title, 14, c["ink"], 700, room=w - 14, pic="pipeline")
-        for i, m in enumerate(mono):
-            s += t(x + 10, y + 41 + 15 * i, m, 12, c["mute"], font=MONO, room=w - 16, pic="pipeline")
+        s = r(x, y, w, 70, fill, 8, stroke, 1.6) + t(x + 10, y + 23, title, 15, c["ink"], 700, room=w - 12, pic="pipeline")
+        for i, mm in enumerate(mono):
+            s += t(x + 10, y + 43 + 16 * i, mm, 12.5, c["mute"], font=MONO, room=w - 14, pic="pipeline")
         out.append(s)
 
     def edge(points, pill=None, px=0, py=0):
         d = "M" + " L".join(f"{x} {y}" for x, y in points); (x1, y1), (x2, y2) = points[-2], points[-1]
         if x2 != x1:
-            s = 1 if x2 > x1 else -1; head = f"M{x2 - 9 * s} {y2 - 5} L{x2} {y2} L{x2 - 9 * s} {y2 + 5} Z"
+            sg = 1 if x2 > x1 else -1; head = f"M{x2 - 10 * sg} {y2 - 5.5} L{x2} {y2} L{x2 - 10 * sg} {y2 + 5.5} Z"
         else:
-            s = 1 if y2 > y1 else -1; head = f"M{x2 - 5} {y2 - 9 * s} L{x2} {y2} L{x2 + 5} {y2 - 9 * s} Z"
-        out.append(f'<path d="{d}" fill="none" stroke="{c["grey"]}" stroke-width="1.6"/><path d="{head}" fill="{c["grey"]}"/>')
+            sg = 1 if y2 > y1 else -1; head = f"M{x2 - 5.5} {y2 - 10 * sg} L{x2} {y2} L{x2 + 5.5} {y2 - 10 * sg} Z"
+        out.append(f'<path d="{d}" fill="none" stroke="{c["grey"]}" stroke-width="1.8"/><path d="{head}" fill="{c["grey"]}"/>')
         if pill:
-            w = 14 + 7.4 * len(pill)
-            out.append(r(round(px - w / 2), py - 11, round(w), 21, c["bsoft"], 10.5, c["blue"]) + t(px, py + 4, pill, 12, c["blue"], 700, "middle", font=MONO))
+            w = 16 + 7.6 * len(pill)
+            out.append(r(round(px - w / 2), py - 11.5, round(w), 23, c["bsoft"], 11.5, c["blue"]) + t(px, py + 4.5, pill, 12.5, c["blue"], 700, "middle", font=MONO))
 
-    YA, YB, YC = 12, 130, 248
-    lane(YA, "LLM LAYER · CLAUDE"); lane(YB, "LOCAL INDEX · INSTALLED SKILLS"); lane(YC, "REMOTE INDEX · GITHUB")
-    a, b, cc = YA + 32, YB + 32, YC + 32
-    node(20, a, 150, "Request", ['"build a', 'landing page"'], "io")
-    node(210, a, 200, "1 · Query expansion", ["topic: landing page", "close: html css …"], "llm")
-    node(210, b, 200, "2 · Term model", ["stems + bigrams", "weights 1 / 1 / 0.5"])
-    node(490, b, 190, "3 · Candidate gate", ["Σ w(shared) ≥ 1.5", "drops 1-word overlap"])
-    node(760, b, 190, "4 · BM25F fit score", ["k1 1.5 · b 0.75", "name field ×3"])
-    XC = [210, 442, 674, 906]
-    node(XC[0], cc, 152, "3 · GitHub Search", ["up to 13 queries", "sorted by stars"])
-    node(XC[1], cc, 152, "4 · Fetch SKILL.md", ["tree API + raw", "nothing installed"])
-    node(XC[2], cc, 152, "5 · Gate + BM25F", ["same term model", "on fetched pool"])
-    node(XC[3], cc, 152, "6 · Rank fusion", ["1/(60+r_fit)", "+ 1/(60+r_stars)"])
-    node(930, a, 170, "7 · LLM re-rank", ["reads descriptions", "keeps ≤ 5 per list"], "llm")
-    node(1130, a, 118, "Answer", ["4 + 5 skills", "when · how"], "io")
-    edge([(170, a + 34), (208, a + 34)])
-    edge([(310, a + 68), (310, b - 2)])
-    edge([(310, b + 68), (310, cc - 2)])
-    edge([(410, b + 34), (488, b + 34)], f"{INSTALLED} skills", 449, b + 14)
-    edge([(680, b + 34), (758, b + 34)], f"{len(J05['local'])} pass", 719, b + 14)
-    edge([(950, b + 34), (990, b + 34), (990, a + 70)], "top 8", 990, b - 14)
+    Y = [10, 128, 246, 364]
+    lane(Y[0], "LLM LAYER · CLAUDE"); lane(Y[1], "LOCAL INDEX · INSTALLED SKILLS"); lane(Y[2], "REMOTE INDEX · GITHUB"); lane(Y[3], "LLM LAYER · CLAUDE")
+    n1, n2, n3, n4 = (y + 31 for y in Y); mid = 35
+    node(20, n1, 190, "Request", ['"build a landing page"'], "io")
+    node(250, n1, 250, "1 · Query expansion", ["topic: landing page", "close: html css signup …"], "llm")
+    node(180, n2, 220, "2 · Term model", ["stems + word pairs", "weights 1 / 1 / 0.5"])
+    node(486, n2, 190, "3 · Candidate gate", ["Σ w(shared) ≥ 1.5", "drops 1-word overlap"])
+    node(748, n2, 176, "4 · BM25F score", ["k1 1.5 · b 0.75", "name field ×3"])
+    XC = [20, 266, 512, 758]
+    node(XC[0], n3, 160, "3 · GitHub Search", ["up to 13 queries", "sorted by stars"])
+    node(XC[1], n3, 160, "4 · Fetch skills", ["tree API + raw file", "nothing installed"])
+    node(XC[2], n3, 160, "5 · Gate + BM25F", ["same term model", "on fetched pool"])
+    node(XC[3], n3, 166, "6 · Rank fusion", ["1/(60+r_fit)", "+ 1/(60+r_stars)"])
+    node(700, n4, 224, "7 · LLM re-rank", ["reads the descriptions", "keeps ≤ 5 per list"], "llm")
+    node(430, n4, 200, "Answer", ["4 + 5 skills", "when · how · needs"], "io")
+    edge([(210, n1 + mid), (248, n1 + mid)])
+    edge([(300, n1 + 70), (300, n2 - 2)])
+    edge([(220, n2 + 70), (220, Y[2] - 5), (100, Y[2] - 5), (100, n3 - 2)])
+    edge([(400, n2 + mid), (484, n2 + mid)], f"{INSTALLED} skills", 442, n2 + 14)
+    edge([(676, n2 + mid), (746, n2 + mid)], f"{len(J05['local'])} pass", 711, n2 + 14)
     for i, lab in enumerate([f"{REPOS} repos", f"{FILES} files", f"{len(J05['pool'])} pass"]):
-        edge([(XC[i] + 152, cc + 34), (XC[i + 1] - 2, cc + 34)], lab, XC[i] + 152 + 40, cc + 14)
-    edge([(1058, cc + 34), (1076, cc + 34), (1076, a + 70)], "top 12", 1076, cc - 14)
-    edge([(1100, a + 34), (1128, a + 34)])
-    return svg(1260, 372, "".join(out))
+        edge([(XC[i] + 160, n3 + mid), (XC[i + 1] - 2, n3 + mid)], lab, XC[i] + 160 + 43, n3 + 14)
+    edge([(924, n2 + mid), (954, n2 + mid), (954, n4 + mid), (926, n4 + mid)], "top 8", 954, Y[2] + LH // 2)
+    edge([(841, n3 + 70), (841, n4 - 2)], "top 12", 841, Y[3] - 5)
+    edge([(700, n4 + mid), (632, n4 + mid)])
+    out.append(t(22, n4 + 28, "Counts on the arrows: one real run", 13, c["mute"], 600) + t(22, n4 + 48, 'of "landing page" in a folder of', 13, c["mute"], 600) + t(22, n4 + 68, f"{INSTALLED} public skills.", 13, c["mute"], 600))
+    lx = 540
+    for i, (col, lab) in enumerate(((c["green"], "you"), (c["orange"], "Claude reads"), (c["ink"], "math"))):
+        out.append(r(lx + i * 130, n1 + 26, 16, 16, "none", 4, col, 2) + t(lx + i * 130 + 24, n1 + 39, lab, 13, c["mute"], 600))
+    return svg(W, 484, "".join(out))
 
 
 def lift(c):

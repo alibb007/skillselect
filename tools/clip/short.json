@@ -1,0 +1,16 @@
+{
+ "note": "Short forms of the WHEN lines in evidence/round10/landing-session.json, written by hand for the film. A skill without an entry shows its full line.",
+ "fits": {
+  "landing-page-generator": "You want a Next.js page with Tailwind",
+  "landing": "You want one polished HTML file",
+  "epic-design": "You want a cinematic, scrolling page",
+  "copywriting": "You need the headline and button text"
+ },
+ "github": {
+  "landing-page-creator": "One self-contained HTML product page",
+  "landing-page-designer": "A classic layout: hero, proof, features",
+  "design-taste-frontend": "A polished company-style site",
+  "write-page": "A page built from benchmark layouts",
+  "seo-landing": "A fast static page built for search"
+ }
+}

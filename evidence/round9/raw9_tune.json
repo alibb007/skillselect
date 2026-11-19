@@ -1,0 +1,2624 @@
+{
+ "J05": {
+  "A": {
+   "local": [
+    "landing",
+    "landing-page-generator",
+    "page-cro",
+    "copywriting",
+    "epic-design"
+   ],
+   "github": [
+    {
+     "skill": "design-taste-frontend",
+     "repo": "Leonxlnx/taste-skill",
+     "stars": 118490,
+     "desc": "- tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photographs and real product UI (licensed stand-in photographs when the client has none; "
+    },
+    {
+     "skill": "paperclip-page",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Publish static HTML pages and asset folders to the Paperclip S3/CloudFront page host. Use when asked to deploy, host, or share a persistent page, viewer, prototype, report, or static site without here.now."
+    },
+    {
+     "skill": "kami-landing",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Produce a print-grade single-page kami (紙 / 纸) document — warm parchment canvas, ink-blue accent, serif at one weight, no italic, no cool grays. The output reads like a professional white paper or studio one-pager, not an app UI. Multilingual by design (EN · zh-CN · ja). One self-contained HTML file"
+    },
+    {
+     "skill": "saas-landing",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Single-page SaaS landing with hero, features, social proof, pricing, and CTA. Respects the active DESIGN.md color/typography/layout tokens. Trigger keywords: \"saas landing\", \"marketing page\", \"product landing\"."
+    },
+    {
+     "skill": "waitlist-page",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Minimal pre-launch landing with email capture, brand logo, and optional decorative layer. Reads DESIGN.md for colors, typography, and layout rules. Best for: product launches, beta signups, early access programs, indie projects."
+    }
+   ],
+   "notes": [
+    "56 repositories looked at, 7 skill folders read, 5 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [
+    {
+     "name": "landing-page-generator",
+     "fit": 14.072
+    },
+    {
+     "name": "landing",
+     "fit": 13.586
+    },
+    {
+     "name": "page-cro",
+     "fit": 8.156
+    },
+    {
+     "name": "epic-design",
+     "fit": 7.997
+    },
+    {
+     "name": "copywriting",
+     "fit": 5.271
+    }
+   ],
+   "pool": [
+    {
+     "skill": "design-taste-frontend",
+     "repo": "Leonxlnx/taste-skill",
+     "stars": 118490,
+     "desc": "- tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photographs and real product UI (licensed stand-in photographs when the client has none; ",
+     "folder": "skills/taste-skill",
+     "license": "MIT",
+     "updated": "2026-11-08",
+     "archived": false,
+     "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
+     "fit": 5.574,
+     "matched": 5
+    },
+    {
+     "skill": "imagegen-frontend-web",
+     "repo": "feimacode/open-design-agent-kit",
+     "stars": 1150,
+     "desc": "Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE separate horizontal image FOR EVERY section. A landing page with 8 sections produces 8 images. Never compress multiple sections into one image. Enforces compos",
+     "folder": "packages/vscode/assets/open-design/skills/imagegen-frontend-web",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/feimacode/open-design-agent-kit/tree/main/packages/vscode/assets/open-design/skills/imagegen-frontend-web",
+     "fit": 6.843,
+     "matched": 4
+    },
+    {
+     "skill": "landing-page-creator",
+     "repo": "Affitor/affiliate-skills",
+     "stars": 795,
+     "desc": "Build high-converting affiliate landing pages as single self-contained HTML files. Triggers on: \"create a landing page for\", \"build a landing page\", \"product landing page\", \"affiliate landing page\", \"comparison page for\", \"vs page\", \"single product page\", \"conversion page\", \"sales page for affiliate",
+     "folder": "skills/landing/landing-page-creator",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/Affitor/affiliate-skills/tree/main/skills/landing/landing-page-creator",
+     "fit": 7.916,
+     "matched": 3
+    },
+    {
+     "skill": "squeeze-page-builder",
+     "repo": "Affitor/affiliate-skills",
+     "stars": 795,
+     "desc": "Build email capture landing pages (squeeze pages) as single self-contained HTML files. Triggers on: \"build a squeeze page\", \"email capture page\", \"lead magnet page\", \"create an opt-in page\", \"build an email list page\", \"lead capture landing page\", \"create a freebie page\", \"build a page to collect em",
+     "folder": "skills/landing/squeeze-page-builder",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/Affitor/affiliate-skills/tree/main/skills/landing/squeeze-page-builder",
+     "fit": 8.181,
+     "matched": 4
+    },
+    {
+     "skill": "product-showcase-page",
+     "repo": "Affitor/affiliate-skills",
+     "stars": 795,
+     "desc": "Build a single-product deep-dive showcase page as a self-contained HTML file. Triggers on: \"build a product showcase page\", \"deep dive landing page for [product]\", \"create a product spotlight page\", \"product feature page\", \"single product page\", \"detailed page about [product]\", \"build a page showing",
+     "folder": "skills/landing/product-showcase-page",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/Affitor/affiliate-skills/tree/main/skills/landing/product-showcase-page",
+     "fit": 4.585,
+     "matched": 3
+    },
+    {
+     "skill": "webinar-registration-page",
+     "repo": "Affitor/affiliate-skills",
+     "stars": 795,
+     "desc": "Build a webinar or live event registration page as a self-contained HTML file with countdown timer, speaker bio, agenda, and registration form. Triggers on: \"build a webinar registration page\", \"create a webinar sign-up page\", \"event registration landing page\", \"live training registration page\", \"wo",
+     "folder": "skills/landing/webinar-registration-page",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/Affitor/affiliate-skills/tree/main/skills/landing/webinar-registration-page",
+     "fit": 5.477,
+     "matched": 3
+    },
+    {
+     "skill": "seo-landing",
+     "repo": "aleksandr-alhoff/seo-landing",
+     "stars": 212,
+     "desc": "Generates fast, SEO-optimized static HTML landing pages targeting 100/100 PageSpeed (LCP < 2.5s, INP < 100ms, CLS < 0.1), full schema.org JSON-LD, AVIF images, critical CSS, zero external dependencies. Use when: user asks to create/build/generate a landing page, one-pager, or static site with focus ",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-10-21",
+     "archived": false,
+     "url": "https://github.com/aleksandr-alhoff/seo-landing",
+     "fit": 7.007,
+     "matched": 4
+    },
+    {
+     "skill": "copy-thief",
+     "repo": "thalesholleben/copy-thief",
+     "stars": 35,
+     "desc": "- Escreve e revisa copy persuasiva de alta conversão para páginas de vendas (landing pages), advertoriais/pre-sell e VSLs, com foco em tráfego frio vindo de Ads (Meta e Google) para produtos e serviços digitais. Use quando o pedido envolver: escrever ou revisar uma página de vendas, landing page, sa",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-10-12",
+     "archived": false,
+     "url": "https://github.com/thalesholleben/copy-thief",
+     "fit": 3.598,
+     "matched": 2
+    },
+    {
+     "skill": "vibefather",
+     "repo": "liyupi/awesome-vibe-coding-websites",
+     "stars": 19,
+     "desc": "Build a complete website from a VibeFather template: an original design with a live demo and a tested build prompt. Use when the user wants a landing page, portfolio, SaaS site, shop, docs, dashboard, interactive explainer or browser game in a particular style, asks for \\\"a site like …\\\", wants to r",
+     "folder": "skills/vibefather",
+     "license": "NOASSERTION",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/liyupi/awesome-vibe-coding-websites/tree/main/skills/vibefather",
+     "fit": 3.517,
+     "matched": 2
+    },
+    {
+     "skill": "landing-page-designer",
+     "repo": "rdoser13/free-claude-skills",
+     "stars": 15,
+     "desc": "Builds high-converting single-page landing pages for digital products, services, local businesses, lead magnets, and offer pages. Outputs production-ready HTML/CSS/JS using a proven anatomy (hero, social proof, how-it-works, features, benefits, reviews, FAQ, repeated CTA). Use this skill when the us",
+     "folder": "landing-page-designer",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/rdoser13/free-claude-skills/tree/main/landing-page-designer",
+     "fit": 8.166,
+     "matched": 4
+    },
+    {
+     "skill": "web-designer",
+     "repo": "rdoser13/free-claude-skills",
+     "stars": 15,
+     "desc": "Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications (examples include websites, landing pages, dashboards, React components, HTML/CSS layouts, or when styling/beautify",
+     "folder": "web-designer",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/rdoser13/free-claude-skills/tree/main/web-designer",
+     "fit": 8.117,
+     "matched": 6
+    },
+    {
+     "skill": "cro-audit",
+     "repo": "rdoser13/free-claude-skills",
+     "stars": 15,
+     "desc": "Evergreen Conversion Rate Optimization audit and build-check skill. Audits any landing page, sales page, lead gen form, homepage, pricing page, or blog post against a 25-point CRO framework plus a library of proven SaaS conversion patterns. Use when user says \"CRO audit\", \"conversion audit\", \"audit ",
+     "folder": "cro-audit",
+     "license": "MIT",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/rdoser13/free-claude-skills/tree/main/cro-audit",
+     "fit": 5.678,
+     "matched": 3
+    },
+    {
+     "skill": "human-copywrite",
+     "repo": "forint573/human-copywrite",
+     "stars": 13,
+     "desc": "Write, finalize, or clean up reader-facing marketing and long-form copy (landing pages, sales pages, e-books, reports, case studies, product and email copy, founder notes) so it reads like a specific human wrote it and says something worth reading. Use when asked to humanize, de-slop, make less AI-s",
+     "folder": "human-copywrite",
+     "license": "Apache-2.0",
+     "updated": "2026-07-11",
+     "archived": false,
+     "url": "https://github.com/forint573/human-copywrite/tree/main/human-copywrite",
+     "fit": 3.373,
+     "matched": 2
+    },
+    {
+     "skill": "apple-design",
+     "repo": "SudewaJay/apple-design-skill",
+     "stars": 12,
+     "desc": "Apply Apple's current design language (Human Interface Guidelines + Liquid Glass, mid-2026) to any UI work — app interfaces in the iOS/iPadOS/macOS style, and marketing/landing pages in the Apple.com style (huge headlines, alternating light/dark sections, scroll-driven product reveals). Use this ski",
+     "folder": "apple-design",
+     "license": "MIT",
+     "updated": "2026-07-18",
+     "archived": false,
+     "url": "https://github.com/SudewaJay/apple-design-skill/tree/main/apple-design",
+     "fit": 4.966,
+     "matched": 4
+    },
+    {
+     "skill": "audit-page",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The Audit-altitude diagnosis in Web Anatomy. Audit the current state of a landing page, homepage, pricing page, feature page, or comparator page. Score it against a 49-point CRO rubric, diagnose it section by section, and return a PRIORITIZED list of what to fix first. Diagnosis and prioritization o",
+     "folder": "skills/audit-page",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/audit-page",
+     "fit": 4.934,
+     "matched": 3
+    },
+    {
+     "skill": "build-page",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The terminal assembler in Web Anatomy. Take a page structure plus its written copy and assemble them into one shareable wireframe with a coherent, single-exemplar design system (type scale, color direction, spacing, component style). Runs on both branches: a newly created page (build) or an improved",
+     "folder": "skills/build-page",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/build-page",
+     "fit": 2.367,
+     "matched": 2
+    },
+    {
+     "skill": "write-page",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The Fix-altitude executor in Web Anatomy. Improve an existing landing page, homepage, pricing page, persona page, feature page, comparator page, or individual section using Web Anatomy benchmarks, or build a new page or section from a chosen structure and direction. Use when the user asks what can y",
+     "folder": "skills/write-page",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/write-page",
+     "fit": 5.255,
+     "matched": 3
+    },
+    {
+     "skill": "moodboard",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The page-level Moodboard in Web Anatomy. Build a section-by-section visual reference board for a whole page (homepage, landing page, money page): for every section, the current state captured large, the problems identified, a grid of benchmark screenshots with the practice each one shows, the discip",
+     "folder": "skills/moodboard",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/moodboard",
+     "fit": 3.881,
+     "matched": 4
+    },
+    {
+     "skill": "find-examples",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The Page-altitude benchmark scan in Web Anatomy. Pull the top-ranked WHOLE pages and section patterns in a market and show their structure, positioning, and copy insights, and when the user shares their own page, how it compares and what to steal. Use when the user asks to find examples, show refere",
+     "folder": "skills/find-examples",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/find-examples",
+     "fit": 2.304,
+     "matched": 2
+    },
+    {
+     "skill": "webanatomy-setup",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The foundation step for the whole Web Anatomy pack. Optional context setup. Use when the user says set up Web Anatomy, create context, start a landing page project, capture product context, benchmark my category, or prepare the benchmark skills. Also offer it as an optional preflight when another We",
+     "folder": "skills/webanatomy-setup",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/webanatomy-setup",
+     "fit": 4.142,
+     "matched": 3
+    },
+    {
+     "skill": "research-best-practices",
+     "repo": "GabrielAmz/web-anatomy",
+     "stars": 11,
+     "desc": "The Section-altitude research report in Web Anatomy. Deep research on a single section the user already knows they want to work on, returned as a tiered improvement ladder (foundational, competitive, best-in-class) grounded in real benchmark sections. Use when the user asks for hero best practices, ",
+     "folder": "skills/research-best-practices",
+     "license": "MIT",
+     "updated": "2026-07-02",
+     "archived": false,
+     "url": "https://github.com/GabrielAmz/web-anatomy/tree/main/skills/research-best-practices",
+     "fit": 1.373,
+     "matched": 2
+    },
+    {
+     "skill": "audit",
+     "repo": "johnericforte/claude-skill-hormozi-offer-audit",
+     "stars": 11,
+     "desc": "Audit and improve a sales offer (landing page, pricing tier, or lead magnet) using Alex Hormozi's frameworks from $100M Offers and $100M Leads. Returns a scored audit with prioritized fixes. Optional pre-audit research mode for deriving missing inputs (Dream Outcome, target buyer, market filter sign",
+     "folder": "skills/audit",
+     "license": "MIT",
+     "updated": "2026-05-13",
+     "archived": false,
+     "url": "https://github.com/johnericforte/claude-skill-hormozi-offer-audit/tree/main/skills/audit",
+     "fit": 3.583,
+     "matched": 2
+    },
+    {
+     "skill": "slop-cop",
+     "repo": "howshannon/slop-cop",
+     "stars": 11,
+     "desc": "- Audit, grade, rewrite, and issue funny evidence-backed tickets for generic AI-slop patterns in prose, social posts, UI/design, and code. Use when asked to de-slop writing, humanize AI copy, grade a draft, review a landing page or generated interface, remove vague claims and repetitive rhetoric, in",
+     "folder": "skills/slop-cop",
+     "license": "MIT",
+     "updated": "2026-07-29",
+     "archived": false,
+     "url": "https://github.com/howshannon/slop-cop/tree/main/skills/slop-cop",
+     "fit": 2.8,
+     "matched": 2
+    },
+    {
+     "skill": "web-artifacts-builder",
+     "repo": "anthropics/skills",
+     "stars": 197254,
+     "desc": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+     "folder": "skills/web-artifacts-builder",
+     "license": "none",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder",
+     "fit": 4.856,
+     "matched": 4
+    },
+    {
+     "skill": "frontend-ui-engineering",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118970,
+     "desc": "Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-gene",
+     "folder": "skills/frontend-ui-engineering",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/addyosmani/agent-skills/tree/main/skills/frontend-ui-engineering",
+     "fit": 2.851,
+     "matched": 2
+    },
+    {
+     "skill": "paperclip-page",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Publish static HTML pages and asset folders to the Paperclip S3/CloudFront page host. Use when asked to deploy, host, or share a persistent page, viewer, prototype, report, or static site without here.now.",
+     "folder": ".agents/skills/paperclip-page",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/.agents/skills/paperclip-page",
+     "fit": 2.706,
+     "matched": 2
+    },
+    {
+     "skill": "imagegen-frontend-web",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Elite frontend image-direction skill for generating premium, conversion-aware website design references. CRITICAL OUTPUT RULE — generate ONE separate horizontal image FOR EVERY section. A landing page with 8 sections produces 8 images. Never compress multiple sections into one image. Enforces compos",
+     "folder": "skills/imagegen-frontend-web",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/imagegen-frontend-web",
+     "fit": 6.843,
+     "matched": 4
+    },
+    {
+     "skill": "frontend-dev",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Full-stack frontend with cinematic animations, AI-generated media via MiniMax API, and generative art. Useful for hero pages and showcase sites.",
+     "folder": "skills/frontend-dev",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/frontend-dev",
+     "fit": 3.184,
+     "matched": 2
+    },
+    {
+     "skill": "frontend-skill",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Create visually strong landing pages, websites, and app UIs with restrained composition. OpenAI's production frontend playbook.",
+     "folder": "skills/frontend-skill",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/frontend-skill",
+     "fit": 6.645,
+     "matched": 3
+    },
+    {
+     "skill": "frontend-design",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Create distinctive, production-grade frontend interfaces with strong visual direction, polished typography, considered layout, and working HTML/CSS/JS or framework code. Use for websites, landing pages, dashboards, React components, application screens, and UI beautification.",
+     "folder": "skills/frontend-design",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/frontend-design",
+     "fit": 7.892,
+     "matched": 5
+    }
+   ],
+   "notes": [
+    "73 repositories looked at, 106 skill folders read, 30 pass the match rule."
+   ]
+  }
+ },
+ "J07": {
+  "A": {
+   "local": [
+    "code-reviewer",
+    "requesting-code-review",
+    "pr-review-expert",
+    "gdpr-compliance",
+    "receiving-code-review"
+   ],
+   "github": [
+    {
+     "skill": "reverse-engineer-anything",
+     "repo": "morluto/rea",
+     "stars": 468456,
+     "desc": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux desktop apps with a task from a request. Use shipped-artifact or requested runt"
+    },
+    {
+     "skill": "flutter-dart-code-review",
+     "repo": "affaan-m/ECC",
+     "stars": 306609,
+     "desc": "Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean architecture. Use when reviewing Flutter or Dart code, whatever state management"
+    },
+    {
+     "skill": "karpathy-guidelines",
+     "repo": "multica-ai/andrej-karpathy-skills",
+     "stars": 234293,
+     "desc": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria."
+    },
+    {
+     "skill": "ponytail-review",
+     "repo": "DietrichGebert/ponytail",
+     "stars": 194120,
+     "desc": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is explained in plain English. Use for \"review this\", \"code review\", \"review the last"
+    },
+    {
+     "skill": "backend-code-review",
+     "repo": "langgenius/dify",
+     "stars": 161458,
+     "desc": "Use only when the user explicitly requests a review or audit of backend code under `api/`. Supports pending-change, file-focused, and pasted-diff reviews. Do not use for implementation-only requests, diagnosis without review intent, frontend code, or backend code outside `api/`."
+    }
+   ],
+   "notes": [
+    "70 repositories looked at, 31 skill folders read, 14 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [
+    {
+     "name": "code-reviewer",
+     "fit": 15.837
+    },
+    {
+     "name": "requesting-code-review",
+     "fit": 13.947
+    },
+    {
+     "name": "receiving-code-review",
+     "fit": 12.34
+    },
+    {
+     "name": "pr-review-expert",
+     "fit": 11.371
+    },
+    {
+     "name": "vercel-react-best-practices",
+     "fit": 3.616
+    },
+    {
+     "name": "gdpr-compliance",
+     "fit": 2.69
+    },
+    {
+     "name": "algorithmic-art",
+     "fit": 2.444
+    },
+    {
+     "name": "vercel-optimize",
+     "fit": 1.825
+    }
+   ],
+   "pool": [
+    {
+     "skill": "reverse-engineer-anything",
+     "repo": "morluto/rea",
+     "stars": 468456,
+     "desc": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux desktop apps with a task from a request. Use shipped-artifact or requested runt",
+     "folder": ".agents/skills/reverse-engineer-anything",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything",
+     "fit": 2.022,
+     "matched": 2
+    },
+    {
+     "skill": "flutter-dart-code-review",
+     "repo": "affaan-m/ECC",
+     "stars": 306609,
+     "desc": "Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean architecture. Use when reviewing Flutter or Dart code, whatever state management",
+     "folder": "skills/flutter-dart-code-review",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/flutter-dart-code-review",
+     "fit": 6.981,
+     "matched": 2
+    },
+    {
+     "skill": "code-tour",
+     "repo": "affaan-m/ECC",
+     "stars": 306609,
+     "desc": "Create CodeTour `.tour` files — persona-targeted, step-by-step walkthroughs with real file and line anchors. Use for onboarding tours, architecture walkthroughs, PR tours, RCA tours, and structured \"explain how this works\" requests. Use when the user asks for a code tour, onboarding walkthrough, PR ",
+     "folder": "skills/code-tour",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/code-tour",
+     "fit": 4.151,
+     "matched": 3
+    },
+    {
+     "skill": "issue-review",
+     "repo": "affaan-m/ECC",
+     "stars": 306609,
+     "desc": "Review a GitHub issue the way /code-review reviews a PR. Fetches the issue with the gh CLI, checks the report against the current codebase, searches for duplicates and prior fixes, scores completeness, assigns severity, and writes a triage report plus a draft reply. Posting comments or labels is opt",
+     "folder": "skills/issue-review",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/issue-review",
+     "fit": 4.758,
+     "matched": 3
+    },
+    {
+     "skill": "orch-refine-code",
+     "repo": "affaan-m/ECC",
+     "stars": 306609,
+     "desc": "Orchestrate a behavior-preserving refactor — confirm tests are green, restructure without changing behavior, keep tests green, review, and gated commit. Use when the structure should improve but behavior must not change.",
+     "folder": "skills/orch-refine-code",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/orch-refine-code",
+     "fit": 2.462,
+     "matched": 2
+    },
+    {
+     "skill": "pr-lens",
+     "repo": "NousResearch/hermes-agent",
+     "stars": 264524,
+     "desc": "Draw code changes as animated architecture/data-flow SVGs.",
+     "folder": "optional-skills/software-development/pr-lens",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/NousResearch/hermes-agent/tree/main/optional-skills/software-development/pr-lens",
+     "fit": 3.287,
+     "matched": 2
+    },
+    {
+     "skill": "karpathy-guidelines",
+     "repo": "multica-ai/andrej-karpathy-skills",
+     "stars": 234293,
+     "desc": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria.",
+     "folder": "skills/karpathy-guidelines",
+     "license": "none",
+     "updated": "2026-04-20",
+     "archived": false,
+     "url": "https://github.com/multica-ai/andrej-karpathy-skills/tree/main/skills/karpathy-guidelines",
+     "fit": 1.745,
+     "matched": 2
+    },
+    {
+     "skill": "ponytail-review",
+     "repo": "DietrichGebert/ponytail",
+     "stars": 194120,
+     "desc": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is explained in plain English. Use for \"review this\", \"code review\", \"review the last",
+     "folder": "skills/ponytail-review",
+     "license": "MIT",
+     "updated": "2026-10-29",
+     "archived": false,
+     "url": "https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-review",
+     "fit": 6.431,
+     "matched": 4
+    },
+    {
+     "skill": "ponytail-audit",
+     "repo": "DietrichGebert/ponytail",
+     "stars": 194120,
+     "desc": "Quality audit of a whole repo: bugs, security holes, what breaks under real load, risky code without tests, slow paths, and what to delete, merge or split. Ranked, each finding explained in plain English. One-shot report, changes nothing. Use for \"audit this codebase\", \"review the whole repo\", \"find",
+     "folder": "skills/ponytail-audit",
+     "license": "MIT",
+     "updated": "2026-10-29",
+     "archived": false,
+     "url": "https://github.com/DietrichGebert/ponytail/tree/main/skills/ponytail-audit",
+     "fit": 1.434,
+     "matched": 2
+    },
+    {
+     "skill": "backend-code-review",
+     "repo": "langgenius/dify",
+     "stars": 161458,
+     "desc": "Use only when the user explicitly requests a review or audit of backend code under `api/`. Supports pending-change, file-focused, and pasted-diff reviews. Do not use for implementation-only requests, diagnosis without review intent, frontend code, or backend code outside `api/`.",
+     "folder": ".agents/skills/backend-code-review",
+     "license": "NOASSERTION",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/langgenius/dify/tree/main/.agents/skills/backend-code-review",
+     "fit": 9.472,
+     "matched": 4
+    },
+    {
+     "skill": "frontend-testing",
+     "repo": "langgenius/dify",
+     "stars": 161458,
+     "desc": "Use when writing or changing Vitest or React Testing Library tests under `web/` or `packages/dify-ui/`, or when the user explicitly requests frontend test strategy, including evaluation of an existing strategy. Do not use for frontend code-review-only requests, general testability discussion, Python",
+     "folder": ".agents/skills/frontend-testing",
+     "license": "NOASSERTION",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/langgenius/dify/tree/main/.agents/skills/frontend-testing",
+     "fit": 4.802,
+     "matched": 3
+    },
+    {
+     "skill": "how-to-write-component",
+     "repo": "langgenius/dify",
+     "stars": 161458,
+     "desc": "Use when implementing or refactoring React/TypeScript components and the task requires decisions about component ownership, feature boundaries, state, data flow, effects, or interaction ownership. Do not use for review-only requests, test-only work, copy-only edits, or styling-only changes.",
+     "folder": ".agents/skills/how-to-write-component",
+     "license": "NOASSERTION",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/langgenius/dify/tree/main/.agents/skills/how-to-write-component",
+     "fit": 1.658,
+     "matched": 2
+    },
+    {
+     "skill": "e2e-cucumber-playwright",
+     "repo": "langgenius/dify",
+     "stars": 161458,
+     "desc": "Use when writing, changing, or reviewing Cucumber and Playwright tests under `e2e/`, including feature files, step definitions, support code, scenario tags, locators, and assertions. Do not use for Vitest, React Testing Library, backend tests, or generic browser automation outside the E2E suite.",
+     "folder": ".agents/skills/e2e-cucumber-playwright",
+     "license": "NOASSERTION",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/langgenius/dify/tree/main/.agents/skills/e2e-cucumber-playwright",
+     "fit": 1.448,
+     "matched": 2
+    },
+    {
+     "skill": "caveman-review",
+     "repo": "JuliusBrussee/caveman",
+     "stars": 121340,
+     "desc": "Compressed code review - one line per finding with location, problem and fix. Use for /caveman-review, \"review this PR\", or \"review the diff\".",
+     "folder": "skills/caveman-review",
+     "license": "Apache-2.0",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/JuliusBrussee/caveman/tree/main/skills/caveman-review",
+     "fit": 7.38,
+     "matched": 4
+    },
+    {
+     "skill": "cavecrew",
+     "repo": "JuliusBrussee/caveman",
+     "stars": 121340,
+     "desc": "When to delegate to `cavecrew-investigator` (locate code), `cavecrew-builder` (1-2 file edit) or `cavecrew-reviewer` (diff review) instead of working inline or using `Explore`. Their output is compressed, so main context lasts longer.",
+     "folder": "skills/cavecrew",
+     "license": "Apache-2.0",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/JuliusBrussee/caveman/tree/main/skills/cavecrew",
+     "fit": 3.276,
+     "matched": 3
+    },
+    {
+     "skill": "code-review-and-quality",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118970,
+     "desc": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters the main branch. Use when asked to review a diff or a pull request, even when t",
+     "folder": "skills/code-review-and-quality",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/addyosmani/agent-skills/tree/main/skills/code-review-and-quality",
+     "fit": 10.862,
+     "matched": 5
+    },
+    {
+     "skill": "code-simplification",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118970,
+     "desc": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated unnecessary complexity. Use when asked to simplify, clean up, or reduce the nes",
+     "folder": "skills/code-simplification",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/addyosmani/agent-skills/tree/main/skills/code-simplification",
+     "fit": 2.53,
+     "matched": 2
+    },
+    {
+     "skill": "check-pr",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Check a GitHub, GitLab, or Perforce PR/MR/CL for review comments, failing checks, and PR-body gaps. Use when asked to inspect, fix, or prepare a change for submission.",
+     "folder": ".agents/skills/check-pr",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/.agents/skills/check-pr",
+     "fit": 2.799,
+     "matched": 2
+    },
+    {
+     "skill": "pr-report",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Produce a maintainer-grade PR or contribution report as HTML or Markdown. Use when asked to deeply review a PR, explain a design, compare systems, or prepare a merge recommendation.",
+     "folder": ".agents/skills/pr-report",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/.agents/skills/pr-report",
+     "fit": 2.814,
+     "matched": 2
+    },
+    {
+     "skill": "pr-gardening",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Discover the pull requests this Paperclip instance opened (never community contributions), report what each is for and how confident we are that it is merge-ready, and automatically drive the non-ready ones back to green with /prepare-paperclip-pr — without ever merging.",
+     "folder": ".agents/skills/pr-gardening",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/.agents/skills/pr-gardening",
+     "fit": 4.663,
+     "matched": 3
+    },
+    {
+     "skill": "setup-code-maintenance-bot",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Set up a Paperclip agent and routine that applies a selected code-maintenance skill to a repository and opens pull requests. Use for nightly maintenance bots, scheduled code gardening, or webhook-driven maintenance, using an existing agent or a new hire.",
+     "folder": ".agents/skills/setup-code-maintenance-bot",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/.agents/skills/setup-code-maintenance-bot",
+     "fit": 4.305,
+     "matched": 3
+    },
+    {
+     "skill": "open-code-review",
+     "repo": "alibaba/open-code-review",
+     "stars": 54201,
+     "desc": "Review workspace changes, PRs, commits, or branch comparisons with OCR's native review pipeline and independently configured model provider. Produces line-level findings; fixes code only when requested. Use when the user wants native mode or has an OCR provider configured. To use the host agent's mo",
+     "folder": "skills/open-code-review",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/alibaba/open-code-review/tree/main/skills/open-code-review",
+     "fit": 7.854,
+     "matched": 3
+    },
+    {
+     "skill": "open-code-review-delegate",
+     "repo": "alibaba/open-code-review",
+     "stars": 54201,
+     "desc": "Review workspace changes, PRs, commits, or branch comparisons with the host agent's model. OCR's CLI handles file selection and rule resolution; this skill defines the review workflow, coverage requirements, and output format. Use when the user has no separate API key for OCR or wants to reuse their",
+     "folder": "skills/open-code-review-delegate",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/alibaba/open-code-review/tree/main/skills/open-code-review-delegate",
+     "fit": 6.693,
+     "matched": 2
+    },
+    {
+     "skill": "gentle-ai-chained-pr",
+     "repo": "Gentleman-Programming/gentle-ai",
+     "stars": 9383,
+     "desc": "Trigger: PRs over 400 lines, stacked PRs, review slices. Split oversized changes into chained PRs that protect review focus.",
+     "folder": "skills/chained-pr",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/Gentleman-Programming/gentle-ai/tree/main/skills/chained-pr",
+     "fit": 2.938,
+     "matched": 2
+    },
+    {
+     "skill": "chained-pr",
+     "repo": "Gentleman-Programming/gentle-ai",
+     "stars": 9383,
+     "desc": "Trigger: PRs over 400 lines, stacked PRs, review slices. Split oversized changes into chained PRs that protect review focus.",
+     "folder": "internal/assets/skills/chained-pr",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/Gentleman-Programming/gentle-ai/tree/main/internal/assets/skills/chained-pr",
+     "fit": 3.032,
+     "matched": 2
+    },
+    {
+     "skill": "comment-writer",
+     "repo": "Gentleman-Programming/gentle-ai",
+     "stars": 9383,
+     "desc": "Write warm, direct collaboration comments. Trigger: PR feedback, issue replies, reviews, Slack messages, or GitHub comments.",
+     "folder": "skills/comment-writer",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/Gentleman-Programming/gentle-ai/tree/main/skills/comment-writer",
+     "fit": 1.943,
+     "matched": 2
+    },
+    {
+     "skill": "pi-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to the Pi coding agent CLI (`pi`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to delegate implementation work to Pi - phrasings like \"have Pi implement X\", \"delegate this to pi\", \"run it through Pi\", or \"use pi to ",
+     "folder": "skills/pi-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/pi-delegate",
+     "fit": 2.32,
+     "matched": 3
+    },
+    {
+     "skill": "agy-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to the Google Antigravity CLI (`agy`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to hand implementation work to Antigravity or agy - phrasings like \"have Antigravity do X\", \"delegate this to agy\", \"run it through ",
+     "folder": "skills/agy-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/agy-delegate",
+     "fit": 2.338,
+     "matched": 3
+    },
+    {
+     "skill": "omp-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to Oh My Pi (`omp`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to delegate implementation work to Oh My Pi / omp - phrasings like \"have omp implement X\", \"delegate this to oh my pi\", \"run it through omp\", \"use oh-",
+     "folder": "skills/omp-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/omp-delegate",
+     "fit": 2.151,
+     "matched": 3
+    },
+    {
+     "skill": "grok-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to the Grok Build CLI as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to hand implementation work to Grok — phrasings like \"have Grok do X\", \"delegate this to Grok\", \"run it through Grok\", \"use Grok Build to implement/",
+     "folder": "skills/grok-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/grok-delegate",
+     "fit": 2.842,
+     "matched": 3
+    },
+    {
+     "skill": "kimi-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to the Kimi Code CLI (`kimi`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to hand implementation work to Kimi - phrasings like \"have Kimi implement X\", \"delegate this to Kimi\", \"run it through Kimi Code\", or \"use K",
+     "folder": "skills/kimi-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/kimi-delegate",
+     "fit": 2.915,
+     "matched": 3
+    },
+    {
+     "skill": "muse-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to Muse Code (`muse`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to hand implementation work to Muse — phrasings like \"have Muse do X\", \"delegate this to Muse\", \"run it through Muse\", or \"use Muse to implement/fix",
+     "folder": "skills/muse-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/muse-delegate",
+     "fit": 3.029,
+     "matched": 3
+    },
+    {
+     "skill": "vibe-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to the Mistral Vibe CLI (`vibe`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to hand implementation work to Vibe — phrasings like \"have Vibe implement X\", \"delegate this to Vibe\", \"run it through Mistral Vibe\", \"us",
+     "folder": "skills/vibe-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/vibe-delegate",
+     "fit": 2.32,
+     "matched": 3
+    },
+    {
+     "skill": "warp-delegate",
+     "repo": "amElnagdy/delegate-skills",
+     "stars": 2627,
+     "desc": "- Delegate a coding task to the Warp Agent CLI (`oz`) as a background implementer, then review its diff and land it yourself. Use this whenever the user wants to hand implementation work to Warp - phrasings like \"have Warp implement X\", \"delegate this to the Warp CLI\", \"run it through Warp\", \"use oz",
+     "folder": "skills/warp-delegate",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/amElnagdy/delegate-skills/tree/master/skills/warp-delegate",
+     "fit": 2.136,
+     "matched": 3
+    },
+    {
+     "skill": "rust-review",
+     "repo": "morganlinton/BeautifulRust",
+     "stars": 2064,
+     "desc": "- Review existing Rust code for idiom, API design, error handling, safety, and maintainability, and produce a prioritized report where every finding cites the rule it breaks and gives a concrete fix. Use this whenever the user asks to review, audit, critique, grade, or \"check\" Rust code, a crate, a ",
+     "folder": "skills/rust-review",
+     "license": "MIT",
+     "updated": "2026-11-08",
+     "archived": false,
+     "url": "https://github.com/morganlinton/BeautifulRust/tree/main/skills/rust-review",
+     "fit": 5.457,
+     "matched": 5
+    },
+    {
+     "skill": "rust-best-practices",
+     "repo": "morganlinton/BeautifulRust",
+     "stars": 2064,
+     "desc": "- Write idiomatic, robust, maintainable Rust. Use this skill whenever you write, review, refactor, debug, or explain Rust code: new crates, modules, functions, structs, traits, error types, async code, unsafe or FFI code, Cargo.toml, tests, or rustdoc. Trigger on any mention of Rust, cargo, crates, ",
+     "folder": "skills/rust-best-practices",
+     "license": "MIT",
+     "updated": "2026-11-08",
+     "archived": false,
+     "url": "https://github.com/morganlinton/BeautifulRust/tree/main/skills/rust-best-practices",
+     "fit": 1.874,
+     "matched": 2
+    },
+    {
+     "skill": "review-r",
+     "repo": "pedrohcgs/claude-code-my-workflow",
+     "stars": 1719,
+     "desc": "Read-only R code review protocol for `.R` scripts. Checks code quality, reproducibility, domain correctness, tidyverse idioms, and professional standards; produces a report without editing. Use when user says \"review this R script\", \"check the R code\", \"audit the analysis code\", \"code review on the ",
+     "folder": ".agents/skills/review-r",
+     "license": "MIT",
+     "updated": "2026-11-07",
+     "archived": false,
+     "url": "https://github.com/pedrohcgs/claude-code-my-workflow/tree/main/.agents/skills/review-r",
+     "fit": 5.819,
+     "matched": 2
+    },
+    {
+     "skill": "oracle-review",
+     "repo": "pedrohcgs/claude-code-my-workflow",
+     "stars": 1719,
+     "desc": "Run an external frontier-model referee (Claude Code -> a different vendor's frontier model via the Oracle CLI) on a paper, proof, estimator, or replication package -- and adjudicate what comes back. Use when the user says \"send this to oracle\", \"get an external review\", \"run a referee round\", \"deep-",
+     "folder": ".claude/skills/oracle-review",
+     "license": "MIT",
+     "updated": "2026-11-07",
+     "archived": false,
+     "url": "https://github.com/pedrohcgs/claude-code-my-workflow/tree/main/.claude/skills/oracle-review",
+     "fit": 1.926,
+     "matched": 2
+    },
+    {
+     "skill": "brooks-review",
+     "repo": "hyhmrright/brooks-lint",
+     "stars": 1582,
+     "desc": "PR code review that surfaces decay risks, design smells, and maintainability issues with concrete Symptom → Source → Consequence → Remedy findings, drawing on twelve classic engineering books. Triggers when: user asks to review code, check a PR, shares a diff or pastes code asking \"does this look ri",
+     "folder": "skills/brooks-review",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/hyhmrright/brooks-lint/tree/main/skills/brooks-review",
+     "fit": 5.502,
+     "matched": 4
+    },
+    {
+     "skill": "brooks-test",
+     "repo": "hyhmrright/brooks-lint",
+     "stars": 1582,
+     "desc": "Test quality review drawing on twelve classic engineering books — with primary focus on xUnit Test Patterns, The Art of Unit Testing, How Google Tests Software, and Working Effectively with Legacy Code — that diagnoses structural problems in an existing test suite: brittleness, mock abuse, coverage ",
+     "folder": "skills/brooks-test",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/hyhmrright/brooks-lint/tree/main/skills/brooks-test",
+     "fit": 1.328,
+     "matched": 2
+    },
+    {
+     "skill": "brooks-audit",
+     "repo": "hyhmrright/brooks-lint",
+     "stars": 1582,
+     "desc": "Architecture audit that maps module dependencies, checks layering integrity, and flags structural decay across a codebase, drawing on twelve classic engineering books. Triggers when: user asks to audit architecture, review folder/module structure, check for circular imports, understand how the codeb",
+     "folder": "skills/brooks-audit",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/hyhmrright/brooks-lint/tree/main/skills/brooks-audit",
+     "fit": 4.276,
+     "matched": 4
+    },
+    {
+     "skill": "brooks-sweep",
+     "repo": "hyhmrright/brooks-lint",
+     "stars": 1582,
+     "desc": "Full-sweep mode: runs a unified analysis across all quality dimensions — code decay, architecture, tech debt, and test quality — then applies fixes directly to the codebase. Safe changes are auto-applied; risky changes are confirmed before execution. Drawing on twelve classic engineering books. Trig",
+     "folder": "skills/brooks-sweep",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/hyhmrright/brooks-lint/tree/main/skills/brooks-sweep",
+     "fit": 1.48,
+     "matched": 2
+    },
+    {
+     "skill": "brooks-health",
+     "repo": "hyhmrright/brooks-lint",
+     "stars": 1582,
+     "desc": "Combined codebase health dashboard that scores a project across all four quality dimensions — PR quality, architecture, tech debt, and test quality — in a single pass, drawing on twelve classic engineering books. Triggers when: user wants an overall quality assessment, asks \"how healthy is this code",
+     "folder": "skills/brooks-health",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/hyhmrright/brooks-lint/tree/main/skills/brooks-health",
+     "fit": 1.73,
+     "matched": 3
+    },
+    {
+     "skill": "unslop",
+     "repo": "michaelshimeles/rstack",
+     "stars": 1530,
+     "desc": "Cut AI tells from text you write or edit for a human reader (commit messages, PR titles and bodies, docs, code comments, replies). Apply before committing, posting, or sending; leave prose you didn't touch alone.",
+     "folder": "unslop",
+     "license": "none",
+     "updated": "2026-11-05",
+     "archived": false,
+     "url": "https://github.com/michaelshimeles/rstack/tree/main/unslop",
+     "fit": 2.128,
+     "matched": 2
+    },
+    {
+     "skill": "greploop",
+     "repo": "michaelshimeles/rstack",
+     "stars": 1530,
+     "desc": "Address Greptile feedback on a PR, MR, or shelved changelist through bounded review and fix cycles. Use when the task includes a Greptile review loop. Supports the alternate @greptile-apps trigger for large PRs.",
+     "folder": "greploop",
+     "license": "none",
+     "updated": "2026-11-05",
+     "archived": false,
+     "url": "https://github.com/michaelshimeles/rstack/tree/main/greploop",
+     "fit": 2.138,
+     "matched": 2
+    },
+    {
+     "skill": "code-review",
+     "repo": "dzhng/skills",
+     "stars": 1512,
+     "desc": "Review changed code for naming, stale references, unnecessary complexity, and comment quality. Use after completing implementation work, before committing, or when the user asks to review or audit code.",
+     "folder": "skills/review/code-review",
+     "license": "MIT",
+     "updated": "2026-11-13",
+     "archived": false,
+     "url": "https://github.com/dzhng/skills/tree/main/skills/review/code-review",
+     "fit": 7.508,
+     "matched": 2
+    },
+    {
+     "skill": "review",
+     "repo": "dzhng/skills",
+     "stars": 1512,
+     "desc": "Closeout pass on a finished substantive change — sequence refactor-change (shape), code-review (diff), and write-docs (docs) so all three run, in the order where each feeds the next. Use after implementing a slice or feature and before calling it done or committing; when the user asks for a final re",
+     "folder": "skills/review/review",
+     "license": "MIT",
+     "updated": "2026-11-13",
+     "archived": false,
+     "url": "https://github.com/dzhng/skills/tree/main/skills/review/review",
+     "fit": 6.702,
+     "matched": 3
+    },
+    {
+     "skill": "audit-decisions",
+     "repo": "dzhng/skills",
+     "stars": 1512,
+     "desc": "Audit the decisions an implementing agent made, not its diff — a pure audit that traces the session's history into a decisions ledger, changes no code, and never blocks an unsupervised run. Working code still embeds architecture the user never chose; surface it because future work inherits it. Use w",
+     "folder": "skills/review/audit-decisions",
+     "license": "MIT",
+     "updated": "2026-11-13",
+     "archived": false,
+     "url": "https://github.com/dzhng/skills/tree/main/skills/review/audit-decisions",
+     "fit": 2.41,
+     "matched": 3
+    },
+    {
+     "skill": "refactor-change",
+     "repo": "dzhng/skills",
+     "stars": 1512,
+     "desc": "Refactor cleanly instead of layering sediment. Use for rename requests, stale or misleading names, legacy leftovers, changed scope, or when a change reveals duplicated concepts, local adapters, obsolete owners, redundant inputs or guards, compatibility wrappers, parallel abstractions, an over-large ",
+     "folder": "skills/review/refactor-change",
+     "license": "MIT",
+     "updated": "2026-11-13",
+     "archived": false,
+     "url": "https://github.com/dzhng/skills/tree/main/skills/review/refactor-change",
+     "fit": 1.789,
+     "matched": 2
+    },
+    {
+     "skill": "request-progress",
+     "repo": "thedotmack/claude-mem",
+     "stars": 118272,
+     "desc": "Group recent conversations into overall requests, review each one's progress from memory, sort each into one of the owner's focus areas, and write the build story, so My Work shows progress meters, shipping velocity and learned working preferences. Use when asked to \"group requests\", \"group by overa",
+     "folder": "plugin/skills/request-progress",
+     "license": "Apache-2.0",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/thedotmack/claude-mem/tree/main/plugin/skills/request-progress",
+     "fit": 3.012,
+     "matched": 2
+    },
+    {
+     "skill": "babysit",
+     "repo": "thedotmack/claude-mem",
+     "stars": 118272,
+     "desc": "Watch a pull request or review cycle until it is ready to merge. Use when asked to babysit, monitor, or keep checking PR comments, reviews, and CI until all actionable issues are resolved.",
+     "folder": "plugin/skills/babysit",
+     "license": "Apache-2.0",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/thedotmack/claude-mem/tree/main/plugin/skills/babysit",
+     "fit": 5.281,
+     "matched": 4
+    },
+    {
+     "skill": "diff-review",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Render the patch-edit run's accumulated changes as a reviewable diff, surface it through a GenUI choice surface, and persist the user's accept / reject decision into the artifact manifest.",
+     "folder": "plugins/_official/atoms/diff-review",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/plugins/_official/atoms/diff-review",
+     "fit": 3.497,
+     "matched": 2
+    },
+    {
+     "skill": "design-review",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Designer Who Codes: visual audit then fixes with atomic commits and before/after screenshots. Useful for tightening shipped UI before launch.",
+     "folder": "skills/design-review",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/design-review",
+     "fit": 2.492,
+     "matched": 2
+    },
+    {
+     "skill": "review-animations",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+     "folder": "skills/review-animations",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/review-animations",
+     "fit": 2.427,
+     "matched": 2
+    },
+    {
+     "skill": "pr-feedback-quality-gate",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Safely track pull request feedback, resolve review comments or merge conflicts, validate fixes, and use a read-only cross-review before committing or pushing follow-up changes.",
+     "folder": "skills/pr-feedback-quality-gate",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/pr-feedback-quality-gate",
+     "fit": 5.338,
+     "matched": 4
+    },
+    {
+     "skill": "archify-review",
+     "repo": "tt-a1i/archify",
+     "stars": 97790,
+     "desc": "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments.",
+     "folder": ".agents/skills/archify-review",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/archify-review",
+     "fit": 2.783,
+     "matched": 2
+    },
+    {
+     "skill": "test-value",
+     "repo": "tt-a1i/archify",
+     "stars": 97790,
+     "desc": "Improve test value and feedback cost when auditing slow, flaky, redundant or brittle tests; choosing tests during implementation; or reviewing test changes before a commit or PR. Keep ordinary implementation and pre-commit use scoped to the affected behavior, not a repository-wide audit.",
+     "folder": ".agents/skills/test-value",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/test-value",
+     "fit": 1.592,
+     "matched": 2
+    },
+    {
+     "skill": "simplify-codebase",
+     "repo": "tt-a1i/archify",
+     "stars": 97790,
+     "desc": "Simplification audit or authorized codebase simplification whose stated objective is to remove accidental complexity. Use for evidence-backed deletion or consolidation of dead code, duplicate state, redundant APIs or layers, ownerless abstractions, obsolete compatibility or design records, and over-",
+     "folder": ".agents/skills/simplify-codebase",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/tt-a1i/archify/tree/main/.agents/skills/simplify-codebase",
+     "fit": 3.576,
+     "matched": 2
+    },
+    {
+     "skill": "understand-diff",
+     "repo": "Egonex-AI/Understand-Anything",
+     "stars": 93191,
+     "desc": "Use when you need to analyze git diffs or pull requests to understand what changed, affected components, and risks",
+     "folder": "understand-anything-plugin/skills/understand-diff",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/Egonex-AI/Understand-Anything/tree/main/understand-anything-plugin/skills/understand-diff",
+     "fit": 5.597,
+     "matched": 3
+    }
+   ],
+   "notes": [
+    "1 GitHub skills left out because you already have a skill of that name.",
+    "67 repositories looked at, 162 skill folders read, 59 pass the match rule."
+   ]
+  }
+ },
+ "J08": {
+  "A": {
+   "local": [
+    "systematic-debugging"
+   ],
+   "github": [
+    {
+     "skill": "debugging-and-error-recovery",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118970,
+     "desc": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why — a systematic approach to finding and fixing the root caus"
+    },
+    {
+     "skill": "export-download-debugging",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Diagnose and fix browser, preview, or Electron export/download failures, especially image export issues involving Save As, Blob/Data URLs, the File System Access API, createWritable failures, and 0 KB files."
+    }
+   ],
+   "notes": [
+    "70 repositories looked at, 3 skill folders read, 2 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [
+    {
+     "name": "systematic-debugging",
+     "fit": 7.431
+    }
+   ],
+   "pool": [
+    {
+     "skill": "debugging-and-error-recovery",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118977,
+     "desc": "Guides systematic root-cause debugging. Use when tests fail, builds break, something that worked yesterday broke, behavior doesn't match expectations, or you encounter any unexpected error. Use when you need to figure out what broke and why — a systematic approach to finding and fixing the root caus",
+     "folder": "skills/debugging-and-error-recovery",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/addyosmani/agent-skills/tree/main/skills/debugging-and-error-recovery",
+     "fit": 5.569,
+     "matched": 3
+    },
+    {
+     "skill": "mini-program-debugging-skill",
+     "repo": "NocodeMrLi/mini-program-engineering-skill-suite",
+     "stars": 101,
+     "desc": "- Diagnose and fix mini-program failures through reproducible, evidence-driven root-cause analysis across source, state, asynchronous timing, caches, mock data, build versions, platform behavior, devices, cloud calls, and external services. Use when users report white screens, crashes, stale or jump",
+     "folder": "skills/mini-program-debugging-skill",
+     "license": "MIT",
+     "updated": "2026-11-11",
+     "archived": false,
+     "url": "https://github.com/NocodeMrLi/mini-program-engineering-skill-suite/tree/main/skills/mini-program-debugging-skill",
+     "fit": 4.473,
+     "matched": 2
+    },
+    {
+     "skill": "root-cause-debugging",
+     "repo": "thiientv/godmode",
+     "stars": 100,
+     "desc": "- Investigates a bug, failing test, build error, regression, flaky behavior, performance symptom, or unexpected result by reproducing it, minimizing the case, testing ranked hypotheses, tracing the first incorrect state, and locking the root cause with a regression check. Use before proposing a fix.",
+     "folder": "skills/root-cause-debugging",
+     "license": "MIT",
+     "updated": "2026-08-26",
+     "archived": false,
+     "url": "https://github.com/thiientv/godmode/tree/main/skills/root-cause-debugging",
+     "fit": 7.184,
+     "matched": 3
+    },
+    {
+     "skill": "abap-code-review",
+     "repo": "shrek-abaper/sap-engineering-skill",
+     "stars": 48,
+     "desc": "Performs structured pre-release security and quality review of SAP ABAP programs across 9 dimensions (SEC, AUTH, DATA, PERF, STD, INTERFACE, CHANGE, COMP, FUNC), producing a formal sign-off-ready Markdown assessment report. Trigger when the user asks to review, audit, assess, or check ABAP code befo",
+     "folder": "skills/abap-code-review",
+     "license": "MIT",
+     "updated": "2026-11-04",
+     "archived": false,
+     "url": "https://github.com/shrek-abaper/sap-engineering-skill/tree/main/skills/abap-code-review",
+     "fit": 2.384,
+     "matched": 2
+    },
+    {
+     "skill": "sap-adt-cli",
+     "repo": "shrek-abaper/sap-engineering-skill",
+     "stars": 48,
+     "desc": "Read/write live SAP ABAP source, DDIC metadata and transport requests via the sap-adt CLI. Use for repository search, where-used, syntax checks, ABAP Unit failure evidence, test include source, ATC, SQL preview, short dump details and stacks, explicitly authorized debugging, Gateway errors, ADT Feed",
+     "folder": "skills/sap-adt-cli",
+     "license": "MIT",
+     "updated": "2026-11-04",
+     "archived": false,
+     "url": "https://github.com/shrek-abaper/sap-engineering-skill/tree/main/skills/sap-adt-cli",
+     "fit": 1.778,
+     "matched": 2
+    },
+    {
+     "skill": "export-download-debugging",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Diagnose and fix browser, preview, or Electron export/download failures, especially image export issues involving Save As, Blob/Data URLs, the File System Access API, createWritable failures, and 0 KB files.",
+     "folder": "skills/export-download-debugging",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/export-download-debugging",
+     "fit": 5.809,
+     "matched": 2
+    }
+   ],
+   "notes": [
+    "1 GitHub skills left out because you already have a skill of that name.",
+    "73 repositories looked at, 117 skill folders read, 6 pass the match rule."
+   ]
+  }
+ },
+ "J10": {
+  "A": {
+   "local": [],
+   "github": [
+    {
+     "skill": "deploy-vercel-static",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Use this plugin when the user wants to deploy an accepted static web artifact to Vercel or prepare an equivalent deployment handoff with preview and production URLs."
+    },
+    {
+     "skill": "publish-online",
+     "repo": "shipstatic/antigravity",
+     "stars": 0,
+     "desc": "Publish a site, page, report, dashboard, slide deck, document, portfolio or small web app at a ShipStatic link anyone can open, with no account needed and optional built-in password protection. Use when the user asks to publish something, deploy or host a static site or a build folder, put it online"
+    }
+   ],
+   "notes": [
+    "63 repositories looked at, 3 skill folders read, 2 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [],
+   "pool": [
+    {
+     "skill": "deploy-vercel-static",
+     "repo": "nexu-io/open-design",
+     "stars": 108361,
+     "desc": "Use this plugin when the user wants to deploy an accepted static web artifact to Vercel or prepare an equivalent deployment handoff with preview and production URLs.",
+     "folder": "plugins/spec/examples/deploy-vercel-static",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/plugins/spec/examples/deploy-vercel-static",
+     "fit": 6.168,
+     "matched": 2
+    },
+    {
+     "skill": "htmly-publish",
+     "repo": "htmlybr/skills",
+     "stars": 3,
+     "desc": "Publica sites HTML estáticos no HTMLy (htmly.com.br) e devolve a URL ao vivo. Use quando o usuário pedir para publicar, hospedar, colocar no ar, subir, compartilhar como link ou atualizar um site, uma landing page, um portfólio, um cardápio, um currículo ou qualquer HTML/CSS/JS gerado na conversa. A",
+     "folder": "skills/htmly-publish",
+     "license": "MIT",
+     "updated": "2026-10-01",
+     "archived": false,
+     "url": "https://github.com/htmlybr/skills/tree/main/skills/htmly-publish",
+     "fit": 4.488,
+     "matched": 4
+    },
+    {
+     "skill": "stoop",
+     "repo": "mislavjc/stoop",
+     "stars": 1,
+     "desc": "Deploy a static site to stoop from a folder using the `stoop` CLI. Use when you have the site's files on disk and a terminal: creating, changing, deploying, or debugging a stoop site, or shipping a quick prototype or demo. If you are a server-side app or agent publishing at runtime with no folder an",
+     "folder": "skills/stoop",
+     "license": "MIT",
+     "updated": "2026-07-31",
+     "archived": false,
+     "url": "https://github.com/mislavjc/stoop/tree/main/skills/stoop",
+     "fit": 7.767,
+     "matched": 3
+    },
+    {
+     "skill": "openhere",
+     "repo": "zachlagden/openhere",
+     "stars": 0,
+     "desc": "Publishes built static sites, pages, reports, dashboards and folders to the user's own self-hosted OpenHere instance and returns a shareable link, then updates, restores and protects them. Use whenever the user wants to publish, host, deploy, share, put online or update a static site, HTML page, rep",
+     "folder": "skills/openhere",
+     "license": "MIT",
+     "updated": "2026-10-12",
+     "archived": false,
+     "url": "https://github.com/zachlagden/openhere/tree/main/skills/openhere",
+     "fit": 9.592,
+     "matched": 5
+    },
+    {
+     "skill": "medium-to-ssg",
+     "repo": "xiehan/medium-to-ssg-skill",
+     "stars": 0,
+     "desc": "Use this skill to migrate a Medium blog or publication to a self-hosted static site built with Hugo (default), Eleventy, or Astro, hosted on either AWS (S3 + CloudFront) or GitHub Pages. Triggers whenever a user wants to leave Medium, migrate Medium posts to Hugo, Eleventy, or Astro, self-host a blo",
+     "folder": ".agents/skills/medium-to-ssg",
+     "license": "MIT",
+     "updated": "2026-08-13",
+     "archived": false,
+     "url": "https://github.com/xiehan/medium-to-ssg-skill/tree/main/.agents/skills/medium-to-ssg",
+     "fit": 11.03,
+     "matched": 3
+    },
+    {
+     "skill": "brewpage-publish",
+     "repo": "kochetkov-ma/brewpage-publish-plugins",
+     "stars": 0,
+     "desc": "HTML hosting, static sites and AI artifact publishing; share Markdown, documents, reports and any files through HTTPS links. Publish user-selected content through connected BrewPage MCP tools, with explicit visibility and password choices.",
+     "folder": "common/mistral-work",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/kochetkov-ma/brewpage-publish-plugins/tree/main/common/mistral-work",
+     "fit": 7.67,
+     "matched": 4
+    }
+   ],
+   "notes": [
+    "68 repositories looked at, 51 skill folders read, 6 pass the match rule."
+   ]
+  }
+ },
+ "J16": {
+  "A": {
+   "local": [
+    "financial-health"
+   ],
+   "github": [
+    {
+     "skill": "trading-analysis-dashboard-template",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Professional trading analysis dashboard template (single-file HTML) with light/dark theme switch, dense market panels, chart interactions, demo/live playback, and command palette behavior. Use when users ask for a Wall-Street-style analytics terminal, trading cockpit, or high-tech financial dashboar"
+    }
+   ],
+   "notes": [
+    "79 repositories looked at, 6 skill folders read, 1 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [
+    {
+     "name": "financial-health",
+     "fit": 13.3
+    },
+    {
+     "name": "stock-analysis",
+     "fit": 5.79
+    }
+   ],
+   "pool": [
+    {
+     "skill": "income-investment",
+     "repo": "xbtlin/ai-berkshire",
+     "stars": 17192,
+     "desc": "AI Berkshire skill: Income Investment: Durable and Opportunistic Distribution Analysis. Source: skills/income-investment.md.",
+     "folder": "codex-skills/income-investment",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/xbtlin/ai-berkshire/tree/main/codex-skills/income-investment",
+     "fit": 4.925,
+     "matched": 2
+    },
+    {
+     "skill": "yfinance-data",
+     "repo": "himself65/finance-skills",
+     "stars": 3573,
+     "desc": "Fetch financial and market data with the yfinance Python library (Yahoo Finance). Use this skill whenever the user wants stock data: current quotes and price history, financial statements (income statement, balance sheet, cash flow), options chains, dividends and splits, earnings and analyst estimat",
+     "folder": "plugins/market-analysis/skills/yfinance-data",
+     "license": "MIT",
+     "updated": "2026-11-04",
+     "archived": false,
+     "url": "https://github.com/himself65/finance-skills/tree/main/plugins/market-analysis/skills/yfinance-data",
+     "fit": 5.218,
+     "matched": 4
+    },
+    {
+     "skill": "product-discovery",
+     "repo": "ipavelm/ultimate-product-discovery-skill",
+     "stars": 25,
+     "desc": "Product Discovery through an 18-task methodology in 6 blocks — from market analysis to an investor-ready financial plan. Use when someone wants to run Product Discovery, validate a startup, assess a market hypothesis, prepare for an investment round, or raises an adjacent topic — idea validation, ni",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-08-27",
+     "archived": false,
+     "url": "https://github.com/ipavelm/ultimate-product-discovery-skill",
+     "fit": 2.232,
+     "matched": 2
+    },
+    {
+     "skill": "sensitivity-tables",
+     "repo": "andreworia/claude-excel-skills",
+     "stars": 17,
+     "desc": "Builds one- and two-variable sensitivity (Data Table) analysis on a model output in a .xlsx with live formulas and a recalc check, then delivers the workbook. Use when someone wants to see how an output (NPV, IRR, EPS, margin) moves as one or two inputs change. Do not trigger for editing an existing",
+     "folder": "skills/sensitivity-tables",
+     "license": "MIT",
+     "updated": "2026-09-08",
+     "archived": false,
+     "url": "https://github.com/andreworia/claude-excel-skills/tree/main/skills/sensitivity-tables",
+     "fit": 3.216,
+     "matched": 2
+    },
+    {
+     "skill": "trading-analysis-dashboard-template",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Professional trading analysis dashboard template (single-file HTML) with light/dark theme switch, dense market panels, chart interactions, demo/live playback, and command palette behavior. Use when users ask for a Wall-Street-style analytics terminal, trading cockpit, or high-tech financial dashboar",
+     "folder": "design-templates/trading-analysis-dashboard-template",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/design-templates/trading-analysis-dashboard-template",
+     "fit": 3.726,
+     "matched": 2
+    }
+   ],
+   "notes": [
+    "87 repositories looked at, 102 skill folders read, 5 pass the match rule."
+   ]
+  }
+ },
+ "J19": {
+  "A": {
+   "local": [],
+   "github": [
+    {
+     "skill": "ecommerce-image-workflow",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Reference-product ecommerce image workflow for generating a compact set of product-faithful main, feature, and lifestyle images from real product reference photos. V1 requires uploaded product imagery and intentionally defers brief-only concept generation and platform-specific batch exports."
+    }
+   ],
+   "notes": [
+    "83 repositories looked at, 3 skill folders read, 1 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [],
+   "pool": [
+    {
+     "skill": "venice-image-edit",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Image edits, upscaling, and background removal via the Venice.ai API.",
+     "folder": "skills/venice-image-edit",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/venice-image-edit",
+     "fit": 2.803,
+     "matched": 3
+    },
+    {
+     "skill": "fal-restore",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Restore and fix image quality — deblur, denoise, fix faces, and restore old documents using fal.ai's hosted restoration models.",
+     "folder": "skills/fal-restore",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/fal-restore",
+     "fit": 5.16,
+     "matched": 2
+    },
+    {
+     "skill": "fal-upscale",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Upscale and enhance image and video resolution using AI super-resolution models hosted on fal.ai.",
+     "folder": "skills/fal-upscale",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/fal-upscale",
+     "fit": 3.099,
+     "matched": 3
+    }
+   ],
+   "notes": [
+    "77 repositories looked at, 20 skill folders read, 3 pass the match rule."
+   ]
+  }
+ },
+ "J21": {
+  "A": {
+   "local": [
+    "content-production"
+   ],
+   "github": [
+    {
+     "skill": "blog-post",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "A long-form article / blog post — masthead, hero image placeholder, article body with figures and pull quotes, author byline, related posts. Use when the brief asks for \"blog\", \"article\", \"post\", \"essay\", or \"case study\"."
+    }
+   ],
+   "notes": [
+    "65 repositories looked at, 3 skill folders read, 1 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [
+    {
+     "name": "content-production",
+     "fit": 20.896
+    }
+   ],
+   "pool": [
+    {
+     "skill": "blog-write",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Write a new blog article from scratch for Google rankings and AI citations, then take it through the delivery gates. Generates the full article with template selection, answer-first formatting, Key Takeaways box, sourced statistics, licensed images, built-in SVG charts, optional FAQ and internal lin",
+     "folder": "skills/blog-write",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-write",
+     "fit": 6.846,
+     "matched": 4
+    },
+    {
+     "skill": "blog",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Full-lifecycle blog engine with 31 sub-skills, 12 templates, 100-point scoring, and 5 agents. Routes requests to the right sub-skill: writing, rewriting, analysis, outlines, audits, schema, charts, images, repurposing, AI citation SEO, FLOW prompts, topic clusters, and multilingual publishing. Optim",
+     "folder": "skills/blog",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog",
+     "fit": 2.743,
+     "matched": 3
+    },
+    {
+     "skill": "blog-geo",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Audit one blog post file for AI-citation readiness (self-contained, sourced passages, entity clarity, structure, crawler access) and score it with an internal 0-100 heuristic plus per-surface notes for AI Overviews, AI Mode, ChatGPT, Perplexity, Claude, Gemini, and Copilot. Use when the user says \"g",
+     "folder": "skills/blog-geo",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-geo",
+     "fit": 3.445,
+     "matched": 2
+    },
+    {
+     "skill": "blog-flow",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "FLOW framework integration for bloggers. Evidence-led content workflow using the Find, Optimize, Win loop with stage-specific AI prompts from the FLOW knowledge base (30 blog-applicable prompts, adapted from FLOW under CC BY 4.0). Use when user says \"FLOW framework\", \"blog flow\", \"/blog flow\", \"evid",
+     "folder": "skills/blog-flow",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-flow",
+     "fit": 2.93,
+     "matched": 3
+    },
+    {
+     "skill": "blog-audio",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Paid Gemini TTS audio for a finished blog post: summary, full read-aloud, or two-speaker dialogue, with an MP3 and an HTML5 embed. Asks for explicit consent before the first paid call. Runs only on an explicit request: /blog audio, \"generate audio for this blog post\", \"narrate this blog post\", \"audi",
+     "folder": "skills/blog-audio",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-audio",
+     "fit": 5.278,
+     "matched": 2
+    },
+    {
+     "skill": "blog-audit",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Full-site blog health assessment scanning all blog files for quality scores, orphan pages, topic cannibalization, stale content, and AI citation readiness. Runs canonical batch analysis before site-wide checks. Produces per-post scores and a prioritized action queue. Use when the user asks for a sit",
+     "folder": "skills/blog-audit",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-audit",
+     "fit": 4.546,
+     "matched": 3
+    },
+    {
+     "skill": "blog-brand",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Establish durable brand and voice context for cross-skill consumption. Generates BRAND.md (audience, positioning, do/don't editorial rules, taboo phrases, competitor differentiation) and VOICE.md (existing persona JSON re-expressed as readable prose), both written to the project root. When present, ",
+     "folder": "skills/blog-brand",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-brand",
+     "fit": 2.703,
+     "matched": 3
+    },
+    {
+     "skill": "blog-brief",
+     "repo": "AgriciDaniel/claude-blog",
+     "stars": 2814,
+     "desc": "Create a content brief for ONE planned post: target and secondary keywords, search intent, template choice, competitor gaps from the live SERP, sourced statistics to include, section plan, internal-link targets, and distribution ideas. Use when the user says \"content brief\", \"blog brief\", \"SEO brief",
+     "folder": "skills/blog-brief",
+     "license": "MIT",
+     "updated": "2026-11-03",
+     "archived": false,
+     "url": "https://github.com/AgriciDaniel/claude-blog/tree/main/skills/blog-brief",
+     "fit": 4.982,
+     "matched": 5
+    },
+    {
+     "skill": "content-writer",
+     "repo": "sociilabs/claude-content-writer",
+     "stars": 54,
+     "desc": "Professional content generation system with a GSD-style phased workflow, integrated SEO optimization (claude-seo), and anti-AI auditing (humanizer). USE THIS SKILL whenever the user asks to write, draft, create, generate, or produce ANY content — including blog posts, articles, LinkedIn posts, Faceb",
+     "folder": "",
+     "license": "none",
+     "updated": "2026-07-28",
+     "archived": false,
+     "url": "https://github.com/sociilabs/claude-content-writer",
+     "fit": 4.774,
+     "matched": 5
+    },
+    {
+     "skill": "unslop",
+     "repo": "L-X-T/ng-agentic-skills",
+     "stars": 14,
+     "desc": "Edit prose to remove AI-writing tells and improve clarity. Use when writing or revising prose (docs, READMEs, commit messages, blog posts, UI copy), or when the user says text sounds like AI, or asks to unslop, de-AI, or humanize it.",
+     "folder": ".agents/skills/unslop",
+     "license": "MIT",
+     "updated": "2026-10-04",
+     "archived": false,
+     "url": "https://github.com/L-X-T/ng-agentic-skills/tree/main/.agents/skills/unslop",
+     "fit": 4.24,
+     "matched": 3
+    },
+    {
+     "skill": "release-announcement",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Write a release announcement — changelog, blog post, in-app note, or social post — that leads with user impact, names the audience, and includes upgrade/migration steps without filler.",
+     "folder": "packages/skills-catalog/catalog/optional/content/release-announcement",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/packages/skills-catalog/catalog/optional/content/release-announcement",
+     "fit": 4.371,
+     "matched": 3
+    },
+    {
+     "skill": "blog-post",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "A long-form article / blog post — masthead, hero image placeholder, article body with figures and pull quotes, author byline, related posts. Use when the brief asks for \"blog\", \"article\", \"post\", \"essay\", or \"case study\".",
+     "folder": "design-templates/blog-post",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/design-templates/blog-post",
+     "fit": 10.376,
+     "matched": 5
+    },
+    {
+     "skill": "article-magazine",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Huashu / huashu-md-html-inspired magazine article layout for turning Markdown or notes into a polished long-form HTML essay.",
+     "folder": "skills/article-magazine",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/article-magazine",
+     "fit": 4.803,
+     "matched": 3
+    }
+   ],
+   "notes": [
+    "79 repositories looked at, 76 skill folders read, 13 pass the match rule."
+   ]
+  }
+ },
+ "J23": {
+  "A": {
+   "local": [
+    "mcp-builder",
+    "claude-api",
+    "xlsx"
+   ],
+   "github": [
+    {
+     "skill": "mcp-server-patterns",
+     "repo": "affaan-m/ECC",
+     "stars": 306615,
+     "desc": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server — tools, resources, prompts, validation, or transport choice."
+    },
+    {
+     "skill": "x-api",
+     "repo": "affaan-m/ECC",
+     "stars": 306615,
+     "desc": "X/Twitter API integration for posting tweets, threads, reading timelines, search, and analytics. Covers OAuth auth patterns, rate limits, and platform-native content posting. Use when the user wants to interact with X programmatically."
+    },
+    {
+     "skill": "eve-chat-template-eve",
+     "repo": "thedotmack/claude-mem",
+     "stars": 118272,
+     "desc": "Work safely on Eve-specific internals in the Eve chat template. Use when changing the Eve agent, withEve routes, eveChannel auth, useEveAgent, ClientSession/SessionState, persisted event logs, stream/resume behavior, connection authorization, Vercel Connect MCP connections, local Eve tools, or upstr"
+    },
+    {
+     "skill": "prepare-mcp-integration",
+     "repo": "paperclipai/paperclip",
+     "stars": 114831,
+     "desc": "Prepare MCP/vendor integrations through cited research, a content PR, exact-revision human approval, and one governed Paperclip connector PR per approved connection. Use for new integration research and delivery; not for ad hoc connector coding that bypasses the playbooks."
+    }
+   ],
+   "notes": [
+    "3 GitHub skills left out of the list because you already have a skill of that name.",
+    "46 repositories looked at, 15 skill folders read, 4 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [
+    {
+     "name": "mcp-builder",
+     "fit": 14.824
+    },
+    {
+     "name": "claude-api",
+     "fit": 4.261
+    }
+   ],
+   "pool": [
+    {
+     "skill": "jira-integration",
+     "repo": "affaan-m/ECC",
+     "stars": 306615,
+     "desc": "Retrieves Jira tickets, analyzes requirements, updates ticket status, adds comments, or transitions issues via MCP or direct REST API patterns.",
+     "folder": "skills/jira-integration",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/jira-integration",
+     "fit": 10.225,
+     "matched": 4
+    },
+    {
+     "skill": "mcp-server-patterns",
+     "repo": "affaan-m/ECC",
+     "stars": 306615,
+     "desc": "Build MCP servers with Node/TypeScript SDK — tools, resources, prompts, Zod validation, stdio vs Streamable HTTP. Use Context7 or official MCP docs for latest API. Use when building or debugging an MCP server — tools, resources, prompts, validation, or transport choice.",
+     "folder": "skills/mcp-server-patterns",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/mcp-server-patterns",
+     "fit": 16.148,
+     "matched": 3
+    },
+    {
+     "skill": "api-connector-builder",
+     "repo": "affaan-m/ECC",
+     "stars": 306615,
+     "desc": "Build a new API connector or provider by matching the target repo's existing integration pattern exactly. Use when adding one more integration without inventing a second architecture.",
+     "folder": "skills/api-connector-builder",
+     "license": "MIT",
+     "updated": "2026-11-17",
+     "archived": false,
+     "url": "https://github.com/affaan-m/ECC/tree/main/skills/api-connector-builder",
+     "fit": 7.858,
+     "matched": 3
+    },
+    {
+     "skill": "building-python-mcp-servers",
+     "repo": "kajisho5/ffmpeg-skill",
+     "stars": 8049,
+     "desc": "Builds robust Python MCP (Model Context Protocol) servers with FastMCP — tool design, error contracts, event-loop-safe blocking work, subprocess/CLI wrapping, single-file vs packaged distribution, global-state-free testing, and prompt-injection awareness. Use when writing an MCP server, exposing a t",
+     "folder": ".claude/skills/mcp-server-design",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/kajisho5/ffmpeg-skill/tree/main/.claude/skills/mcp-server-design",
+     "fit": 14.395,
+     "matched": 2
+    },
+    {
+     "skill": "copilot-sdk",
+     "repo": "microsoft/skills",
+     "stars": 3224,
+     "desc": "Build applications powered by GitHub Copilot using the Copilot SDK. Use when creating programmatic integrations with Copilot across Node.js/TypeScript, Python, Go, or .NET. Covers session management, custom tools, streaming, hooks, MCP servers, BYOK providers, session persistence, custom agents, ski",
+     "folder": ".github/skills/copilot-sdk",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/microsoft/skills/tree/main/.github/skills/copilot-sdk",
+     "fit": 8.055,
+     "matched": 3
+    },
+    {
+     "skill": "azure-compute",
+     "repo": "microsoft/azure-skills",
+     "stars": 1656,
+     "desc": "Azure VM/VMSS router. WHEN: create / provision / deploy / spin-up VM, recommend VM size, compare VM pricing, VMSS, scale set, autoscale, burstable, lightweight server, website, backend, GPU, machine learning, HPC simulation, dev/test, workload, family, load balancer, Flexible orchestration, Uniform ",
+     "folder": "skills/azure-compute",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/microsoft/azure-skills/tree/main/skills/azure-compute",
+     "fit": 3.135,
+     "matched": 2
+    },
+    {
+     "skill": "academy-guide",
+     "repo": "anthropics/skills",
+     "stars": 197254,
+     "desc": "Stop and check this skill before finishing any reply to a question about how to use Claude or a Claude product — it recommends matching courses, tutorials, and use cases from Claude Academy (academy.claude.com), Anthropic's learning hub. Trigger on: \"how do I\", \"how can I\", \"getting started with\", \"",
+     "folder": "skills/academy-guide",
+     "license": "none",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/anthropics/skills/tree/main/skills/academy-guide",
+     "fit": 2.354,
+     "matched": 2
+    },
+    {
+     "skill": "eve-chat-template-eve",
+     "repo": "thedotmack/claude-mem",
+     "stars": 118272,
+     "desc": "Work safely on Eve-specific internals in the Eve chat template. Use when changing the Eve agent, withEve routes, eveChannel auth, useEveAgent, ClientSession/SessionState, persisted event logs, stream/resume behavior, connection authorization, Vercel Connect MCP connections, local Eve tools, or upstr",
+     "folder": "integrations/eve/template/.agents/skills/eve-chat-template-eve",
+     "license": "Apache-2.0",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/thedotmack/claude-mem/tree/main/integrations/eve/template/.agents/skills/eve-chat-template-eve",
+     "fit": 2.48,
+     "matched": 2
+    },
+    {
+     "skill": "prepare-mcp-integration",
+     "repo": "paperclipai/paperclip",
+     "stars": 114830,
+     "desc": "Prepare MCP/vendor integrations through cited research, a content PR, exact-revision human approval, and one governed Paperclip connector PR per approved connection. Use for new integration research and delivery; not for ad hoc connector coding that bypasses the playbooks.",
+     "folder": "packages/skills-catalog/catalog/optional/software-development/prepare-mcp-integration",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/paperclipai/paperclip/tree/master/packages/skills-catalog/catalog/optional/software-development/prepare-mcp-integration",
+     "fit": 8.988,
+     "matched": 3
+    }
+   ],
+   "notes": [
+    "2 GitHub skills left out because you already have a skill of that name.",
+    "65 repositories looked at, 137 skill folders read, 9 pass the match rule."
+   ]
+  }
+ },
+ "J29": {
+  "A": {
+   "local": [],
+   "github": [
+    {
+     "skill": "fal-3d",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Generate 3D models from text or images via fal.ai. Useful for game assets, AR previews, product mockups, and concept sculpting."
+    },
+    {
+     "skill": "kiln",
+     "repo": "elithril/blender-kiln",
+     "stars": 226,
+     "desc": "Makes and fixes 3D assets in Blender, for games, the web and AR. Use when the user wants a 3D model, prop, character or GLB/glTF/FBX/USDZ file made — from a text brief, a reference image, a free marketplace (PolyHaven, Sketchfab) or AI generation — AND when they bring an existing 3D file to fix: too"
+    },
+    {
+     "skill": "smoothstone",
+     "repo": "baney75/smoothstone",
+     "stars": 75,
+     "desc": "Make 3D printable parts that look designed, from a text request or a picture, by choosing and setting tested parametric recipes with the stone CLI. Works for small local models (tier S), mid models (M) and large models (L), and keeps its state on disk so it survives context compaction. Use when some"
+    }
+   ],
+   "notes": [
+    "93 repositories looked at, 6 skill folders read, 3 fit at least 2 of your 5 key words."
+   ]
+  },
+  "B": {
+   "local": [],
+   "pool": [
+    {
+     "skill": "img2threejs",
+     "repo": "img2threejs/img2threejs",
+     "stars": 21592,
+     "desc": "Turn an object or character reference image into a quality-gated, animation-ready procedural Three.js model built in code. Use for image-to-3D reconstruction, detail-accurate object rebuilds, stylized/likeness-maximized human characters, sculpt specs, and staged code generation.",
+     "folder": "",
+     "license": "Apache-2.0",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/img2threejs/img2threejs",
+     "fit": 1.823,
+     "matched": 2
+    },
+    {
+     "skill": "scenario-3d",
+     "repo": "scenario-labs/skills",
+     "stars": 3892,
+     "desc": "Use when generating or handling 3D assets through the Scenario MCP server, including text-to-3D or image-to-3D meshes, GPT-6 Astra 3D or Claude Opus 5.5 3D, GLB, FBX, OBJ, STL, or VOX files, PBR-textured or game-ready models, voxel models, multi-view reconstruction, editing a mesh by prompt, retextu",
+     "folder": "skills/scenario-3d",
+     "license": "MIT",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/scenario-labs/skills/tree/main/skills/scenario-3d",
+     "fit": 3.881,
+     "matched": 3
+    },
+    {
+     "skill": "scenario-zbrush-pose-print",
+     "repo": "scenario-labs/skills",
+     "stars": 3892,
+     "desc": "Use when posing a sculpt or preparing it for 3D printing in ZBrush: \"pose this character\", Transpose Master, TPoseMesh, Gizmo posing with masks, ZSphere rig, Proxy Pose, weapon in the hand, stretching after posing, \"3D print this\", 1/6 scale statue, miniature, resin or FDM, hollowing, wall thickness",
+     "folder": "skills/dcc/zbrush/scenario-zbrush-pose-print",
+     "license": "MIT",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/scenario-labs/skills/tree/main/skills/dcc/zbrush/scenario-zbrush-pose-print",
+     "fit": 4.895,
+     "matched": 3
+    },
+    {
+     "skill": "scenario-godot-3d-world",
+     "repo": "scenario-labs/skills",
+     "stars": 3892,
+     "desc": "Use when building 3D levels and worlds in Godot 4.7: third-person or FPS controller, player stuck on stairs, spring arm camera clipping, blockout with CSG, GridMap and MeshLibrary, terrain (heightmap, HeightMapShape3D, Terrain3D regions, textures, painting), scattering trees with MultiMesh, streamin",
+     "folder": "skills/game-engines/godot/scenario-godot-3d-world",
+     "license": "MIT",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/scenario-labs/skills/tree/main/skills/game-engines/godot/scenario-godot-3d-world",
+     "fit": 2.242,
+     "matched": 2
+    },
+    {
+     "skill": "scenario",
+     "repo": "scenario-labs/skills",
+     "stars": 3892,
+     "desc": "Use when connecting an AI agent to Scenario (scenario.com) through MCP, or when a task involves generating images, video, 3D, audio, sprites, textures, or game assets. Also when picking a Scenario model, running a LoRA, refining a generation prompt, uploading reference images, waiting on generation ",
+     "folder": "skills/scenario",
+     "license": "MIT",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/scenario-labs/skills/tree/main/skills/scenario",
+     "fit": 1.521,
+     "matched": 2
+    },
+    {
+     "skill": "cad",
+     "repo": "autonomous-ai/openharness",
+     "stars": 1516,
+     "desc": "Create, modify, inspect, and validate parametric CAD parts and assemblies authored as cadgen model scripts. Use for natural-language CAD specs, reference images, 2D technical drawings, STEP/STP generation or direct inspection, Python CAD source, source-level joints, selector references, geometry fac",
+     "folder": "store/agents/text-to-cad/skills/cad",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/autonomous-ai/openharness/tree/main/store/agents/text-to-cad/skills/cad",
+     "fit": 5.072,
+     "matched": 3
+    },
+    {
+     "skill": "dxf",
+     "repo": "autonomous-ai/openharness",
+     "stars": 1516,
+     "desc": "Generate, regenerate, and validate 2D DXF drawings from Python build123d sources. Use for DXF files, `.py` drawing scripts, @dxf models, 2D profiles, outlines, templates, gaskets, panels, flat patterns, laser/plasma/waterjet cut layouts, and 2D drawing exports of CAD geometry.",
+     "folder": "store/agents/text-to-cad/skills/dxf",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/autonomous-ai/openharness/tree/main/store/agents/text-to-cad/skills/dxf",
+     "fit": 2.293,
+     "matched": 2
+    },
+    {
+     "skill": "gcode",
+     "repo": "autonomous-ai/openharness",
+     "stars": 1516,
+     "desc": "Generate, inspect, dry-run, and statically validate plain FDM `.gcode` from 3D mesh files by orchestrating real slicer CLIs. Use when Codex needs to slice `.stl`, `.obj`, unsliced `.3mf`, `.ply`, `.glb`, or `.gltf` into printer-profiled G-code, discover local slicer backends, inspect whether a mesh ",
+     "folder": "store/agents/text-to-cad/skills/gcode",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/autonomous-ai/openharness/tree/main/store/agents/text-to-cad/skills/gcode",
+     "fit": 3.967,
+     "matched": 3
+    },
+    {
+     "skill": "bambu-studio-ai",
+     "repo": "heyixuan2/bambu-studio-ai",
+     "stars": 280,
+     "desc": "- End-to-end 3D printing for Bambu Lab printers. Finds models online (MakerWorld, Printables), generates them with AI (text-to-3D, image-to-3D) or as exact-dimension parametric CAD, checks and repairs printability, converts textures to AMS multi-color, renders previews, opens them in Bambu Studio fo",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-09-19",
+     "archived": false,
+     "url": "https://github.com/heyixuan2/bambu-studio-ai",
+     "fit": 6.218,
+     "matched": 5
+    },
+    {
+     "skill": "kiln",
+     "repo": "elithril/blender-kiln",
+     "stars": 226,
+     "desc": "Makes and fixes 3D assets in Blender, for games, the web and AR. Use when the user wants a 3D model, prop, character or GLB/glTF/FBX/USDZ file made — from a text brief, a reference image, a free marketplace (PolyHaven, Sketchfab) or AI generation — AND when they bring an existing 3D file to fix: too",
+     "folder": "plugin",
+     "license": "MIT",
+     "updated": "2026-11-16",
+     "archived": false,
+     "url": "https://github.com/elithril/blender-kiln/tree/main/plugin",
+     "fit": 3.377,
+     "matched": 2
+    },
+    {
+     "skill": "3d-image-renderer",
+     "repo": "hassancs91/claude-image-generation",
+     "stars": 115,
+     "desc": "Generate PNG images by building a real Three.js 3D scene and capturing one frame headlessly — no image model involved. Takes a text prompt and an aspect ratio (1:1, 16:9, or 9:16) and produces a rendered PNG. Use this skill whenever the user asks to generate, create, or render an image, picture, sce",
+     "folder": ".claude/skills/level-2-image-generator",
+     "license": "MIT",
+     "updated": "2026-08-18",
+     "archived": false,
+     "url": "https://github.com/hassancs91/claude-image-generation/tree/main/.claude/skills/level-2-image-generator",
+     "fit": 2.235,
+     "matched": 2
+    },
+    {
+     "skill": "create-3d-model",
+     "repo": "CheshireJCat/blender",
+     "stars": 81,
+     "desc": "Create and refine portable 3D models from text prompts, one or more reference images, wireframes, orthographic views, templates, texture atlases, or existing 3D assets. Use whenever the dsh agent must model or reconstruct geometry, match visual references, create materials and UVs, rig or animate a ",
+     "folder": "skills/create-3d-model",
+     "license": "MIT",
+     "updated": "2026-10-24",
+     "archived": false,
+     "url": "https://github.com/CheshireJCat/blender/tree/main/skills/create-3d-model",
+     "fit": 7.898,
+     "matched": 3
+    },
+    {
+     "skill": "blender-export",
+     "repo": "CheshireJCat/blender",
+     "stars": 81,
+     "desc": "Export Blender scenes to glTF/GLB (web/AR), FBX (game engines), OBJ (universal), USD (VFX pipelines), STL (3D printing). Includes per-format settings, embed/unpack textures, axis conversion, polygon optimization (Decimate), and target-platform validation. Use whenever the user asks to \"export this\",",
+     "folder": "skills/create-3d-model/references/modules/blender-export",
+     "license": "MIT",
+     "updated": "2026-10-24",
+     "archived": false,
+     "url": "https://github.com/CheshireJCat/blender/tree/main/skills/create-3d-model/references/modules/blender-export",
+     "fit": 4.524,
+     "matched": 3
+    },
+    {
+     "skill": "reference-to-3d",
+     "repo": "CheshireJCat/blender",
+     "stars": 81,
+     "desc": "Reconstruct Blender models from supplied reference sheets, branding templates, texture atlases, orthographic front/side/back/top views, or mascot/logo art where visual fidelity to the source is more important than a plausible generated object. Use when the user says the model must match a template, ",
+     "folder": "skills/create-3d-model/references/modules/reference-to-3d",
+     "license": "MIT",
+     "updated": "2026-10-24",
+     "archived": false,
+     "url": "https://github.com/CheshireJCat/blender/tree/main/skills/create-3d-model/references/modules/reference-to-3d",
+     "fit": 2.595,
+     "matched": 2
+    },
+    {
+     "skill": "wireframe-to-3d",
+     "repo": "CheshireJCat/blender",
+     "stars": 81,
+     "desc": "Convert 2D orthographic wireframe PNG drawings to 3D Blender models exported as glTF/GLB. Use this skill whenever the user provides wireframe images (technical drawings, line drawings, orthographic views, side/front/back panels) and wants to generate a 3D model, mesh, or .glb file. Triggers on phras",
+     "folder": "skills/create-3d-model/references/modules/wireframe-to-3d",
+     "license": "MIT",
+     "updated": "2026-10-24",
+     "archived": false,
+     "url": "https://github.com/CheshireJCat/blender/tree/main/skills/create-3d-model/references/modules/wireframe-to-3d",
+     "fit": 5.101,
+     "matched": 2
+    },
+    {
+     "skill": "smoothstone",
+     "repo": "baney75/smoothstone",
+     "stars": 75,
+     "desc": "Make 3D printable parts that look designed, from a text request or a picture, by choosing and setting tested parametric recipes with the stone CLI. Works for small local models (tier S), mid models (M) and large models (L), and keeps its state on disk so it survives context compaction. Use when some",
+     "folder": "skill",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/baney75/smoothstone/tree/main/skill",
+     "fit": 8.005,
+     "matched": 4
+    },
+    {
+     "skill": "alpha-scene-gen",
+     "repo": "ig-shadow-walker/BlenderXAlpha-3DGenSkill",
+     "stars": 32,
+     "desc": "Generates AI 3D models through the Alpha3D MCP connector and imports them directly into the user's currently open Blender scene, scaled and placed to build out a described environment, prop set, or character roster. Use this skill whenever the user wants to populate, build, dress, furnish, or fill a",
+     "folder": "skills/alpha-scene-gen",
+     "license": "MIT",
+     "updated": "2026-07-21",
+     "archived": false,
+     "url": "https://github.com/ig-shadow-walker/BlenderXAlpha-3DGenSkill/tree/main/skills/alpha-scene-gen",
+     "fit": 3.078,
+     "matched": 2
+    },
+    {
+     "skill": "ai-3d-to-dayz",
+     "repo": "willy92wins/DayZ-Modding-Knowledge-Pack",
+     "stars": 25,
+     "desc": "Front-end para generar un prop, item o asset 3D de DayZ con IA: image/text-to-3D, limpieza y retopología low-poly manifold, UV, normal bake high→low, PBR y handoff a .p3d/.paa/.rvmat. Úsala para \"generar un objeto/modelo 3D para DayZ\", \"crear un prop desde cero\", \"image to 3D\", \"convertir un GLB de ",
+     "folder": "skills/ai-3d-to-dayz",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/willy92wins/DayZ-Modding-Knowledge-Pack/tree/main/skills/ai-3d-to-dayz",
+     "fit": 2.182,
+     "matched": 2
+    },
+    {
+     "skill": "dayz-3d-viewer",
+     "repo": "willy92wins/DayZ-Modding-Knowledge-Pack",
+     "stars": 25,
+     "desc": "Use when: 3D viewer, p3d viewer, PAA to PNG, glTF export, GLB convert, model preview, texture conversion. P3D/PAA/RVMAT → Three.js HTML/GLB. Not structural audits: dayz-p3d-audit; not interactive Recipe edit: dayz-p3d-inspector.",
+     "folder": "skills/dayz-3d-viewer",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/willy92wins/DayZ-Modding-Knowledge-Pack/tree/main/skills/dayz-3d-viewer",
+     "fit": 2.488,
+     "matched": 2
+    },
+    {
+     "skill": "dayz-model-pipeline",
+     "repo": "willy92wins/DayZ-Modding-Knowledge-Pack",
+     "stars": 25,
+     "desc": "Skill for generating complete DayZ mod objects autonomously — from 3D models to game-ready .p3d files with LODs, memory points, named selections, procedural textures, .rvmat materials, animations (model.cfg), and config.cpp. Primary path: Blender headless for pro geometry (bevel, subdiv, booleans, S",
+     "folder": "skills/dayz-model-pipeline",
+     "license": "MIT",
+     "updated": "2026-11-18",
+     "archived": false,
+     "url": "https://github.com/willy92wins/DayZ-Modding-Knowledge-Pack/tree/main/skills/dayz-model-pipeline",
+     "fit": 4.291,
+     "matched": 2
+    },
+    {
+     "skill": "world-model-mcp",
+     "repo": "putervision/world-model-mcp",
+     "stars": 23,
+     "desc": "Teaches the agent to use the Spatial World Model MCP server to track entities, 3D/2D positions, spatial relationships, object permanence, and movement simulation.",
+     "folder": ".agents/skills/world-model-mcp",
+     "license": "MIT",
+     "updated": "2026-10-03",
+     "archived": false,
+     "url": "https://github.com/putervision/world-model-mcp/tree/main/.agents/skills/world-model-mcp",
+     "fit": 2.448,
+     "matched": 2
+    },
+    {
+     "skill": "web-3d-modeling-workflow",
+     "repo": "wodelt-tishellor/web-3d-modeling-workflow",
+     "stars": 18,
+     "desc": "Build and refine HTML/WebGL/Three.js scenes, reference-matched dioramas, and procedural assets. Prioritize composition, shape, materials and lighting; verify geometry, interaction and delivery with risk-based browser QA. Also supports reusable asset systems and measured performance work. Not for Ble",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-09-06",
+     "archived": false,
+     "url": "https://github.com/wodelt-tishellor/web-3d-modeling-workflow",
+     "fit": 6.732,
+     "matched": 2
+    },
+    {
+     "skill": "architectural-concept-design",
+     "repo": "Mhrnqaruni/ai-agent-skill-architectural-concept-design",
+     "stars": 12,
+     "desc": "- Turns a building brief into a checked concept design package: requirement matrix, decision questions, design specification, CAD floor plans, elevations and a section (DXF, PDF, PNG), a furnished interactive 3D model in one HTML file, and an area schedule. Write one JSON design model, and the bundl",
+     "folder": "skills/architectural-concept-design",
+     "license": "MIT",
+     "updated": "2026-11-08",
+     "archived": false,
+     "url": "https://github.com/Mhrnqaruni/ai-agent-skill-architectural-concept-design/tree/main/skills/architectural-concept-design",
+     "fit": 4.879,
+     "matched": 3
+    },
+    {
+     "skill": "threejs-to-3d-model",
+     "repo": "duosheng/threejs-to-3d-model",
+     "stars": 10,
+     "desc": "用 Three.js 代码程序化生成带骨骼动画的 3D 模型（人物、怪物、生物、机甲、道具等），导出标准 GLB，再经 Blender 转 FBX 并烘焙贴图，得到 Unity、Unreal、Godot、Cocos、Web 都能直接使用的资产包，可选在 Unity 中自动导入并逐帧比对骨骼。用户说\"生成一个 3D 骨骼动画\"\"做一个会走会攻击的角色/怪物模型\"\"Three.js 模型导出 GLB/FBX\"\"给 Unity/Godot/Unreal 用的带动画模型\"\"Three.js 骨骼动画转 FBX\"，或用自然语言描述一个角色、生物或物体并要求做成可用的 3D 动画资产时使用。Generat",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/duosheng/threejs-to-3d-model",
+     "fit": 7.014,
+     "matched": 2
+    },
+    {
+     "skill": "fal-3d",
+     "repo": "nexu-io/open-design",
+     "stars": 108360,
+     "desc": "Generate 3D models from text or images via fal.ai. Useful for game assets, AR previews, product mockups, and concept sculpting.",
+     "folder": "skills/fal-3d",
+     "license": "Apache-2.0",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/nexu-io/open-design/tree/main/skills/fal-3d",
+     "fit": 5.252,
+     "matched": 2
+    }
+   ],
+   "notes": [
+    "99 repositories looked at, 94 skill folders read, 25 pass the match rule."
+   ]
+  }
+ },
+ "J32": {
+  "A": {
+   "local": [],
+   "github": [
+    {
+     "skill": "reverse-engineer-anything",
+     "repo": "morluto/rea",
+     "stars": 468459,
+     "desc": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux desktop apps with a task from a request. Use shipped-artifact or requested runt"
+    },
+    {
+     "skill": "design-taste-frontend",
+     "repo": "Leonxlnx/taste-skill",
+     "stars": 118497,
+     "desc": "- tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photographs and real product UI (licensed stand-in photographs when the client has none; "
+    }
+   ],
+   "notes": [
+    "58 repositories looked at, 5 skill folders read, 2 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [],
+   "pool": [
+    {
+     "skill": "reverse-engineer-anything",
+     "repo": "morluto/rea",
+     "stars": 468459,
+     "desc": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux desktop apps with a task from a request. Use shipped-artifact or requested runt",
+     "folder": ".agents/skills/reverse-engineer-anything",
+     "license": "MIT",
+     "updated": "2026-11-19",
+     "archived": false,
+     "url": "https://github.com/morluto/rea/tree/main/.agents/skills/reverse-engineer-anything",
+     "fit": 3.035,
+     "matched": 2
+    },
+    {
+     "skill": "design-taste-frontend",
+     "repo": "Leonxlnx/taste-skill",
+     "stars": 118497,
+     "desc": "- tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photographs and real product UI (licensed stand-in photographs when the client has none; ",
+     "folder": "skills/taste-skill",
+     "license": "MIT",
+     "updated": "2026-11-08",
+     "archived": false,
+     "url": "https://github.com/Leonxlnx/taste-skill/tree/main/skills/taste-skill",
+     "fit": 2.249,
+     "matched": 3
+    },
+    {
+     "skill": "guizang-game-skill",
+     "repo": "op7418/guizang-game-skill",
+     "stars": 410,
+     "desc": "用 AI 生成素材（Tripo 等 3D 模型、即梦等图片与配音、Suno 等配乐）加 three.js，做一个能在浏览器里跑、最后打包成单个 HTML 的 3D 动作游戏的完整流程和踩坑清单。只要用户想做网页 3D 游戏、WebGL 游戏、three.js 游戏、俯视角或魂类动作游戏、带 Boss 战的 demo，或者提到\"打击感\"\"技能特效\"\"掉落物\"\"单文件分发\"\"用 AI 生成模型做游戏\"，哪怕没说\"用这个 skill\"，都应该先读它再动手。Build a polished browser 3D action game (three.js / WebGL, isometric soul",
+     "folder": "",
+     "license": "AGPL-3.0",
+     "updated": "2026-11-11",
+     "archived": false,
+     "url": "https://github.com/op7418/guizang-game-skill",
+     "fit": 4.976,
+     "matched": 3
+    }
+   ],
+   "notes": [
+    "78 repositories looked at, 101 skill folders read, 3 pass the match rule."
+   ]
+  }
+ },
+ "J33": {
+  "A": {
+   "local": [],
+   "github": [],
+   "notes": [
+    "71 repositories looked at, 0 skill folders read, 0 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [],
+   "pool": [
+    {
+     "skill": "document-translation",
+     "repo": "feverZHONG/liya-document-translation",
+     "stars": 0,
+     "desc": "论文/长文档翻译——PDF提取全文→术语表→并行分章→质量抽查→归档。触发：翻论文、翻译长文档。",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-11-02",
+     "archived": false,
+     "url": "https://github.com/feverZHONG/liya-document-translation",
+     "fit": 7.337,
+     "matched": 2
+    },
+    {
+     "skill": "baoyu-document-translator-v4",
+     "repo": "Geighlord007/Agent-skills_QP",
+     "stars": 0,
+     "desc": "Translate DOCX / PPTX documents into the target language while preserving formatting (runs, fields, shapes, tables, headers/footers, footnotes, speaker notes). Use whenever the user asks to translate, localize, 中文化 or 英文化 a .docx or .pptx file — reports, pitch decks, papers, manuals — or any documen",
+     "folder": "baoyu-document-translator-v4",
+     "license": "none",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/Geighlord007/Agent-skills_QP/tree/main/baoyu-document-translator-v4",
+     "fit": 5.263,
+     "matched": 4
+    },
+    {
+     "skill": "baoyu-document-translator-v3.6",
+     "repo": "Geighlord007/Agent-skills_QP",
+     "stars": 0,
+     "desc": "Translate DOCX / PPTX documents into the target language while preserving formatting (runs, fields, shapes, tables, headers/footers, footnotes, speaker notes). Use whenever the user asks to translate, localize, 中文化 or 英文化 a .docx or .pptx file — reports, pitch decks, papers, manuals — or any documen",
+     "folder": "baoyu-document-translator-v3.6",
+     "license": "none",
+     "updated": "2026-10-19",
+     "archived": false,
+     "url": "https://github.com/Geighlord007/Agent-skills_QP/tree/main/baoyu-document-translator-v3.6",
+     "fit": 5.298,
+     "matched": 4
+    },
+    {
+     "skill": "document-translation",
+     "repo": "FonaTech/Translation_Skills",
+     "stars": 0,
+     "desc": "Translate selected documents into faithful complete and interpretive editions, with HTML/PDF reading copies, source alignment and extraction, semantic and layout review. Use for document translation, translated collections, bilingual reading editions or translation audits.",
+     "folder": "skills/document-translation",
+     "license": "MIT",
+     "updated": "2026-11-10",
+     "archived": false,
+     "url": "https://github.com/FonaTech/Translation_Skills/tree/main/skills/document-translation",
+     "fit": 7.076,
+     "matched": 2
+    },
+    {
+     "skill": "md-to-office",
+     "repo": "yezzes1231-ship-it/md-to-office-skill",
+     "stars": 0,
+     "desc": "Convert Markdown files to Microsoft Word (.docx), PowerPoint (.pptx), PDF, HTML, LaTeX, or EPUB with Pandoc while preserving headings, tables, images, metadata, and document structure. Use when the user asks to export Markdown or a completed translation to an Office document, especially Word.",
+     "folder": "",
+     "license": "MIT",
+     "updated": "2026-08-05",
+     "archived": false,
+     "url": "https://github.com/yezzes1231-ship-it/md-to-office-skill",
+     "fit": 2.216,
+     "matched": 2
+    },
+    {
+     "skill": "pagetranslate-document-translator",
+     "repo": "Caravaca-Labs/pagetranslate-mcp",
+     "stars": 0,
+     "desc": "Use this skill whenever the user wants a Word document or business file translated and returned as the same kind of file: DOCX contracts, manuals, HR policies, marketing material, financial reports, CVs. Keeps headings, tables, lists and images. Shows the exact price first.",
+     "folder": "skills/pagetranslate-document-translator",
+     "license": "MIT",
+     "updated": "2026-11-14",
+     "archived": false,
+     "url": "https://github.com/Caravaca-Labs/pagetranslate-mcp/tree/main/skills/pagetranslate-document-translator",
+     "fit": 2.593,
+     "matched": 2
+    }
+   ],
+   "notes": [
+    "63 repositories looked at, 21 skill folders read, 6 pass the match rule."
+   ]
+  }
+ },
+ "J36": {
+  "A": {
+   "local": [],
+   "github": [],
+   "notes": [
+    "102 repositories looked at, 2 skill folders read, 0 fit at least 2 of your 4 key words."
+   ]
+  },
+  "B": {
+   "local": [],
+   "pool": [],
+   "notes": [
+    "88 repositories looked at, 8 skill folders read, 0 pass the match rule."
+   ]
+  }
+ }
+}

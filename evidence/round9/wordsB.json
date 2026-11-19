@@ -1,0 +1,182 @@
+{
+ "J01": {
+  "id": "J01",
+  "topic": "word document",
+  "also": "docx doc report headings table"
+ },
+ "J02": {
+  "id": "J02",
+  "topic": "spreadsheet",
+  "also": "xlsx excel conditional formatting tracker sheets"
+ },
+ "J03": {
+  "id": "J03",
+  "topic": "slide deck",
+  "also": "presentation pptx powerpoint slides pitch"
+ },
+ "J04": {
+  "id": "J04",
+  "topic": "pdf extraction",
+  "also": "pdf document parsing text extract contract"
+ },
+ "J05": {
+  "id": "J05",
+  "topic": "landing page",
+  "also": "web page html css frontend signup"
+ },
+ "J06": {
+  "id": "J06",
+  "topic": "seo audit",
+  "also": "search engine optimization google ranking local seo website"
+ },
+ "J07": {
+  "id": "J07",
+  "topic": "code review",
+  "also": "pull request pr diff review concurrency"
+ },
+ "J08": {
+  "id": "J08",
+  "topic": "debugging",
+  "also": "bug fix troubleshooting race condition code"
+ },
+ "J09": {
+  "id": "J09",
+  "topic": "end-to-end tests",
+  "also": "e2e playwright testing test automation browser"
+ },
+ "J10": {
+  "id": "J10",
+  "topic": "static site hosting",
+  "also": "deployment domain dns html website hosting"
+ },
+ "J11": {
+  "id": "J11",
+  "topic": "resume tailoring",
+  "also": "cv resume job application cover letter"
+ },
+ "J12": {
+  "id": "J12",
+  "topic": "expense categorization",
+  "also": "receipts bookkeeping tax ocr images"
+ },
+ "J13": {
+  "id": "J13",
+  "topic": "meeting summary",
+  "also": "transcript notes action items minutes"
+ },
+ "J14": {
+  "id": "J14",
+  "topic": "internal announcement email",
+  "also": "email memo internal communications"
+ },
+ "J15": {
+  "id": "J15",
+  "topic": "privacy compliance",
+  "also": "gdpr data protection legal regulation policy"
+ },
+ "J16": {
+  "id": "J16",
+  "topic": "financial analysis",
+  "also": "income statement margins financials accounting ratios"
+ },
+ "J17": {
+  "id": "J17",
+  "topic": "animated gif",
+  "also": "gif animation emoji slack image"
+ },
+ "J18": {
+  "id": "J18",
+  "topic": "generative art",
+  "also": "p5js creative coding javascript canvas algorithmic art"
+ },
+ "J19": {
+  "id": "J19",
+  "topic": "photo restoration",
+  "also": "image enhancement upscaling sharpen image editing"
+ },
+ "J20": {
+  "id": "J20",
+  "topic": "brand naming",
+  "also": "brainstorming names domain branding"
+ },
+ "J21": {
+  "id": "J21",
+  "topic": "blog post",
+  "also": "article long-form writing content"
+ },
+ "J22": {
+  "id": "J22",
+  "topic": "ad copy",
+  "also": "headlines copywriting marketing social media ads"
+ },
+ "J23": {
+  "id": "J23",
+  "topic": "mcp server",
+  "also": "integration api tool connector jira"
+ },
+ "J24": {
+  "id": "J24",
+  "topic": "file organization script",
+  "also": "automation python shell script file sorting"
+ },
+ "J25": {
+  "id": "J25",
+  "topic": "mobile app",
+  "also": "ios android cross-platform react native flutter"
+ },
+ "J26": {
+  "id": "J26",
+  "topic": "database schema",
+  "also": "postgres sql data model erd tables"
+ },
+ "J27": {
+  "id": "J27",
+  "topic": "logo design",
+  "also": "logo svg branding graphic design sticker"
+ },
+ "J28": {
+  "id": "J28",
+  "topic": "podcast outline",
+  "also": "interview questions episode script"
+ },
+ "J29": {
+  "id": "J29",
+  "topic": "3d model",
+  "also": "stl openscad cad 3d printing"
+ },
+ "J30": {
+  "id": "J30",
+  "topic": "email newsletter",
+  "also": "newsletter email marketing"
+ },
+ "J31": {
+  "id": "J31",
+  "topic": "kubernetes troubleshooting",
+  "also": "k8s eks pods memory oom debugging"
+ },
+ "J32": {
+  "id": "J32",
+  "topic": "browser game",
+  "also": "javascript html canvas game"
+ },
+ "J33": {
+  "id": "J33",
+  "topic": "document translation",
+  "also": "translation localization manual"
+ },
+ "J34": {
+  "id": "J34",
+  "topic": "trip itinerary",
+  "also": "travel planning itinerary budget"
+ },
+ "J35": {
+  "id": "J35",
+  "topic": "cli app",
+  "also": "command-line rust cargo terminal tool"
+ },
+ "J36": {
+  "id": "J36",
+  "topic": "wedding speech",
+  "also": "toast speech writing maid of honor"
+ }
+}

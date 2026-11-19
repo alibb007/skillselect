@@ -1,0 +1,842 @@
+{
+ "installed": 50,
+ "jobs": {
+  "landing page website marketing html": {
+   "local": [
+    {
+     "name": "landing-page-generator",
+     "matched": 3,
+     "of": 5,
+     "desc": "Use when asked for a landing, marketing or campaign page as a Next.js TSX component with Tailwind. Scaffolds it with landing_page_scaffolder.py using PAS, AIDA or BAB copy, SEO meta and Core Web Vitals targets."
+    },
+    {
+     "name": "landing",
+     "matched": 3,
+     "of": 5,
+     "desc": "Use when asked for a premium single-file HTML landing page with 3D CSS, GSAP scroll effects and parallax. Locks positioning in a short intake, validates the palette with brand_palette_validator.py and the output with htm"
+    },
+    {
+     "name": "page-cro",
+     "matched": 2,
+     "of": 5,
+     "desc": "Fix a page that is not converting: section by section audit with fixes ranked by impact. Use whenever a homepage, landing, pricing or feature page gets few signups, sales or clicks."
+    },
+    {
+     "name": "copywriting",
+     "matched": 2,
+     "of": 5,
+     "desc": "Use for any headline, tagline, CTA, landing, pricing or about-page copy request, before drafting. Scores candidate headlines with headline_scorer.py and applies a page-section framework, so the first draft is tested rath"
+    },
+    {
+     "name": "epic-design",
+     "matched": 2,
+     "of": 5,
+     "desc": "Use for any landing page, hero section or scroll-driven web design that should feel cinematic (parallax, scrollytelling, overlapping sections, text reveals, Apple-style animation), before coding. Inspects assets with ins"
+    }
+   ],
+   "shown": [
+    {
+     "skill": "design-taste-frontend",
+     "repo": "Leonxlnx/taste-skill",
+     "stars": 118464,
+     "matched": 3,
+     "of": 5,
+     "desc": "- tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photograp"
+    },
+    {
+     "skill": "paperclip-page",
+     "repo": "paperclipai/paperclip",
+     "stars": 114822,
+     "matched": 2,
+     "of": 5,
+     "desc": "Publish static HTML pages and asset folders to the Paperclip S3/CloudFront page host. Use when asked to deploy, host, or share a persistent page, viewer, prototype, report, or static site without here.now."
+    },
+    {
+     "skill": "screenshots-marketing",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 3,
+     "of": 5,
+     "desc": "Generate marketing screenshots with Playwright. Useful for landing-page hero shots, App Store screenshots, and changelog visuals."
+    },
+    {
+     "skill": "kami-landing",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 3,
+     "of": 5,
+     "desc": "Produce a print-grade single-page kami (\u7d19 / \u7eb8) document \u2014 warm parchment canvas, ink-blue accent, serif at one weight, no italic, no cool grays. The output reads like a professional white paper or studio one-pager, not a"
+    }
+   ],
+   "pool": [
+    {
+     "skill": "design-taste-frontend",
+     "repo": "Leonxlnx/taste-skill",
+     "stars": 118464,
+     "matched": 3,
+     "of": 5,
+     "desc": "- tasteskill 2.5.1, the anti-slop frontend skill. Builds professional company websites at the level of figma.com and x.ai: plain copy in a voice of its own, one system, one section per screen, equal edges, real photograp"
+    },
+    {
+     "skill": "paperclip-page",
+     "repo": "paperclipai/paperclip",
+     "stars": 114822,
+     "matched": 2,
+     "of": 5,
+     "desc": "Publish static HTML pages and asset folders to the Paperclip S3/CloudFront page host. Use when asked to deploy, host, or share a persistent page, viewer, prototype, report, or static site without here.now."
+    },
+    {
+     "skill": "screenshots-marketing",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 3,
+     "of": 5,
+     "desc": "Generate marketing screenshots with Playwright. Useful for landing-page hero shots, App Store screenshots, and changelog visuals."
+    },
+    {
+     "skill": "kami-landing",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 3,
+     "of": 5,
+     "desc": "Produce a print-grade single-page kami (\u7d19 / \u7eb8) document \u2014 warm parchment canvas, ink-blue accent, serif at one weight, no italic, no cool grays. The output reads like a professional white paper or studio one-pager, not a"
+    }
+   ],
+   "notes": [
+    "3 GitHub skills left out of the list because you already have a skill of that name.",
+    "64 repositories looked at, 10 skill folders read, 4 fit at least 2 of your 5 key words."
+   ]
+  },
+  "slide deck presentation": {
+   "local": [
+    {
+     "name": "pptx",
+     "matched": 3,
+     "of": 3,
+     "desc": "Use this skill any time a .pptx or .potx file is involved in any way \u2014 as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx or"
+    }
+   ],
+   "shown": [
+    {
+     "skill": "deck-open-slide-canvas",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "Locked 1920x1080 canvas deck with React component-level free composition, not bound to a fixed template."
+    },
+    {
+     "skill": "officecli-pptx",
+     "repo": "iOfficeAI/OfficeCLI",
+     "stars": 33435,
+     "matched": 3,
+     "of": 3,
+     "desc": "Use this skill any time a .pptx file is involved -- as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file; editing, modify"
+    },
+    {
+     "skill": "officecli-pitch-deck",
+     "repo": "iOfficeAI/OfficeCLI",
+     "stars": 33435,
+     "matched": 2,
+     "of": 3,
+     "desc": "Use this skill when the user is building a fundraising / investor pitch deck \u2014 seed, Series A / B / C, convertible note, SAFE round, strategic raise. Trigger on: 'pitch deck', 'investor deck', 'Series A deck', 'Series B "
+    },
+    {
+     "skill": "many-ppt-skills",
+     "repo": "brycewang-stanford/many-ppt-skills",
+     "stars": 87,
+     "matched": 3,
+     "of": 3,
+     "desc": "Pick an AI slide-deck skill and a concrete visual style from a curated registry, filtering on the requirements that decide it \u2014 editable in PowerPoint, speaker notes, a mandated corporate template, offline, PDF \u2014 with sa"
+    },
+    {
+     "skill": "slide-design-skill",
+     "repo": "SlideSpeak/slide-design-skill",
+     "stars": 41,
+     "matched": 3,
+     "of": 3,
+     "desc": "Design and generate polished, on-brand presentation decks as clean 1920\u00d71080 HTML \u2014 with real charts, tables, and AI or stock imagery. Use whenever someone wants to create, design, or improve a presentation, slide deck, "
+    }
+   ],
+   "pool": [
+    {
+     "skill": "deck-open-slide-canvas",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "Locked 1920x1080 canvas deck with React component-level free composition, not bound to a fixed template."
+    },
+    {
+     "skill": "officecli-pptx",
+     "repo": "iOfficeAI/OfficeCLI",
+     "stars": 33435,
+     "matched": 3,
+     "of": 3,
+     "desc": "Use this skill any time a .pptx file is involved -- as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file; editing, modify"
+    },
+    {
+     "skill": "officecli-pitch-deck",
+     "repo": "iOfficeAI/OfficeCLI",
+     "stars": 33435,
+     "matched": 2,
+     "of": 3,
+     "desc": "Use this skill when the user is building a fundraising / investor pitch deck \u2014 seed, Series A / B / C, convertible note, SAFE round, strategic raise. Trigger on: 'pitch deck', 'investor deck', 'Series A deck', 'Series B "
+    },
+    {
+     "skill": "many-ppt-skills",
+     "repo": "brycewang-stanford/many-ppt-skills",
+     "stars": 87,
+     "matched": 3,
+     "of": 3,
+     "desc": "Pick an AI slide-deck skill and a concrete visual style from a curated registry, filtering on the requirements that decide it \u2014 editable in PowerPoint, speaker notes, a mandated corporate template, offline, PDF \u2014 with sa"
+    },
+    {
+     "skill": "slide-design-skill",
+     "repo": "SlideSpeak/slide-design-skill",
+     "stars": 41,
+     "matched": 3,
+     "of": 3,
+     "desc": "Design and generate polished, on-brand presentation decks as clean 1920\u00d71080 HTML \u2014 with real charts, tables, and AI or stock imagery. Use whenever someone wants to create, design, or improve a presentation, slide deck, "
+    },
+    {
+     "skill": "image-ppt-king",
+     "repo": "TateZhouSiu/image-ppt-king",
+     "stars": 34,
+     "matched": 2,
+     "of": 3,
+     "desc": "Convert slide/page images into editable PowerPoint PPTX decks by using Image Split visual layers, region schemas, transparent editable text, and QA gates. Use when Codex is given PNG/JPG/Image2/AI-generated slide images "
+    },
+    {
+     "skill": "flight-check",
+     "repo": "analystacademy/flight-check",
+     "stars": 25,
+     "matched": 2,
+     "of": 3,
+     "desc": "Final-pass quality review for near-finished slide decks before they are sent or presented. Use when the user shares a PowerPoint, PDF, slide screenshots, or pasted slide text and asks for a review, final pass, sanity che"
+    },
+    {
+     "skill": "presentation-forge",
+     "repo": "thmsgo18/presentation-forge",
+     "stars": 10,
+     "matched": 3,
+     "of": 3,
+     "desc": "- Build beautiful, self-contained HTML presentations (slide decks) with the bundled Presentation Forge engine: one HTML file per slide, bundled into a single portable index.html with presenter mode, progressive reveal, a"
+    }
+   ],
+   "notes": [
+    "76 repositories looked at, 27 skill folders read, 8 fit at least 2 of your 3 key words."
+   ]
+  },
+  "blog post writing": {
+   "local": [
+    {
+     "name": "content-production",
+     "matched": 2,
+     "of": 3,
+     "desc": "Write a blog post, article or guide end to end: research, outline, draft, SEO pass and quality gates. Use whenever the user asks to write a blog post, draft an article on a topic, or turn notes into a full piece."
+    }
+   ],
+   "shown": [
+    {
+     "skill": "blog-post",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "A long-form article / blog post \u2014 masthead, hero image placeholder, article body with figures and pull quotes, author byline, related posts. Use when the brief asks for \"blog\", \"article\", \"post\", \"essay\", or \"case study\""
+    },
+    {
+     "skill": "writing-coach",
+     "repo": "franndeli/writing-coach",
+     "stars": 1,
+     "matched": 3,
+     "of": 3,
+     "desc": "Writing coach that restructures a writer's own words into LinkedIn posts and blog articles without ever adding words of its own, and keeps a voice-dictated journal that it critically mines for post ideas against the writ"
+    },
+    {
+     "skill": "ai-seo-writing",
+     "repo": "keupera/ai-seo-writing",
+     "stars": 0,
+     "matched": 3,
+     "of": 3,
+     "desc": "Write blog posts and web articles that rank in Google and get cited in AI Overviews, AI Mode, ChatGPT and Perplexity \u2014 while sounding like a human wrote them and putting reader value first. Use this skill whenever the us"
+    },
+    {
+     "skill": "writers-room",
+     "repo": "tejalogs/writers-room",
+     "stars": 0,
+     "matched": 3,
+     "of": 3,
+     "desc": "Writes non-fiction podcast scripts, blog posts, social posts, ads, landing pages and video scripts (with shots and on-screen text) using strong hooks, open loops, narrative and fresh language, built on real stories and r"
+    }
+   ],
+   "pool": [
+    {
+     "skill": "blog-post",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "A long-form article / blog post \u2014 masthead, hero image placeholder, article body with figures and pull quotes, author byline, related posts. Use when the brief asks for \"blog\", \"article\", \"post\", \"essay\", or \"case study\""
+    },
+    {
+     "skill": "writing-coach",
+     "repo": "franndeli/writing-coach",
+     "stars": 1,
+     "matched": 3,
+     "of": 3,
+     "desc": "Writing coach that restructures a writer's own words into LinkedIn posts and blog articles without ever adding words of its own, and keeps a voice-dictated journal that it critically mines for post ideas against the writ"
+    },
+    {
+     "skill": "ai-seo-writing",
+     "repo": "keupera/ai-seo-writing",
+     "stars": 0,
+     "matched": 3,
+     "of": 3,
+     "desc": "Write blog posts and web articles that rank in Google and get cited in AI Overviews, AI Mode, ChatGPT and Perplexity \u2014 while sounding like a human wrote them and putting reader value first. Use this skill whenever the us"
+    },
+    {
+     "skill": "writers-room",
+     "repo": "tejalogs/writers-room",
+     "stars": 0,
+     "matched": 3,
+     "of": 3,
+     "desc": "Writes non-fiction podcast scripts, blog posts, social posts, ads, landing pages and video scripts (with shots and on-screen text) using strong hooks, open loops, narrative and fresh language, built on real stories and r"
+    }
+   ],
+   "notes": [
+    "53 repositories looked at, 6 skill folders read, 4 fit at least 2 of your 3 key words."
+   ]
+  },
+  "code review pull request": {
+   "local": [
+    {
+     "name": "code-reviewer",
+     "matched": 4,
+     "of": 4,
+     "desc": "Use for any code review: a pull request, a diff, a commit, or a pasted function, handler or file in TypeScript, JavaScript, Python, Go, Swift, Kotlin, C#/.NET, Java, C, C++, Rust, Ruby, PHP or Dart/Flutter. Applies per-l"
+    },
+    {
+     "name": "requesting-code-review",
+     "matched": 3,
+     "of": 4,
+     "desc": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements"
+    },
+    {
+     "name": "pr-review-expert",
+     "matched": 3,
+     "of": 4,
+     "desc": "File-by-file pull request review for bugs, security and quality, with a merge verdict. Load whenever the user asks to review, look over or check a PR or diff before merging."
+    },
+    {
+     "name": "gdpr-compliance",
+     "matched": 3,
+     "of": 4,
+     "desc": "Expert GDPR compliance assistant covering all four core workflows: (1) auditing code and systems for GDPR violations, (2) drafting GDPR-compliant documents such as privacy policies, Data Processing Agreements (DPAs), and"
+    },
+    {
+     "name": "receiving-code-review",
+     "matched": 2,
+     "of": 4,
+     "desc": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind "
+    }
+   ],
+   "shown": [
+    {
+     "skill": "reverse-engineer-anything",
+     "repo": "morluto/rea",
+     "stars": 468400,
+     "matched": 2,
+     "of": 4,
+     "desc": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux"
+    },
+    {
+     "skill": "flutter-dart-code-review",
+     "repo": "affaan-m/ECC",
+     "stars": 306572,
+     "matched": 2,
+     "of": 4,
+     "desc": "Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean "
+    },
+    {
+     "skill": "karpathy-guidelines",
+     "repo": "multica-ai/andrej-karpathy-skills",
+     "stars": 234284,
+     "matched": 2,
+     "of": 4,
+     "desc": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria."
+    },
+    {
+     "skill": "ponytail-review",
+     "repo": "DietrichGebert/ponytail",
+     "stars": 194091,
+     "matched": 2,
+     "of": 4,
+     "desc": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is ex"
+    },
+    {
+     "skill": "backend-code-review",
+     "repo": "langgenius/dify",
+     "stars": 161453,
+     "matched": 3,
+     "of": 4,
+     "desc": "Use only when the user explicitly requests a review or audit of backend code under `api/`. Supports pending-change, file-focused, and pasted-diff reviews. Do not use for implementation-only requests, diagnosis without re"
+    }
+   ],
+   "pool": [
+    {
+     "skill": "reverse-engineer-anything",
+     "repo": "morluto/rea",
+     "stars": 468400,
+     "matched": 2,
+     "of": 4,
+     "desc": "Reverse engineer native, managed, Electron/JavaScript, packaged, firmware, and browser targets with REA, and build agent environments (AgentEnv bundles) of web applications from a live instance or a capture, and of Linux"
+    },
+    {
+     "skill": "flutter-dart-code-review",
+     "repo": "affaan-m/ECC",
+     "stars": 306572,
+     "matched": 2,
+     "of": 4,
+     "desc": "Library-agnostic Flutter/Dart code review checklist covering widget best practices, state management patterns (BLoC, Riverpod, Provider, GetX, MobX, Signals), Dart idioms, performance, accessibility, security, and clean "
+    },
+    {
+     "skill": "code-tour",
+     "repo": "affaan-m/ECC",
+     "stars": 306572,
+     "matched": 2,
+     "of": 4,
+     "desc": "Create CodeTour `.tour` files \u2014 persona-targeted, step-by-step walkthroughs with real file and line anchors. Use for onboarding tours, architecture walkthroughs, PR tours, RCA tours, and structured \"explain how this work"
+    },
+    {
+     "skill": "karpathy-guidelines",
+     "repo": "multica-ai/andrej-karpathy-skills",
+     "stars": 234284,
+     "matched": 2,
+     "of": 4,
+     "desc": "Behavioral guidelines to reduce common LLM coding mistakes. Use when writing, reviewing, or refactoring code to avoid overcomplication, make surgical changes, surface assumptions, and define verifiable success criteria."
+    },
+    {
+     "skill": "ponytail-review",
+     "repo": "DietrichGebert/ponytail",
+     "stars": 194091,
+     "matched": 2,
+     "of": 4,
+     "desc": "Quality review of a change: is the logic right, is it safe, does it hold under real load, is risky code tested, is it fast enough, and is every line needed. Reads the connected code, not only the diff. Each finding is ex"
+    },
+    {
+     "skill": "backend-code-review",
+     "repo": "langgenius/dify",
+     "stars": 161453,
+     "matched": 3,
+     "of": 4,
+     "desc": "Use only when the user explicitly requests a review or audit of backend code under `api/`. Supports pending-change, file-focused, and pasted-diff reviews. Do not use for implementation-only requests, diagnosis without re"
+    },
+    {
+     "skill": "caveman-review",
+     "repo": "JuliusBrussee/caveman",
+     "stars": 121327,
+     "matched": 2,
+     "of": 4,
+     "desc": "Compressed code review - one line per finding with location, problem and fix. Use for /caveman-review, \"review this PR\", or \"review the diff\"."
+    },
+    {
+     "skill": "code-review-and-quality",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118961,
+     "matched": 4,
+     "of": 4,
+     "desc": "Conducts multi-axis code review. Use before merging any change. Use when reviewing code written by yourself, another agent, or a human. Use when you need to assess code quality across multiple dimensions before it enters"
+    },
+    {
+     "skill": "code-simplification",
+     "repo": "addyosmani/agent-skills",
+     "stars": 118961,
+     "matched": 2,
+     "of": 4,
+     "desc": "Simplifies code for clarity. Use when refactoring code for clarity without changing behavior. Use when code works but is harder to read, maintain, or extend than it should be. Use when reviewing code that has accumulated"
+    },
+    {
+     "skill": "babysit",
+     "repo": "thedotmack/claude-mem",
+     "stars": 118265,
+     "matched": 3,
+     "of": 4,
+     "desc": "Watch a pull request or review cycle until it is ready to merge. Use when asked to babysit, monitor, or keep checking PR comments, reviews, and CI until all actionable issues are resolved."
+    },
+    {
+     "skill": "request-progress",
+     "repo": "thedotmack/claude-mem",
+     "stars": 118265,
+     "matched": 2,
+     "of": 4,
+     "desc": "Group recent conversations into overall requests, review each one's progress from memory, sort each into one of the owner's focus areas, and write the build story, so My Work shows progress meters, shipping velocity and "
+    },
+    {
+     "skill": "setup-code-maintenance-bot",
+     "repo": "paperclipai/paperclip",
+     "stars": 114822,
+     "matched": 3,
+     "of": 4,
+     "desc": "Set up a Paperclip agent and routine that applies a selected code-maintenance skill to a repository and opens pull requests. Use for nightly maintenance bots, scheduled code gardening, or webhook-driven maintenance, usin"
+    },
+    {
+     "skill": "review-animations",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 4,
+     "desc": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned."
+    },
+    {
+     "skill": "archify-review",
+     "repo": "tt-a1i/archify",
+     "stars": 97773,
+     "matched": 2,
+     "of": 4,
+     "desc": "Review Archify issues, PRs, or code through value, cost, and impact to support evidence-based maintenance decisions. Use for issue triage, change reviews, and code quality assessments."
+    },
+    {
+     "skill": "agent-flow-qa",
+     "repo": "Drix10/agent-flow",
+     "stars": 12,
+     "matched": 2,
+     "of": 4,
+     "desc": "Quality gate for agent-flow. Runs the repo's test, typecheck and lint commands in the issue worktree, re-runs failures once, reports raw output as JSON. Never modifies code. Use when launched with AGENT_FLOW_ROLE=qa afte"
+    }
+   ],
+   "notes": [
+    "70 repositories looked at, 31 skill folders read, 14 fit at least 2 of your 4 key words."
+   ]
+  },
+  "short video animation": {
+   "local": [],
+   "shown": [
+    {
+     "skill": "video-hyperframes",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "Hyperframes / Remotion-compatible continuous frame animation with autoplay support."
+    },
+    {
+     "skill": "video-shortform",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "Short-form video generation skill \u2014 3-10 second clips for product reveals, motion teasers, ambient loops. Defaults to Seedance 2 but works the same with Kling 3 / 4, Veo 3 or Sora 2. Output is one MP4 saved to the projec"
+    },
+    {
+     "skill": "video-director",
+     "repo": "SallyRS/video-director",
+     "stars": 30,
+     "matched": 3,
+     "of": 3,
+     "desc": "Direct any short video (about 6 seconds to 3 minutes) that mixes motion graphics with generated or supplied photos, footage and clips, such as a product launch film, an explainer, a brand film, a designed demo or tutoria"
+    },
+    {
+     "skill": "code-video",
+     "repo": "Win-Hao/code-video",
+     "stars": 20,
+     "matched": 3,
+     "of": 3,
+     "desc": "Make short videos and animations with code: ask what the user wants, fill in a block prompt for this request (you fill the tags; the look is only a recommendation), then write the code, render every frame to MP4, check s"
+    },
+    {
+     "skill": "motion-ui",
+     "repo": "Kimeur/motion-launch-videos",
+     "stars": 13,
+     "matched": 2,
+     "of": 3,
+     "desc": "Make a looping app or product UI promo, 8 to 15 seconds, from the user's screenshots or live site. A phone, tablet or browser window shows their real screens, rebuilt from primitives in their colours and copy, driven lik"
+    }
+   ],
+   "pool": [
+    {
+     "skill": "video-hyperframes",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "Hyperframes / Remotion-compatible continuous frame animation with autoplay support."
+    },
+    {
+     "skill": "video-shortform",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "Short-form video generation skill \u2014 3-10 second clips for product reveals, motion teasers, ambient loops. Defaults to Seedance 2 but works the same with Kling 3 / 4, Veo 3 or Sora 2. Output is one MP4 saved to the projec"
+    },
+    {
+     "skill": "sprite-animation",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "A pixel / sprite-style animated explainer slide \u2014 full-bleed cream stage, bold display year, animated pixel-art mascot (e.g. Hanafuda card, mushroom, or 8-bit console), kinetic Japanese display type, ticking timeline rib"
+    },
+    {
+     "skill": "video-director",
+     "repo": "SallyRS/video-director",
+     "stars": 30,
+     "matched": 3,
+     "of": 3,
+     "desc": "Direct any short video (about 6 seconds to 3 minutes) that mixes motion graphics with generated or supplied photos, footage and clips, such as a product launch film, an explainer, a brand film, a designed demo or tutoria"
+    },
+    {
+     "skill": "code-video",
+     "repo": "Win-Hao/code-video",
+     "stars": 20,
+     "matched": 3,
+     "of": 3,
+     "desc": "Make short videos and animations with code: ask what the user wants, fill in a block prompt for this request (you fill the tags; the look is only a recommendation), then write the code, render every frame to MP4, check s"
+    },
+    {
+     "skill": "motion-ui",
+     "repo": "Kimeur/motion-launch-videos",
+     "stars": 13,
+     "matched": 2,
+     "of": 3,
+     "desc": "Make a looping app or product UI promo, 8 to 15 seconds, from the user's screenshots or live site. A phone, tablet or browser window shows their real screens, rebuilt from primitives in their colours and copy, driven lik"
+    },
+    {
+     "skill": "motion-3d",
+     "repo": "Kimeur/motion-launch-videos",
+     "stars": 13,
+     "matched": 2,
+     "of": 3,
+     "desc": "Make a looping 3D motion-graphics film, 6 to 20 seconds, from a short brief. Real extruded, bevelled 3D type and SVG logos, plus boxes, spheres, tori, cylinders, cones and capsules, lit by a key light with soft shadows o"
+    },
+    {
+     "skill": "2d-character-sketch",
+     "repo": "yenceesanjeev/2d-character-sketch",
+     "stars": 12,
+     "matched": 2,
+     "of": 3,
+     "desc": "Make simple 2D cartoon characters and short talking sketch videos, drawn entirely in code on this machine. Use when asked to design or build a cartoon character, draw a character sheet, make a character talk or say a lin"
+    }
+   ],
+   "notes": [
+    "56 repositories looked at, 15 skill folders read, 7 fit at least 2 of your 3 key words."
+   ]
+  },
+  "spreadsheet excel analysis": {
+   "local": [],
+   "shown": [
+    {
+     "skill": "officecli-xlsx",
+     "repo": "iOfficeAI/OfficeCLI",
+     "stars": 33436,
+     "matched": 2,
+     "of": 3,
+     "desc": "Use this skill any time a .xlsx file is involved -- as input, output, or both. This includes: creating spreadsheets, financial models, dashboards, or trackers; reading, parsing, or extracting data from any .xlsx file; ed"
+    }
+   ],
+   "pool": [
+    {
+     "skill": "officecli-xlsx",
+     "repo": "iOfficeAI/OfficeCLI",
+     "stars": 33436,
+     "matched": 2,
+     "of": 3,
+     "desc": "Use this skill any time a .xlsx file is involved -- as input, output, or both. This includes: creating spreadsheets, financial models, dashboards, or trackers; reading, parsing, or extracting data from any .xlsx file; ed"
+    }
+   ],
+   "notes": [
+    "50 repositories looked at, 4 skill folders read, 1 fit at least 2 of your 3 key words."
+   ]
+  },
+  "unit tests python": {
+   "local": [],
+   "shown": [
+    {
+     "skill": "test-writer",
+     "repo": "Angelamer/test-writer-skill",
+     "stars": 0,
+     "matched": 3,
+     "of": 3,
+     "desc": "Analyze Python code, design and implement unit or integration tests, run them, and produce an evidence-based Markdown report. Use when any coding agent is asked to write, improve, execute, or report on Python tests, incl"
+    },
+    {
+     "skill": "analyze-changes",
+     "repo": "FilipRokita/pr-test-agent",
+     "stars": 0,
+     "matched": 2,
+     "of": 3,
+     "desc": "Classifies files changed in a Taskly pull request and decides per source file whether unit tests must be added, updated, or skipped, with a reviewer-verifiable reason. Use at the start of every test-engineer run, before "
+    },
+    {
+     "skill": "write-backend-tests",
+     "repo": "FilipRokita/pr-test-agent",
+     "stars": 0,
+     "matched": 2,
+     "of": 3,
+     "desc": "Conventions and patterns for pytest unit tests of the Taskly FastAPI backend (routers, repository, dependencies, config, app factory, lifespan). Use before writing or editing any file under backend/tests."
+    },
+    {
+     "skill": "cleantest-pipeline",
+     "repo": "jimmy0717/cleantest-agent",
+     "stars": 0,
+     "matched": 2,
+     "of": 3,
+     "desc": "Orchestrates the CleanTest data cleaning pipeline for unit test training datasets. Sequentially invokes syntax-filter, relevance-filter, and coverage-filter skills to remove noisy samples, then generates a noise report. "
+    }
+   ],
+   "pool": [
+    {
+     "skill": "test-writer",
+     "repo": "Angelamer/test-writer-skill",
+     "stars": 0,
+     "matched": 3,
+     "of": 3,
+     "desc": "Analyze Python code, design and implement unit or integration tests, run them, and produce an evidence-based Markdown report. Use when any coding agent is asked to write, improve, execute, or report on Python tests, incl"
+    },
+    {
+     "skill": "analyze-changes",
+     "repo": "FilipRokita/pr-test-agent",
+     "stars": 0,
+     "matched": 2,
+     "of": 3,
+     "desc": "Classifies files changed in a Taskly pull request and decides per source file whether unit tests must be added, updated, or skipped, with a reviewer-verifiable reason. Use at the start of every test-engineer run, before "
+    },
+    {
+     "skill": "write-backend-tests",
+     "repo": "FilipRokita/pr-test-agent",
+     "stars": 0,
+     "matched": 2,
+     "of": 3,
+     "desc": "Conventions and patterns for pytest unit tests of the Taskly FastAPI backend (routers, repository, dependencies, config, app factory, lifespan). Use before writing or editing any file under backend/tests."
+    },
+    {
+     "skill": "cleantest-pipeline",
+     "repo": "jimmy0717/cleantest-agent",
+     "stars": 0,
+     "matched": 2,
+     "of": 3,
+     "desc": "Orchestrates the CleanTest data cleaning pipeline for unit test training datasets. Sequentially invokes syntax-filter, relevance-filter, and coverage-filter skills to remove noisy samples, then generates a noise report. "
+    }
+   ],
+   "notes": [
+    "53 repositories looked at, 17 skill folders read, 4 fit at least 2 of your 3 key words."
+   ]
+  },
+  "logo design brand": {
+   "local": [],
+   "shown": [
+    {
+     "skill": "brand-guidelines",
+     "repo": "anthropics/skills",
+     "stars": 197239,
+     "matched": 2,
+     "of": 3,
+     "desc": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design "
+    },
+    {
+     "skill": "design",
+     "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+     "stars": 151378,
+     "matched": 3,
+     "of": 3,
+     "desc": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, MuAPI, or UberLLM AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations"
+    },
+    {
+     "skill": "brand-extract",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 3,
+     "of": 3,
+     "desc": "Extract a complete Brand Kit from a live website by driving the in-app browser. Use when a brand-extraction project opens with a site in the Browser tab, or when the user asks to \"extract a brand\", \"pull the brand from <"
+    },
+    {
+     "skill": "swiftui-design",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "SwiftUI \u524d\u7aef\u8bbe\u8ba1 skill \u2014 anti AI-slop rules, design direction advisor, brand asset protocol, and five-dimension review. Works with Claude Code, Cursor, Codex, and OpenCode."
+    },
+    {
+     "skill": "logo-animation",
+     "repo": "iart-ai/motion-design-skills",
+     "stars": 246,
+     "matched": 2,
+     "of": 3,
+     "desc": "This skill should be used when the user asks to \"animate our logo\", \"make a logo intro/stinger\", \"build a brand reveal\", \"create an app splash animation\", \"loop a loader logo\", \"draw on our SVG mark\", \"morph an icon into"
+    }
+   ],
+   "pool": [
+    {
+     "skill": "brand-guidelines",
+     "repo": "anthropics/skills",
+     "stars": 197239,
+     "matched": 2,
+     "of": 3,
+     "desc": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design "
+    },
+    {
+     "skill": "design",
+     "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+     "stars": 151378,
+     "matched": 3,
+     "of": 3,
+     "desc": "Comprehensive design skill: brand identity, design tokens, UI styling, logo generation (55 styles, Gemini, Atlas Cloud, MuAPI, or UberLLM AI), corporate identity program (50 deliverables, CIP mockups), HTML presentations"
+    },
+    {
+     "skill": "design-system",
+     "repo": "nextlevelbuilder/ui-ux-pro-max-skill",
+     "stars": 151378,
+     "matched": 2,
+     "of": 3,
+     "desc": "Token architecture, component specifications, and slide generation. Three-layer tokens (primitive\u2192semantic\u2192component), CSS variables, spacing/typography scales, component specs, strategic slide creation. Use for design t"
+    },
+    {
+     "skill": "brand-extract",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 3,
+     "of": 3,
+     "desc": "Extract a complete Brand Kit from a live website by driving the in-app browser. Use when a brand-extraction project opens with a site in the Browser tab, or when the user asks to \"extract a brand\", \"pull the brand from <"
+    },
+    {
+     "skill": "swiftui-design",
+     "repo": "nexu-io/open-design",
+     "stars": 108351,
+     "matched": 2,
+     "of": 3,
+     "desc": "SwiftUI \u524d\u7aef\u8bbe\u8ba1 skill \u2014 anti AI-slop rules, design direction advisor, brand asset protocol, and five-dimension review. Works with Claude Code, Cursor, Codex, and OpenCode."
+    },
+    {
+     "skill": "logo-animation",
+     "repo": "iart-ai/motion-design-skills",
+     "stars": 246,
+     "matched": 2,
+     "of": 3,
+     "desc": "This skill should be used when the user asks to \"animate our logo\", \"make a logo intro/stinger\", \"build a brand reveal\", \"create an app splash animation\", \"loop a loader logo\", \"draw on our SVG mark\", \"morph an icon into"
+    },
+    {
+     "skill": "logo-design",
+     "repo": "zstvns/design-skills",
+     "stars": 49,
+     "matched": 3,
+     "of": 3,
+     "desc": "Design or evaluate a logo against the SAD bar \u2014 Simple, Appropriate, Distinct \u2014 always judged in context. Use when designing a new mark, refining one, or assessing whether an existing logo is any good. Triggers on 'logo,"
+    },
+    {
+     "skill": "design-principles",
+     "repo": "zstvns/design-skills",
+     "stars": 49,
+     "matched": 3,
+     "of": 3,
+     "desc": "The universal principles behind strong visual design \u2014 across logos, brand identity, collateral, and web. Use at the start of any design work, when a design feels off but you can't name why, when judging whether a piece "
+    }
+   ],
+   "notes": [
+    "70 repositories looked at, 36 skill folders read, 7 fit at least 2 of your 3 key words."
+   ]
+  }
+ }
+}

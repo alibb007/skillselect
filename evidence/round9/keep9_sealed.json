@@ -1,0 +1,393 @@
+{
+ "J02": {
+  "installed": [
+   "xlsx"
+  ],
+  "github": [
+   [
+    "iOfficeAI/OfficeCLI",
+    "officecli-xlsx"
+   ],
+   [
+    "gmickel/sheets-cli",
+    "sheets-cli"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J01": {
+  "installed": [
+   "docx"
+  ],
+  "github": [
+   [
+    "nexu-io/open-design",
+    "doc"
+   ],
+   [
+    "nexu-io/open-design",
+    "minimax-docx"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J04": {
+  "installed": [
+   "pdf"
+  ],
+  "github": [
+   [
+    "Verstige/pdf-document-extraction",
+    "pdf-document-extraction"
+   ],
+   [
+    "LPSlv/doc-extract",
+    "doc-extract"
+   ],
+   [
+    "zavora-ai/skill-pdf-document-management",
+    "pdf-document-management"
+   ],
+   [
+    "ghbhiee/skills",
+    "pdf-extract"
+   ],
+   [
+    "manrods/pdf-deep-reader-skill",
+    "pdf-deep-reader"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J03": {
+  "installed": [
+   "pptx"
+  ],
+  "github": [
+   [
+    "nexu-io/open-design",
+    "pptx-generator"
+   ],
+   [
+    "SlideSpeak/slide-design-skill",
+    "slide-design-skill"
+   ],
+   [
+    "nexu-io/open-design",
+    "create-slides-pitch"
+   ],
+   [
+    "andisab/swe-marketplace",
+    "slideware"
+   ],
+   [
+    "thmsgo18/presentation-forge",
+    "presentation-forge"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J06": {
+  "installed": [],
+  "github": [
+   [
+    "coreyhaines31/marketingskills",
+    "seo-audit"
+   ],
+   [
+    "sickn33/agentic-awesome-skills",
+    "local-seo-audit-checklist"
+   ],
+   [
+    "every-app/open-seo",
+    "seo-audit"
+   ],
+   [
+    "AgriciDaniel/claude-seo",
+    "seo-audit"
+   ],
+   [
+    "seranking/seo-skills",
+    "seo-local"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J09": {
+  "installed": [
+   "webapp-testing"
+  ],
+  "github": [],
+  "order": "rrf"
+ },
+ "J12": {
+  "installed": [
+   "invoice-organizer"
+  ],
+  "github": [],
+  "order": "rrf"
+ },
+ "J13": {
+  "installed": [],
+  "github": [
+   [
+    "Abulkosim/skills",
+    "meeting-notes"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J14": {
+  "installed": [
+   "internal-comms"
+  ],
+  "github": [],
+  "order": "rrf"
+ },
+ "J15": {
+  "installed": [
+   "gdpr-compliance"
+  ],
+  "github": [
+   [
+    "alirezarezvani/claude-skills",
+    "gdpr-dsgvo-expert"
+   ],
+   [
+    "alirezarezvani/claude-skills",
+    "gdpr-audit-prep"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J11": {
+  "installed": [
+   "tailored-resume-generator"
+  ],
+  "github": [
+   [
+    "reactive-resume/reactive-resume",
+    "resume-tailor"
+   ],
+   [
+    "ai-job-search-dev/ai-job-search",
+    "job-application-assistant"
+   ],
+   [
+    "vignzpie/resume-agent-skills",
+    "resume-tailor"
+   ],
+   [
+    "mikezhangyl/jd-cv-grill",
+    "jd-cv-grill"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J20": {
+  "installed": [
+   "domain-name-brainstormer"
+  ],
+  "github": [
+   [
+    "cofoundy/brand-skills",
+    "brand"
+   ],
+   [
+    "cofoundy/brand-skills",
+    "naming"
+   ],
+   [
+    "paveldevyatov/ai-domain-name-generator",
+    "find-domain"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J18": {
+  "installed": [
+   "algorithmic-art"
+  ],
+  "github": [
+   [
+    "itgoyo/hermes-skills",
+    "p5js"
+   ],
+   [
+    "anthropics/skills",
+    "canvas-design"
+   ],
+   [
+    "nexu-io/open-design",
+    "canvas-design"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J17": {
+  "installed": [
+   "slack-gif-creator"
+  ],
+  "github": [
+   [
+    "nexu-io/open-design",
+    "gif-sticker-maker"
+   ],
+   [
+    "fantuan-lab/animated-sticker-studio",
+    "animated-sticker-studio"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J24": {
+  "installed": [
+   "file-organizer"
+  ],
+  "github": [],
+  "order": "rrf"
+ },
+ "J22": {
+  "installed": [
+   "copywriting"
+  ],
+  "github": [
+   [
+    "alirezarezvani/claude-skills",
+    "ad-creative"
+   ],
+   [
+    "miqdadbadjuber/anti-slop",
+    "antislop-copywriting"
+   ],
+   [
+    "nexu-io/open-design",
+    "ad-creative"
+   ],
+   [
+    "coreyhaines31/marketingskills",
+    "ad-creative"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J25": {
+  "installed": [],
+  "github": [
+   [
+    "sleekdotdesign/agent-skills",
+    "sleek-design-mobile-apps"
+   ],
+   [
+    "Appllama/appllama-skills",
+    "appllama-app-design-skill"
+   ],
+   [
+    "massipetro/app-ui-slopless",
+    "app-ui-slopless"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J26": {
+  "installed": [],
+  "github": [
+   [
+    "schemity/skills",
+    "designing-database-schemas"
+   ],
+   [
+    "Yuuzulight/db-artisan",
+    "data-schema-design"
+   ],
+   [
+    "SchemaSketch-dev/schemasketch-skills",
+    "schemasketch"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J27": {
+  "installed": [],
+  "github": [
+   [
+    "kaankiziltug/logo-design-skill",
+    "logo-design"
+   ],
+   [
+    "zstvns/design-skills",
+    "logo-design"
+   ],
+   [
+    "carrapido/rob-janoff-design",
+    "rob-janoff-design"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J28": {
+  "installed": [],
+  "github": [
+   [
+    "amlei/amlei-skills",
+    "amlei-podcast-outline"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J35": {
+  "installed": [],
+  "github": [],
+  "order": "rrf"
+ },
+ "J31": {
+  "installed": [],
+  "github": [
+   [
+    "affaan-m/ECC",
+    "kubernetes-patterns"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J34": {
+  "installed": [],
+  "github": [
+   [
+    "Hizir-SamuelP/deep-trip-planning",
+    "deep-trip-planning-en"
+   ],
+   [
+    "ryan11njr/tripink",
+    "travel-planner"
+   ],
+   [
+    "skywain/trip-planner-skill",
+    "trip-planner"
+   ],
+   [
+    "joshgoncsu/ai-trip-planner-skill",
+    "ai-trip-planner"
+   ],
+   [
+    "jechiu16/travel-itinerary-book",
+    "travel-itinerary-book"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J30": {
+  "installed": [],
+  "github": [
+   [
+    "Insightful-Pipe/email-marketing-skills",
+    "newsletter"
+   ],
+   [
+    "milad-ahmd/email-campaign-writer",
+    "email-campaign-writer"
+   ]
+  ],
+  "order": "rrf"
+ }
+}

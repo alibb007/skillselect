@@ -1,18 +1,18 @@
 {
-  "name": "straight-answer",
+  "name": "skillselect",
   "owner": {
     "name": "Ali B.B",
     "url": "https://github.com/alibb007"
   },
   "plugins": [
     {
-      "name": "straight-answer",
+      "name": "skillselect",
       "source": "./",
-      "description": "Which skill to use, and how to use it. Short, finished answers too.",
-      "version": "2.2.0"
+      "description": "Tells you which of your skills to use, when and how, finds more on GitHub, and never installs anything.",
+      "version": "3.0.0"
     }
   ],
   "metadata": {
-    "description": "Straight Answer: which skill to use and how to use it, for Claude Code."
+    "description": "SkillSelect: which skill to use, when and how, for Claude Code."
   }
 }

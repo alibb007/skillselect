@@ -1,0 +1,254 @@
+[
+ {
+  "id": "J01",
+  "field": "a Word document",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Can you turn my bullet notes into a proper Word doc for the school board? It's about the new after-school robotics program and needs headings and a table of the weekly schedule."
+ },
+ {
+  "id": "J02",
+  "field": "a spreadsheet",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "I run a small bakery and want a spreadsheet that tracks flour, sugar and butter stock each week, with a cell that turns red when anything drops below 10 kg."
+ },
+ {
+  "id": "J03",
+  "field": "a slide presentation",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Make me a 12-slide deck pitching our dog-walking app to investors, keep it clean and put the $40k monthly revenue number up front."
+ },
+ {
+  "id": "J04",
+  "field": "a PDF file",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "I've got a 60-page PDF lease agreement, can you pull out every clause that mentions early termination or penalties?"
+ },
+ {
+  "id": "J05",
+  "field": "a landing page for a product",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "Need a landing page for our noise-cancelling sleep earbuds, launching Black Friday at $89, with an email signup above the fold."
+ },
+ {
+  "id": "J06",
+  "field": "a site's ranking in search engines",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Our plumbing company's website doesn't show up on Google when people search 'emergency plumber Leeds', what should we fix first?"
+ },
+ {
+  "id": "J07",
+  "field": "reviewing a code change before it is merged",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "Can you look over this pull request before I merge it? It changes how we cache user sessions in Redis and I'm nervous about race conditions."
+ },
+ {
+  "id": "J08",
+  "field": "tracking down a bug",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "Our checkout page randomly charges people twice, maybe 1 in 200 orders, and I can't figure out why. Here's the payment handler code."
+ },
+ {
+  "id": "J09",
+  "field": "automated tests for a web app",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Write some Playwright tests for our React signup flow, covering the happy path plus what happens when the email is already taken."
+ },
+ {
+  "id": "J10",
+  "field": "putting a website online",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "I built a portfolio site with plain HTML and CSS, how do I get it live on my own domain without paying more than a few bucks a month?"
+ },
+ {
+  "id": "J11",
+  "field": "a résumé for one job ad",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Tailor my résumé to this junior data analyst posting at Spotify, they keep mentioning SQL and A/B testing so lean into that."
+ },
+ {
+  "id": "J12",
+  "field": "invoices and receipts",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "I have about 80 receipt photos from my freelance work this year, can you help me sort them into categories for my tax return?"
+ },
+ {
+  "id": "J13",
+  "field": "notes from recorded meetings",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Here's the transcript from our 90-minute product sync, give me a short summary with decisions and who owns each action item."
+ },
+ {
+  "id": "J14",
+  "field": "an announcement to all staff",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Draft a company-wide email letting all 300 employees know the office is moving to hybrid, three days in, starting January."
+ },
+ {
+  "id": "J15",
+  "field": "privacy law for a product with European users",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "We're a US startup with a fitness tracking app and we just got our first users in Germany, what do we need to do to be GDPR compliant?"
+ },
+ {
+  "id": "J16",
+  "field": "a company's finances",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "Here are our last three years of income statements, can you tell me if our margins are actually improving or if it's just revenue growth?"
+ },
+ {
+  "id": "J17",
+  "field": "an animated GIF for a chat app",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Make a little animated GIF of a cat slamming a keyboard that I can use as a Slack reaction, under 128KB if possible."
+ },
+ {
+  "id": "J18",
+  "field": "generative art made with code",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "I want to make some generative art in p5.js, like swirling flow fields in ocean colors, that I could print as a poster."
+ },
+ {
+  "id": "J19",
+  "field": "making a blurry photo look better",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "I have an old blurry photo of my grandparents from the 70s, is there a way to sharpen it up so I can frame it?"
+ },
+ {
+  "id": "J20",
+  "field": "a name for a new product",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Help me brainstorm names for a meal-prep delivery service aimed at college students, something short and catchy with an available .com."
+ },
+ {
+  "id": "J21",
+  "field": "a long blog article",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "Write a 2,500-word blog post on how small nonprofits can use volunteer data better, friendly tone, with real examples."
+ },
+ {
+  "id": "J22",
+  "field": "words for an ad",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "Give me five punchy Instagram ad headlines for our reusable coffee cup, the audience is commuters in their 20s."
+ },
+ {
+  "id": "J23",
+  "field": "a connector that lets an AI assistant use a company tool",
+  "has_skill_field": true,
+  "set": "tune",
+  "request": "I want our AI assistant to be able to create and search tickets in our internal Jira, can you help me build the integration for that?"
+ },
+ {
+  "id": "J24",
+  "field": "a messy downloads folder",
+  "has_skill_field": true,
+  "set": "sealed",
+  "request": "My Downloads folder has like 4,000 files in it, can you write a script that sorts them into folders by type and date?"
+ },
+ {
+  "id": "J25",
+  "field": "a mobile app",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "I want to build a simple iOS and Android app for my yoga studio where members can book classes, what's the fastest way to do it?"
+ },
+ {
+  "id": "J26",
+  "field": "a database schema",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "Design a Postgres schema for a library system with books, members, loans and late fees, and explain the relationships."
+ },
+ {
+  "id": "J27",
+  "field": "a logo",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "Can you make a simple logo for my coffee truck called 'Bean There', something that looks good on a sticker?"
+ },
+ {
+  "id": "J28",
+  "field": "a podcast episode",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "Help me outline a 30-minute podcast episode interviewing a local farmer about regenerative agriculture, with good opening questions."
+ },
+ {
+  "id": "J29",
+  "field": "a 3D model for printing",
+  "has_skill_field": false,
+  "set": "tune",
+  "request": "I need a 3D printable wall mount for my Nintendo Switch dock, can you make an STL or OpenSCAD file for it?"
+ },
+ {
+  "id": "J30",
+  "field": "an email newsletter",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "Write this month's newsletter for our 2,000 garden club subscribers, covering the seed swap on the 12th and winter pruning tips."
+ },
+ {
+  "id": "J31",
+  "field": "a Kubernetes cluster",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "Our pods on the EKS cluster keep getting OOMKilled after the last deploy, how do I figure out what's eating the memory?"
+ },
+ {
+  "id": "J32",
+  "field": "a small browser game",
+  "has_skill_field": false,
+  "set": "tune",
+  "request": "Make me a small snake game in JavaScript that runs in the browser, my 9-year-old wants to play it on our old laptop."
+ },
+ {
+  "id": "J33",
+  "field": "translating a manual",
+  "has_skill_field": false,
+  "set": "tune",
+  "request": "Translate our 40-page espresso machine user manual from English into Spanish, keeping the safety warnings exact."
+ },
+ {
+  "id": "J34",
+  "field": "a travel plan",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "Plan a 10-day trip to Japan for me and my partner in April, mostly Tokyo and Kyoto, budget around $5,000 total."
+ },
+ {
+  "id": "J35",
+  "field": "a home budget app in Rust",
+  "has_skill_field": false,
+  "set": "sealed",
+  "request": "I'm learning Rust and want to build a command-line budget tracker for my household that saves expenses to a local file, can you get me started?"
+ },
+ {
+  "id": "J36",
+  "field": "a wedding speech",
+  "has_skill_field": false,
+  "set": "tune",
+  "request": "My little sister is getting married next month and I'm the maid of honor, help me write a 3-minute speech that's funny but not embarrassing."
+ }
+]

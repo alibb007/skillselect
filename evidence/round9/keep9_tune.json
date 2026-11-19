@@ -1,0 +1,220 @@
+{
+ "J08": {
+  "installed": [
+   "systematic-debugging"
+  ],
+  "github": [
+   [
+    "addyosmani/agent-skills",
+    "debugging-and-error-recovery"
+   ],
+   [
+    "thiientv/godmode",
+    "root-cause-debugging"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J10": {
+  "installed": [],
+  "github": [
+   [
+    "nexu-io/open-design",
+    "deploy-vercel-static"
+   ],
+   [
+    "zachlagden/openhere",
+    "openhere"
+   ],
+   [
+    "mislavjc/stoop",
+    "stoop"
+   ],
+   [
+    "htmlybr/skills",
+    "htmly-publish"
+   ],
+   [
+    "kochetkov-ma/brewpage-publish-plugins",
+    "brewpage-publish"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J05": {
+  "installed": [
+   "landing-page-generator",
+   "landing",
+   "epic-design",
+   "copywriting"
+  ],
+  "github": [
+   [
+    "Affitor/affiliate-skills",
+    "squeeze-page-builder"
+   ],
+   [
+    "nexu-io/open-design",
+    "frontend-design"
+   ],
+   [
+    "Affitor/affiliate-skills",
+    "landing-page-creator"
+   ],
+   [
+    "rdoser13/free-claude-skills",
+    "landing-page-designer"
+   ],
+   [
+    "rdoser13/free-claude-skills",
+    "web-designer"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J07": {
+  "installed": [
+   "code-reviewer",
+   "requesting-code-review",
+   "pr-review-expert"
+  ],
+  "github": [
+   [
+    "addyosmani/agent-skills",
+    "code-review-and-quality"
+   ],
+   [
+    "JuliusBrussee/caveman",
+    "caveman-review"
+   ],
+   [
+    "DietrichGebert/ponytail",
+    "ponytail-review"
+   ],
+   [
+    "alibaba/open-code-review",
+    "open-code-review"
+   ],
+   [
+    "alibaba/open-code-review",
+    "open-code-review-delegate"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J16": {
+  "installed": [
+   "financial-health"
+  ],
+  "github": [],
+  "order": "rrf"
+ },
+ "J19": {
+  "installed": [],
+  "github": [
+   [
+    "nexu-io/open-design",
+    "fal-restore"
+   ],
+   [
+    "nexu-io/open-design",
+    "fal-upscale"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J23": {
+  "installed": [
+   "mcp-builder"
+  ],
+  "github": [
+   [
+    "affaan-m/ECC",
+    "mcp-server-patterns"
+   ],
+   [
+    "affaan-m/ECC",
+    "jira-integration"
+   ],
+   [
+    "kajisho5/ffmpeg-skill",
+    "building-python-mcp-servers"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J21": {
+  "installed": [
+   "content-production"
+  ],
+  "github": [
+   [
+    "AgriciDaniel/claude-blog",
+    "blog-write"
+   ],
+   [
+    "sociilabs/claude-content-writer",
+    "content-writer"
+   ],
+   [
+    "L-X-T/ng-agentic-skills",
+    "unslop"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J32": {
+  "installed": [],
+  "github": [],
+  "order": "rrf"
+ },
+ "J29": {
+  "installed": [],
+  "github": [
+   [
+    "baney75/smoothstone",
+    "smoothstone"
+   ],
+   [
+    "heyixuan2/bambu-studio-ai",
+    "bambu-studio-ai"
+   ],
+   [
+    "autonomous-ai/openharness",
+    "cad"
+   ]
+  ],
+  "order": "rrf"
+ },
+ "J36": {
+  "installed": [],
+  "github": [],
+  "order": "rrf"
+ },
+ "J33": {
+  "installed": [],
+  "github": [
+   [
+    "feverZHONG/liya-document-translation",
+    "document-translation"
+   ],
+   [
+    "FonaTech/Translation_Skills",
+    "document-translation"
+   ],
+   [
+    "Geighlord007/Agent-skills_QP",
+    "baoyu-document-translator-v3.6"
+   ],
+   [
+    "Geighlord007/Agent-skills_QP",
+    "baoyu-document-translator-v4"
+   ],
+   [
+    "Caravaca-Labs/pagetranslate-mcp",
+    "pagetranslate-document-translator"
+   ]
+  ],
+  "order": "rrf"
+ }
+}

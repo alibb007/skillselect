@@ -1,18 +1,19 @@
 {
-  "name": "straight-answer",
-  "version": "2.2.0",
-  "description": "Which skill to use, and how. Checks the skills you already have, finds the best ones on GitHub by stars, and tells you how to use the one it picks. Also keeps every answer short and finished.",
+  "name": "skillselect",
+  "version": "3.0.0",
+  "description": "Reads every skill you have installed, scores each one against what you asked for, and tells you which to use, when and how. Adds the best-fitting skills on GitHub. Keeps answers short and finished.",
   "author": {
     "name": "Ali B.B",
     "url": "https://github.com/alibb007"
   },
-  "homepage": "https://github.com/alibb007/straight-answer",
-  "repository": "https://github.com/alibb007/straight-answer",
+  "homepage": "https://github.com/alibb007/skillselect",
+  "repository": "https://github.com/alibb007/skillselect",
   "license": "MIT",
   "keywords": [
     "claude-code",
     "agent-skills",
     "skill-finder",
-    "prompt"
+    "retrieval",
+    "bm25"
   ]
 }

@@ -1,0 +1,14 @@
+{
+ "judge": "one AI assistant, reading name + description, rule in RULES8.md, not blind, 18 Nov 2026",
+ "installed_on_topic": {"landing page website marketing html": [4, 5], "slide deck presentation": [1, 1], "blog post writing": [1, 1], "code review pull request": [3, 5], "short video animation": [0, 0], "spreadsheet excel analysis": [0, 0], "unit tests python": [0, 0], "logo design brand": [0, 0]},
+ "installed_off": {"landing page website marketing html": ["page-cro (audits a live page)"], "code review pull request": ["gdpr-compliance", "receiving-code-review (handles feedback, does not review)"]},
+ "installed_missed": {"spreadsheet excel analysis": "xlsx is in the folder; only 1 of 3 key words matched its description, 2 are needed", "unit tests python": "test-driven-development is in the folder; 1 of 3 key words matched (arguable fit)"},
+ "github_shown_on_topic": {"landing page website marketing html": [2, 4], "slide deck presentation": [4, 5], "blog post writing": [4, 4], "code review pull request": [3, 5], "short video animation": [5, 5], "spreadsheet excel analysis": [1, 1], "unit tests python": [2, 4], "logo design brand": [1, 5]},
+ "github_off": {"landing page website marketing html": ["paperclip-page (hosting)", "screenshots-marketing"], "slide deck presentation": ["many-ppt-skills (a registry of deck skills)"], "code review pull request": ["reverse-engineer-anything", "karpathy-guidelines"], "unit tests python": ["analyze-changes", "cleantest-pipeline"], "logo design brand": ["brand-guidelines", "brand-extract", "swiftui-design", "logo-animation"]},
+ "github_on_but_narrow": ["flutter-dart-code-review (Flutter only)", "backend-code-review (one repo's api/ folder)", "write-backend-tests (one project's backend)"],
+ "orderings_top5_on_topic": {"stars (2.2.0, as shown)": [22, 33], "fit then stars": [21, 33], "fit x log10(stars+10)": [20, 33]},
+ "per_job_fit_then_stars": [[2, 4], [4, 5], [4, 4], [2, 5], [4, 5], [1, 1], [2, 4], [2, 5]],
+ "per_job_fit_x_log_stars": [[2, 4], [4, 5], [4, 4], [2, 5], [4, 5], [1, 1], [2, 4], [1, 5]],
+ "totals": {"installed": [9, 12], "github": [22, 33]},
+ "notes": ["The landing job listed 4 GitHub skills today and 5 in the round-6 session: GitHub search results change by the day.", "Three of the blog picks and all four test picks come from repositories with 0 or 1 stars.", "logo-design (zstvns/design-skills, 49 stars, 3 of 3 key words) was read but not shown: five skills with more stars came first."]
+}

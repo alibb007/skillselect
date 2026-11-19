@@ -1,7 +1,9 @@
 {
+ "name": "SkillSelect",
+ "slug": "skillselect",
  "ask": "build a landing page for my product",
- "query": "landing page website marketing html",
- "key_words": 5,
+ "topic": "landing page",
+ "also": "marketing page homepage hero section html website",
  "installed": [
   "algorithmic-art",
   "brainstorming",
@@ -55,138 +57,149 @@
   "youtube-downloader"
  ],
  "scores": {
-  "algorithmic-art": 0,
-  "brainstorming": 0,
-  "changelog-generator": 0,
-  "claude-api": 0,
-  "code-reviewer": 0,
-  "content-production": 0,
-  "copywriting": 2,
-  "data-quality-auditor": 0,
-  "deploy-to-vercel": 0,
-  "dispatching-parallel-agents": 0,
-  "doc-coauthoring": 0,
-  "docx": 1,
-  "domain-name-brainstormer": 0,
-  "dpdpa": 0,
-  "epic-design": 2,
-  "executing-plans": 0,
-  "file-organizer": 0,
-  "financial-health": 0,
-  "gdpr-compliance": 0,
-  "image-enhancer": 0,
-  "internal-comms": 0,
-  "invoice-organizer": 0,
-  "landing": 3,
-  "landing-page-generator": 3,
-  "langsmith-fetch": 0,
-  "mcp-builder": 0,
-  "meeting-insights-analyzer": 0,
-  "page-cro": 2,
-  "pdf": 0,
-  "pptx": 0,
-  "pr-review-expert": 0,
-  "raffle-winner-picker": 0,
-  "receiving-code-review": 0,
-  "requesting-code-review": 0,
-  "seo-auditor": 0,
-  "skill-creator": 0,
-  "slack-gif-creator": 0,
-  "stock-analysis": 0,
-  "systematic-debugging": 0,
-  "tailored-resume-generator": 0,
-  "test-driven-development": 0,
-  "using-git-worktrees": 0,
-  "vercel-cli-with-tokens": 0,
-  "vercel-optimize": 0,
-  "vercel-react-best-practices": 0,
-  "verification-before-completion": 0,
-  "webapp-testing": 0,
-  "writing-plans": 0,
-  "xlsx": 1,
-  "youtube-downloader": 0
+  "algorithmic-art": 0.0,
+  "brainstorming": 0.0,
+  "changelog-generator": 0.0,
+  "claude-api": 0.0,
+  "code-reviewer": 0.0,
+  "content-production": 0.0,
+  "copywriting": 6.69,
+  "data-quality-auditor": 0.0,
+  "deploy-to-vercel": 2.21,
+  "dispatching-parallel-agents": 0.0,
+  "doc-coauthoring": 0.0,
+  "docx": 1.12,
+  "domain-name-brainstormer": 0.0,
+  "dpdpa": 1.75,
+  "epic-design": 10.33,
+  "executing-plans": 0.0,
+  "file-organizer": 0.0,
+  "financial-health": 0.0,
+  "gdpr-compliance": 0.0,
+  "image-enhancer": 0.0,
+  "internal-comms": 0.0,
+  "invoice-organizer": 0.0,
+  "landing": 11.58,
+  "landing-page-generator": 14.66,
+  "langsmith-fetch": 0.0,
+  "mcp-builder": 0.0,
+  "meeting-insights-analyzer": 0.0,
+  "page-cro": 10.11,
+  "pdf": 1.55,
+  "pptx": 0.0,
+  "pr-review-expert": 0.0,
+  "raffle-winner-picker": 0.0,
+  "receiving-code-review": 0.0,
+  "requesting-code-review": 0.0,
+  "seo-auditor": 1.74,
+  "skill-creator": 0.0,
+  "slack-gif-creator": 0.0,
+  "stock-analysis": 0.0,
+  "systematic-debugging": 0.0,
+  "tailored-resume-generator": 0.0,
+  "test-driven-development": 0.0,
+  "using-git-worktrees": 0.0,
+  "vercel-cli-with-tokens": 0.0,
+  "vercel-optimize": 0.0,
+  "vercel-react-best-practices": 1.62,
+  "verification-before-completion": 0.0,
+  "webapp-testing": 0.0,
+  "writing-plans": 0.0,
+  "xlsx": 0.88,
+  "youtube-downloader": 0.0
  },
+ "passed": 5,
  "fits": [
   {
    "name": "landing-page-generator",
-   "when": "use it if you want the page as a Next.js TSX component with Tailwind.",
-   "call": "/landing-page-generator"
+   "when": "You want the page as a Next.js TSX component with Tailwind, with PAS, AIDA or BAB copy, SEO meta and Core Web Vitals targets.",
+   "how": "/landing-page-generator <what you want>",
+   "needs": ""
   },
   {
    "name": "landing",
-   "when": "use it if you want one high-end HTML file with 3D CSS, GSAP scroll effects and parallax.",
-   "call": "/landing"
+   "when": "You want a premium single-file HTML page with 3D CSS, GSAP scroll effects and parallax, starting from a short intake on positioning.",
+   "how": "/landing <what you want>",
+   "needs": ""
   },
   {
    "name": "epic-design",
-   "when": "use it if the page should feel cinematic, with scrollytelling, text reveals and Apple-style motion.",
-   "call": "/epic-design"
+   "when": "You want a cinematic page built around scroll (parallax, scrollytelling, text reveals, Apple-style animation).",
+   "how": "/epic-design <what you want>",
+   "needs": "pip: Pillow"
   },
   {
    "name": "copywriting",
-   "when": "use it for the headline, tagline and call-to-action text before you build.",
-   "call": "/copywriting"
-  },
-  {
-   "name": "page-cro",
-   "when": "use it after the page is live, if it isn't getting signups or sales.",
-   "call": "/page-cro"
+   "when": "You want the page's headline, tagline and CTA copy tested before anything is built.",
+   "how": "/copywriting <what you want>",
+   "needs": ""
   }
  ],
  "github": [
   {
-   "stars": 118427,
+   "skill": "landing-page-creator",
+   "repo": "Affitor/affiliate-skills",
+   "stars": 795,
+   "license": "MIT",
+   "updated": "2026-10-19",
+   "when": "You want a single self-contained HTML product page. It is written mainly for affiliate pages.",
+   "needs": "npx: vercel"
+  },
+  {
+   "skill": "landing-page-designer",
+   "repo": "rdoser13/free-claude-skills",
+   "stars": 15,
+   "license": "MIT",
+   "updated": "2026-10-19",
+   "when": "You want production-ready HTML/CSS/JS laid out as hero, social proof, how-it-works, features and benefits.",
+   "needs": ""
+  },
+  {
    "skill": "design-taste-frontend",
    "repo": "Leonxlnx/taste-skill",
+   "stars": 118520,
    "license": "MIT",
    "updated": "2026-11-08",
-   "when": "It builds polished company websites with plain copy, which suits a product landing page."
+   "when": "You want a polished company site that avoids generic AI-looking design, with plain copy and real product images.",
+   "needs": ""
   },
   {
-   "stars": 114811,
-   "skill": "paperclip-page",
-   "repo": "paperclipai/paperclip",
+   "skill": "write-page",
+   "repo": "GabrielAmz/web-anatomy",
+   "stars": 11,
    "license": "MIT",
-   "updated": "2026-11-19",
-   "when": "This one publishes pages to Paperclip's hosting and doesn't build them."
+   "updated": "2026-07-02",
+   "when": "You want a new landing page or section built from Web Anatomy benchmarks.",
+   "needs": ""
   },
   {
-   "stars": 108338,
-   "skill": "screenshots-marketing",
-   "repo": "nexu-io/open-design",
-   "license": "Apache-2.0",
-   "updated": "2026-11-18",
-   "when": "It makes hero screenshots for a page with Playwright and doesn't build the page itself."
-  },
-  {
-   "stars": 108338,
-   "skill": "kami-landing",
-   "repo": "nexu-io/open-design",
-   "license": "Apache-2.0",
-   "updated": "2026-11-18",
-   "when": "It makes a print-style single-page document in a parchment-and-serif look."
-  },
-  {
-   "stars": 61257,
-   "skill": "marketing-psychology",
-   "repo": "coreyhaines31/marketingskills",
+   "skill": "seo-landing",
+   "repo": "aleksandr-alhoff/seo-landing",
+   "stars": 212,
    "license": "MIT",
-   "updated": "2026-11-18",
-   "when": "It covers persuasion tactics for marketing and doesn't build pages."
+   "updated": "2026-10-21",
+   "when": "You want a fast static HTML page that targets a 100/100 PageSpeed score and includes schema.org markup.",
+   "needs": ""
   }
  ],
- "pick": "landing-page-generator",
+ "gh": {
+  "repos": 85,
+  "files": 82,
+  "passed": 27,
+  "listed": 12
+ },
  "plain": {
   "used": [
    "landing"
   ],
   "runs": 6,
   "one": 5,
-  "two": 1
+  "more": 1,
+  "none": 0
  },
  "after": {
-  "tokens": 46725,
-  "sec": 23.9,
+  "tokens": 49854,
+  "sec": 50.8,
   "steps": 1
  },
  "before": {

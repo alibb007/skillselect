@@ -1,0 +1,146 @@
+{
+ "J01": {
+  "id": "J01",
+  "topic": "word document report docx"
+ },
+ "J02": {
+  "id": "J02",
+  "topic": "spreadsheet inventory tracker xlsx"
+ },
+ "J03": {
+  "id": "J03",
+  "topic": "pitch deck presentation pptx"
+ },
+ "J04": {
+  "id": "J04",
+  "topic": "pdf contract clause extraction"
+ },
+ "J05": {
+  "id": "J05",
+  "topic": "landing page website html"
+ },
+ "J06": {
+  "id": "J06",
+  "topic": "seo search ranking website"
+ },
+ "J07": {
+  "id": "J07",
+  "topic": "code review pull request"
+ },
+ "J08": {
+  "id": "J08",
+  "topic": "debugging bug fix payments"
+ },
+ "J09": {
+  "id": "J09",
+  "topic": "end-to-end tests playwright testing"
+ },
+ "J10": {
+  "id": "J10",
+  "topic": "website deployment static hosting"
+ },
+ "J11": {
+  "id": "J11",
+  "topic": "resume cv job application"
+ },
+ "J12": {
+  "id": "J12",
+  "topic": "receipt expense categorization tax"
+ },
+ "J13": {
+  "id": "J13",
+  "topic": "meeting summary notes transcript"
+ },
+ "J14": {
+  "id": "J14",
+  "topic": "internal announcement email communication"
+ },
+ "J15": {
+  "id": "J15",
+  "topic": "gdpr privacy compliance legal"
+ },
+ "J16": {
+  "id": "J16",
+  "topic": "financial statement analysis margins"
+ },
+ "J17": {
+  "id": "J17",
+  "topic": "animated gif slack emoji"
+ },
+ "J18": {
+  "id": "J18",
+  "topic": "generative art p5js creative coding"
+ },
+ "J19": {
+  "id": "J19",
+  "topic": "photo restoration image enhancement"
+ },
+ "J20": {
+  "id": "J20",
+  "topic": "brand naming business name brainstorming"
+ },
+ "J21": {
+  "id": "J21",
+  "topic": "blog post article writing"
+ },
+ "J22": {
+  "id": "J22",
+  "topic": "ad copy headlines marketing"
+ },
+ "J23": {
+  "id": "J23",
+  "topic": "mcp server tool integration api"
+ },
+ "J24": {
+  "id": "J24",
+  "topic": "file organization automation script"
+ },
+ "J25": {
+  "id": "J25",
+  "topic": "mobile app booking cross-platform"
+ },
+ "J26": {
+  "id": "J26",
+  "topic": "database schema design sql"
+ },
+ "J27": {
+  "id": "J27",
+  "topic": "logo design branding graphic"
+ },
+ "J28": {
+  "id": "J28",
+  "topic": "podcast episode outline interview"
+ },
+ "J29": {
+  "id": "J29",
+  "topic": "3d model printable openscad stl"
+ },
+ "J30": {
+  "id": "J30",
+  "topic": "newsletter email writing"
+ },
+ "J31": {
+  "id": "J31",
+  "topic": "kubernetes memory troubleshooting devops"
+ },
+ "J32": {
+  "id": "J32",
+  "topic": "browser game javascript html"
+ },
+ "J33": {
+  "id": "J33",
+  "topic": "translation localization manual document"
+ },
+ "J34": {
+  "id": "J34",
+  "topic": "travel itinerary trip planning"
+ },
+ "J35": {
+  "id": "J35",
+  "topic": "cli app rust command-line"
+ },
+ "J36": {
+  "id": "J36",
+  "topic": "wedding speech toast writing"
+ }
+}

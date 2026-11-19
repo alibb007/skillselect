@@ -13,7 +13,7 @@ export const theme = {
     heroSoft: "#E4EAFF",
     star: "#E9A23B",
     warn: "#E8622C", // the "before" colour: what goes wrong without the plugin
-    gold: "#C9920A", // the product name, always
+    gold: "#FFC21A", // the product name and its edges
     good: "#1E8E5A", // a number that got better
     note: "#3D424D", // small print: dark enough to read on the light ground
     shadow: "rgba(20,22,27,0.10)",

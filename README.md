@@ -145,7 +145,7 @@ SkillSelect also adds one sentence to every request, so the answer comes back sh
 
 ## License and credit
 
-SkillSelect is free to use, copy and change under the [MIT license](LICENSE). The one condition is credit. Keep the license notice with its copyright line when you copy or reuse it. A mention of SkillSelect or of Ali B.B with a link to this repository is welcome too.
+SkillSelect is free to use, copy and change under the [MIT license](LICENSE). Keep the license notice with its copyright line when you copy or reuse it. A mention of SkillSelect or of Ali B.B with a link to this repository is welcome too.
 
 The evidence files quote short descriptions of public skills so the tests can be checked. Each one is named with its repository, and those texts belong to their authors. This repository does not include any of those skills.
 

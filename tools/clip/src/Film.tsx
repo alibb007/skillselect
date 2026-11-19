@@ -7,23 +7,34 @@ import data from "./data.json";
 // The one exception is the counter in scene 1: it is a picture of "more and more", not a measurement.
 const C = theme.colors;
 const FLAT = Boolean((getInputProps() as any).flat); // for the GIF: no moving grain, no drifting background
-export const SECONDS = 70;
+export const SECONDS = 64;
 const NAME = data.name;
 // the product name is always gold and heavy, so the eye learns it
-const Nm: React.FC = () => <b style={{ color: C.gold, fontWeight: 800 }}>{NAME}</b>;
+const GOLD = "linear-gradient(105deg, rgba(255,246,190,0) 45%, rgba(255,246,190,0.9) 50%, rgba(255,246,190,0) 55%), linear-gradient(180deg, #FFE45A 0%, #FFC81A 36%, #FF9E00 74%, #FFCB3D 100%)";
+const Gold: React.FC<{ children: React.ReactNode; under?: number; glow?: boolean }> = ({ children, under = 1, glow = true }) => {
+  const f = useCurrentFrame(), pos = FLAT ? 160 : 160 - ((f % 96) / 96) * 230;
+  return (
+    <span style={{ position: "relative", display: "inline-block", fontWeight: 800, paddingBottom: under ? "0.13em" : 0 }}>
+      <span style={{ backgroundImage: GOLD, backgroundSize: "260% 100%, 100% 100%", backgroundPosition: `${pos}% 0, 0 0`, backgroundRepeat: "no-repeat", WebkitBackgroundClip: "text", backgroundClip: "text", WebkitTextFillColor: "transparent", color: "transparent", filter: glow ? "drop-shadow(0 0.03em 0 #B97400) drop-shadow(0 0 0.22em rgba(255,186,0,0.55))" : "drop-shadow(0 1px 0 #B97400)" }}>{children}</span>
+      {under ? <span style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: "0.085em", minHeight: 3, borderRadius: 99, transformOrigin: "left center", transform: `scaleX(${under})`, background: "linear-gradient(90deg, #FFD23F, #FF9E00)", boxShadow: glow ? "0 0 0.25em rgba(255,186,0,0.7)" : "none" }} /> : null}
+    </span>
+  );
+};
+const Nm: React.FC = () => <Gold glow={false}>{NAME}</Gold>;
 
 // when each beat starts, in seconds. Scenes with more to read get more time.
 const T = {
   count: 0.3, burst: 3.3,
   ask: 5.6, type: 6.1,
-  pick: 9.6, lift: 12.4, miss: 13.9, noteA: 15.1,
-  tidy: 19.1, sweep: 19.9,
-  score: 23.5, rank: 25.7,
-  cards: 28.7,
-  what: 35.6,
-  hub: 39.8, row1: 40.8, rowStep: 1.6,
-  chart: 49.6, bar1: 50.8, barStep: 2.5,
-  end: 62.0,
+  pick: 9.6, lift: 12.4, miss: 13.9, noteA: 15.3,
+  fix: 19.4, name: 21.3,
+  tidy: 23.6, sweep: 24.4,
+  score: 28.0, rank: 30.2,
+  cards: 33.2,
+  what: 40.1,
+  hub: 44.3, row1: 45.0,
+  chart: 49.4, bar1: 50.4,
+  end: 55.6,
 };
 
 const PAD = 96, W = 1920 - PAD * 2, TOP = 350;
@@ -77,7 +88,8 @@ const Headline: React.FC<{ c: Ctx; from: number; to: number; text: string; col?:
         {words.map((x, i) => {
           const p = sp(c, from + i * 0.07, theme.spring.snappy);
           const isName = x.w.replace(/[^A-Za-z]/g, "") === NAME;
-          return <span key={i} style={{ display: "inline-block", opacity: p, transform: `translateY(${mix(30, 0, p)}px) scale(${mix(0.96, 1, p) * (isName ? 1.05 : 1)})`, color: isName ? C.gold : x.hi ? col : C.ink, WebkitTextStroke: isName ? `1.2px ${C.gold}` : undefined }}>{x.w}</span>;
+          if (isName) return <span key={i} style={{ display: "inline-block", opacity: p, fontSize: "1.2em", lineHeight: 0.9, transform: `translateY(${mix(30, 0, p)}px) scale(${mix(0.9, 1, p)})` }}><Gold under={sp(c, from + 0.35 + i * 0.07)}>{x.w}</Gold></span>;
+          return <span key={i} style={{ display: "inline-block", opacity: p, transform: `translateY(${mix(30, 0, p)}px) scale(${mix(0.96, 1, p)})`, color: x.hi ? col : C.ink }}>{x.w}</span>;
         })}
       </div>
       {sub ? <div style={{ marginTop: 6, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: size * 0.62, letterSpacing: "-0.02em", color: col, opacity: s, transform: `scale(${mix(0.86, 1, s)})` }}>{sub}</div> : null}
@@ -205,8 +217,8 @@ const Picker: React.FC<{ c: Ctx }> = ({ c }) => {
 
 // Scene 3: what Claude used, and the skills that fit and were never opened.
 const Missed: React.FC<{ c: Ctx }> = ({ c }) => {
-  if (c.f < sec(c, T.lift) || c.f > sec(c, T.tidy) + 10) return null;
-  const o = out(c, T.tidy - 0.3, 0.25), rows = [USED, ...fitNames.filter((n) => n !== USED)];
+  if (c.f < sec(c, T.lift) || c.f > sec(c, T.fix) + 10) return null;
+  const o = out(c, T.fix - 0.3, 0.25), rows = [USED, ...fitNames.filter((n) => n !== USED)];
   return (
     <div style={{ position: "absolute", left: 1300, top: 380, width: 524, opacity: o, zIndex: 12 }}>
       {rows.map((n, i) => {
@@ -227,15 +239,15 @@ const Missed: React.FC<{ c: Ctx }> = ({ c }) => {
 
 // Scene 3, second line: your sentence, with the two numbers big and coloured.
 const Could: React.FC<{ c: Ctx }> = ({ c }) => {
-  const from = T.miss, to = T.tidy - 0.3;
+  const from = T.miss, to = T.fix - 0.3;
   if (c.f < sec(c, from) - 2 || c.f > sec(c, to) + 14) return null;
   const o = out(c, to), a = sp(c, from, theme.spring.snappy), n1 = sp(c, from + 0.5, theme.spring.bouncy), n2 = sp(c, from + 1.7, theme.spring.bouncy), b = sp(c, from + 1.2, theme.spring.snappy);
-  const pulse = 1 + Math.sin(c.f / 6) * 0.03, num: React.CSSProperties = { display: "inline-block", fontSize: 128, lineHeight: 0.8, margin: "0 16px", verticalAlign: -14 };
+  const pulse = 1 + Math.sin(c.f / 6) * 0.03, num: React.CSSProperties = { display: "inline-block", fontSize: 112, lineHeight: 0.8, margin: "0 14px", verticalAlign: -12 };
   return (
-    <div style={{ position: "absolute", left: PAD, top: 62, width: W, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 66, letterSpacing: "-0.035em", lineHeight: 1.1, color: C.ink, opacity: o, zIndex: 20 }}>
+    <div style={{ position: "absolute", left: PAD, top: 28, width: W, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 58, letterSpacing: "-0.035em", lineHeight: 1.1, color: C.ink, opacity: o, zIndex: 20 }}>
       <span style={{ opacity: a }}>You could have used</span>
       <span style={{ ...num, color: C.hero, opacity: n1, transform: `scale(${mix(0.3, 1, n1) * pulse})` }}>{K}</span>
-      <span style={{ opacity: a }}>skills,</span>{" "}
+      <span style={{ opacity: a }}>skills to achieve a better result,</span><br />
       <span style={{ opacity: b }}>but Claude used</span>
       <span style={{ ...num, color: C.warn, opacity: n2, transform: `translateY(${mix(-120, 0, n2)}px) scale(${mix(1.6, 1, n2)})` }}>{data.plain.used.length}</span>
     </div>
@@ -265,12 +277,11 @@ const Question: React.FC<{ c: Ctx }> = ({ c }) => {
 
 const Rows: React.FC<{ c: Ctx }> = ({ c }) => {
   if (c.f < sec(c, T.hub) || c.f > sec(c, T.chart) + 14) return null;
-  const max = Math.max(...data.github.map((g) => g.stars)), RH = 122;
+  const RH = 122;
   return (
     <>
       {data.github.map((g, i) => {
-        const at = T.row1 + i * T.rowStep, p = sp(c, at), bar = sp(c, at + 0.25, theme.spring.slow), o = out(c, T.chart - 0.25 + i * 0.04, 0.28);
-        const active = c.f >= sec(c, at) && c.f < sec(c, at + T.rowStep);
+        const at = T.row1 + i * 0.07, p = sp(c, at), o = out(c, T.chart - 0.25 + i * 0.04, 0.28), active = false;
         return (
           <div key={g.skill + g.repo} style={{ position: "absolute", left: PAD, top: 332 + i * (RH + 12), width: W, height: RH, borderRadius: 24, background: C.surface, border: `${active ? 4 : 2}px solid ${active ? C.hero : C.line}`, boxShadow: `0 18px 40px -26px ${active ? C.hero + "88" : C.shadow}`, display: "flex", alignItems: "center", padding: "0 28px", gap: 24,
             opacity: p * o, transform: `translateX(${mix(70, 0, p)}px) scale(${mix(0.97, 1, p)})` }}>
@@ -282,7 +293,7 @@ const Rows: React.FC<{ c: Ctx }> = ({ c }) => {
             <div style={{ flex: 1, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 31, letterSpacing: "-0.02em", lineHeight: 1.15, color: C.ink, opacity: sp(c, at + 0.3) }}><span style={{ fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 23, letterSpacing: "0.08em", color: C.hero, marginRight: 14 }}>WHEN</span>{g.short}</div>
             <div style={{ width: 250, flex: "0 0 auto" }}>
               <div style={{ textAlign: "right", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 34, letterSpacing: "-0.02em", color: C.ink, fontVariantNumeric: "tabular-nums" }}>{fmt(g.stars * sp(c, at + 0.2, theme.spring.smooth))}<span style={{ color: C.star, fontSize: 27, marginLeft: 8 }}>★</span></div>
-              <div style={{ marginTop: 6, height: 12, borderRadius: 6, background: C.bg, overflow: "hidden" }}><div style={{ width: `${Math.max(2, (g.stars / max) * 100) * bar}%`, height: "100%", borderRadius: 6, background: C.hero, marginLeft: "auto" }} /></div>
+              
             </div>
           </div>
         );
@@ -305,8 +316,7 @@ const Chart: React.FC<{ c: Ctx }> = ({ c }) => {
   return (
     <>
       {rows.map((r, i) => {
-        const at = T.bar1 + i * T.barStep, p = sp(c, at), g = sp(c, at + 0.25, theme.spring.slow), big = sp(c, at + 0.9, theme.spring.bouncy), m = Math.max(r.bv, r.av);
-        const active = c.f >= sec(c, at) && c.f < sec(c, at + T.barStep);
+        const at = T.bar1 + i * 0.08, p = sp(c, at), g = sp(c, at + 0.25, theme.spring.slow), big = sp(c, at + 0.9, theme.spring.bouncy), m = Math.max(r.bv, r.av), active = false;
         return (
           <div key={i} style={{ position: "absolute", left: PAD, top: 330 + i * (RH + 14), width: W, height: RH, borderRadius: 26, background: C.surface, border: `${active ? 4 : 2}px solid ${active ? C.hero : C.line}`, boxShadow: `0 18px 40px -26px ${C.shadow}`, display: "flex", alignItems: "center", padding: "0 34px", gap: 28, opacity: p * o, transform: `translateY(${mix(40, 0, p)}px) scale(${mix(0.97, 1, p)})` }}>
             <div style={{ width: 380, flex: "0 0 auto", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 36, letterSpacing: "-0.02em", lineHeight: 1.08, color: C.ink }}>{r.label}</div>
@@ -347,8 +357,32 @@ const End: React.FC<{ c: Ctx }> = ({ c }) => {
         return <div key={f.name} style={{ position: "absolute", left: mix(m.x, tx, rise), top: mix(m.y, ty, rise) + float * rise, width: mix(156, GW - 30, rise), height: mix(84, 112, rise), borderRadius: 20, background: C.hero, border: `5px solid ${C.gold}`, boxShadow: `0 26px 54px -18px ${C.hero}AA`, display: "grid", placeItems: "center", textAlign: "center", padding: 8, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: mix(15, 23, rise), lineHeight: 1.12, color: C.surface, transform: `rotate(${m.r * (1 - rise)}deg)`, zIndex: 5 }}>{soft(f.name)}</div>;
       })}
       <div style={{ position: "absolute", left: 0, width: 1920, top: 330, textAlign: "center", fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 112, letterSpacing: "-0.045em", lineHeight: 1.02, color: C.ink, opacity: p, transform: `translateY(${mix(40, 0, p)}px) scale(${mix(0.94, 1, p)})` }}>Don't let your <span style={{ color: C.hero }}>best skill</span> sit unused.</div>
-      <div style={{ position: "absolute", left: 0, width: 1920, top: 478, textAlign: "center", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 44, color: C.ink, opacity: q, transform: `translateY(${mix(24, 0, q)}px)` }}><span style={{ fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 56, color: C.gold, WebkitTextStroke: `1px ${C.gold}` }}>{NAME}</span>, a plugin for Claude Code</div>
+      <div style={{ position: "absolute", left: 0, width: 1920, top: 478, textAlign: "center", fontFamily: theme.fonts.body, fontWeight: 700, fontSize: 44, color: C.ink, opacity: q, transform: `translateY(${mix(24, 0, q)}px)` }}><span style={{ fontFamily: theme.fonts.display, fontSize: 64 }}><Gold under={sp(c, T.end + 2.8)}>{NAME}</Gold></span>, a plugin for Claude Code</div>
       <div style={{ position: "absolute", left: 0, width: 1920, top: 590, display: "flex", justifyContent: "center", opacity: u, transform: `scale(${mix(0.9, 1, u)})` }}><div style={{ fontFamily: theme.fonts.mono, fontWeight: 700, fontSize: 30, color: C.surface, background: C.ink, borderRadius: 22, padding: "20px 34px" }}>/plugin install {data.slug} --marketplace alibb007/{data.slug}</div></div>
+    </AbsoluteFill>
+  );
+};
+
+const Reveal: React.FC<{ c: Ctx }> = ({ c }) => {
+  if (c.f < sec(c, T.fix) - 8 || c.f > sec(c, T.tidy) + 16) return null;
+  const veil = Math.min(tw(c, T.fix - 0.25, T.fix + 0.15, 0, 1), tw(c, T.tidy - 0.1, T.tidy + 0.45, 1, 0));
+  const q = sp(c, T.fix, theme.spring.snappy), qo = out(c, T.name - 0.25, 0.22), n = sp(c, T.name, theme.spring.bouncy), no = out(c, T.tidy - 0.15, 0.3);
+  const ring = tw(c, T.name, T.name + 0.8, 0, 1), words = "What's the solution?".split(" ");
+  return (
+    <AbsoluteFill style={{ zIndex: 19 }}>
+      <AbsoluteFill style={{ background: C.bg, opacity: veil * 0.94 }} />
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 34, opacity: qo }}>
+        <div style={{ display: "flex", columnGap: 30, fontFamily: theme.fonts.display, fontWeight: 800, fontSize: 124, letterSpacing: "-0.04em", color: C.ink }}>
+          {words.map((w, i) => { const p = sp(c, T.fix + i * 0.09, theme.spring.snappy); return <span key={i} style={{ display: "inline-block", opacity: p * q, transform: `translateY(${mix(40, 0, p)}px)` }}>{w}</span>; })}
+        </div>
+        <div style={{ display: "flex", gap: 22 }}>
+          {[0, 1, 2].map((i) => { const d = sp(c, T.fix + 0.75 + i * 0.28, theme.spring.bouncy), beat = FLAT ? 1 : 1 + Math.max(0, Math.sin(c.f / 2.2 - i * 1.4)) * 0.35; return <div key={i} style={{ width: 30, height: 30, borderRadius: 15, background: "#FFB400", opacity: d, transform: `scale(${d * beat})` }} />; })}
+        </div>
+      </AbsoluteFill>
+      {ring > 0 && ring < 1 ? <div style={{ position: "absolute", left: 960 - 760 * ring, top: 540 - 760 * ring, width: 1520 * ring, height: 1520 * ring, borderRadius: "50%", border: `${mix(30, 2, ring)}px solid #FFC21A`, opacity: 1 - ring }} /> : null}
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: n * no }}>
+        <div style={{ fontFamily: theme.fonts.display, fontSize: 250, letterSpacing: "-0.045em", lineHeight: 1, transform: `scale(${mix(2.2, 1, n)})` }}><Gold under={sp(c, T.name + 0.45)}>{NAME}</Gold></div>
+      </AbsoluteFill>
     </AbsoluteFill>
   );
 };
@@ -366,18 +400,19 @@ export const Film: React.FC = () => {
       <Could c={c} />
       <Headline c={c} from={T.tidy} to={T.score - 0.3} text={`*${NAME}* reads *every* skill you have.`} />
       <Headline c={c} from={T.score} to={T.cards - 0.3} text="It *scores* each one against your request." />
-      <Headline c={c} from={T.cards} to={T.what - 0.4} text={`${NAME} found the *${K}* most useful skills you *already* *have!*`} sub="No more guessing!" />
+      <Headline c={c} from={T.cards} to={T.what - 0.4} text={`${NAME} found the *${K}* most useful skills you *already* *have!*`} sub="No more guessing!" size={56} top={50} />
       <Question c={c} />
-      <Headline c={c} from={T.hub} to={T.chart - 0.3} text={`${NAME} searches *GitHub* and brings back *${g}* that fit.`} />
+      <Headline c={c} from={T.hub} to={T.chart - 0.3} text={`${NAME} searches *GitHub* and finds you *${g}* skills.`} />
       <Headline c={c} from={T.chart} to={T.end - 0.3} text={`Difference *with* and without ${NAME}`} />
       <JobRow c={c} />
       <Tiles c={c} />
+      <Reveal c={c} />
       <Rows c={c} />
       <Chart c={c} />
-      <Note c={c} from={T.noteA} to={T.tidy - 0.4}>Plain Claude, same request, {pl.runs} runs: it loaded 1 of these {K} skills in {pl.one} runs and 2 in {pl.more}.</Note>
+      <Note c={c} from={T.noteA} to={T.fix - 0.4}>Plain Claude, same request, {pl.runs} runs: it loaded 1 of these {K} skills in {pl.one} runs and 2 in {pl.more}.</Note>
       <Note c={c} from={T.rank + 0.6} to={T.cards - 0.4}>{data.passed} of {data.installed.length} passed the match rule. <Nm /> kept the {K} whose description does the job.</Note>
-      <Note c={c} from={T.row1 + 1} to={T.chart - 0.4}>{data.gh.repos} repositories searched, {data.gh.files} skill files read, {data.gh.passed} matched, {g} kept. Nothing is installed for you.</Note>
-      <Note c={c} from={T.bar1 + 5} to={T.end - 0.4}>Tokens, time, steps: Claude answering which skills to use, with <Nm /> (middle of 3 runs) and without (1 run). Claude Opus.</Note>
+      <Note c={c} from={T.row1 + 0.9} to={T.chart - 0.4}>{data.gh.repos} repositories searched, {data.gh.files} skill files read, {data.gh.passed} matched, {g} kept. Nothing is installed for you.</Note>
+      <Note c={c} from={T.bar1 + 1.4} to={T.end - 0.4}>Tokens, time, steps: Claude answering which skills to use, with <Nm /> (middle of 3 runs) and without (1 run). Claude Opus.</Note>
       <End c={c} />
       <Finish c={c} />
     </AbsoluteFill>

@@ -38,7 +38,8 @@ def mins(sec):
 
 
 # ---------- numbers, read from the evidence files ----------
-R10 = json.load(open(EV + "/round10/results.json")); WITH, WITHOUT = R10["with_plugin"], R10["without"]
+R10 = json.load(open(EV + "/round10/results.json")); WITHOUT = R10["without"]
+_L15 = json.load(open(EV + "/round15/live15.json")); WITH = dict(tokens=_L15["tokens"], sec=_L15["sec"], steps=_L15["tool_calls"])  # one real run of 1.0.0
 S9 = json.load(open(EV + "/round9/score9_sealed.json"))
 J05 = json.load(open(EV + "/round9/raw9_tune.json"))["J05"]["B"]
 REPOS, FILES = map(int, re.search(r"(\d+) repositories looked at, (\d+) skill folders read", J05["notes"][-1]).groups())

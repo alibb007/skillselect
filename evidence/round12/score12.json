@@ -1,0 +1,30 @@
+{
+ "A": {
+  "kept": 59,
+  "on": 49,
+  "share": 83.1,
+  "on_per_request": 2.04,
+  "requests_with_no_pick": 5,
+  "listed": 170,
+  "listed_from_list": 0
+ },
+ "B": {
+  "kept": 81,
+  "on": 68,
+  "share": 84.0,
+  "on_per_request": 2.83,
+  "requests_with_no_pick": 3,
+  "listed": 241,
+  "listed_from_list": 137
+ },
+ "C": {
+  "kept": 58,
+  "on": 49,
+  "share": 84.5,
+  "on_per_request": 2.04,
+  "requests_with_no_pick": 6,
+  "listed": 208,
+  "listed_from_list": 208
+ },
+ "spend": 1.78
+}

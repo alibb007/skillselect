@@ -1,0 +1,66 @@
+[
+ {
+  "topic": "landing page",
+  "searches": 5,
+  "core": 17,
+  "listed": 7,
+  "from_list": 0,
+  "sec": 10.7
+ },
+ {
+  "topic": "slide deck",
+  "searches": 3,
+  "core": 12,
+  "listed": 12,
+  "from_list": 0,
+  "sec": 6.6
+ },
+ {
+  "topic": "code review",
+  "searches": 3,
+  "core": 9,
+  "listed": 12,
+  "from_list": 0,
+  "sec": 6.9
+ },
+ {
+  "topic": "meeting notes",
+  "searches": 3,
+  "core": 13,
+  "listed": 12,
+  "from_list": 0,
+  "sec": 5.5
+ },
+ {
+  "topic": "spreadsheet excel analysis",
+  "searches": 6,
+  "core": 3,
+  "listed": 5,
+  "from_list": 0,
+  "sec": 6.0
+ },
+ {
+  "topic": "word document",
+  "searches": 3,
+  "core": 13,
+  "listed": 5,
+  "from_list": 0,
+  "sec": 4.9
+ },
+ {
+  "topic": "unit tests",
+  "searches": 3,
+  "core": 13,
+  "listed": 10,
+  "from_list": 0,
+  "sec": 6.4
+ },
+ {
+  "topic": "database migration",
+  "searches": 3,
+  "core": 12,
+  "listed": 12,
+  "from_list": 0,
+  "sec": 3.9
+ }
+]

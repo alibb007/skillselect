@@ -1,0 +1,223 @@
+{
+ "J01": {
+  "installed": [
+   "docx"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "docx",
+   "xlsx"
+  ],
+  "lines": 48
+ },
+ "J03": {
+  "installed": [
+   "pptx"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "pptx"
+  ],
+  "lines": 49
+ },
+ "J02": {
+  "installed": [
+   "xlsx"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "xlsx",
+   "raffle-winner-picker",
+   "docx"
+  ],
+  "lines": 47
+ },
+ "J04": {
+  "installed": [
+   "pdf"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "pdf",
+   "pptx"
+  ],
+  "lines": 48
+ },
+ "J09": {
+  "installed": [
+   "webapp-testing"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "webapp-testing"
+  ],
+  "lines": 49
+ },
+ "J06": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [
+   "seo-auditor",
+   "page-cro"
+  ],
+  "lines": 48
+ },
+ "J11": {
+  "installed": [
+   "tailored-resume-generator"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "tailored-resume-generator"
+  ],
+  "lines": 49
+ },
+ "J12": {
+  "installed": [
+   "invoice-organizer"
+  ],
+  "found_by_reading": [
+   "file-organizer"
+  ],
+  "top": [
+   "invoice-organizer"
+  ],
+  "lines": 49
+ },
+ "J14": {
+  "installed": [
+   "internal-comms"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "internal-comms"
+  ],
+  "lines": 49
+ },
+ "J15": {
+  "installed": [
+   "gdpr-compliance"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "gdpr-compliance",
+   "dpdpa"
+  ],
+  "lines": 48
+ },
+ "J13": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [
+   "meeting-insights-analyzer",
+   "pptx"
+  ],
+  "lines": 48
+ },
+ "J17": {
+  "installed": [
+   "slack-gif-creator"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "slack-gif-creator"
+  ],
+  "lines": 49
+ },
+ "J18": {
+  "installed": [
+   "algorithmic-art"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "algorithmic-art"
+  ],
+  "lines": 49
+ },
+ "J22": {
+  "installed": [
+   "copywriting"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "copywriting",
+   "landing-page-generator"
+  ],
+  "lines": 48
+ },
+ "J24": {
+  "installed": [
+   "file-organizer"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "file-organizer",
+   "invoice-organizer",
+   "xlsx",
+   "code-reviewer"
+  ],
+  "lines": 46
+ },
+ "J20": {
+  "installed": [
+   "domain-name-brainstormer"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "domain-name-brainstormer"
+  ],
+  "lines": 49
+ },
+ "J26": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [
+   "xlsx"
+  ],
+  "lines": 49
+ },
+ "J25": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J27": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J28": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J31": {
+  "installed": [],
+  "found_by_reading": [
+   "systematic-debugging"
+  ],
+  "top": [],
+  "lines": 50
+ },
+ "J35": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J30": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J34": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ }
+}

@@ -189,8 +189,25 @@ def numbers(c):
     return svg(1200, 30 + 112 * len(rows) + 10, b)
 
 
+def fixes(c):
+    """3.0.0 against 3.1 on the round-14 checks: four rows, the old bar in orange and the new one in blue."""
+    K = json.load(open(EV + "/round14/checks.json")); n, h, g, ts = K["installed_count"], K["hostile_add_lines"], K["github_calls_no_login"], K["tests"]
+    rows = [(f"Skills it calls installed ({n['really_installed']} are)", n["v300_says"], n["v310_says"], str(n["v300_says"]), str(n["v310_says"]), "exact", "the real count"),
+            (f"Unsafe add lines from {h['tried']} hostile folder names", h["v300_unsafe"], h["v310_unsafe"], str(h["v300_unsafe"]), str(h["v310_unsafe"]), "0", "unsafe lines"),
+            ("GitHub calls for one request, no login", g["v300_mean"], g["v310_mean"], str(g["v300_mean"]), str(g["v310_mean"]), f"−{pct(g['v300_mean'], g['v310_mean'])}%", "fewer calls"),
+            ("Tests in the repository", ts["v300"], ts["v310"], str(ts["v300"]), str(ts["v310"]), str(ts["v310"]), "tests pass")]
+    b = r(.5, .5, 1199, 30 + 112 * len(rows) + 9, c["panel"], 16, c["line"])
+    for i, (name, old, new, lo, ln, big, unit) in enumerate(rows):
+        y = 28 + i * 112; full = 620; top = max(old, new) or 1
+        b += t(32, y + 22, name, 20, c["ink"], 800, ls=-.3)
+        b += t(32, y + 52, "SkillSelect 3.0.0", 14, c["mute"]) + r(190, y + 37, full, 22, c["soft"], 6) + (r(190, y + 37, max(6, round(full * old / top)), 22, c["orange"], 6) if old else "") + t(190 + full + 14, y + 54, lo, 17, c["orange"], 800, font=MONO)
+        b += t(32, y + 84, "SkillSelect 3.1", 14, c["mute"]) + r(190, y + 69, full, 22, c["soft"], 6) + (r(190, y + 69, max(6, round(full * new / top)), 22, c["blue"], 6) if new else "") + t(190 + full + 14, y + 86, ln, 17, c["blue"], 800, font=MONO)
+        b += t(1168, y + 66, big, 54, c["green"], 800, "end", ls=-2) + t(1168, y + 90, unit, 14, c["mute"], 400, "end")
+    return svg(1200, 30 + 112 * len(rows) + 10, b)
+
+
 os.makedirs(OUT, exist_ok=True)
-for name, fn in (("hero", hero), ("flow", flow), ("proof", proof), ("pipeline", pipeline), ("lift", lift), ("numbers", numbers)):
+for name, fn in (("hero", hero), ("flow", flow), ("proof", proof), ("pipeline", pipeline), ("lift", lift), ("numbers", numbers), ("fixes", fixes)):
     for mode, c in T.items():
         open(os.path.join(OUT, f"{name}-{mode}.svg"), "w").write(fn(c))
 tight = sorted({x for x in WIDE if x[2] > x[3]})

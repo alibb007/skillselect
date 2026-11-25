@@ -1,0 +1,1100 @@
+{
+ "J01": {
+  "p1": {
+   "installed": [
+    "docx"
+   ],
+   "github_on": [
+    [
+     "nexu-io/open-design",
+     "doc"
+    ],
+    [
+     "iOfficeAI/OfficeCLI",
+     "officecli-docx"
+    ],
+    [
+     "nexu-io/open-design",
+     "minimax-docx"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "nexu-io/open-design",
+     "doc"
+    ],
+    [
+     "nexu-io/openmotion",
+     "doc"
+    ],
+    [
+     "nexu-io/openmotion",
+     "minimax-docx"
+    ],
+    [
+     "nexu-io/open-design",
+     "minimax-docx"
+    ],
+    [
+     "github/awesome-copilot",
+     "md-to-docx"
+    ]
+   ]
+  }
+ },
+ "J03": {
+  "p1": {
+   "installed": [
+    "pptx"
+   ],
+   "github_on": [
+    [
+     "iOfficeAI/OfficeCLI",
+     "officecli-pptx"
+    ],
+    [
+     "nexu-io/open-design",
+     "html-ppt-pitch-deck"
+    ],
+    [
+     "nexu-io/codex-slides",
+     "codex-slides"
+    ],
+    [
+     "andisab/swe-marketplace",
+     "slideware"
+    ],
+    [
+     "nexu-io/codex-slides",
+     "codex-slides-deck"
+    ],
+    [
+     "SlideSpeak/slide-design-skill",
+     "slide-design-skill"
+    ],
+    [
+     "SlideSpeak/slide-design-skill",
+     "pitch"
+    ],
+    [
+     "zarazhangrui/frontend-slides",
+     "frontend-slides"
+    ],
+    [
+     "thmsgo18/presentation-forge",
+     "presentation-forge"
+    ],
+    [
+     "nexu-io/open-design",
+     "create-slides-pitch"
+    ],
+    [
+     "nexu-io/open-design",
+     "pptx-generator"
+    ],
+    [
+     "iOfficeAI/OfficeCLI",
+     "officecli-pitch-deck"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "andisab/swe-marketplace",
+     "slideware"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "2slides-ppt-generator"
+    ],
+    [
+     "nexu-io/open-design",
+     "create-slides-pitch"
+    ],
+    [
+     "nexu-io/codex-slides",
+     "codex-slides"
+    ],
+    [
+     "zarazhangrui/frontend-slides",
+     "frontend-slides"
+    ],
+    [
+     "nexu-io/open-design",
+     "pptx-generator"
+    ],
+    [
+     "nexu-io/open-design",
+     "slides"
+    ],
+    [
+     "JimLiu/baoyu-skills",
+     "baoyu-slide-deck"
+    ],
+    [
+     "SlideSpeak/slide-design-skill",
+     "slide-design-skill"
+    ]
+   ]
+  }
+ },
+ "J02": {
+  "p1": {
+   "installed": [
+    "xlsx"
+   ],
+   "github_on": [
+    [
+     "iOfficeAI/OfficeCLI",
+     "officecli-xlsx"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "composio-community/awesome-codex-skills",
+     "paperjsx"
+    ],
+    [
+     "iOfficeAI/OfficeCLI",
+     "officecli-xlsx"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "spreadsheet-formula-helper"
+    ]
+   ]
+  }
+ },
+ "J04": {
+  "p1": {
+   "installed": [
+    "pdf"
+   ],
+   "github_on": [
+    [
+     "manrods/pdf-deep-reader-skill",
+     "pdf-deep-reader"
+    ],
+    [
+     "Verstige/pdf-document-extraction",
+     "pdf-document-extraction"
+    ],
+    [
+     "zavora-ai/skill-pdf-document-management",
+     "pdf-document-management"
+    ],
+    [
+     "Moonwalker1307/PdfPecker.Skills",
+     "pdfpecker"
+    ],
+    [
+     "ghbhiee/skills",
+     "pdf-extract"
+    ],
+    [
+     "LPSlv/doc-extract",
+     "doc-extract"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "aden-hive/hive",
+     "hive.pdf"
+    ],
+    [
+     "manrods/pdf-deep-reader-skill",
+     "pdf-deep-reader"
+    ],
+    [
+     "Verstige/pdf-document-extraction",
+     "pdf-document-extraction"
+    ],
+    [
+     "K-Dense-AI/scientific-agent-skills",
+     "liteparse"
+    ],
+    [
+     "ghbhiee/skills",
+     "pdf-extract"
+    ],
+    [
+     "nanocoai/nanoclaw",
+     "convert-documents-to-markdown"
+    ],
+    [
+     "LPSlv/doc-extract",
+     "doc-extract"
+    ],
+    [
+     "github/awesome-copilot",
+     "convert-pdf-to-md"
+    ],
+    [
+     "zavora-ai/skill-pdf-document-management",
+     "pdf-document-management"
+    ]
+   ]
+  }
+ },
+ "J06": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "seranking/seo-skills",
+     "seo-local"
+    ],
+    [
+     "every-app/open-seo",
+     "seo-audit"
+    ],
+    [
+     "AgriciDaniel/claude-seo",
+     "seo-audit"
+    ],
+    [
+     "affaan-m/ECC",
+     "seo"
+    ],
+    [
+     "AgriciDaniel/claude-seo",
+     "seo"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "seo-audit"
+    ],
+    [
+     "cognyai/claude-code-marketing-skills",
+     "seo-audit"
+    ],
+    [
+     "AgriciDaniel/claude-seo",
+     "seo-local"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "local-seo-audit-checklist"
+    ],
+    [
+     "rampstackco/claude-skills",
+     "seo-audit-orchestration"
+    ],
+    [
+     "zhtyyx/codex-seo",
+     "seo-audit"
+    ],
+    [
+     "zhtyyx/codex-seo",
+     "seo-local"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "davila7/claude-code-templates",
+     "seo-optimizer"
+    ],
+    [
+     "seranking/seo-skills",
+     "seo-local"
+    ],
+    [
+     "TheSmokeDev/geo-skills",
+     "seo-audit"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "seo-audit"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "local-seo-manager"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "seo-audit"
+    ],
+    [
+     "every-app/open-seo",
+     "seo-audit"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "local-seo-audit-checklist"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "seo-audit"
+    ]
+   ]
+  }
+ },
+ "J12": {
+  "p1": {
+   "installed": [
+    "invoice-organizer"
+   ],
+   "github_on": []
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": []
+  }
+ },
+ "J09": {
+  "p1": {
+   "installed": [
+    "webapp-testing"
+   ],
+   "github_on": [
+    [
+     "hzijad/playwright-agent-skills",
+     "playwright-core"
+    ],
+    [
+     "emiliodominguez/test-skills",
+     "test-e2e"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "wshobson/agents",
+     "e2e-testing-patterns"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "senior-qa"
+    ],
+    [
+     "wshobson/agents",
+     "javascript-testing-patterns"
+    ]
+   ]
+  }
+ },
+ "J14": {
+  "p1": {
+   "installed": [
+    "internal-comms"
+   ],
+   "github_on": []
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": []
+  }
+ },
+ "J11": {
+  "p1": {
+   "installed": [
+    "tailored-resume-generator"
+   ],
+   "github_on": [
+    [
+     "ai-job-search-dev/ai-job-search",
+     "job-application-assistant"
+    ],
+    [
+     "reactive-resume/reactive-resume",
+     "resume-tailor"
+    ],
+    [
+     "lautalom/cv-match",
+     "application-tailor"
+    ],
+    [
+     "calmzen91/career-application-toolkit",
+     "career-application-toolkit"
+    ],
+    [
+     "mikezhangyl/jd-cv-grill",
+     "jd-cv-grill"
+    ],
+    [
+     "vignzpie/resume-agent-skills",
+     "resume-tailor"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "ai-job-search-dev/ai-job-search",
+     "job-application-assistant"
+    ],
+    [
+     "mikezhangyl/jd-cv-grill",
+     "jd-cv-grill"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "resume-tailor"
+    ],
+    [
+     "vignzpie/resume-agent-skills",
+     "resume-tailor"
+    ],
+    [
+     "reactive-resume/reactive-resume",
+     "resume-tailor"
+    ]
+   ]
+  }
+ },
+ "J13": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "Abulkosim/skills",
+     "meeting-notes"
+    ],
+    [
+     "breakthrough-edu/breakthrough-meeting-scribe",
+     "breakthrough-meeting-scribe"
+    ],
+    [
+     "nexu-io/open-design",
+     "meeting-notes"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "nexu-io/open-design",
+     "meeting-notes"
+    ],
+    [
+     "phuryn/pm-skills",
+     "summarize-meeting"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "meeting-notes-and-actions"
+    ],
+    [
+     "github/awesome-copilot",
+     "meeting-minutes"
+    ],
+    [
+     "Abulkosim/skills",
+     "meeting-notes"
+    ]
+   ]
+  }
+ },
+ "J18": {
+  "p1": {
+   "installed": [
+    "algorithmic-art"
+   ],
+   "github_on": [
+    [
+     "anthropics/skills",
+     "canvas-design"
+    ],
+    [
+     "itgoyo/hermes-skills",
+     "p5js"
+    ],
+    [
+     "nexu-io/open-design",
+     "canvas-design"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "itgoyo/hermes-skills",
+     "p5js"
+    ],
+    [
+     "anthropics/skills",
+     "canvas-design"
+    ],
+    [
+     "ComposioHQ/awesome-claude-skills",
+     "canvas-design"
+    ],
+    [
+     "nexu-io/open-design",
+     "canvas-design"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "canvas-design"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "canvas-design"
+    ]
+   ]
+  }
+ },
+ "J17": {
+  "p1": {
+   "installed": [
+    "slack-gif-creator"
+   ],
+   "github_on": [
+    [
+     "nexu-io/open-design",
+     "gif-sticker-maker"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "nexu-io/openmotion",
+     "gif-sticker-maker"
+    ],
+    [
+     "nexu-io/open-design",
+     "gif-sticker-maker"
+    ],
+    [
+     "fantuan-lab/animated-sticker-studio",
+     "animated-sticker-studio"
+    ]
+   ]
+  }
+ },
+ "J15": {
+  "p1": {
+   "installed": [
+    "gdpr-compliance"
+   ],
+   "github_on": [
+    [
+     "collinsanfo/ai-legal-team",
+     "ai-legal-team"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "gdpr-dsgvo-expert"
+    ],
+    [
+     "suleymnkpln/legal-launch-kit",
+     "legal-launch-audit"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "alirezarezvani/claude-skills",
+     "gdpr-dsgvo-expert"
+    ],
+    [
+     "phuryn/pm-skills",
+     "privacy-policy"
+    ],
+    [
+     "wshobson/agents",
+     "gdpr-data-handling"
+    ]
+   ]
+  }
+ },
+ "J20": {
+  "p1": {
+   "installed": [
+    "domain-name-brainstormer",
+    "brainstorming"
+   ],
+   "github_on": [
+    [
+     "paveldevyatov/ai-domain-name-generator",
+     "find-domain"
+    ],
+    [
+     "cofoundy/brand-skills",
+     "brand"
+    ],
+    [
+     "cofoundy/brand-skills",
+     "naming"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "cofoundy/brand-skills",
+     "naming"
+    ],
+    [
+     "phuryn/pm-skills",
+     "product-name"
+    ],
+    [
+     "paveldevyatov/ai-domain-name-generator",
+     "find-domain"
+    ]
+   ]
+  }
+ },
+ "J24": {
+  "p1": {
+   "installed": [
+    "file-organizer"
+   ],
+   "github_on": []
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "github/awesome-copilot",
+     "batch-script-progress"
+    ]
+   ]
+  }
+ },
+ "J22": {
+  "p1": {
+   "installed": [
+    "copywriting"
+   ],
+   "github_on": [
+    [
+     "nexu-io/open-design",
+     "marketing-psychology"
+    ],
+    [
+     "nexu-io/open-design",
+     "ad-creative"
+    ],
+    [
+     "Yuzzyuk/marketing-os",
+     "marketing-os"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "ad-creative"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "ad-creative"
+    ],
+    [
+     "miqdadbadjuber/anti-slop",
+     "antislop-copywriting"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "nexu-io/open-design",
+     "ad-creative"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "ad-creative"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "ad-creative"
+    ],
+    [
+     "nexu-io/openmotion",
+     "ad-creative"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "ad-creative"
+    ]
+   ]
+  }
+ },
+ "J25": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "Appllama/appllama-skills",
+     "appllama-app-design-skill"
+    ],
+    [
+     "sleekdotdesign/agent-skills",
+     "sleek-design-mobile-apps"
+    ],
+    [
+     "massipetro/app-ui-slopless",
+     "app-ui-slopless"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "wshobson/agents",
+     "react-native-architecture"
+    ],
+    [
+     "massipetro/app-ui-slopless",
+     "app-ui-slopless"
+    ],
+    [
+     "Appllama/appllama-skills",
+     "appllama-app-design-skill"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "android-dev"
+    ],
+    [
+     "Achref23illi/ui-craft",
+     "ui-craft"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "mobile-design"
+    ],
+    [
+     "wshobson/agents",
+     "react-native-design"
+    ]
+   ]
+  }
+ },
+ "J27": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "carrapido/rob-janoff-design",
+     "rob-janoff-design"
+    ],
+    [
+     "kaankiziltug/logo-design-skill",
+     "logo-design"
+    ],
+    [
+     "nextlevelbuilder/ui-ux-pro-max-skill",
+     "design"
+    ],
+    [
+     "zstvns/design-skills",
+     "logo-design"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "aden-hive/hive",
+     "hive.image-generation"
+    ],
+    [
+     "kaankiziltug/logo-design-skill",
+     "logo-design"
+    ],
+    [
+     "carrapido/rob-janoff-design",
+     "rob-janoff-design"
+    ],
+    [
+     "zstvns/design-skills",
+     "logo-design"
+    ],
+    [
+     "nextlevelbuilder/ui-ux-pro-max-skill",
+     "design"
+    ]
+   ]
+  }
+ },
+ "J26": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "SchemaSketch-dev/schemasketch-skills",
+     "schemasketch"
+    ],
+    [
+     "Yuuzulight/db-artisan",
+     "data-schema-design"
+    ],
+    [
+     "schemity/skills",
+     "designing-database-schemas"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "alirezarezvani/claude-skills",
+     "database-schema-designer"
+    ],
+    [
+     "Jeffallan/claude-skills",
+     "sql-pro"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "database-designer"
+    ],
+    [
+     "Yuuzulight/db-artisan",
+     "data-schema-design"
+    ],
+    [
+     "schemity/skills",
+     "designing-database-schemas"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "database-architect"
+    ]
+   ]
+  }
+ },
+ "J28": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "arm-pz/platform-content",
+     "platform-content"
+    ],
+    [
+     "amlei/amlei-skills",
+     "amlei-podcast-outline"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "amlei/amlei-skills",
+     "amlei-podcast-outline"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "ai-content-outline-generator"
+    ]
+   ]
+  }
+ },
+ "J35": {
+  "p1": {
+   "installed": [],
+   "github_on": []
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": []
+  }
+ },
+ "J31": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "affaan-m/ECC",
+     "kubernetes-patterns"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "affaan-m/ECC",
+     "kubernetes-patterns"
+    ]
+   ]
+  }
+ },
+ "J30": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "Insightful-Pipe/email-marketing-skills",
+     "newsletter"
+    ],
+    [
+     "milad-ahmd/email-campaign-writer",
+     "email-campaign-writer"
+    ],
+    [
+     "EditorialOS/email-marketing-manager",
+     "email-strategist"
+    ],
+    [
+     "satishTheLegend/single-source-content-factory",
+     "single-source-content-factory"
+    ],
+    [
+     "afeezadebayo/email-inbox-skills",
+     "email-writing-clarity"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "milad-ahmd/email-campaign-writer",
+     "email-campaign-writer"
+    ],
+    [
+     "Insightful-Pipe/email-marketing-skills",
+     "newsletter"
+    ]
+   ]
+  }
+ },
+ "J34": {
+  "p1": {
+   "installed": [],
+   "github_on": [
+    [
+     "Hizir-SamuelP/deep-trip-planning",
+     "deep-trip-planning"
+    ],
+    [
+     "johnisanerd/claude-skill-plan-a-trip",
+     "apify-plan-a-trip"
+    ],
+    [
+     "Hizir-SamuelP/deep-trip-planning",
+     "deep-trip-planning-en"
+    ],
+    [
+     "skywain/trip-planner-skill",
+     "trip-planner"
+    ],
+    [
+     "joshgoncsu/ai-trip-planner-skill",
+     "ai-trip-planner"
+    ],
+    [
+     "woipot/trip-guide-site",
+     "trip-guide-site"
+    ],
+    [
+     "ryan11njr/tripink",
+     "travel-planner"
+    ],
+    [
+     "jechiu16/travel-itinerary-book",
+     "travel-itinerary-book"
+    ]
+   ]
+  },
+  "model": [
+   "claude-haiku-5-5"
+  ],
+  "p2": {
+   "on": [
+    [
+     "joshgoncsu/ai-trip-planner-skill",
+     "ai-trip-planner"
+    ],
+    [
+     "Hizir-SamuelP/deep-trip-planning",
+     "deep-trip-planning-en"
+    ],
+    [
+     "skywain/trip-planner-skill",
+     "trip-planner"
+    ],
+    [
+     "ryan11njr/tripink",
+     "travel-planner"
+    ],
+    [
+     "woipot/trip-guide-site",
+     "trip-guide-site"
+    ],
+    [
+     "jechiu16/travel-itinerary-book",
+     "travel-itinerary-book"
+    ]
+   ]
+  }
+ }
+}

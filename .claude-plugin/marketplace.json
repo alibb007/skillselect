@@ -9,7 +9,7 @@
       "name": "skillselect",
       "source": "./",
       "description": "Tells you which of your skills to use, when and how, finds more on GitHub, and never installs anything.",
-      "version": "3.0.0"
+      "version": "3.1.0"
     }
   ],
   "metadata": {

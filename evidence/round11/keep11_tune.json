@@ -1,0 +1,123 @@
+{
+ "J07": {
+  "installed": [
+   "code-reviewer",
+   "requesting-code-review",
+   "pr-review-expert"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "code-reviewer",
+   "requesting-code-review",
+   "receiving-code-review",
+   "pr-review-expert",
+   "vercel-react-best-practices",
+   "gdpr-compliance",
+   "algorithmic-art",
+   "vercel-optimize"
+  ],
+  "lines": 42
+ },
+ "J10": {
+  "installed": [],
+  "found_by_reading": [
+   "deploy-to-vercel",
+   "vercel-cli-with-tokens"
+  ],
+  "top": [],
+  "lines": 50
+ },
+ "J05": {
+  "installed": [
+   "landing-page-generator",
+   "landing",
+   "epic-design",
+   "copywriting"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "landing-page-generator",
+   "landing",
+   "page-cro",
+   "epic-design",
+   "copywriting"
+  ],
+  "lines": 45
+ },
+ "J08": {
+  "installed": [
+   "systematic-debugging"
+  ],
+  "found_by_reading": [
+   "code-reviewer"
+  ],
+  "top": [
+   "systematic-debugging"
+  ],
+  "lines": 49
+ },
+ "J19": {
+  "installed": [],
+  "found_by_reading": [
+   "image-enhancer"
+  ],
+  "top": [],
+  "lines": 50
+ },
+ "J16": {
+  "installed": [
+   "financial-health"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "financial-health",
+   "stock-analysis"
+  ],
+  "lines": 48
+ },
+ "J21": {
+  "installed": [
+   "content-production"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "content-production"
+  ],
+  "lines": 49
+ },
+ "J23": {
+  "installed": [
+   "mcp-builder"
+  ],
+  "found_by_reading": [],
+  "top": [
+   "mcp-builder",
+   "claude-api"
+  ],
+  "lines": 48
+ },
+ "J29": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J32": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J36": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ },
+ "J33": {
+  "installed": [],
+  "found_by_reading": [],
+  "top": [],
+  "lines": 50
+ }
+}

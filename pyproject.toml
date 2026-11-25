@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skillselect"
+version = "3.1.0"
+description = "Which of your installed agent skills to use, when and how. Finds more on GitHub. Never installs anything."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Ali B.B" }]
+keywords = ["agent-skills", "claude-code", "codex", "cursor", "skill-finder", "retrieval", "bm25"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/alibb007/skillselect"
+
+[project.scripts]
+skillselect = "skillselect_cli.find_skills:main"
+
+[tool.setuptools]
+packages = ["skillselect_cli"]
+
+[tool.setuptools.package-dir]
+skillselect_cli = "skills/skillselect/scripts"
+
+[tool.setuptools.package-data]
+skillselect_cli = ["index.json.gz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

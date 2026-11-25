@@ -1,0 +1,19 @@
+{
+ "C": {
+  "fits": 19,
+  "found": 14,
+  "kept": 14,
+  "kept_that_fit": 14
+ },
+ "D": {
+  "fits": 19,
+  "found": 15,
+  "kept": 16,
+  "kept_that_fit": 15
+ },
+ "by_reading": {
+  "added": 2,
+  "added_that_fit": 1
+ },
+ "spend": 0.76
+}

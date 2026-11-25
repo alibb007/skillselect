@@ -1,6 +1,6 @@
 {
   "name": "skillselect",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Reads every skill you have installed, scores each one against what you asked for, and tells you which to use, when and how. Adds the best-fitting skills on GitHub. Keeps answers short and finished.",
   "author": {
     "name": "Ali B.B",

@@ -4,3 +4,11 @@ __pycache__/
 tools/clip/node_modules
 tools/clip/out/
 tools/clip/public/fonts/
+evidence/*/cache*/
+evidence/round13/planted/
+evidence/round13/empty-project/
+evidence/round1*/start.txt
+*.egg-info/
+build/
+PROGRESS.md
+evidence/round13/raw/

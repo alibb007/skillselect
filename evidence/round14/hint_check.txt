@@ -1,0 +1,5 @@
+tune: 12 requests | hint spoke on 2 | skills named 3, labelled fits among them 3 | requests with a fit 8, hint named a fit on 2
+   named but not a labelled fit: []
+sealed: 24 requests | hint spoke on 6 | skills named 6, labelled fits among them 5 | requests with a fit 18, hint named a fit on 5
+   named but not a labelled fit: [('J24', 'invoice-organizer')]
+not-a-job messages: 24 | hint spoke on 0 []

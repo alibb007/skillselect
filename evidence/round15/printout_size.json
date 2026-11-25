@@ -1,0 +1,229 @@
+{
+ "summary": {
+  "requests": 36,
+  "skills_in_folder": 50,
+  "chars_with_list": 7332,
+  "chars_of_list": 6407,
+  "chars_without_list": 925,
+  "list_lines": 49.7,
+  "list_chars_max": 6574
+ },
+ "rows": [
+  {
+   "id": "J01",
+   "all": 7540,
+   "block": 6336,
+   "lines": 49
+  },
+  {
+   "id": "J02",
+   "all": 7717,
+   "block": 6201,
+   "lines": 48
+  },
+  {
+   "id": "J03",
+   "all": 7333,
+   "block": 6455,
+   "lines": 50
+  },
+  {
+   "id": "J04",
+   "all": 7595,
+   "block": 6337,
+   "lines": 49
+  },
+  {
+   "id": "J05",
+   "all": 8170,
+   "block": 5941,
+   "lines": 46
+  },
+  {
+   "id": "J06",
+   "all": 7444,
+   "block": 6325,
+   "lines": 49
+  },
+  {
+   "id": "J07",
+   "all": 8937,
+   "block": 5513,
+   "lines": 43
+  },
+  {
+   "id": "J08",
+   "all": 7123,
+   "block": 6458,
+   "lines": 50
+  },
+  {
+   "id": "J09",
+   "all": 7248,
+   "block": 6445,
+   "lines": 50
+  },
+  {
+   "id": "J10",
+   "all": 7025,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J11",
+   "all": 7176,
+   "block": 6434,
+   "lines": 50
+  },
+  {
+   "id": "J12",
+   "all": 7267,
+   "block": 6442,
+   "lines": 50
+  },
+  {
+   "id": "J13",
+   "all": 7565,
+   "block": 6315,
+   "lines": 49
+  },
+  {
+   "id": "J14",
+   "all": 7266,
+   "block": 6445,
+   "lines": 50
+  },
+  {
+   "id": "J15",
+   "all": 7562,
+   "block": 6324,
+   "lines": 49
+  },
+  {
+   "id": "J16",
+   "all": 7455,
+   "block": 6314,
+   "lines": 49
+  },
+  {
+   "id": "J17",
+   "all": 7285,
+   "block": 6442,
+   "lines": 50
+  },
+  {
+   "id": "J18",
+   "all": 7278,
+   "block": 6444,
+   "lines": 50
+  },
+  {
+   "id": "J19",
+   "all": 7030,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J20",
+   "all": 7204,
+   "block": 6435,
+   "lines": 50
+  },
+  {
+   "id": "J21",
+   "all": 7235,
+   "block": 6441,
+   "lines": 50
+  },
+  {
+   "id": "J22",
+   "all": 7485,
+   "block": 6312,
+   "lines": 49
+  },
+  {
+   "id": "J23",
+   "all": 7636,
+   "block": 6323,
+   "lines": 49
+  },
+  {
+   "id": "J24",
+   "all": 8026,
+   "block": 6066,
+   "lines": 47
+  },
+  {
+   "id": "J25",
+   "all": 7021,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J26",
+   "all": 7234,
+   "block": 6455,
+   "lines": 50
+  },
+  {
+   "id": "J27",
+   "all": 7015,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J28",
+   "all": 7013,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J29",
+   "all": 7000,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J30",
+   "all": 7006,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J31",
+   "all": 7023,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J32",
+   "all": 7003,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J33",
+   "all": 7015,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J34",
+   "all": 7010,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J35",
+   "all": 7008,
+   "block": 6574,
+   "lines": 51
+  },
+  {
+   "id": "J36",
+   "all": 7012,
+   "block": 6574,
+   "lines": 51
+  }
+ ]
+}

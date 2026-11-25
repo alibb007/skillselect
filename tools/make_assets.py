@@ -160,7 +160,7 @@ def pipeline(c):
 
 def lift(c):
     A, B, C = S9["A"], S9["B_rrf"], S9["C"]
-    cards = [("PLUGIN 2.2.0", A, "word overlap, ordered by stars", c["orange"]), ("+ RETRIEVAL MATH", B, "more good candidates, same share", c["blue"]), ("+ LLM RE-RANK", C, "Claude keeps what does the job", c["green"])]
+    cards = [("EARLIER BUILD", A, "word overlap, ordered by stars", c["orange"]), ("+ RETRIEVAL MATH", B, "more good candidates, same share", c["blue"]), ("+ LLM RE-RANK", C, "Claude keeps what does the job", c["green"])]
     b = t(14, 22, f"GITHUB PICKS THAT DO THE JOB · {A['jobs']} SEALED REQUESTS", 13, c["mute"], 700, font=MONO, ls=1)
     for i, (name, v, sub, col) in enumerate(cards):
         x = 12 + i * 396; share = v["gh_on"] / v["gh_listed"]
@@ -190,7 +190,7 @@ def numbers(c):
 
 
 def fixes(c):
-    """3.0.0 against 3.1 on the round-14 checks: four rows, the old bar in orange and the new one in blue."""
+    """The pre-launch build against 1.0.0 on the round-14 checks: four rows, the old bar in orange and the new one in blue."""
     K = json.load(open(EV + "/round14/checks.json")); n, h, g, ts = K["installed_count"], K["hostile_add_lines"], K["github_calls_no_login"], K["tests"]
     rows = [(f"Skills it calls installed ({n['really_installed']} are)", n["v300_says"], n["v310_says"], str(n["v300_says"]), str(n["v310_says"]), "exact", "the real count"),
             (f"Unsafe add lines from {h['tried']} hostile folder names", h["v300_unsafe"], h["v310_unsafe"], str(h["v300_unsafe"]), str(h["v310_unsafe"]), "0", "unsafe lines"),
@@ -200,8 +200,8 @@ def fixes(c):
     for i, (name, old, new, lo, ln, big, unit) in enumerate(rows):
         y = 28 + i * 112; full = 620; top = max(old, new) or 1
         b += t(32, y + 22, name, 20, c["ink"], 800, ls=-.3)
-        b += t(32, y + 52, "SkillSelect 3.0.0", 14, c["mute"]) + r(190, y + 37, full, 22, c["soft"], 6) + (r(190, y + 37, max(6, round(full * old / top)), 22, c["orange"], 6) if old else "") + t(190 + full + 14, y + 54, lo, 17, c["orange"], 800, font=MONO)
-        b += t(32, y + 84, "SkillSelect 3.1", 14, c["mute"]) + r(190, y + 69, full, 22, c["soft"], 6) + (r(190, y + 69, max(6, round(full * new / top)), 22, c["blue"], 6) if new else "") + t(190 + full + 14, y + 86, ln, 17, c["blue"], 800, font=MONO)
+        b += t(32, y + 52, "Pre-launch build", 14, c["mute"]) + r(190, y + 37, full, 22, c["soft"], 6) + (r(190, y + 37, max(6, round(full * old / top)), 22, c["orange"], 6) if old else "") + t(190 + full + 14, y + 54, lo, 17, c["orange"], 800, font=MONO)
+        b += t(32, y + 84, "SkillSelect 1.0.0", 14, c["mute"]) + r(190, y + 69, full, 22, c["soft"], 6) + (r(190, y + 69, max(6, round(full * new / top)), 22, c["blue"], 6) if new else "") + t(190 + full + 14, y + 86, ln, 17, c["blue"], 800, font=MONO)
         b += t(1168, y + 66, big, 54, c["green"], 800, "end", ls=-2) + t(1168, y + 90, unit, 14, c["mute"], 400, "end")
     return svg(1200, 30 + 112 * len(rows) + 10, b)
 

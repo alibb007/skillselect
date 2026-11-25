@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "skillselect"
-version = "3.1.0"
+version = "1.0.0"
 description = "Which of your installed agent skills to use, when and how. Finds more on GitHub. Never installs anything."
 readme = "README.md"
 requires-python = ">=3.9"

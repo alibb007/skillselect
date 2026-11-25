@@ -1,5 +1,7 @@
 # Evidence
 
+The version numbers in this folder, 1.1.0 to 3.1, are build numbers from before the public launch. SkillSelect 1.0.0 is build 3.1 with the changes of round 15 and of the code review. "3.0.0" in these files is what the README calls the pre-launch build.
+
 | Folder | What was tested | Size | Files |
 |---|---|---|---|
 | [round15](round15) | Three other judges (Claude Fable, Sonnet, Haiku) on the saved picks of rounds 9, 11 and 12; `read` merged into the default and `hint` removed by rules set first; one real session with the merged list | 24 requests, 3 judges, 135 judge calls | `RULES15.md` (written first, cost decision, result), `label15_fable.json`, `label15_sonnet.json`, `label15_haiku.json`, `score15.json`, `printout_size.json`, `live15.json`, `offline_recheck.json`, `login_recheck.json` (after the code review), scripts |

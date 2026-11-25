@@ -54,3 +54,10 @@ The numbers above are from the frozen finder. The shipped one differs from it by
 
 ## Before publishing (24 Nov 2026)
 One line of `run12.py` changed after the run: it now loads the harness from `../harness` (or `$SKILLSELECT_LAB`) and no longer from a folder on my computer. Nothing else changed. Its checksum is now 21f431f0a89818ac4c8f7ba53ade6c5bd8417b399bd007a1f3a7c565159589fd, so it no longer matches the one frozen above.
+
+## After a code review (24 Nov 2026, `../round15/login_recheck.json`, no model call)
+A review before release changed how the shipped list joins the live search: a repository opened live used to lose all its list entries, and now loses only the skills that were read live. Arm B was run again on the 24 requests with a login (7 calls were not in the cache).
+- 79 of B's 81 judged picks are still listed (the 2 that are not were both ON). 12 skills are listed that were not before; no judge has seen them.
+- The list is the same, in the same order, on 10 of 24 requests.
+- Arm C (offline) is unchanged: the same list on 24 of 24.
+The numbers in the result table above are from the frozen finder.

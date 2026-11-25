@@ -4,6 +4,7 @@ find_skills.py --mine [--json]       every installed skill, with its command, it
 find_skills.py --for codex|cursor    write the add lines for another agent's skill folder
 find_skills.py --short on|off        the one sentence added to every request (see --settings)
 find_skills.py --settings            show the switch
+find_skills.py --help                this text
 
 1. Scores the skills already on this computer against the topic. Nothing about them leaves the machine.
 2. Searches public GitHub, reads the skill files it finds, and orders them by fit and stars together.
@@ -169,16 +170,22 @@ def howto(text, name, plugin=""):
     return h
 
 
+PLAIN = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.\-]{0,63}\Z")
+
+
+def plain(s):
+    """A plugin or marketplace name as it may be printed: letters, digits, dot, dash, underscore. Anything else gives ""."""
+    return s if isinstance(s, str) and PLAIN.match(s) else ""
+
+
 def plugin_of(path):
-    """The plugin a local skill folder belongs to, or "" for a plain skill."""
+    """The plugin a local skill folder belongs to, or "" for a plain skill. The name comes from a file anyone can write,
+    so only a plain name is returned: a broken file, or a name with spaces, line breaks or symbols, gives ""."""
     parts = path.split("/")
     if "skills" not in parts:
         return ""
     i = len(parts) - 1 - parts[::-1].index("skills")
-    try:
-        return json.load(open("/".join(parts[:i]) + "/.claude-plugin/plugin.json")).get("name", "")
-    except (OSError, ValueError):
-        return ""
+    return plain(read_json("/".join(parts[:i]) + "/.claude-plugin/plugin.json").get("name"))
 
 
 SAFE_REPO = re.compile(r"[A-Za-z0-9_.\-]+/[A-Za-z0-9_.\-]+\Z")
@@ -194,7 +201,7 @@ def add_command(repo, folder, has_market, agent="claude"):
     short = repo.split("/")[1]; q = shlex.quote; to = TARGETS.get(agent, TARGETS["claude"]); tmp = "/tmp/skillselect-" + short
     url = q("https://github.com/" + repo)
     if folder:
-        cmd = f"git clone --depth 1 {url} {q(tmp)} && mkdir -p {to} && cp -R {q(tmp + '/' + folder)} {to}/"
+        cmd = f"rm -rf {q(tmp)} && git clone --depth 1 {url} {q(tmp)} && mkdir -p {to} && cp -R {q(tmp + '/' + folder)} {to}/"
     else:
         cmd = f"mkdir -p {to} && git clone --depth 1 {url} {to}/{q(short)}"
     return dict(copy=cmd, market=f"/plugin marketplace add {repo}" if has_market and agent == "claude" else "", note="")
@@ -205,11 +212,11 @@ AGENTS = (("Claude Code", ".claude/skills"), ("Codex", ".codex/skills"), ("Curso
 SKIP = ("node_modules", ".git", ".trash", "__pycache__")
 
 
-def walk(root, depth=7):
-    """Every folder under root that holds a SKILL.md."""
+def walk(root, depth=7, skip_tests=False):
+    """Every folder under root that holds a SKILL.md. With skip_tests, a test folder is not entered (unless it is a skill itself)."""
     base = root.rstrip("/").count("/")
     for dp, dn, fn in os.walk(root, followlinks=True):
-        dn[:] = [d for d in dn if d not in SKIP]
+        dn[:] = [d for d in dn if d not in SKIP and not (skip_tests and d in TEST_DIRS and not os.path.isfile(os.path.join(dp, d, "SKILL.md")))]
         if dp.count("/") - base > depth:
             dn[:] = []
         if "SKILL.md" in fn:
@@ -230,19 +237,34 @@ def version_key(path):
     return (tuple(int(x) for x in nums), os.path.getmtime(path))
 
 
-def plugin_state(h):
+def claude_dir():
+    """Where Claude Code keeps its files: CLAUDE_CONFIG_DIR when it is set, else ~/.claude."""
+    return (os.environ.get("CLAUDE_CONFIG_DIR") or os.path.expanduser("~/.claude")).rstrip("/")
+
+
+def plugin_roots(folder):
+    """The folders a plugin's skills load from: skills/, plus any its manifest names. The whole plugin when it has neither."""
+    man = read_json(folder + "/.claude-plugin/plugin.json").get("skills"); real = os.path.realpath(folder); roots = [folder + "/skills"]
+    for p in [man] if isinstance(man, str) else man if isinstance(man, list) else []:
+        rp = os.path.realpath(os.path.join(folder, p)) if isinstance(p, str) else ""
+        if rp and (rp + "/").startswith(real + "/"):  # never a folder outside the plugin
+            roots.append(rp)
+    return [r for r in dict.fromkeys(roots) if os.path.isdir(r)] or [folder]
+
+
+def plugin_state(c):
     """Claude Code plugins that are installed ({name@marketplace: folder}) and the ones switched off.
     Read from Claude Code's own record: the cache folder alone also holds old copies, and the marketplace folder holds plugins nobody installed."""
-    root = h + "/.claude/plugins"; cwd = os.getcwd(); paths = {}
+    root = c + "/plugins"; cwd = os.getcwd(); paths = {}
     rec = read_json(root + "/installed_plugins.json").get("plugins")
     if isinstance(rec, dict):
         for key, entries in rec.items():
-            for e in entries if isinstance(entries, list) else []:
+            for e in entries if isinstance(entries, list) else [entries] if isinstance(entries, dict) else []:  # one object in older records
                 e = e if isinstance(e, dict) else {}
                 pp = e.get("projectPath")
                 if pp and not (cwd + "/").startswith(pp.rstrip("/") + "/"):
                     continue  # installed for another project only
-                if e.get("installPath") and os.path.isdir(e["installPath"]):
+                if isinstance(e.get("installPath"), str) and os.path.isdir(e["installPath"]):
                     paths[key] = e["installPath"]
     else:  # no record to read: the newest copy of each plugin in the cache
         cache = root + "/cache"
@@ -252,7 +274,7 @@ def plugin_state(h):
                 if vs:
                     paths[pl + "@" + m] = max(vs, key=version_key)
     on = {}
-    for f in (h + "/.claude/settings.json", cwd + "/.claude/settings.json", cwd + "/.claude/settings.local.json"):
+    for f in (c + "/settings.json", cwd + "/.claude/settings.json", cwd + "/.claude/settings.local.json"):
         e = read_json(f).get("enabledPlugins")
         if isinstance(e, dict):
             on.update(e)
@@ -274,7 +296,7 @@ def local_skills():
                 name, desc = front(f.read(8000))
         except OSError:
             return
-        out.append(dict(name=clean(name, 60) or os.path.basename(dp), desc=clean(desc, 4000), path=dp, agent=agent, state=state, plugin=plugin, market=market))
+        out.append(dict(name=clean(name, 60) or clean(os.path.basename(dp), 60), desc=clean(desc, 4000), path=dp, agent=agent, state=state, plugin=plain(plugin), market=plain(market)))
 
     only = [d for d in os.environ.get("SKILL_FINDER_ONLY", "").split(os.pathsep) if d]
     if only:  # look in these folders and nowhere else (tests and demos)
@@ -282,23 +304,25 @@ def local_skills():
             for dp in walk(root) if os.path.isdir(root) else []:
                 add(dp, "Claude Code", "installed", plugin_of(dp))
         return out
-    h = os.path.expanduser("~")
+    h = os.path.expanduser("~"); c = claude_dir()
     for agent, sub in AGENTS:
-        for dp in walk(h + "/" + sub) if os.path.isdir(h + "/" + sub) else []:
+        folder = c + "/skills" if agent == "Claude Code" else h + "/" + sub
+        for dp in walk(folder) if os.path.isdir(folder) else []:
             add(dp, agent, "installed")
     for root in [os.getcwd() + "/.claude/skills"] + [d for d in os.environ.get("SKILL_FINDER_DIRS", "").split(os.pathsep) if d]:
         for dp in walk(root) if os.path.isdir(root) else []:
             add(dp, "Claude Code", "installed")
-    paths, off = plugin_state(h)
+    paths, off = plugin_state(c)
     for key, folder in sorted(paths.items()):
-        for dp in walk(folder):
-            add(dp, "Claude Code", "off" if key in off else "installed", plugin_of(dp) or key.split("@")[0], key.partition("@")[2])
-    synced = h + "/.claude/plugins/synced"  # plugins that came with the account
+        for root in plugin_roots(folder):  # only what the plugin loads: not its templates, examples or test files
+            for dp in walk(root, skip_tests=True):
+                add(dp, "Claude Code", "off" if key in off else "installed", plugin_of(dp) or key.split("@")[0], key.partition("@")[2])
+    synced = c + "/plugins/synced"  # plugins that came with the account
     for dp in walk(synced) if os.path.isdir(synced) else []:
         add(dp, "Claude Code", "installed", plugin_of(dp))
-    markets = h + "/.claude/plugins/marketplaces"
+    markets = c + "/plugins/marketplaces"
     for m in sorted(os.listdir(markets)) if os.path.isdir(markets) else []:
-        for dp in walk(markets + "/" + m):
+        for dp in walk(markets + "/" + m, skip_tests=True):
             parts = dp.split("/")
             pl = plugin_of(dp) or (parts[len(parts) - 2 - parts[::-1].index("skills")] if "skills" in parts else parts[-1])
             if pl + "@" + m not in paths:
@@ -313,6 +337,8 @@ def installed(skills):
 def get_line(s):
     """How to get a skill that is on this computer but not usable yet."""
     key = s["plugin"] + "@" + s["market"] if s["plugin"] and s["market"] else s["plugin"]
+    if not key:  # no plain plugin name to print: its plugin.json is missing, broken or has an unusual name
+        return "open /plugin and find it there (its plugin has no plain name to print)"
     return ("/plugin enable " if s["state"] == "off" else "/plugin install ") + key
 
 
@@ -344,7 +370,7 @@ def rank_local(topic, also, skills, k=8):
     names, out = set(), []
     for x, s, n, d in res:
         if s["name"] not in names:
-            names.add(s["name"]); out.append(dict(s, fit=round(x, 2), matched=n, why=matched_words(d, topic, also), orders=gives_orders(s["desc"]) or odd_name(s["name"])))
+            names.add(s["name"]); out.append(dict(s, fit=round(x, 2), matched=n, why=matched_words(d, topic, also), orders=gives_orders(s["desc"]) or gives_orders(s["name"]) or odd_name(s["name"])))
     return out[:k], len(out)
 
 
@@ -417,7 +443,7 @@ def index_entries(ix):
                 out.append(dict(skill=name, repo=repo, stars=stars, desc=desc, folder=folder, raw=None, market=bool(r.get("market")), src="list",
                                 doc=terms(" ".join([name, os.path.basename(folder) or repo.split("/")[-1]])) * 3 + terms(desc), skills_in_repo=int(r.get("files") or len(r["skills"])), flags=flags,
                                 license=lic, updated=upd, pre=dict(call=clean(str(call), 80), needs=[clean(str(x), 80) for x in (needs or [])][:5], by_name=bool(by_name)),
-                                url=f"https://github.com/{repo}" + (f"/tree/{branch}/{folder}" if folder else "")))
+                                url=f"https://github.com/{repo}" + (f"/tree/{urllib.parse.quote(branch)}/{urllib.parse.quote(folder)}" if folder else "")))
         except (KeyError, TypeError, ValueError):
             continue
     return out
@@ -517,21 +543,22 @@ def search_github(topic, also, tok, limit=12, have=(), per_repo=2, agent="claude
                 out.append(dict(skill=skill, repo=it["full_name"], stars=stars, desc=desc or clean(it.get("description") or "", 600), folder=folder, raw=raw, market=".claude-plugin/marketplace.json" in allp, src="live",
                                 doc=terms(" ".join([name, os.path.basename(folder) or it["name"]])) * 3 + terms(desc), skills_in_repo=len(paths), flags=flags,
                                 license={"NOASSERTION": "unclear"}.get((it.get("license") or {}).get("spdx_id"), (it.get("license") or {}).get("spdx_id") or "none"), updated=(it.get("pushed_at") or "")[:10],
-                                url=f"https://github.com/{it['full_name']}" + (f"/tree/{it['default_branch']}/{folder}" if folder else "")))
+                                url=f"https://github.com/{it['full_name']}" + (f"/tree/{urllib.parse.quote(it['default_branch'])}/{urllib.parse.quote(folder)}" if folder else "")))
             return out
 
         with ThreadPoolExecutor(8 if tok else 3) as ex:
             read = [o for part in ex.map(repo, todo) for o in part]
-    live_keys = {(o["repo"], o["skill"]) for o in read}; live_repos = {o["repo"] for o in read}
-    # a repository read live just now is fresher than the list: the list fills in everything else
-    from_list = [o for o in index_entries(ix) if o["repo"] not in live_repos and (o["repo"], o["skill"]) not in live_keys]
+    live_keys = {(o["repo"], o["skill"]) for o in read}; live_stars = {o["repo"]: o["stars"] for o in read}
+    # a skill read live just now is fresher than its list entry. The list fills in everything else, also inside a repository
+    # that was opened live: the live read takes 8 folders by folder name, and a skill can fit by its description alone.
+    from_list = [dict(o, stars=live_stars.get(o["repo"], o["stars"])) for o in index_entries(ix) if (o["repo"], o["skill"]) not in live_keys]
     everything = read + from_list
     pool, owned, seen, dropped = [], set(), set(), []
     for o, x in zip(everything, bm25([o["doc"] for o in everything], w)):
         n, ok = gate(o["doc"], core, extra)
-        if not ok or (o["repo"], o["skill"]) in seen or gives_orders(o["desc"]) or gives_orders(o["skill"]) or odd_name(o["skill"]):
+        if not ok or (o["repo"], o["skill"]) in seen or gives_orders(o["desc"]) or gives_orders(o["skill"]) or odd_name(o["skill"]) or gives_orders(re.sub(r"[/_\-]+", " ", o["folder"])):
             if ok and (o["repo"], o["skill"]) not in seen:
-                dropped.append(o["repo"])  # its text talks to the assistant: never listed
+                dropped.append(o["repo"])  # its text or its folder name talks to the assistant: never listed
             continue
         seen.add((o["repo"], o["skill"]))
         if o["skill"].lower() in have:
@@ -581,7 +608,7 @@ SHORT_SENTENCE = "Use my exact facts and numbers, and give me a short, finished 
 
 # ---------- the switch ----------
 def config_path():
-    return os.environ.get("SKILLSELECT_CONFIG") or os.path.expanduser("~/.claude/skillselect.json")
+    return os.environ.get("SKILLSELECT_CONFIG") or claude_dir() + "/skillselect.json"
 
 
 def setting(key, default):
@@ -666,7 +693,11 @@ def main(argv=None):
     for name in ("--also", "--short", "--for"):
         if name in a:
             i = a.index(name); opt[name] = a[i + 1] if i + 1 < len(a) and not a[i + 1].startswith("--") else ""; a = a[:i] + a[i + (2 if opt[name] else 1):]
+    if "--help" in a or "-h" in a:
+        print(__doc__); return 0
     also = opt.get("--also", ""); agent = (opt.get("--for") or "claude").lower()
+    if agent not in TARGETS:
+        print(f"Unknown agent for --for: {clean(agent, 40)}. Use one of: {', '.join(TARGETS)}."); return 2
     flags = {x for x in a if x.startswith("--")}
     topic = " ".join(x for x in a if not x.startswith("--")).strip()
     unknown = sorted(flags - {"--json", "--no-online", "--offline", "--no-token", "--mine", "--settings"})
@@ -684,11 +715,12 @@ def main(argv=None):
     everything = local_skills(); have = installed(everything); total = len({s["name"] for s in have})
     local, passed = rank_local(topic, also, have)
     names = {s["name"] for s in have}
-    nearby, _ = rank_local(topic, also, [s for s in everything if s["state"] != "installed" and s["name"] not in names], 5)
+    near_all, _ = rank_local(topic, also, [s for s in everything if s["state"] != "installed" and s["name"] not in names], 10 ** 6)
+    nearby = [s for s in near_all if not s["orders"]][:5]; left_out = sum(1 for s in near_all if s["orders"])  # not installed and its text gives orders: never listed
     for s in nearby:
         s["get"] = get_line(s)
     rest, more = one_line_list(have, [s["name"] for s in local], topic, also)   # always: round 15 merged the old `read` switch into the default
-    res = dict(topic=topic, also=also, installed_total=total, local_passed=passed, local=local, nearby=nearby, rest=rest, rest_not_shown=more, online=[], notes=[], github={})
+    res = dict(topic=topic, also=also, installed_total=total, local_passed=passed, local=local, nearby=nearby, nearby_left_out=left_out, rest=rest, rest_not_shown=more, online=[], notes=[], github={})
     if "--no-online" not in flags:
         try:
             res["online"], res["notes"], res["github"] = search_github(topic, also, None if "--offline" in flags else token("--no-token" not in flags), 12, {s["name"].lower() for s in have}, agent=agent, offline="--offline" in flags)
@@ -713,6 +745,8 @@ def main(argv=None):
         print("\n   ALREADY ON THIS COMPUTER, NOT USABLE YET (a plugin that is switched off, or one in a plugin list you added)")
         for s in res["nearby"]:
             print(f"  {s['name']}  (fit {s['fit']})\n     {says(s['desc'], 160)}\n     get it: {s['get']}")
+    if res["nearby_left_out"]:
+        print(f"\n   {res['nearby_left_out']} more on this computer, not installed, left out because the text gives orders to the assistant or the name mixes alphabets.")
     if res["rest"]:
         print(f"\n   EVERY OTHER INSTALLED SKILL, ONE LINE EACH ({len(res['rest'])}): the word match misses a skill that says it in other words. Read these.")
         for r in res["rest"]:

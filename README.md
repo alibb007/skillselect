@@ -86,7 +86,7 @@ I tested 3.0.0 the way a stranger would use it, and it failed in ways my own tes
 | A skill's description reached the assistant as plain text. | It is printed after `says:`, under a notice telling the assistant to treat it as information about the skill. A GitHub skill whose text gives orders is left out. |
 | Without a GitHub login one request used 11.5 of GitHub's 60 free calls an hour. After that the GitHub list came back empty. | 2.8 calls. A list of 4,136 public skills from 80 repositories ships with SkillSelect and answers when GitHub says no. |
 | The sentence that shortens answers had no off switch. | `/skillselect short off` |
-| 0 tests. | 61 tests, on Python 3.9, 3.11 and 3.13. |
+| 0 tests. | 81 tests, on Python 3.9, 3.11 and 3.13. |
 | A Claude Code plugin only. | Also a `skillselect` command for any terminal, and add lines for Codex and Cursor. |
 
 ## The switch
@@ -118,7 +118,7 @@ The command prints the same two lists. `--for codex` or `--for cursor` writes th
 
 Read it as a U. The request goes in at the top left and the answer comes out at the bottom left. The counts on the arrows are from one run of "landing page" in the 50-skill test folder. 5 of the 50 installed skills passed the gate. On GitHub, 73 repositories led to 106 skill files, and 30 of them passed.
 
-**Installed means installed.** The finder reads Claude Code's install record and the list of plugins that are switched on. A skill in a switched-off plugin, or in a plugin list you never installed from, is not counted. It is shown apart with the line that gets it. Skills of Codex and Cursor carry their agent's name.
+**Installed means installed.** The finder reads Claude Code's install record and the list of plugins that are switched on. A skill in a switched-off plugin, or in a plugin list you never installed from, is not counted. It is shown apart with the line that gets it. Inside a plugin only its skill folders count, so its templates and test files are not skills. Skills of Codex and Cursor carry their agent's name.
 
 1. **Query expansion.** Claude turns your request into 2 to 4 topic words and up to 6 close words: other names for the same thing, and its file types.
 2. **Term model.** Words are cut to their stems. Two words side by side also count as a pair, so "landing page" is a term of its own. Topic words and pairs weigh 1, and close words weigh 0.5.
@@ -230,6 +230,7 @@ SkillSelect also adds one sentence to every request, so the answer comes back sh
 - "Needs" lists what a skill's instructions name, found with fixed patterns. It can miss a requirement or list an optional one.
 - The planted-order test is 3 runs a side, with one wording and one model.
 - I ran the planted-order test before the finder always printed the one-line list.
+- After the judging, a code review changed how the shipped list joins the live search. 79 of the 81 judged picks are still listed, and 12 skills are now listed that no judge has seen.
 - The terminal command and the skill folder were tested from a terminal. I have not run them inside Codex or Cursor.
 - No person has labelled the test requests. All four judges are Claude models.
 - The sealed requests have now been used four times. Nothing was tuned on them, but they are no longer fresh.

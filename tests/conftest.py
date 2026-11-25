@@ -65,5 +65,6 @@ def home(tmp_path, monkeypatch):
     monkeypatch.delenv("SKILLSELECT_SHORT", raising=False)
     monkeypatch.delenv("SKILLSELECT_HINT", raising=False)
     monkeypatch.delenv("SKILLSELECT_CONFIG", raising=False)
+    monkeypatch.delenv("CLAUDE_CONFIG_DIR", raising=False)
     monkeypatch.chdir(proj)
     return h

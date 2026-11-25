@@ -1,0 +1,1225 @@
+{
+ "what": "3.1 with a login after the code-review fixes, against recheck12.json (GitHub calls only, no model)",
+ "requests": 24,
+ "same_list": 10,
+ "judged_kept_picks": 81,
+ "judged_kept_picks_no_longer_listed": 2,
+ "of_them_judged_ON_by_opus": 2,
+ "skills_listed_that_were_not_before": 12,
+ "calls_not_in_cache": 7,
+ "requests_with_a_search_turned_away": 0,
+ "lists": {
+  "J01": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "doc"
+    ],
+    [
+     "nanocoai/nanoclaw",
+     "convert-documents-to-markdown"
+    ],
+    [
+     "nexu-io/open-design",
+     "minimax-docx"
+    ],
+    [
+     "github/awesome-copilot",
+     "convert-word-to-md"
+    ],
+    [
+     "github/awesome-copilot",
+     "md-to-docx"
+    ],
+    [
+     "kklimuk/docx-cli",
+     "docx-cli"
+    ],
+    [
+     "nexu-io/openmotion",
+     "doc"
+    ],
+    [
+     "thedotmack/claude-mem",
+     "wowerpoint"
+    ],
+    [
+     "paperclipai/paperclip",
+     "simplified-english"
+    ],
+    [
+     "googleworkspace/cli",
+     "recipe-share-doc-and-notify"
+    ],
+    [
+     "Yuan1z0825/nature-skills",
+     "nature-paper2word"
+    ],
+    [
+     "nexu-io/openmotion",
+     "minimax-docx"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "thedotmack/claude-mem",
+     "wowerpoint"
+    ],
+    [
+     "paperclipai/paperclip",
+     "simplified-english"
+    ]
+   ],
+   "from_list": 9
+  },
+  "J02": {
+   "now": [
+    [
+     "iOfficeAI/OfficeCLI",
+     "officecli-xlsx"
+    ],
+    [
+     "googleworkspace/cli",
+     "recipe-create-expense-tracker"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "spreadsheet-formula-helper"
+    ],
+    [
+     "googleworkspace/cli",
+     "gws-sheets"
+    ],
+    [
+     "petehottelet/spreadsheet-auditor",
+     "spreadsheet-auditor"
+    ],
+    [
+     "gmickel/sheets-cli",
+     "sheets-cli"
+    ],
+    [
+     "BayramAnnakov/excel-hygiene",
+     "excel-hygiene"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "paperjsx"
+    ],
+    [
+     "dream-num/skills",
+     "build-with-univer"
+    ],
+    [
+     "dream-num/univer-cli",
+     "core"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 4
+  },
+  "J03": {
+   "now": [
+    [
+     "K-Dense-AI/scientific-agent-skills",
+     "scientific-slides"
+    ],
+    [
+     "nexu-io/open-design",
+     "slides"
+    ],
+    [
+     "thedotmack/claude-mem",
+     "wowerpoint"
+    ],
+    [
+     "JimLiu/baoyu-skills",
+     "baoyu-slide-deck"
+    ],
+    [
+     "nexu-io/open-design",
+     "create-slides-pitch"
+    ],
+    [
+     "PlutoLei/paperbanana-skill",
+     "paperbanana-slide-deck"
+    ],
+    [
+     "nexu-io/codex-slides",
+     "codex-slides-deck"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "md-slides"
+    ],
+    [
+     "zarazhangrui/frontend-slides",
+     "frontend-slides"
+    ],
+    [
+     "nexu-io/codex-slides",
+     "codex-slides"
+    ],
+    [
+     "andisab/swe-marketplace",
+     "slideware"
+    ],
+    [
+     "wshobson/agents",
+     "pptx-slide-specification"
+    ]
+   ],
+   "lost_kept_picks": [
+    [
+     "SlideSpeak/slide-design-skill",
+     "slide-design-skill"
+    ]
+   ],
+   "new": [
+    [
+     "wshobson/agents",
+     "pptx-slide-specification"
+    ]
+   ],
+   "from_list": 6
+  },
+  "J04": {
+   "now": [
+    [
+     "K-Dense-AI/scientific-agent-skills",
+     "liteparse"
+    ],
+    [
+     "github/awesome-copilot",
+     "convert-pdf-to-md"
+    ],
+    [
+     "K-Dense-AI/scientific-agent-skills",
+     "paperclip"
+    ],
+    [
+     "nexu-io/open-design",
+     "brand-extract"
+    ],
+    [
+     "nanocoai/nanoclaw",
+     "convert-documents-to-markdown"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "prompt-engineering-instructor"
+    ],
+    [
+     "virgiliojr94/book-to-skill",
+     "book-to-skill"
+    ],
+    [
+     "aden-hive/hive",
+     "hive.pdf"
+    ],
+    [
+     "Orchestra-Research/AI-Research-SKILLs",
+     "instructor"
+    ],
+    [
+     "nexu-io/openmotion",
+     "brand-extract"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "deepread"
+    ],
+    [
+     "nexu-io/open-design",
+     "canvas-design"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "nexu-io/open-design",
+     "canvas-design"
+    ]
+   ],
+   "from_list": 11
+  },
+  "J06": {
+   "now": [
+    [
+     "sickn33/agentic-awesome-skills",
+     "seo-audit"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "seo-audit"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "local-seo-audit-checklist"
+    ],
+    [
+     "every-app/open-seo",
+     "seo-audit"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "seo-audit"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "programmatic-seo"
+    ],
+    [
+     "AgriciDaniel/claude-seo",
+     "seo-audit"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "seo-optimizer"
+    ],
+    [
+     "affaan-m/ECC",
+     "seo"
+    ],
+    [
+     "AgriciDaniel/claude-seo",
+     "seo"
+    ],
+    [
+     "TheSmokeDev/geo-skills",
+     "seo-audit"
+    ],
+    [
+     "rampstackco/claude-skills",
+     "seo-audit-orchestration"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 2
+  },
+  "J09": {
+   "now": [
+    [
+     "langgenius/dify",
+     "e2e-cucumber-playwright"
+    ],
+    [
+     "langgenius/dify",
+     "frontend-testing"
+    ],
+    [
+     "wshobson/agents",
+     "e2e-testing-patterns"
+    ],
+    [
+     "addyosmani/agent-skills",
+     "browser-testing-with-devtools"
+    ],
+    [
+     "wshobson/agents",
+     "javascript-testing-patterns"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "android_ui_verification"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "senior-qa"
+    ],
+    [
+     "K-Dense-AI/scientific-agent-skills",
+     "fictiv"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "awt-e2e-testing"
+    ],
+    [
+     "ComposioHQ/awesome-claude-skills",
+     "test-app-automation"
+    ],
+    [
+     "nexu-io/open-design",
+     "agent-browser"
+    ],
+    [
+     "CherryHQ/cherry-studio",
+     "cherry-regression-test"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 7
+  },
+  "J11": {
+   "now": [
+    [
+     "davila7/claude-code-templates",
+     "resume-tailor"
+    ],
+    [
+     "reactive-resume/reactive-resume",
+     "resume-tailor"
+    ],
+    [
+     "reactive-resume/reactive-resume",
+     "cover-letter-writer"
+    ],
+    [
+     "ai-job-search-dev/ai-job-search",
+     "job-application-assistant"
+    ],
+    [
+     "vignzpie/resume-agent-skills",
+     "resume-tailor"
+    ],
+    [
+     "mikezhangyl/jd-cv-grill",
+     "jd-cv-grill"
+    ],
+    [
+     "phuryn/pm-skills",
+     "review-resume"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "cover-letter-generator"
+    ],
+    [
+     "vignzpie/resume-agent-skills",
+     "career-profile-builder"
+    ],
+    [
+     "career-ops-hq/career-ops",
+     "career-ops"
+    ],
+    [
+     "tw93/Kami",
+     "kami"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 4
+  },
+  "J12": {
+   "now": [
+    [
+     "fengyiqicoder/gmail-receipt-tracker",
+     "gmail-receipt-tracker"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 0
+  },
+  "J13": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "meeting-notes"
+    ],
+    [
+     "phuryn/pm-skills",
+     "summarize-meeting"
+    ],
+    [
+     "github/awesome-copilot",
+     "meeting-minutes"
+    ],
+    [
+     "paperclipai/paperclip",
+     "summarize-status"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "meeting-notes-and-actions"
+    ],
+    [
+     "googleworkspace/cli",
+     "gws-workflow-standup-report"
+    ],
+    [
+     "googleworkspace/cli",
+     "gws-workflow-weekly-digest"
+    ],
+    [
+     "JimLiu/baoyu-skills",
+     "baoyu-podcast-summary"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "decision-logger"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "agent-run-forensics"
+    ],
+    [
+     "phuryn/pm-skills",
+     "summarize-interview"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 10
+  },
+  "J14": {
+   "now": [
+    [
+     "coreyhaines31/marketingskills",
+     "popups"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "announcement-board"
+    ],
+    [
+     "wshobson/agents",
+     "mtls-configuration"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "coreyhaines31/marketingskills",
+     "popups"
+    ]
+   ],
+   "from_list": 3
+  },
+  "J15": {
+   "now": [
+    [
+     "wshobson/agents",
+     "gdpr-data-handling"
+    ],
+    [
+     "phuryn/pm-skills",
+     "privacy-policy"
+    ],
+    [
+     "wshobson/agents",
+     "pci-compliance"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "gdpr-dsgvo-expert"
+    ],
+    [
+     "goul4rt/lgpd-skills",
+     "lgpd-privacy-policy"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "gdpr-audit-prep"
+    ],
+    [
+     "VenusOne-Lee/popia-compliance",
+     "popia-compliance"
+    ],
+    [
+     "nexu-io/open-design",
+     "html-ppt-zhangzara-stencil-tablet"
+    ],
+    [
+     "K-Dense-AI/scientific-agent-skills",
+     "bids"
+    ],
+    [
+     "mhfed/vn-law-check",
+     "vn-law-check"
+    ],
+    [
+     "goul4rt/lgpd-skills",
+     "lgpd-audit"
+    ],
+    [
+     "AgriciDaniel/claude-ads",
+     "ads-setup"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "nexu-io/open-design",
+     "html-ppt-zhangzara-stencil-tablet"
+    ]
+   ],
+   "from_list": 5
+  },
+  "J17": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "gif-sticker-maker"
+    ],
+    [
+     "nexu-io/open-design",
+     "animate"
+    ],
+    [
+     "nexu-io/openmotion",
+     "gif-sticker-maker"
+    ],
+    [
+     "github/awesome-copilot",
+     "image-annotations"
+    ],
+    [
+     "emilkowalski/skills",
+     "animate"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "animate"
+    ],
+    [
+     "t0mtaylor/peepshow",
+     "slides"
+    ],
+    [
+     "fantuan-lab/animated-sticker-studio",
+     "animated-sticker-studio"
+    ],
+    [
+     "emilkowalski/skills",
+     "animate-expo"
+    ],
+    [
+     "OpenMontageInc/OpenMontage",
+     "ltx2"
+    ],
+    [
+     "OpenMontageInc/OpenMontage",
+     "threejs-animation"
+    ],
+    [
+     "nexu-io/openmotion",
+     "animate"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 6
+  },
+  "J18": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "frontend-dev"
+    ],
+    [
+     "nexu-io/open-design",
+     "huashu-art-motion"
+    ],
+    [
+     "itgoyo/hermes-skills",
+     "p5js"
+    ],
+    [
+     "nexu-io/openmotion",
+     "frontend-dev"
+    ],
+    [
+     "anthropics/skills",
+     "canvas-design"
+    ],
+    [
+     "ComposioHQ/awesome-claude-skills",
+     "canvas-design"
+    ],
+    [
+     "nexu-io/openmotion",
+     "huashu-art-motion"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "canvas-design"
+    ],
+    [
+     "itgoyo/hermes-skills",
+     "ascii-video"
+    ],
+    [
+     "composio-community/awesome-codex-skills",
+     "canvas-design"
+    ],
+    [
+     "nextlevelbuilder/ui-ux-pro-max-skill",
+     "banner-design"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "creative-portfolio-resume"
+    ]
+   ],
+   "lost_kept_picks": [
+    [
+     "nexu-io/open-design",
+     "canvas-design"
+    ]
+   ],
+   "new": [
+    [
+     "nexu-io/open-design",
+     "frontend-dev"
+    ]
+   ],
+   "from_list": 8
+  },
+  "J20": {
+   "now": [
+    [
+     "cofoundy/brand-skills",
+     "brand"
+    ],
+    [
+     "phuryn/pm-skills",
+     "product-name"
+    ],
+    [
+     "cofoundy/brand-skills",
+     "naming"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "business-name-fit"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "aiseotracker"
+    ],
+    [
+     "paveldevyatov/ai-domain-name-generator",
+     "find-domain"
+    ],
+    [
+     "elementalsouls/Claude-BugHunter",
+     "recon-scope-triage"
+    ],
+    [
+     "beatra-ai/ai-logo-maker-skill",
+     "ai-logo-maker"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 4
+  },
+  "J22": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "ad-creative"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "ads"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "ad-creative"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "paid-ads"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "paid-ads"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "ad-creative"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "ad-creative"
+    ],
+    [
+     "AgriciDaniel/claude-ads",
+     "ads-creative"
+    ],
+    [
+     "nexu-io/openmotion",
+     "ad-creative"
+    ],
+    [
+     "github/awesome-copilot",
+     "competitor-ad-intelligence"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "copy-editing"
+    ],
+    [
+     "miqdadbadjuber/anti-slop",
+     "antislop-copywriting"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 6
+  },
+  "J24": {
+   "now": [
+    [
+     "davila7/claude-code-templates",
+     "agent-md-refactor"
+    ],
+    [
+     "github/awesome-copilot",
+     "batch-files"
+    ],
+    [
+     "nexu-io/open-design",
+     "figma-create-new-file"
+    ],
+    [
+     "github/awesome-copilot",
+     "batch-script-progress"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "gmod-addon-maker"
+    ],
+    [
+     "paperclipai/paperclip",
+     "para-memory-files"
+    ],
+    [
+     "googleworkspace/cli",
+     "recipe-organize-drive-folder"
+    ],
+    [
+     "googleworkspace/cli",
+     "gws-script-push"
+    ],
+    [
+     "wshobson/agents",
+     "python-project-structure"
+    ],
+    [
+     "wshobson/agents",
+     "bats-testing-patterns"
+    ],
+    [
+     "ComposioHQ/awesome-claude-skills",
+     "files-com-automation"
+    ],
+    [
+     "ComposioHQ/awesome-claude-skills",
+     "Cloudinary Automation"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "ComposioHQ/awesome-claude-skills",
+     "Cloudinary Automation"
+    ]
+   ],
+   "from_list": 9
+  },
+  "J25": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "mobile-app"
+    ],
+    [
+     "nexu-io/open-design",
+     "imagegen-frontend-mobile"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "mobile-design"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "android-dev"
+    ],
+    [
+     "nexu-io/openmotion",
+     "imagegen-frontend-mobile"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "app-store-optimization"
+    ],
+    [
+     "wshobson/agents",
+     "react-native-design"
+    ],
+    [
+     "emilkowalski/skills",
+     "mobile-native"
+    ],
+    [
+     "sleekdotdesign/agent-skills",
+     "sleek-design-mobile-apps"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "mobile-release"
+    ],
+    [
+     "wshobson/agents",
+     "react-native-architecture"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "app-store-optimization"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 9
+  },
+  "J26": {
+   "now": [
+    [
+     "addyosmani/agent-skills",
+     "deprecation-and-migration"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "database-schema-designer"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "database-migration"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "database-designer"
+    ],
+    [
+     "wshobson/agents",
+     "sql-optimization-patterns"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "database-architect"
+    ],
+    [
+     "phuryn/pm-skills",
+     "sql-queries"
+    ],
+    [
+     "wshobson/agents",
+     "database-migration"
+    ],
+    [
+     "Jeffallan/claude-skills",
+     "sql-pro"
+    ],
+    [
+     "nexu-io/open-design",
+     "html-ppt-zhangzara-long-table"
+    ],
+    [
+     "cathrynlavery/diagram-design",
+     "diagram-design"
+    ],
+    [
+     "github/awesome-copilot",
+     "efcore-d2-db-diagram"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 10
+  },
+  "J27": {
+   "now": [
+    [
+     "nextlevelbuilder/ui-ux-pro-max-skill",
+     "design"
+    ],
+    [
+     "nexu-io/open-design",
+     "frame-logo-outro"
+    ],
+    [
+     "nexu-io/open-design",
+     "brand-extract"
+    ],
+    [
+     "kaankiziltug/logo-design-skill",
+     "logo-design"
+    ],
+    [
+     "zstvns/design-skills",
+     "logo-design"
+    ],
+    [
+     "heygen-com/hyperframes",
+     "figma"
+    ],
+    [
+     "nexu-io/openmotion",
+     "openmotion-glitch-logo-sting"
+    ],
+    [
+     "iart-ai/motion-design-skills",
+     "logo-animation"
+    ],
+    [
+     "carrapido/rob-janoff-design",
+     "rob-janoff-design"
+    ],
+    [
+     "nexu-io/openmotion",
+     "frame-logo-outro"
+    ],
+    [
+     "zstvns/design-skills",
+     "design-principles"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "brand-guidelines"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "nexu-io/open-design",
+     "frame-logo-outro"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "brand-guidelines"
+    ]
+   ],
+   "from_list": 4
+  },
+  "J28": {
+   "now": [
+    [
+     "sickn33/agentic-awesome-skills",
+     "ai-content-outline-generator"
+    ],
+    [
+     "JimLiu/baoyu-skills",
+     "baoyu-podcast-summary"
+    ],
+    [
+     "phuryn/pm-skills",
+     "interview-script"
+    ],
+    [
+     "nexu-io/openmotion",
+     "openmotion-shortlist-shorts"
+    ],
+    [
+     "kangarooking/cangjie-skill",
+     "cangjie-skill"
+    ],
+    [
+     "nexu-io/openmotion",
+     "openmotion-multicam-edit"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 6
+  },
+  "J30": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "email-marketing"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "influencer-marketing"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "email-systems"
+    ],
+    [
+     "nexu-io/openmotion",
+     "email-marketing"
+    ],
+    [
+     "coreyhaines31/marketingskills",
+     "marketing-ideas"
+    ],
+    [
+     "davila7/claude-code-templates",
+     "executing-marketing-campaigns"
+    ],
+    [
+     "alirezarezvani/claude-skills",
+     "copy-editing"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "coreyhaines31/marketingskills",
+     "influencer-marketing"
+    ]
+   ],
+   "from_list": 5
+  },
+  "J31": {
+   "now": [
+    [
+     "affaan-m/ECC",
+     "kubernetes-patterns"
+    ],
+    [
+     "k8s-servant/k8s-skills",
+     "k8s-node-troubleshooting"
+    ],
+    [
+     "k8s-servant/k8s-skills",
+     "k8s-api-troubleshooting"
+    ],
+    [
+     "wshobson/agents",
+     "k8s-manifest-generator"
+    ],
+    [
+     "wshobson/agents",
+     "k8s-security-policies"
+    ],
+    [
+     "elementalsouls/Claude-BugHunter",
+     "hunt-k8s"
+    ],
+    [
+     "SnailSploit/Claude-Red",
+     "offensive-k8s-attacks"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 4
+  },
+  "J34": {
+   "now": [
+    [
+     "AdeDeepFishing/trip-itinerary-page",
+     "trip-itinerary-page"
+    ],
+    [
+     "ryan11njr/tripink",
+     "travel-planner"
+    ],
+    [
+     "Hizir-SamuelP/deep-trip-planning",
+     "deep-trip-planning-en"
+    ],
+    [
+     "YuanMenghe/trip-cheat-sheet-skill",
+     "trip-cheat-sheet"
+    ],
+    [
+     "marinsokol5/trip-atlas",
+     "trip-atlas-update-itinerary"
+    ],
+    [
+     "jechiu16/travel-itinerary-book",
+     "travel-itinerary-book"
+    ],
+    [
+     "digitaljohn/trip-planner",
+     "trip-planner"
+    ],
+    [
+     "skywain/trip-planner-skill",
+     "trip-planner"
+    ],
+    [
+     "ShawNova/wentro",
+     "wentro"
+    ],
+    [
+     "woipot/trip-guide-site",
+     "trip-guide-site"
+    ],
+    [
+     "joshgoncsu/ai-trip-planner-skill",
+     "ai-trip-planner"
+    ],
+    [
+     "redmouthcrow/itinerary-doctor",
+     "itinerary-doctor"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [],
+   "from_list": 0
+  },
+  "J35": {
+   "now": [
+    [
+     "nexu-io/open-design",
+     "ve-terminal-mono"
+    ],
+    [
+     "topoteretes/cognee",
+     "cognee-cli"
+    ],
+    [
+     "sickn33/agentic-awesome-skills",
+     "android-cli"
+    ],
+    [
+     "nocobase/nocobase",
+     "nocobase-app-plugin-cli-example"
+    ],
+    [
+     "github/awesome-copilot",
+     "mcp-cli"
+    ],
+    [
+     "obsidianmd/obsidian-skills",
+     "obsidian-headless"
+    ],
+    [
+     "AgriciDaniel/claude-obsidian",
+     "wiki-cli"
+    ],
+    [
+     "nocobase/nocobase",
+     "nocobase-app-plugin-agent-sessions"
+    ],
+    [
+     "obsidianmd/obsidian-skills",
+     "obsidian-cli"
+    ],
+    [
+     "erkamyaman/rust-anything",
+     "rust-anything"
+    ],
+    [
+     "github/awesome-copilot",
+     "cli-mastery"
+    ],
+    [
+     "rorkai/app-store-connect-cli-skills",
+     "asc-cli-usage"
+    ]
+   ],
+   "lost_kept_picks": [],
+   "new": [
+    [
+     "rorkai/app-store-connect-cli-skills",
+     "asc-cli-usage"
+    ]
+   ],
+   "from_list": 9
+  }
+ }
+}
